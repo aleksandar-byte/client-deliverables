@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wagner Sleep Dentist - UI/UX & SEO Handoff</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* =========================================
+           PRESENTATION WRAPPER STYLES
+           ========================================= */
+        :root {
+            --bg-color: #f1f5f9;
+            --text-dark: #0f172a;
+        }
+        body.presentation {
+            background-color: var(--bg-color);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            color: var(--text-dark);
+        }
+        .handoff-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .handoff-title {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        .handoff-subtitle {
+            font-size: 16px;
+            color: #475569;
+        }
+        .section-header {
+            max-width: 1400px;
+            margin: 0 auto 20px auto;
+            font-size: 24px;
+            font-weight: 700;
+            border-bottom: 2px solid #cbd5e1;
+            padding-bottom: 10px;
+            color: #334155;
+        }
+
+        .card-wrapper {
+            max-width: 1400px;
+            margin: 0 auto 50px auto;
+        }
+
+        .state-label-bar {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #334155;
+            color: white;
+            padding: 8px 18px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 0;
+        }
+
+        .state-label-bar.open-state {
+            background: #16a34a;
+        }
+        
+        .desktop-container {
+            max-width: 1400px;
+            background: white;
+            border-radius: 0 12px 12px 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .mobile-showcase {
+            max-width: 1400px;
+            margin: 0 auto 60px auto;
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .mobile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .mobile-card .state-label-bar {
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .mobile-container {
+            width: 414px;
+            background: white;
+            border-radius: 40px;
+            border: 12px solid #0f172a;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* =========================================
+           SHARED MOCKUP STYLES (Scoped carefully)
+           ========================================= */
+        .mockup * { box-sizing: border-box; }
+        .mockup { font-family: 'Inter', sans-serif; color: #333; }
+        .mockup a { text-decoration: none; color: inherit; }
+        
+        /* Typography */
+        .logo-top { font-family: 'Playfair Display', serif; color: #2c4a3b; font-size: 18px; line-height: 1; }
+        .logo-mid { font-family: 'Playfair Display', serif; color: #2c4a3b; font-size: 32px; font-weight: 700; line-height: 1; display: flex; align-items: baseline; gap: 4px; }
+        .logo-dds { font-family: 'Inter', sans-serif; font-size: 12px; letter-spacing: 1px; color: #2c4a3b; font-weight: 600; }
+        .logo-bottom { font-size: 9px; color: #666; margin-top: 4px; letter-spacing: 0.5px; text-transform: uppercase; }
+        
+        .hero-title { font-family: 'Playfair Display', serif; font-weight: 600; line-height: 1.1; margin-bottom: 24px; color: white; text-wrap: balance; }
+        .hero-text { line-height: 1.6; margin-bottom: 40px; color: #f0f0f0; text-wrap: balance;}
+        
+        .subhead-pill {
+            background-color: #947e6b;
+            color: white;
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 24px;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: #383e3c;
+            color: white;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            position: relative;
+        }
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #2ecc71;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 6px rgba(46, 204, 113, 0.6);
+        }
+        .btn-book-top {
+            background-color: #1a9e73;
+            color: white;
+            border-radius: 20px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            transition: background-color 0.2s;
+            box-shadow: 0 2px 8px rgba(26, 158, 115, 0.4);
+        }
+        .btn-book-top:hover { background-color: #14805c; }
+
+        /* CTA Buttons */
+        .btn-primary {
+            background-color: #b7c7b8;
+            color: #1e3025;
+            border-radius: 30px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background 0.3s;
+            text-align: center;
+        }
+        .btn-primary:hover { background-color: #a3b5a4; }
+        
+        /* SECONDARY BUTTON DESIGN */
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: rgba(30, 48, 37, 0.85) !important;
+            color: #ffffff !important;
+            border: 2px solid #ffffff !important;
+            border-radius: 30px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .btn-secondary:hover { 
+            background-color: #2c4a3b !important;
+            border-color: #b7c7b8 !important;
+        }
+        .btn-secondary svg { 
+            width: 18px; 
+            height: 18px; 
+            fill: #ffffff !important; 
+        }
+
+        /* =========================================
+           DESKTOP SPECIFIC OVERRIDES
+           ========================================= */
+        .desktop-container .top-bar { padding: 12px 5%; justify-content: center; gap: 20px; }
+        .desktop-container .top-bar-left { display: flex; align-items: center; gap: 6px; color: #d1d5db; position: absolute; left: 5%; }
+        .desktop-container .top-bar-center { display: flex; align-items: center; gap: 10px; font-weight: 500; }
+        .desktop-container .btn-book-top { padding: 8px 16px; font-size: 13px; }
+        
+        .desktop-container .header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: white; position: relative; z-index: 10; border-bottom: 1px solid #eaeaea; }
+        .desktop-container .nav-links { display: flex; gap: 32px; font-weight: 600; font-size: 15px; color: #111; }
+        .desktop-container .nav-links a:hover { color: #1a9e73; }
+        .desktop-container .contact-phone { display: flex; align-items: center; gap: 8px; font-size: 20px; color: #7f8a83; font-family: 'Playfair Display', serif; }
+        
+        .desktop-container .hero { 
+            background: linear-gradient(to right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.75) 100%), url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            min-height: 650px; display: flex; align-items: center; justify-content: flex-end; padding: 0 10%; 
+        }
+        .desktop-container .hero-content { max-width: 680px; text-align: center; }
+        .desktop-container .hero-title { font-size: 52px; }
+        .desktop-container .hero-text { font-size: 18px; padding: 0 20px; }
+        .desktop-container .btn-group { display: flex; gap: 20px; justify-content: center; }
+        .desktop-container .btn-primary, .desktop-container .btn-secondary { padding: 16px 28px; font-size: 14px; }
+
+        /* =========================================
+           MOBILE SPECIFIC OVERRIDES
+           ========================================= */
+        .mobile-container .top-bar { padding: 10px 12px; justify-content: space-between; }
+        .mobile-container .icon-group { display: flex; align-items: center; gap: 4px; font-weight: 500; }
+        .mobile-container .btn-book-top { padding: 7px 12px; font-size: 11px; }
+        
+        .mobile-container .header { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background: white; border-bottom: 1px solid #eee; }
+        .mobile-container .logo-top { font-size: 16px; }
+        .mobile-container .logo-mid { font-size: 26px; }
+        .mobile-container .logo-dds { font-size: 10px; }
+        .mobile-container .logo-bottom { font-size: 7.5px; }
+        
+        .mobile-container .hamburger { width: 44px; height: 44px; background-color: #9cb1a2; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+        
+        .mobile-container .hero { 
+            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
+            padding: 60px 24px; text-align: center; min-height: 600px; display: flex; flex-direction: column; justify-content: center; 
+        }
+        .mobile-container .subhead-pill { font-size: 10px; align-self: center; letter-spacing: 1px;}
+        .mobile-container .hero-title { font-size: 32px; }
+        .mobile-container .hero-text { font-size: 15px; }
+        .mobile-container .btn-primary { display: block; width: 100%; padding: 16px 20px; font-size: 14px; margin-bottom: 16px; }
+        .mobile-container .btn-secondary { width: 100%; padding: 14px 20px; font-size: 14px; }
+    </style>
+</head>
+<body class="presentation">
+
+    <div class="handoff-header">
+        <h1 class="handoff-title">Wagner Sleep Dentist</h1>
+        <p class="handoff-subtitle">CRO & SEO Design Handoff - Phone Button Hidden During Closed Hours</p>
+    </div>
+
+    <!-- ==============================================
+         DESKTOP VIEWS
+         ============================================== -->
+    <h2 class="section-header">Desktop Experience</h2>
+
+    <!-- Desktop Open (Shows Call Button) -->
+    <div class="card-wrapper">
+        <div class="state-label-bar open-state">Desktop — Business Hours (Open)</div>
+        <div class="desktop-container mockup">
+            <div class="top-bar">
+                <div class="top-bar-left">
+                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 16 7 16C7 16 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#A0AAB2"/></svg>
+                    8849 Shelby St. Suite A2, Indianapolis, IN
+                </div>
+                <div class="top-bar-center">
+                    <span class="status-dot"></span>
+                    <span style="font-size: 16px;">☀️</span> 
+                    We are Open! Claim your appointment slot today or call us.
+                    <a href="#" class="btn-book-top">[BOOK APPT]</a>
+                </div>
+            </div>
+
+            <header class="header">
+                <div class="logo-area">
+                    <div class="logo-top">Susan E.</div>
+                    <div class="logo-mid">Wagner <span class="logo-dds">DDS</span></div>
+                    <div class="logo-bottom">Dentistry that makes you look and feel good.</div>
+                </div>
+                <nav class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">The Practice ›</a>
+                    <a href="#">Dental Services ›</a>
+                    <a href="#">Patient Resources ›</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <div class="contact-phone">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92V20C22 20.5523 21.5523 21 21 21C10.5066 21 2 12.4934 2 2C2 1.44772 2.44772 1 3 1H6.08C6.58988 1 7.02298 1.38531 7.07342 1.88981C7.16434 2.79927 7.37894 3.68266 7.70821 4.51731C7.86908 4.92484 7.77196 5.39055 7.45 5.7L5.54 7.61C7.03 10.5 9.5 12.97 12.39 14.46L14.3 12.55C14.6095 12.228 15.0752 12.1309 15.4827 12.2918C16.3173 12.6211 17.2007 12.8357 18.1102 12.9266C18.6147 12.977 19 13.4101 19 13.92V16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    (317) 342-6319
+                </div>
+            </header>
+
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="subhead-pill">Serving South Perry • Greenwood • Center Grove</div>
+                    <h1 class="hero-title">Your Trusted Cosmetic & Sleep Dentist Near South Perry & Greenwood</h1>
+                    <p class="hero-text">Looking for personalized dental care close to home? Dr. Susan Wagner offers gentle cosmetic enhancements, sleep apnea solutions, and family dentistry for patients across South Perry, Greenwood, and Center Grove.</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn-primary">Schedule Your Visit</a>
+                        <a href="tel:+13173426319" class="btn-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                            Call (317) 342-6319
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Desktop Closed (Hides Call Button completely) -->
+    <div class="card-wrapper">
+        <div class="state-label-bar">Desktop — After Hours (Closed)</div>
+        <div class="desktop-container mockup">
+            <div class="top-bar">
+                <div class="top-bar-left">
+                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 16 7 16C7 16 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#A0AAB2"/></svg>
+                    8849 Shelby St. Suite A2, Indianapolis, IN
+                </div>
+                <div class="top-bar-center">
+                    <span style="font-size: 16px;">🌙</span> 
+                    Office Closed? Reserve Your Spot Online 24/7!
+                    <a href="#" class="btn-book-top">[BOOK ONLINE 24/7]</a>
+                </div>
+            </div>
+
+            <header class="header">
+                <div class="logo-area">
+                    <div class="logo-top">Susan E.</div>
+                    <div class="logo-mid">Wagner <span class="logo-dds">DDS</span></div>
+                    <div class="logo-bottom">Dentistry that makes you look and feel good.</div>
+                </div>
+                <nav class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">The Practice ›</a>
+                    <a href="#">Dental Services ›</a>
+                    <a href="#">Patient Resources ›</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <div class="contact-phone">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92V20C22 20.5523 21.5523 21 21 21C10.5066 21 2 12.4934 2 2C2 1.44772 2.44772 1 3 1H6.08C6.58988 1 7.02298 1.38531 7.07342 1.88981C7.16434 2.79927 7.37894 3.68266 7.70821 4.51731C7.86908 4.92484 7.77196 5.39055 7.45 5.7L5.54 7.61C7.03 10.5 9.5 12.97 12.39 14.46L14.3 12.55C14.6095 12.228 15.0752 12.1309 15.4827 12.2918C16.3173 12.6211 17.2007 12.8357 18.1102 12.9266C18.6147 12.977 19 13.4101 19 13.92V16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    (317) 342-6319
+                </div>
+            </header>
+
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="subhead-pill">Serving South Perry • Greenwood • Center Grove</div>
+                    <h1 class="hero-title">Your Trusted Cosmetic & Sleep Dentist Near South Perry & Greenwood</h1>
+                    <p class="hero-text">Looking for personalized dental care close to home? Dr. Susan Wagner offers gentle cosmetic enhancements, sleep apnea solutions, and family dentistry for patients across South Perry, Greenwood, and Center Grove.</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn-primary" style="background-color: #2ecc71; color: #064e3b; box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4); padding: 18px 40px;">Reserve Your Spot Online 24/7</a>
+                        <!-- PHONE BUTTON HIDDEN WHEN CLOSED -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- ==============================================
+         MOBILE VIEWS (Side-by-side)
+         ============================================== -->
+    <h2 class="section-header">Mobile Experience</h2>
+    <div class="mobile-showcase">
+        
+        <!-- Mobile Open (Shows Call Button) -->
+        <div class="mobile-card">
+            <div class="state-label-bar open-state">Mobile — Business Hours (Open)</div>
+            <div class="mobile-container mockup">
+                <div class="top-bar">
+                    <div class="icon-group">
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 16 7 16C7 16 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#A0AAB2"/></svg>
+                    </div>
+                    <div class="icon-group" style="margin-right: auto; margin-left: 10px;">
+                        <span class="status-dot"></span>
+                        <span style="font-size: 15px; margin-left: 2px;">☀️</span> 
+                        <span style="color: #E2E8F0; margin-left: 4px; font-weight: 600;">Open Today</span>
+                    </div>
+                    <a href="#" class="btn-book-top">BOOK APPT</a>
+                </div>
+
+                <div class="header">
+                    <div class="logo-area">
+                        <div class="logo-top">Susan E.</div>
+                        <div class="logo-mid">Wagner <span class="logo-dds">DDS</span></div>
+                        <div class="logo-bottom">Dentistry that makes you look and feel good.</div>
+                    </div>
+                    <div class="hamburger">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12H20M4 6H20M4 18H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                </div>
+
+                <div class="hero">
+                    <div class="subhead-pill">Serving South Perry • Greenwood • Center Grove</div>
+                    <h1 class="hero-title">Your Trusted Cosmetic & Sleep Dentist Near South Perry & Greenwood</h1>
+                    <p class="hero-text">Looking for personalized dental care close to home? Dr. Susan Wagner offers gentle cosmetic enhancements, sleep apnea solutions, and family dentistry for patients across South Perry, Greenwood, and Center Grove.</p>
+                    
+                    <a href="#" class="btn-primary">Schedule Your Visit</a>
+                    <a href="tel:+13173426319" class="btn-secondary" style="margin-top: 4px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                        Call (317) 342-6319
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Closed (Hides Call Button completely) -->
+        <div class="mobile-card">
+            <div class="state-label-bar">Mobile — After Hours (Closed)</div>
+            <div class="mobile-container mockup">
+                <div class="top-bar">
+                    <div class="icon-group">
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 16 7 16C7 16 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#A0AAB2"/></svg>
+                    </div>
+                    <div class="icon-group" style="margin-right: auto; margin-left: 8px;">
+                        <span style="font-size: 15px;">🌙</span> 
+                        <span style="font-size: 11.5px; color: #f1f5f9; font-weight: 500;">Closed? Reserve 24/7</span>
+                    </div>
+                    <a href="#" class="btn-book-top">CLAIM YOUR SLOT</a>
+                </div>
+
+                <div class="header">
+                    <div class="logo-area">
+                        <div class="logo-top">Susan E.</div>
+                        <div class="logo-mid">Wagner <span class="logo-dds">DDS</span></div>
+                        <div class="logo-bottom">Dentistry that makes you look and feel good.</div>
+                    </div>
+                    <div class="hamburger">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12H20M4 6H20M4 18H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                </div>
+
+                <div class="hero">
+                    <div class="subhead-pill">Serving South Perry • Greenwood • Center Grove</div>
+                    <h1 class="hero-title">Your Trusted Cosmetic & Sleep Dentist Near South Perry & Greenwood</h1>
+                    <p class="hero-text">Looking for personalized dental care close to home? Dr. Susan Wagner offers gentle cosmetic enhancements, sleep apnea solutions, and family dentistry for patients across South Perry, Greenwood, and Center Grove.</p>
+                    
+                    <!-- EXCLUSIVE SINGLE CTA WHEN CLOSED -->
+                    <a href="#" class="btn-primary" style="background-color: #2ecc71; color: #064e3b; box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4); margin-bottom: 0;">Reserve Your Spot Online 24/7</a>
+                    <!-- PHONE BUTTON HIDDEN WHEN CLOSED -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
