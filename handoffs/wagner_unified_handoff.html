@@ -67,6 +67,10 @@
         .state-label-bar.open-state {
             background: #16a34a;
         }
+
+        .state-label-bar.next-opening-state {
+            background: #59655f;
+        }
         
         .desktop-container {
             max-width: 1400px;
@@ -115,13 +119,13 @@
         .mockup a { text-decoration: none; color: inherit; }
         
         /* Typography */
-        .logo-image { display: block; width: 168px; height: auto; }
+        .logo-image { display: block; width: 210px; height: auto; }
         
-        .hero-title { font-family: 'Playfair Display', serif; font-weight: 600; line-height: 1.1; margin-bottom: 24px; color: white; text-wrap: balance; }
-        .hero-text { line-height: 1.6; margin-bottom: 40px; color: #f0f0f0; text-wrap: balance;}
+        .hero-title { font-family: 'Playfair Display', serif; font-weight: 600; line-height: 1.08; margin: 0 0 22px; color: white; text-wrap: balance; }
+        .hero-text { line-height: 1.65; margin: 0 0 34px; color: #ffffff; text-wrap: balance; }
         
         .subhead-pill {
-            background-color: #947e6b;
+            background-color: #786556;
             color: white;
             display: inline-block;
             padding: 8px 16px;
@@ -143,28 +147,55 @@
             position: relative;
         }
         .btn-book-top {
-            background-color: #1a9e73;
+            background-color: #176c52;
             color: white;
             border-radius: 20px;
             font-weight: 700;
             letter-spacing: 0.5px;
             transition: background-color 0.2s;
-            box-shadow: 0 2px 8px rgba(26, 158, 115, 0.4);
+            min-height: 36px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
-        .btn-book-top:hover { background-color: #14805c; }
+        .btn-book-top:hover { background-color: #125642; }
+
+        .hours-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #f8fafc;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #55d89b;
+            box-shadow: 0 0 0 3px rgba(85, 216, 155, 0.15);
+            flex: 0 0 auto;
+        }
+
+        .next-opening .status-dot {
+            background: #d9c29c;
+            box-shadow: 0 0 0 3px rgba(217, 194, 156, 0.14);
+        }
 
         /* CTA Buttons */
-        .btn-primary {
-            background-color: #b7c7b8;
-            color: #1e3025;
+        .mockup .btn-primary {
+            background-color: #176c52;
+            color: #ffffff;
             border-radius: 30px;
             font-weight: 700;
             letter-spacing: 1px;
             text-transform: uppercase;
             transition: background 0.3s;
             text-align: center;
+            box-shadow: 0 8px 22px rgba(10, 45, 34, 0.28);
         }
-        .btn-primary:hover { background-color: #a3b5a4; }
+        .mockup .btn-primary:hover { background-color: #125642; }
         
         /* SECONDARY BUTTON DESIGN */
         .btn-secondary {
@@ -195,47 +226,72 @@
         /* =========================================
            DESKTOP SPECIFIC OVERRIDES
            ========================================= */
-        .desktop-container .top-bar { padding: 12px 5%; justify-content: center; gap: 20px; }
+        .desktop-container .top-bar { min-height: 48px; padding: 8px 5%; justify-content: center; gap: 20px; }
         .desktop-container .top-bar-left { display: flex; align-items: center; gap: 6px; color: #d1d5db; position: absolute; left: 5%; }
         .desktop-container .top-bar-center { display: flex; align-items: center; gap: 10px; font-weight: 500; }
         .desktop-container .btn-book-top { padding: 8px 16px; font-size: 13px; }
         
-        .desktop-container .header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: white; position: relative; z-index: 10; border-bottom: 1px solid #eaeaea; }
-        .desktop-container .nav-links { display: flex; gap: 32px; font-weight: 600; font-size: 15px; color: #111; }
+        .desktop-container .header { display: flex; justify-content: space-between; align-items: center; padding: 18px 5%; background: white; position: relative; z-index: 10; border-bottom: 1px solid #eaeaea; }
+        .desktop-container .nav-links { display: flex; gap: 28px; font-weight: 600; font-size: 15px; color: #111; }
         .desktop-container .nav-links a:hover { color: #1a9e73; }
         .desktop-container .contact-phone { display: flex; align-items: center; gap: 8px; font-size: 20px; color: #7f8a83; font-family: 'Playfair Display', serif; }
         
         .desktop-container .hero { 
-            background: linear-gradient(to right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.75) 100%), url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
-            min-height: 650px; display: flex; align-items: center; justify-content: flex-end; padding: 0 10%; 
+            background: url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            min-height: 650px; display: flex; align-items: center; justify-content: flex-start; padding: 0 8%; position: relative;
         }
-        .desktop-container .hero-content { max-width: 680px; text-align: center; }
-        .desktop-container .hero-title { font-size: 52px; }
-        .desktop-container .hero-text { font-size: 18px; padding: 0 20px; }
-        .desktop-container .btn-group { display: flex; gap: 20px; justify-content: center; }
-        .desktop-container .btn-primary, .desktop-container .btn-secondary { padding: 16px 28px; font-size: 14px; }
+        .desktop-container .hero::before { content: ""; position: absolute; inset: 0; background: rgba(14, 20, 17, 0.67); }
+        .desktop-container .hero-content { max-width: 650px; text-align: left; position: relative; z-index: 1; }
+        .desktop-container .hero-title { font-size: 54px; }
+        .desktop-container .hero-text { font-size: 18px; max-width: 610px; }
+        .desktop-container .btn-group { display: flex; gap: 16px; justify-content: flex-start; }
+        .desktop-container .btn-primary, .desktop-container .btn-secondary { min-height: 50px; padding: 15px 28px; font-size: 14px; }
 
         /* =========================================
            MOBILE SPECIFIC OVERRIDES
            ========================================= */
-        .mobile-container .top-bar { padding: 10px 12px; justify-content: space-between; }
-        .mobile-container .icon-group { display: flex; align-items: center; gap: 4px; font-weight: 500; }
-        .mobile-container .btn-book-top { padding: 7px 12px; font-size: 11px; }
+        .mobile-container .top-bar { min-height: 46px; padding: 7px 12px; justify-content: space-between; gap: 10px; }
+        .mobile-container .hours-status { font-size: 12px; line-height: 1.2; }
+        .mobile-container .btn-book-top { min-height: 34px; padding: 7px 12px; font-size: 11px; flex: 0 0 auto; }
         
         .mobile-container .header { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background: white; border-bottom: 1px solid #eee; }
-        .mobile-container .logo-image { width: 142px; }
+        .mobile-container .logo-image { width: 170px; }
         
         .mobile-container .hamburger { width: 44px; height: 44px; background-color: #9cb1a2; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; }
         
         .mobile-container .hero { 
-            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
-            padding: 60px 24px; text-align: center; min-height: 600px; display: flex; flex-direction: column; justify-content: center; 
+            background: url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') 64% center/cover no-repeat;
+            padding: 48px 24px; text-align: center; min-height: 590px; display: flex; flex-direction: column; justify-content: center; position: relative;
         }
-        .mobile-container .subhead-pill { font-size: 10px; align-self: center; letter-spacing: 1px;}
-        .mobile-container .hero-title { font-size: 32px; }
-        .mobile-container .hero-text { font-size: 15px; }
-        .mobile-container .btn-primary { display: block; width: 100%; padding: 16px 20px; font-size: 14px; margin-bottom: 16px; }
-        .mobile-container .btn-secondary { width: 100%; padding: 14px 20px; font-size: 14px; }
+        .mobile-container .hero::before { content: ""; position: absolute; inset: 0; background: rgba(14, 20, 17, 0.72); }
+        .mobile-container .hero > * { position: relative; z-index: 1; }
+        .mobile-container .subhead-pill { font-size: 11px; align-self: center; letter-spacing: 1px; margin-bottom: 20px; }
+        .mobile-container .hero-title { font-size: 36px; }
+        .mobile-container .hero-text { font-size: 15px; line-height: 1.6; margin-bottom: 30px; }
+        .mobile-container .btn-primary { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 50px; padding: 14px 20px; font-size: 13px; margin-bottom: 14px; }
+        .mobile-container .btn-secondary { width: 100%; min-height: 50px; padding: 13px 20px; font-size: 13px; }
+
+        @media (max-width: 600px) {
+            body.presentation { padding: 28px 12px; }
+            .handoff-header { margin-bottom: 36px; }
+            .handoff-title { font-size: 30px; }
+            .handoff-subtitle { font-size: 14px; }
+            .desktop-section,
+            .card-wrapper { display: none; }
+            .section-header { font-size: 21px; }
+            .mobile-showcase { gap: 42px; margin-bottom: 30px; }
+            .mobile-card { width: 100%; }
+            .mobile-container {
+                width: min(414px, calc(100vw - 32px));
+                border-width: 8px;
+                border-radius: 30px;
+            }
+            .mobile-container .top-bar { gap: 6px; padding: 7px 9px; }
+            .mobile-container .hours-status { font-size: 10px; gap: 5px; }
+            .mobile-container .btn-book-top { padding: 7px 9px; font-size: 10px; }
+            .mobile-container .hero { padding: 42px 20px; }
+            .mobile-container .hero-title { font-size: 32px; }
+        }
     </style>
 </head>
 <body class="presentation">
@@ -248,20 +304,20 @@
     <!-- ==============================================
          DESKTOP VIEWS
          ============================================== -->
-    <h2 class="section-header">Desktop Experience</h2>
+    <h2 class="section-header desktop-section">Desktop Experience</h2>
 
-    <!-- Desktop Open (Shows Call Button) -->
+    <!-- Desktop open-hours state -->
     <div class="card-wrapper">
-        <div class="state-label-bar open-state">Desktop — Business Hours (Open)</div>
+        <div class="state-label-bar open-state">Desktop - Open hours</div>
         <div class="desktop-container mockup">
             <div class="top-bar">
                 <div class="top-bar-left">
                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 16 7 16C7 16 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#A0AAB2"/></svg>
                     8849 Shelby St. Suite A2, Indianapolis, IN
                 </div>
-                <div class="top-bar-center">
-                    <span style="font-size: 16px;">☀️</span> 
-                    We are Open
+                <div class="top-bar-center hours-status">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    <span>Open now &bull; Closes at 5:00 PM</span>
                     <a href="#" class="btn-book-top">SCHEDULE YOUR VISIT</a>
                 </div>
             </div>
@@ -272,27 +328,27 @@
                 </div>
                 <nav class="nav-links">
                     <a href="#">Home</a>
-                    <a href="#">The Practice ›</a>
-                    <a href="#">Dental Services ›</a>
-                    <a href="#">Patient Resources ›</a>
+                    <a href="#">The Practice &rsaquo;</a>
+                    <a href="#">Dental Services &rsaquo;</a>
+                    <a href="#">Patient Resources &rsaquo;</a>
                     <a href="#">Contact</a>
                 </nav>
                 <div class="contact-phone">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92V20C22 20.5523 21.5523 21 21 21C10.5066 21 2 12.4934 2 2C2 1.44772 2.44772 1 3 1H6.08C6.58988 1 7.02298 1.38531 7.07342 1.88981C7.16434 2.79927 7.37894 3.68266 7.70821 4.51731C7.86908 4.92484 7.77196 5.39055 7.45 5.7L5.54 7.61C7.03 10.5 9.5 12.97 12.39 14.46L14.3 12.55C14.6095 12.228 15.0752 12.1309 15.4827 12.2918C16.3173 12.6211 17.2007 12.8357 18.1102 12.9266C18.6147 12.977 19 13.4101 19 13.92V16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    (317) 342-6319
+                    (317) 881-4000
                 </div>
             </header>
 
             <section class="hero">
                 <div class="hero-content">
-                    <div class="subhead-pill">Serving South Perry • Greenwood • Center Grove</div>
-                    <h1 class="hero-title">Your Trusted Cosmetic & Sleep Dentist Near South Perry & Greenwood</h1>
-                    <p class="hero-text">Looking for personalized dental care close to home? Dr. Susan Wagner offers gentle cosmetic enhancements, sleep apnea solutions, and family dentistry for patients across South Perry, Greenwood, and Center Grove.</p>
+                    <div class="subhead-pill">Serving South Perry &bull; Greenwood &bull; Center Grove</div>
+                    <h1 class="hero-title">Comfortable Cosmetic &amp; Sedation Dentistry in South Indianapolis</h1>
+                    <p class="hero-text">Dr. Susan Wagner provides gentle cosmetic dentistry, sedation options, and family dental care for patients in South Perry, Greenwood, and Center Grove.</p>
                     <div class="btn-group">
                         <a href="#" class="btn-primary">Schedule Your Visit</a>
-                        <a href="tel:+13173426319" class="btn-secondary">
+                        <a href="tel:+13178814000" class="btn-secondary">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
-                            Call (317) 342-6319
+                            Call (317) 881-4000
                         </a>
                     </div>
                 </div>
@@ -300,16 +356,18 @@
         </div>
     </div>
 
-    <!-- Desktop alternate CTA state -->
+    <!-- Desktop next-opening state -->
     <div class="card-wrapper">
-        <div class="state-label-bar">Desktop</div>
+        <div class="state-label-bar next-opening-state">Desktop - Next opening</div>
         <div class="desktop-container mockup">
             <div class="top-bar">
                 <div class="top-bar-left">
                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 16 7 16C7 16 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#A0AAB2"/></svg>
                     8849 Shelby St. Suite A2, Indianapolis, IN
                 </div>
-                <div class="top-bar-center">
+                <div class="top-bar-center hours-status next-opening">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    <span>Opens Monday at 8:00 AM</span>
                     <a href="#" class="btn-book-top">SCHEDULE YOUR VISIT</a>
                 </div>
             </div>
@@ -320,24 +378,24 @@
                 </div>
                 <nav class="nav-links">
                     <a href="#">Home</a>
-                    <a href="#">The Practice ›</a>
-                    <a href="#">Dental Services ›</a>
-                    <a href="#">Patient Resources ›</a>
+                    <a href="#">The Practice &rsaquo;</a>
+                    <a href="#">Dental Services &rsaquo;</a>
+                    <a href="#">Patient Resources &rsaquo;</a>
                     <a href="#">Contact</a>
                 </nav>
                 <div class="contact-phone">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92V20C22 20.5523 21.5523 21 21 21C10.5066 21 2 12.4934 2 2C2 1.44772 2.44772 1 3 1H6.08C6.58988 1 7.02298 1.38531 7.07342 1.88981C7.16434 2.79927 7.37894 3.68266 7.70821 4.51731C7.86908 4.92484 7.77196 5.39055 7.45 5.7L5.54 7.61C7.03 10.5 9.5 12.97 12.39 14.46L14.3 12.55C14.6095 12.228 15.0752 12.1309 15.4827 12.2918C16.3173 12.6211 17.2007 12.8357 18.1102 12.9266C18.6147 12.977 19 13.4101 19 13.92V16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    (317) 342-6319
+                    (317) 881-4000
                 </div>
             </header>
 
             <section class="hero">
                 <div class="hero-content">
-                    <div class="subhead-pill">Serving South Perry • Greenwood • Center Grove</div>
-                    <h1 class="hero-title">Your Trusted Cosmetic & Sleep Dentist Near South Perry & Greenwood</h1>
-                    <p class="hero-text">Looking for personalized dental care close to home? Dr. Susan Wagner offers gentle cosmetic enhancements, sleep apnea solutions, and family dentistry for patients across South Perry, Greenwood, and Center Grove.</p>
+                    <div class="subhead-pill">Serving South Perry &bull; Greenwood &bull; Center Grove</div>
+                    <h1 class="hero-title">Comfortable Cosmetic &amp; Sedation Dentistry in South Indianapolis</h1>
+                    <p class="hero-text">Dr. Susan Wagner provides gentle cosmetic dentistry, sedation options, and family dental care for patients in South Perry, Greenwood, and Center Grove.</p>
                     <div class="btn-group">
-                        <a href="#" class="btn-primary" style="background-color: #2ecc71; color: #064e3b; box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4); padding: 18px 40px;">Schedule Your Visit</a>
+                        <a href="#" class="btn-primary">Schedule Your Visit</a>
                     </div>
                 </div>
             </section>
@@ -350,19 +408,19 @@
     <h2 class="section-header">Mobile Experience</h2>
     <div class="mobile-showcase">
         
-        <!-- Mobile Open (Shows Call Button) -->
+        <!-- Mobile open-hours state -->
         <div class="mobile-card">
-            <div class="state-label-bar open-state">Mobile — Business Hours (Open)</div>
+            <div class="state-label-bar open-state">Mobile - Open hours</div>
             <div class="mobile-container mockup">
                 <div class="top-bar">
                     <div class="icon-group">
                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 16 7 16C7 16 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#A0AAB2"/></svg>
                     </div>
-                    <div class="icon-group" style="margin-right: auto; margin-left: 10px;">
-                        <span style="font-size: 15px; margin-left: 2px;">☀️</span> 
-                        <span style="color: #E2E8F0; margin-left: 4px; font-weight: 600;">We are Open</span>
+                    <div class="icon-group hours-status" style="margin-right: auto; margin-left: 10px;">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span>Open now &bull; Closes at 5 PM</span>
                     </div>
-                    <a href="#" class="btn-book-top">SCHEDULE YOUR VISIT</a>
+                    <a href="#" class="btn-book-top">BOOK</a>
                 </div>
 
                 <div class="header">
@@ -375,28 +433,32 @@
                 </div>
 
                 <div class="hero">
-                    <div class="subhead-pill">Serving South Perry • Greenwood • Center Grove</div>
-                    <h1 class="hero-title">Your Trusted Cosmetic & Sleep Dentist Near South Perry & Greenwood</h1>
-                    <p class="hero-text">Looking for personalized dental care close to home? Dr. Susan Wagner offers gentle cosmetic enhancements, sleep apnea solutions, and family dentistry for patients across South Perry, Greenwood, and Center Grove.</p>
+                    <div class="subhead-pill">Serving South Perry &bull; Greenwood &bull; Center Grove</div>
+                    <h1 class="hero-title">Comfortable Cosmetic &amp; Sedation Dentistry in South Indianapolis</h1>
+                    <p class="hero-text">Dr. Susan Wagner provides gentle cosmetic dentistry, sedation options, and family dental care for patients in South Perry, Greenwood, and Center Grove.</p>
                     
                     <a href="#" class="btn-primary">Schedule Your Visit</a>
-                    <a href="tel:+13173426319" class="btn-secondary" style="margin-top: 4px;">
+                    <a href="tel:+13178814000" class="btn-secondary" style="margin-top: 4px;">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
-                        Call (317) 342-6319
+                        Call (317) 881-4000
                     </a>
                 </div>
             </div>
         </div>
 
-        <!-- Mobile alternate CTA state -->
+        <!-- Mobile next-opening state -->
         <div class="mobile-card">
-            <div class="state-label-bar">Mobile</div>
+            <div class="state-label-bar next-opening-state">Mobile - Next opening</div>
             <div class="mobile-container mockup">
                 <div class="top-bar">
                     <div class="icon-group">
                         <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 16 7 16C7 16 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#A0AAB2"/></svg>
                     </div>
-                    <a href="#" class="btn-book-top">SCHEDULE YOUR VISIT</a>
+                    <div class="icon-group hours-status next-opening" style="margin-right: auto; margin-left: 10px;">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span>Opens Monday at 8:00 AM</span>
+                    </div>
+                    <a href="#" class="btn-book-top">SCHEDULE</a>
                 </div>
 
                 <div class="header">
@@ -409,11 +471,11 @@
                 </div>
 
                 <div class="hero">
-                    <div class="subhead-pill">Serving South Perry • Greenwood • Center Grove</div>
-                    <h1 class="hero-title">Your Trusted Cosmetic & Sleep Dentist Near South Perry & Greenwood</h1>
-                    <p class="hero-text">Looking for personalized dental care close to home? Dr. Susan Wagner offers gentle cosmetic enhancements, sleep apnea solutions, and family dentistry for patients across South Perry, Greenwood, and Center Grove.</p>
+                    <div class="subhead-pill">Serving South Perry &bull; Greenwood &bull; Center Grove</div>
+                    <h1 class="hero-title">Comfortable Cosmetic &amp; Sedation Dentistry in South Indianapolis</h1>
+                    <p class="hero-text">Dr. Susan Wagner provides gentle cosmetic dentistry, sedation options, and family dental care for patients in South Perry, Greenwood, and Center Grove.</p>
                     
-                    <a href="#" class="btn-primary" style="background-color: #2ecc71; color: #064e3b; box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4); margin-bottom: 0;">Schedule Your Visit</a>
+                    <a href="#" class="btn-primary" style="margin-bottom: 0;">Schedule Your Visit</a>
                 </div>
             </div>
         </div>
