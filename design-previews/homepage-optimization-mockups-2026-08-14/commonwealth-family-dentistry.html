@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Dentist in Chester, VA | Commonwealth Family Dentistry</title>
+  <meta name="description" content="Commonwealth Family Dentistry provides family, restorative, implant, cosmetic, emergency, and sedation dentistry in Chester, VA. Request an appointment.">
+  <style>
+    :root {
+      --blue: #325785;
+      --blue-dark: #173a61;
+      --blue-soft: #dfeaf5;
+      --sky: #8bafd7;
+      --ink: #2f3439;
+      --muted: #607382;
+      --line: #d7e0e8;
+      --paper: #ffffff;
+      --soft: #f4f7f9;
+      --warm: #f5f1e9;
+      --yellow: #e6db55;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      letter-spacing: 0;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: var(--blue); text-underline-offset: 3px; }
+    a:hover { color: var(--blue-dark); }
+    h1, h2, h3 { margin: 0; color: var(--blue-dark); font-family: Georgia, "Times New Roman", serif; font-weight: 500; letter-spacing: 0; }
+    h1 { max-width: 800px; color: #fff; font-size: 58px; line-height: 1.08; }
+    h2 { font-size: 40px; line-height: 1.18; }
+    h3 { font-size: 25px; line-height: 1.25; }
+    p { margin: 0; }
+    .container { width: min(var(--max), calc(100% - 48px)); margin: 0 auto; }
+    .section { padding: 88px 0; }
+    section[id] { scroll-margin-top: 92px; }
+    .section-soft { background: var(--soft); }
+    .section-warm { background: var(--warm); }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { width: 36px; height: 3px; background: var(--yellow); content: ""; }
+    .intro { max-width: 720px; margin-top: 18px; color: var(--muted); font-size: 19px; }
+    .button-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .button {
+      display: inline-flex;
+      min-height: 50px;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 22px;
+      border: 2px solid var(--blue-dark);
+      border-radius: 4px;
+      background: var(--blue-dark);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .button:hover { background: var(--blue); color: #fff; }
+    .button-secondary { background: transparent; color: var(--blue-dark); }
+    .button-secondary:hover { background: var(--blue-soft); color: var(--blue-dark); }
+
+    .site-header {
+      position: sticky;
+      z-index: 20;
+      top: 0;
+      border-bottom: 1px solid rgba(50, 87, 133, .14);
+      background: rgba(255,255,255,.96);
+    }
+    .nav { display: flex; min-height: 82px; align-items: center; justify-content: space-between; gap: 24px; }
+    .logo { width: 230px; }
+    .nav-links { display: flex; align-items: center; gap: 26px; }
+    .nav-links a { color: var(--ink); font-size: 15px; font-weight: 700; text-decoration: none; }
+    .nav-links .nav-cta { padding: 9px 15px; background: var(--blue); color: #fff; }
+
+    .hero {
+      position: relative;
+      display: flex;
+      min-height: min(680px, 74vh);
+      align-items: center;
+      overflow: hidden;
+      background: #39454d url("https://commonwealthfamilydentistry.com/wp-content/uploads/2026/07/commonwealth-video-1024x759.webp") center 42% / cover no-repeat;
+    }
+    .hero::before { position: absolute; inset: 0; background: rgba(17, 39, 62, .68); content: ""; }
+    .hero .container { position: relative; z-index: 1; }
+    .hero-copy { max-width: 820px; padding: 70px 0; }
+    .hero .eyebrow { color: #fff; }
+    .hero p { max-width: 690px; margin-top: 22px; color: #f1f5f8; font-size: 21px; }
+    .hero .button { border-color: #fff; background: #fff; color: var(--blue-dark); }
+    .hero .button:hover { background: var(--blue-soft); }
+    .hero .button-secondary { background: transparent; color: #fff; }
+    .hero .button-secondary:hover { background: rgba(255,255,255,.14); }
+    .hero-note { display: block; margin-top: 15px; color: #dae5ec; font-size: 14px; }
+
+    .facts { border-bottom: 1px solid var(--line); background: var(--paper); }
+    .facts-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .fact { min-height: 150px; padding: 30px 26px; border-right: 1px solid var(--line); }
+    .fact:first-child { border-left: 1px solid var(--line); }
+    .fact strong { display: block; margin-bottom: 7px; color: var(--blue-dark); font-family: Georgia, "Times New Roman", serif; font-size: 21px; font-weight: 500; }
+    .fact span { display: block; color: var(--muted); font-size: 15px; line-height: 1.5; }
+
+    .care-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin-top: 42px; background: var(--line); border: 1px solid var(--line); }
+    .care-item { min-height: 230px; padding: 34px; background: var(--paper); }
+    .care-item .number { display: block; margin-bottom: 28px; color: var(--sky); font-size: 14px; font-weight: 700; }
+    .care-item p { margin-top: 12px; color: var(--muted); }
+
+    .doctor-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 72px; align-items: center; }
+    .doctor-collage { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .doctor-photo { margin: 0; }
+    .doctor-photo img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: center top; }
+    .doctor-photo figcaption { padding-top: 10px; color: var(--blue-dark); font-size: 14px; font-weight: 700; }
+    .doctor-copy > p { margin-top: 20px; color: var(--muted); }
+    .doctor-details { display: grid; gap: 22px; margin-top: 30px; }
+    .doctor-detail { padding-left: 20px; border-left: 3px solid var(--yellow); }
+    .doctor-detail p { margin-top: 7px; color: var(--muted); font-size: 16px; }
+    .credential-links { margin-top: 22px; color: var(--muted); font-size: 14px; }
+
+    .patient-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 68px; align-items: start; }
+    .patient-copy p { margin-top: 18px; color: var(--muted); }
+    .patient-options { border-top: 1px solid var(--line); }
+    .patient-option { padding: 24px 0; border-bottom: 1px solid var(--line); }
+    .patient-option h3 { font-family: Arial, Helvetica, sans-serif; font-size: 19px; font-weight: 700; }
+    .patient-option p { margin-top: 8px; color: var(--muted); font-size: 16px; }
+
+    .location-layout { display: grid; grid-template-columns: 1.08fr .92fr; gap: 56px; align-items: stretch; }
+    .office-image { width: 100%; height: 100%; min-height: 430px; object-fit: cover; }
+    .location-copy { padding: 8px 0; }
+    .location-copy > p { margin-top: 18px; color: var(--muted); }
+    .location-data { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin: 30px 0; }
+    .location-data strong { display: block; margin-bottom: 6px; color: var(--blue-dark); }
+    .location-data span { color: var(--muted); }
+    .route-list { display: grid; gap: 9px; margin-top: 22px; }
+    .route-list a { padding: 13px 15px; border: 1px solid var(--line); background: #fff; font-weight: 700; text-decoration: none; }
+    .map { height: 360px; margin-top: 28px; border: 0; width: 100%; }
+
+    .faq { border-top: 1px solid var(--line); }
+    details { border-bottom: 1px solid var(--line); }
+    summary { padding: 24px 4px; color: var(--blue-dark); cursor: pointer; font-size: 19px; font-weight: 700; }
+    details p { max-width: 760px; padding: 0 4px 24px; color: var(--muted); }
+
+    .final-cta { background: var(--blue-dark); color: #fff; }
+    .final-cta .container { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+    .final-cta h2 { color: #fff; }
+    .final-cta p { max-width: 650px; margin-top: 12px; color: #dce7ef; }
+    .final-cta .button { border-color: #fff; background: #fff; color: var(--blue-dark); }
+    .final-cta .button-secondary { background: transparent; color: #fff; }
+
+    footer { padding: 30px 0; background: #102b49; color: #dce7ef; font-size: 14px; }
+    footer .container { display: flex; justify-content: space-between; gap: 24px; }
+    footer a { color: #fff; }
+
+    .review-flag {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 7px 10px;
+      border: 1px dashed #a67816;
+      background: #fff8de;
+      color: #674b10;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 900px) {
+      h1 { font-size: 46px; }
+      h2 { font-size: 34px; }
+      .nav-links a:not(.nav-cta) { display: none; }
+      .facts-grid { grid-template-columns: repeat(2, 1fr); }
+      .fact:nth-child(2) { border-right: 0; }
+      .fact:nth-child(n+3) { border-top: 1px solid var(--line); }
+      .doctor-layout, .patient-layout, .location-layout { grid-template-columns: 1fr; }
+      .doctor-layout { gap: 42px; }
+      .patient-layout, .location-layout { gap: 44px; }
+      .office-image { min-height: 360px; }
+      .final-cta .container { align-items: flex-start; flex-direction: column; }
+    }
+
+    @media (max-width: 620px) {
+      body { font-size: 16px; }
+      .container { width: min(100% - 32px, var(--max)); }
+      .section { padding: 64px 0; }
+      h1 { font-size: 39px; }
+      h2 { font-size: 31px; }
+      h3 { font-size: 23px; }
+      .nav { min-height: 70px; }
+      .logo { width: 180px; }
+      .nav-cta { padding: 8px 11px !important; font-size: 13px !important; }
+      .hero { min-height: 74svh; background-position: 57% center; }
+      .hero-copy { padding: 54px 0; }
+      .hero p { font-size: 18px; }
+      .button-row { align-items: stretch; flex-direction: column; }
+      .button { width: 100%; }
+      .facts-grid { grid-template-columns: 1fr; }
+      .fact, .fact:first-child { min-height: 0; border: 0; border-bottom: 1px solid var(--line); }
+      .care-grid { grid-template-columns: 1fr; }
+      .care-item { min-height: 0; padding: 28px 24px; }
+      .care-item .number { margin-bottom: 18px; }
+      .doctor-collage { gap: 9px; }
+      .doctor-photo figcaption { font-size: 13px; }
+      .location-data { grid-template-columns: 1fr; }
+      .office-image { min-height: 280px; }
+      .map { height: 320px; }
+      footer .container { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="https://commonwealthfamilydentistry.com/" aria-label="Commonwealth Family Dentistry home">
+        <img class="logo" src="https://commonwealthfamilydentistry.com/wp-content/uploads/2026/03/commonwealth-dental-final.webp" alt="Commonwealth Family Dentistry">
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#care">Services</a>
+        <a href="#dentists">Dentists</a>
+        <a href="#visit">Visit</a>
+        <a class="nav-cta" href="https://commonwealthfamilydentistry.com/request-an-appointment/">Request Visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-copy">
+          <div class="eyebrow">Commonwealth Family Dentistry</div>
+          <h1>Family dentist in Chester, VA for routine and complex care</h1>
+          <p>Dr. Timothy Breeden and Dr. Nicole Chambers provide preventive, restorative, implant, cosmetic, emergency, and sedation dentistry for patients across different stages of life.</p>
+          <div class="button-row">
+            <a class="button" href="https://commonwealthfamilydentistry.com/request-an-appointment/">Request an Appointment</a>
+            <a class="button button-secondary" href="tel:+18047486433">Call (804) 748-6433</a>
+          </div>
+          <span class="hero-note">Appointment requests are confirmed by the office team.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="facts" aria-label="Practice facts">
+      <div class="container facts-grid">
+        <div class="fact"><strong>Two general dentists</strong><span>Both doctors completed two-year General Practice Residencies in Richmond.</span></div>
+        <div class="fact"><strong>Care beyond checkups</strong><span>Family dentistry, implants, restorative care, sedation, and dental sleep medicine.</span></div>
+        <div class="fact"><strong>Emergency pathway</strong><span>New and existing patients may call about urgent tooth pain, swelling, or injury.</span></div>
+        <div class="fact"><strong>Chester office</strong><span>Open Monday through Thursday from 8:00 AM to 5:00 PM.</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="care">
+      <div class="container">
+        <div class="eyebrow">Dental care in Chester</div>
+        <h2>Start with what you need help with</h2>
+        <p class="intro">Some visits are preventive. Others begin with a damaged tooth, missing teeth, a cosmetic concern, dental anxiety, or a sleep problem. These pathways connect each concern with the most relevant care.</p>
+        <div class="care-grid">
+          <article class="care-item">
+            <span class="number">01</span>
+            <h3>Keep your family on track</h3>
+            <p>Plan exams, preventive visits, and ongoing <a href="https://commonwealthfamilydentistry.com/services/family-dentistry/">family dental care for children, teens, adults, and seniors</a>.</p>
+          </article>
+          <article class="care-item">
+            <span class="number">02</span>
+            <h3>Repair or replace teeth</h3>
+            <p>Explore ways to <a href="https://commonwealthfamilydentistry.com/services/restorative-dentistry/">repair damaged teeth or replace missing teeth</a>, including crowns, dentures, and <a href="https://commonwealthfamilydentistry.com/services/dental-implants/">dental implants</a>.</p>
+          </article>
+          <article class="care-item">
+            <span class="number">03</span>
+            <h3>Change something about your smile</h3>
+            <p>If color, shape, spacing, or alignment bothers you, compare options to <a href="https://commonwealthfamilydentistry.com/services/cosmetic-dentistry/">improve the appearance of your smile</a>.</p>
+          </article>
+          <article class="care-item">
+            <span class="number">04</span>
+            <h3>Make care easier to manage</h3>
+            <p>Ask about <a href="https://commonwealthfamilydentistry.com/services/sedation-dentistry/">options for dental anxiety</a> or whether oral-appliance <a href="https://commonwealthfamilydentistry.com/services/sleep-apnea/">sleep apnea treatment</a> may fit your situation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="dentists">
+      <div class="container doctor-layout">
+        <div class="doctor-collage" aria-label="Commonwealth Family Dentistry doctors">
+          <figure class="doctor-photo">
+            <img src="https://commonwealthfamilydentistry.com/wp-content/uploads/2026/02/dr.breeden.webp" alt="Dr. Timothy Breeden at Commonwealth Family Dentistry">
+            <figcaption>Dr. Timothy Breeden</figcaption>
+          </figure>
+          <figure class="doctor-photo">
+            <img src="https://commonwealthfamilydentistry.com/wp-content/uploads/2026/02/dr.chamber.webp" alt="Dr. Nicole Chambers at Commonwealth Family Dentistry">
+            <figcaption>Dr. Nicole Chambers</figcaption>
+          </figure>
+        </div>
+        <div class="doctor-copy">
+          <div class="eyebrow">Meet the dentists</div>
+          <h2>Training that supports a wider range of care</h2>
+          <p><a href="https://commonwealthfamilydentistry.com/about-us/meet-the-doctors/">Dr. Timothy Breeden and Dr. Nicole Chambers</a> are general dentists whose backgrounds include two-year General Practice Residencies at the Central Virginia VA Medical Center.</p>
+          <div class="doctor-details">
+            <div class="doctor-detail">
+              <h3>Dr. Timothy Breeden, MS, DDS, d-ABDSM</h3>
+              <p>Dr. Breeden's work includes restorative and implant cases, grafting, full-mouth care, TMJ therapy, and dental sleep medicine. He joined private practice in 2002 and assumed ownership in 2005.</p>
+            </div>
+            <div class="doctor-detail">
+              <h3>Dr. Nicole Chambers, DDS</h3>
+              <p>Dr. Chambers has advanced training in implants, crowns and bridges, pre-prosthetic surgery, grafting, IV and oral sedation, and periodontal care.</p>
+            </div>
+          </div>
+          <p class="credential-links">Credential reference: Dr. Breeden is listed in the official <a href="https://www.memberleap.com/members/directory/search_bootstrap.php?org_id=ABDS" target="_blank" rel="noopener">American Board of Dental Sleep Medicine directory</a>. Residency program background is available from the <a href="https://www.va.gov/richmond-health-care/work-with-us/internships-and-fellowships/general-practice-residency-in-dental-medicine/" target="_blank" rel="noopener">Central Virginia VA Health Care System</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="new-patients">
+      <div class="container patient-layout">
+        <div class="patient-copy">
+          <div class="eyebrow">Planning your visit</div>
+          <h2>A clearer next step for new and returning patients</h2>
+          <p>Use the online form to request a visit. The team will contact you to confirm the appointment, so the submitted time should not be treated as final until you hear back.</p>
+          <div class="button-row">
+            <a class="button" href="https://commonwealthfamilydentistry.com/request-an-appointment/">Request an Appointment</a>
+            <a class="button button-secondary" href="https://commonwealthfamilydentistry.com/contact-us/">Contact the Office</a>
+          </div>
+        </div>
+        <div class="patient-options">
+          <article class="patient-option">
+            <h3>Routine or planned care</h3>
+            <p>Tell the team what you would like help with and whether you are a new or returning patient.</p>
+          </article>
+          <article class="patient-option">
+            <h3>Tooth pain or a dental injury</h3>
+            <p>For <a href="https://commonwealthfamilydentistry.com/services/emergency-dentist/">urgent tooth pain, swelling, or a dental injury</a>, call first so the office can help you decide what to do next.</p>
+          </article>
+          <article class="patient-option">
+            <h3>Insurance or payment questions</h3>
+            <p>Ask the office to confirm current insurance and payment details before treatment begins.</p>
+            <span class="review-flag">Web-team note: publish specific financing details only after the client confirms them.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-warm" id="visit">
+      <div class="container location-layout">
+        <img class="office-image" src="https://commonwealthfamilydentistry.com/wp-content/uploads/2026/02/Copy-of-IMG_2882.webp" alt="Exterior of Commonwealth Family Dentistry in Chester, Virginia">
+        <div class="location-copy">
+          <div class="eyebrow">Visit the Chester office</div>
+          <h2>Commonwealth Family Dentistry</h2>
+          <p>The office is located on Greenyard Way in Chester and is open Monday through Thursday. Review the <a href="https://commonwealthfamilydentistry.com/contact-us/">office and access details</a> before your visit.</p>
+          <div class="location-data">
+            <div><strong>Address</strong><span>10601 Greenyard Way<br>Chester, VA 23831</span></div>
+            <div><strong>Hours</strong><span>Mon-Thu: 8:00 AM-5:00 PM<br>Fri-Sun: Closed</span></div>
+          </div>
+          <a href="tel:+18047486433"><strong>(804) 748-6433</strong></a>
+          <div class="route-list" aria-label="Directions from nearby communities">
+            <a href="https://www.google.com/maps/dir/?api=1&amp;origin=Chesterfield%2C%20VA&amp;destination=10601%20Greenyard%20Way%2C%20Chester%2C%20VA%2023831&amp;travelmode=driving" target="_blank" rel="noopener">Directions from Chesterfield</a>
+            <a href="https://www.google.com/maps/dir/?api=1&amp;origin=Hopewell%2C%20VA&amp;destination=10601%20Greenyard%20Way%2C%20Chester%2C%20VA%2023831&amp;travelmode=driving" target="_blank" rel="noopener">Directions from Hopewell</a>
+            <a href="https://www.google.com/maps/dir/?api=1&amp;origin=Colonial%20Heights%2C%20VA&amp;destination=10601%20Greenyard%20Way%2C%20Chester%2C%20VA%2023831&amp;travelmode=driving" target="_blank" rel="noopener">Directions from Colonial Heights</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <iframe class="map" title="Map showing Commonwealth Family Dentistry in Chester, Virginia" loading="lazy" src="https://www.google.com/maps?q=10601%20Greenyard%20Way%2C%20Chester%2C%20VA%2023831&amp;output=embed"></iframe>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="eyebrow">Before you contact the office</div>
+        <h2>Common questions about visiting</h2>
+        <div class="faq" style="margin-top: 34px;">
+          <details>
+            <summary>Is an online appointment request immediately confirmed?</summary>
+            <p>No. The request form lets you propose a visit, but the office will contact you to confirm the appointment.</p>
+          </details>
+          <details>
+            <summary>Can a new patient call about a dental emergency?</summary>
+            <p>Yes. The practice's emergency guidance welcomes calls from new and existing patients with tooth pain, swelling, broken teeth, lost restorations, or dental injuries.</p>
+          </details>
+          <details>
+            <summary>Where is the office and when is it open?</summary>
+            <p>The office is at 10601 Greenyard Way in Chester. Posted hours are Monday through Thursday from 8:00 AM to 5:00 PM.</p>
+          </details>
+        </div>
+        <span class="review-flag">Web-team note: the current homepage review section is empty. Restore it only after the review source, attribution, rating, and responsive rendering are verified.</span>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="container">
+        <div>
+          <h2>Ready to talk with the Chester dental team?</h2>
+          <p>Request an appointment online, or call the office if you need help deciding which type of visit to schedule.</p>
+        </div>
+        <div class="button-row">
+          <a class="button" href="https://commonwealthfamilydentistry.com/request-an-appointment/">Request an Appointment</a>
+          <a class="button button-secondary" href="tel:+18047486433">Call the Office</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>Commonwealth Family Dentistry · 10601 Greenyard Way, Chester, VA 23831</span>
+      <span><a href="https://commonwealthfamilydentistry.com/privacy-policy/">Privacy Policy</a></span>
+    </div>
+  </footer>
+</body>
+</html>
