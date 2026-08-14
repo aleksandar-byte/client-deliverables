@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Homepage optimization mockup | Brio Dental Care Springfield</title>
+  <meta name="description" content="Review mockup for a clearer Brio Dental Care Springfield homepage.">
+  <style>
+    :root {
+      --ink: #222831;
+      --ink-soft: #36414d;
+      --gold: #c99b5b;
+      --gold-light: #f1e4d0;
+      --paper: #ffffff;
+      --mist: #f2f4f6;
+      --line: #d7dde2;
+      --green: #456c62;
+      --text: #3e4954;
+      --muted: #687581;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--paper);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.62;
+      letter-spacing: 0;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { color: var(--ink); line-height: 1.12; letter-spacing: 0; }
+    h1 { max-width: 760px; margin-bottom: 22px; font-family: Georgia, 'Times New Roman', serif; font-size: 58px; font-weight: 500; }
+    h2 { margin-bottom: 18px; font-family: Georgia, 'Times New Roman', serif; font-size: 40px; font-weight: 500; }
+    h3 { margin-bottom: 10px; font-size: 20px; }
+    p { margin-bottom: 18px; }
+    .wrap { width: min(calc(100% - 48px), var(--max)); margin-inline: auto; }
+    .band { padding: 88px 0; }
+    .band--mist { background: var(--mist); }
+    .band--ink { color: #edf1f3; background: var(--ink); }
+    .band--ink h2, .band--ink h3 { color: var(--paper); }
+    .band--ink p { color: #d7dde2; }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { width: 34px; height: 3px; background: var(--gold); content: ''; }
+    .band--ink .eyebrow { color: var(--gold-light); }
+    .band--ink .text-link { color: var(--gold-light); }
+    .lead { max-width: 720px; color: var(--muted); font-size: 19px; }
+    .implementation-bar {
+      padding: 10px 20px;
+      color: #fff;
+      background: var(--green);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .site-header { position: relative; z-index: 10; background: #fff; border-bottom: 1px solid var(--line); }
+    .nav { display: flex; min-height: 92px; align-items: center; justify-content: space-between; gap: 28px; }
+    .logo { width: 250px; }
+    .menu { display: flex; align-items: center; gap: 25px; }
+    .menu a { color: var(--ink); font-size: 15px; font-weight: 700; text-decoration: none; }
+    .menu a:hover { color: var(--green); }
+    .menu .button { color: #fff; }
+    .menu .button:hover { color: #fff; }
+    .menu-toggle { display: none; width: 44px; height: 44px; border: 1px solid var(--line); background: #fff; color: var(--ink); font-size: 22px; }
+
+    .button-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .button {
+      display: inline-flex;
+      min-height: 52px;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 22px;
+      border: 1px solid var(--ink);
+      border-radius: 4px;
+      color: #fff;
+      background: var(--ink);
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .button:hover { background: #11161c; }
+    .button--light { border-color: #fff; color: var(--ink); background: #fff; }
+    .button--outline { border-color: currentColor; color: currentColor; background: transparent; }
+    .button--gold { border-color: var(--gold); color: var(--ink); background: var(--gold); }
+
+    .hero {
+      position: relative;
+      display: grid;
+      min-height: 660px;
+      align-items: center;
+      color: #fff;
+      background-color: var(--ink);
+      background-image: url('https://briodentalcarespringfield.com/wp-content/uploads/2026/05/brio-dental-care-2.webp');
+      background-position: center;
+      background-size: cover;
+    }
+    .hero::before { position: absolute; inset: 0; background: rgba(22, 27, 33, .72); content: ''; }
+    .hero .wrap { position: relative; z-index: 1; }
+    .hero__content { max-width: 790px; padding: 80px 0; }
+    .hero h1 { color: #fff; }
+    .hero .eyebrow { color: var(--gold-light); }
+    .hero__copy { max-width: 690px; color: #edf1f3; font-size: 20px; }
+
+    .facts { border-bottom: 1px solid var(--line); background: #fff; }
+    .facts__grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .fact { min-height: 126px; padding: 28px 24px; border-right: 1px solid var(--line); }
+    .fact:first-child { border-left: 1px solid var(--line); }
+    .fact strong { display: block; color: var(--ink); font-family: Georgia, 'Times New Roman', serif; font-size: 26px; font-weight: 500; }
+    .fact span { color: var(--muted); font-size: 14px; }
+
+    .section-head { display: grid; grid-template-columns: 1.1fr .9fr; align-items: end; gap: 60px; margin-bottom: 44px; }
+    .section-head p { margin-bottom: 0; }
+    .care-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .care-card {
+      display: flex;
+      min-height: 245px;
+      flex-direction: column;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      color: inherit;
+      background: #fff;
+      text-decoration: none;
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+    .care-card:hover { transform: translateY(-3px); border-color: var(--gold); box-shadow: 0 12px 30px rgba(34, 40, 49, .09); }
+    .care-card__number { margin-bottom: 28px; color: var(--green); font-size: 13px; font-weight: 700; }
+    .care-card p { color: var(--muted); font-size: 15px; }
+    .care-card__link { margin-top: auto; color: var(--ink); font-size: 14px; font-weight: 700; }
+
+    .split { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 70px; }
+    .text-link { color: var(--green); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .doctor-portraits { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .doctor-portrait { display: grid; min-height: 172px; place-items: center; padding: 20px; border: 1px solid var(--line); border-radius: 6px; background: var(--mist); text-align: center; }
+    .doctor-portrait__initials { display: grid; width: 64px; height: 64px; margin-bottom: 12px; place-items: center; border-radius: 50%; color: #fff; background: var(--green); font-family: Georgia, 'Times New Roman', serif; font-size: 22px; }
+    .doctor-portrait strong { display: block; color: var(--ink); font-size: 14px; line-height: 1.3; }
+    .doctor-portrait small { color: var(--muted); font-size: 12px; }
+    .credential-list { display: grid; gap: 0; margin: 30px 0; border-top: 1px solid var(--line); }
+    .credential { display: grid; grid-template-columns: 32px 1fr; gap: 14px; padding: 17px 0; border-bottom: 1px solid var(--line); }
+    .credential b { color: var(--ink); }
+    .check { display: grid; width: 24px; height: 24px; place-items: center; border-radius: 50%; color: #fff; background: var(--green); font-size: 13px; }
+
+    .advanced-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin-top: 42px; background: #59616b; border: 1px solid #59616b; }
+    .advanced-item { min-height: 225px; padding: 28px; background: var(--ink); }
+    .advanced-item p { font-size: 15px; }
+    .advanced-item a { color: var(--gold-light); font-size: 14px; font-weight: 700; text-decoration: none; }
+
+    .access-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 42px; }
+    .access-item { padding-top: 22px; border-top: 3px solid var(--gold); }
+    .access-item a { color: var(--green); font-weight: 700; }
+
+    .evidence-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 56px; align-items: start; }
+    .quote { margin: 30px 0 0; padding: 30px; border-left: 4px solid var(--gold); background: #fff; }
+    .quote p { color: var(--ink); font-family: Georgia, 'Times New Roman', serif; font-size: 24px; line-height: 1.4; }
+    .quote small { color: var(--muted); }
+    .gallery-panel { min-height: 390px; overflow: hidden; border-radius: 6px; }
+    .gallery-panel img { width: 100%; height: 390px; object-fit: cover; }
+
+    .location-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; }
+    .detail-list { display: grid; gap: 20px; margin: 30px 0; }
+    .detail-list b { display: block; color: var(--ink); }
+    .map {
+      display: grid;
+      min-height: 440px;
+      place-items: center;
+      padding: 40px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #e8ecef;
+      text-align: center;
+    }
+    .map__pin { display: grid; width: 70px; height: 70px; margin: 0 auto 18px; place-items: center; border-radius: 50%; color: #fff; background: var(--green); font-size: 28px; }
+    .route-list { display: grid; gap: 10px; margin-top: 24px; text-align: left; }
+    .route-link { display: flex; min-height: 48px; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 14px; border: 1px solid #c7d0d6; border-radius: 4px; color: var(--ink); background: #fff; font-size: 14px; font-weight: 700; text-decoration: none; }
+    .route-link:hover { border-color: var(--gold); }
+    .route-note { margin-top: 14px; color: var(--muted); font-size: 12px; line-height: 1.45; }
+
+    .faq { max-width: 900px; margin-inline: auto; }
+    details { border-top: 1px solid var(--line); }
+    details:last-of-type { border-bottom: 1px solid var(--line); }
+    summary { display: flex; padding: 22px 0; color: var(--ink); cursor: pointer; font-weight: 700; list-style: none; justify-content: space-between; gap: 20px; }
+    summary::after { color: var(--green); content: '+'; font-size: 24px; font-weight: 400; }
+    details[open] summary::after { content: '-'; }
+    details p { max-width: 760px; padding-bottom: 20px; }
+
+    .final-cta { padding: 78px 0; text-align: center; }
+    .final-cta h2 { max-width: 740px; margin-inline: auto; }
+    .final-cta p { max-width: 650px; margin-inline: auto; }
+    .final-cta .button-row { justify-content: center; }
+    footer { padding: 34px 0; color: #cdd4da; background: #171c22; font-size: 14px; }
+    .footer-row { display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    .footer-row img { width: 210px; filter: brightness(0) invert(1); }
+
+    @media (max-width: 920px) {
+      h1 { font-size: 46px; }
+      h2 { font-size: 34px; }
+      .menu-toggle { display: block; }
+      .menu { display: none; position: absolute; top: 92px; right: 24px; left: 24px; padding: 22px; border: 1px solid var(--line); background: #fff; box-shadow: 0 16px 30px rgba(34,40,49,.12); }
+      .menu.is-open { display: grid; }
+      .hero { min-height: 600px; background-position: 62% center; }
+      .facts__grid { grid-template-columns: repeat(2, 1fr); }
+      .fact:nth-child(3) { border-left: 1px solid var(--line); }
+      .section-head, .split, .evidence-grid, .location-grid { grid-template-columns: 1fr; gap: 38px; }
+      .care-grid { grid-template-columns: repeat(2, 1fr); }
+      .advanced-grid { grid-template-columns: repeat(2, 1fr); }
+      .access-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      .wrap { width: min(calc(100% - 32px), var(--max)); }
+      .band { padding: 62px 0; }
+      h1 { font-size: 39px; }
+      h2 { font-size: 31px; }
+      .logo { width: 205px; }
+      .nav { min-height: 78px; }
+      .menu { top: 78px; right: 16px; left: 16px; }
+      .hero { min-height: 640px; background-position: 68% center; }
+      .hero__content { padding: 68px 0; }
+      .hero__copy { font-size: 18px; }
+      .button-row { display: grid; grid-template-columns: 1fr; }
+      .button { width: 100%; }
+      .facts__grid { grid-template-columns: 1fr 1fr; }
+      .fact { min-height: 118px; padding: 22px 16px; }
+      .fact strong { font-size: 22px; }
+      .section-head { margin-bottom: 30px; }
+      .care-grid, .advanced-grid { grid-template-columns: 1fr; }
+      .care-card { min-height: 215px; }
+      .doctor-portraits { grid-template-columns: 1fr 1fr; }
+      .doctor-portrait { min-height: 150px; padding: 16px 10px; }
+      .quote p { font-size: 21px; }
+      .gallery-panel, .gallery-panel img { min-height: 310px; height: 310px; }
+      .map { min-height: 340px; }
+      .footer-row { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="implementation-bar">Homepage content and hierarchy mockup for review. This is not live.</div>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="https://briodentalcarespringfield.com/" aria-label="Brio Dental Care Springfield home">
+        <img class="logo" src="https://briodentalcarespringfield.com/wp-content/uploads/2026/05/brio-dental-care-logo-horizontal.webp" alt="Brio Dental Care Springfield">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Open menu">&#9776;</button>
+      <nav class="menu" id="main-menu" aria-label="Main navigation">
+        <a href="https://briodentalcarespringfield.com/about/">About</a>
+        <a href="https://briodentalcarespringfield.com/springfield-va/">Services</a>
+        <a href="https://briodentalcarespringfield.com/new-patients/">New Patients</a>
+        <a href="https://briodentalcarespringfield.com/reviews/">Reviews</a>
+        <a class="button" href="https://briodentalcarespringfield.com/appointments/">Book Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero__content">
+          <div class="eyebrow">Comprehensive dental care in Springfield, VA</div>
+          <h1>Dental care for everyday needs and more complex treatment</h1>
+          <p class="hero__copy">Brio Dental Care brings preventive, restorative, cosmetic, implant, periodontal, and emergency dentistry together at one Springfield office. Meet with a dentist, understand your options, and plan the next step around your health and priorities.</p>
+          <div class="button-row">
+            <a class="button button--gold" href="https://briodentalcarespringfield.com/appointments/">Book an appointment <span aria-hidden="true">&rarr;</span></a>
+            <a class="button button--outline" href="tel:+17034516100">Call (703) 451-6100</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="facts" aria-label="Practice facts">
+      <div class="wrap facts__grid">
+        <div class="fact"><strong>Since 1997</strong><span>Serving patients in the Springfield area</span></div>
+        <div class="fact"><strong>6 dentists</strong><span>General and focused clinical experience</span></div>
+        <div class="fact"><strong>4 languages</strong><span>English, Spanish, Arabic, and Italian</span></div>
+        <div class="fact"><strong>One office</strong><span>Routine, restorative, cosmetic, and advanced care</span></div>
+      </div>
+    </section>
+
+    <section class="band band--mist" id="care">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Find the right place to start</div>
+            <h2>What can we help you with?</h2>
+          </div>
+          <p class="lead">You do not need to know the name of a procedure before you call. Start with the concern that is closest to yours, or review the <a class="text-link" href="https://briodentalcarespringfield.com/springfield-va/">full range of dental services available in Springfield</a>.</p>
+        </div>
+        <div class="care-grid">
+          <a class="care-card" href="https://briodentalcarespringfield.com/springfield-va/general-dentistry/">
+            <span class="care-card__number">01</span><h3>Keep up with routine care</h3><p>Exams, cleanings, X-rays, fluoride, and preventive care help us monitor changes and address problems early.</p><span class="care-card__link">Explore general dentistry &rarr;</span>
+          </a>
+          <a class="care-card" href="https://briodentalcarespringfield.com/springfield-va/restorative-dentist/">
+            <span class="care-card__number">02</span><h3>Repair a damaged tooth</h3><p>Fillings and crowns can rebuild teeth affected by decay, cracks, wear, or an older restoration.</p><span class="care-card__link">Explore restorative care &rarr;</span>
+          </a>
+          <a class="care-card" href="https://briodentalcarespringfield.com/springfield-va/dental-implants/">
+            <span class="care-card__number">03</span><h3>Replace missing teeth</h3><p>Compare dental implants and denture options based on the number of missing teeth, oral health, and daily needs.</p><span class="care-card__link">Explore tooth replacement &rarr;</span>
+          </a>
+          <a class="care-card" href="https://briodentalcarespringfield.com/springfield-va/cosmetic-dentist/">
+            <span class="care-card__number">04</span><h3>Change something about your smile</h3><p>Whitening, bonding, veneers, gum contouring, and smile planning can address different cosmetic goals.</p><span class="care-card__link">Explore cosmetic dentistry &rarr;</span>
+          </a>
+          <a class="care-card" href="https://briodentalcarespringfield.com/springfield-va/periodontics/">
+            <span class="care-card__number">05</span><h3>Look after your gums</h3><p>Bleeding, swelling, recession, or persistent bad breath can be signs that your gums need a closer evaluation.</p><span class="care-card__link">Explore periodontal care &rarr;</span>
+          </a>
+          <a class="care-card" href="https://briodentalcarespringfield.com/springfield-va/emergency-dentist/">
+            <span class="care-card__number">06</span><h3>Get help for an urgent problem</h3><p>Call when you have significant tooth pain, swelling, dental trauma, or another problem that should not wait.</p><span class="care-card__link">See emergency dental care &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap split">
+        <div class="doctor-portraits" aria-label="Doctor portrait requests">
+          <div class="doctor-portrait"><div><span class="doctor-portrait__initials">MA</span><strong>Dr. Muhanned A. Alhadad</strong><small>First-party portrait required</small></div></div>
+          <div class="doctor-portrait"><div><span class="doctor-portrait__initials">JP</span><strong>Dr. Jung Park</strong><small>First-party portrait required</small></div></div>
+          <div class="doctor-portrait"><div><span class="doctor-portrait__initials">MO</span><strong>Dr. Mark Ornoff</strong><small>First-party portrait required</small></div></div>
+          <div class="doctor-portrait"><div><span class="doctor-portrait__initials">KC</span><strong>Dr. Karim Chaddad</strong><small>First-party portrait required</small></div></div>
+          <div class="doctor-portrait"><div><span class="doctor-portrait__initials">GH</span><strong>Dr. Ghada Hamid</strong><small>First-party portrait required</small></div></div>
+          <div class="doctor-portrait"><div><span class="doctor-portrait__initials">ZA</span><strong>Dr. Zahraa Alsalihi</strong><small>First-party portrait required</small></div></div>
+        </div>
+        <div>
+          <div class="eyebrow">A team for different dental needs</div>
+          <h2>Meet the dentists at Brio Dental Care</h2>
+          <p><a class="text-link" href="https://briodentalcarespringfield.com/about/our-team/">Dr. Muhanned A. Alhadad and the Brio Dental Care team</a> provide care for patients of all ages. The six-dentist team brings experience across general dentistry, restorative treatment, root canal care, dental implants, periodontics, and smile-focused services.</p>
+          <div class="credential-list">
+            <div class="credential"><span class="check">&#10003;</span><div><b>Care with a wider clinical perspective</b><br>Dr. Alhadad's official biography includes a two-year <a class="text-link" href="https://www.urmc.rochester.edu/dentistry/education/advanced-education-general-dentistry">Advanced Education in General Dentistry program at the Eastman Institute for Oral Health</a>, along with training in restorative, conservative, root canal, crown, bridge, and implant care.</div></div>
+            <div class="credential"><span class="check">&#10003;</span><div><b>Communication in four languages</b><br>The practice states that its team can assist patients in English, Spanish, Arabic, and Italian.</div></div>
+            <div class="credential"><span class="check">&#10003;</span><div><b>Treatment planned around the individual</b><br>An examination lets the dentist connect symptoms, oral health, priorities, and practical considerations before recommending care.</div></div>
+          </div>
+          <a class="button" href="https://briodentalcarespringfield.com/about/our-team/">Meet all six dentists <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--ink">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">When treatment needs more planning</div><h2>Advanced care is part of the conversation here</h2></div>
+          <p>Some concerns need more than a filling or cleaning. Patients considering <a class="text-link" href="https://briodentalcarespringfield.com/springfield-va/dental-implants/">dental implants</a>, treatment for <a class="text-link" href="https://briodentalcarespringfield.com/springfield-va/periodontics/">gum disease</a>, or <a class="text-link" href="https://briodentalcarespringfield.com/springfield-va/root-canal/">care for an infected tooth</a> can review the available options before an evaluation.</p>
+        </div>
+        <div class="advanced-grid">
+          <div class="advanced-item"><h3>Dental implants</h3><p>Explore single-tooth and full-arch options for replacing missing teeth.</p><a href="https://briodentalcarespringfield.com/springfield-va/dental-implants/">Review implant care &rarr;</a></div>
+          <div class="advanced-item"><h3>Periodontics</h3><p>Learn how the team evaluates and treats gum disease and related concerns.</p><a href="https://briodentalcarespringfield.com/springfield-va/periodontics/">Review gum care &rarr;</a></div>
+          <div class="advanced-item"><h3>Root canal treatment</h3><p>Understand how treatment may relieve infection while preserving a natural tooth.</p><a href="https://briodentalcarespringfield.com/springfield-va/root-canal/">Review root canal care &rarr;</a></div>
+          <div class="advanced-item"><h3>Clear aligners</h3><p>See how removable aligners may address selected spacing, crowding, and bite concerns.</p><a href="https://briodentalcarespringfield.com/springfield-va/clear-aligners/">Review aligner care &rarr;</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">Planning your first visit</div><h2>Know what to arrange before you arrive</h2></div>
+          <p class="lead">A little preparation makes it easier to use your appointment time well. The <a class="text-link" href="https://briodentalcarespringfield.com/new-patients/">new-patient guide</a> explains what to bring and which insurance or financing questions to settle before treatment.</p>
+        </div>
+        <div class="access-grid">
+          <div class="access-item"><h3>Your first appointment</h3><p>Bring your health history, medication information, insurance details, and any questions about pain, function, or appearance.</p><a href="https://briodentalcarespringfield.com/new-patients/">Read the new-patient guide</a></div>
+          <div class="access-item"><h3>Insurance and financing</h3><p>Ask the office to confirm current plan participation, expected benefits, and whether CareCredit or staged treatment may apply.</p><a href="https://briodentalcarespringfield.com/new-patients/">Review patient resources</a></div>
+          <div class="access-item"><h3>Urgent dental needs</h3><p>For significant pain, swelling, or trauma, call the office so the team can assess how quickly you should be seen.</p><a href="tel:+17034516100">Call (703) 451-6100</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--mist">
+      <div class="wrap evidence-grid">
+        <div>
+          <div class="eyebrow">Patient experience</div>
+          <h2>See what care at Brio looks and feels like</h2>
+          <p>Public reviews can help you understand how patients describe their visits. The smile gallery can show examples of work the practice has chosen to share. Both are more useful than broad promises on a homepage.</p>
+          <div class="quote">
+            <p>Insert the live Google review widget here so ratings and review text stay attributable and current.</p>
+            <small>Implementation note for the web team</small>
+          </div>
+          <div class="button-row">
+            <a class="button" href="https://briodentalcarespringfield.com/reviews/">Read patient reviews</a>
+            <a class="button button--outline" href="https://briodentalcarespringfield.com/gallery/">View the smile gallery</a>
+          </div>
+        </div>
+        <div class="gallery-panel">
+          <img src="https://briodentalcarespringfield.com/wp-content/uploads/2026/05/patient-comfort-dentistry-reassurance.webp" alt="Patient receiving dental care">
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap location-grid">
+        <div>
+          <div class="eyebrow">Visit the Springfield office</div>
+          <h2>Brio Dental Care on Rolling Road</h2>
+          <p>The office is located in Suite E at 6230 Rolling Road. Use the map for directions, and review the <a class="text-link" href="https://briodentalcarespringfield.com/new-patients/">first-visit information</a> before you arrive. Call ahead if you need help planning accessibility or parking.</p>
+          <div class="detail-list">
+            <div><b>Address</b>6230 Rolling Rd. Suite E<br>Springfield, VA 22152</div>
+            <div><b>Office hours</b>Monday-Friday, 9:30 AM-5:00 PM</div>
+            <div><b>Phone</b><a href="tel:+17034516100">(703) 451-6100</a></div>
+          </div>
+          <a class="button" href="https://www.google.com/maps/place/?q=place_id:ChIJBfVEQIFStokRfJtonT_Tlco">Get directions <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="map" aria-label="Map implementation placeholder">
+          <div>
+            <div class="map__pin">&#9679;</div>
+            <h3>Insert the verified Google map here</h3>
+            <p>Use the same confirmed Place ID, phone, address, coordinates, and hours in the map link, footer, GBP, and structured data.</p>
+            <div class="route-list" aria-label="Directions from nearby communities">
+              <a class="route-link" href="https://www.google.com/maps/dir/?api=1&amp;origin=West+Springfield%2C+VA&amp;destination=6230+Rolling+Rd+Suite+E%2C+Springfield%2C+VA+22152">Directions from West Springfield <span aria-hidden="true">&rarr;</span></a>
+              <a class="route-link" href="https://www.google.com/maps/dir/?api=1&amp;origin=Franconia%2C+VA&amp;destination=6230+Rolling+Rd+Suite+E%2C+Springfield%2C+VA+22152">Directions from Franconia <span aria-hidden="true">&rarr;</span></a>
+              <a class="route-link" href="https://www.google.com/maps/dir/?api=1&amp;origin=Newington%2C+VA&amp;destination=6230+Rolling+Rd+Suite+E%2C+Springfield%2C+VA+22152">Directions from Newington <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <p class="route-note">Review note: Brio's canonical client record currently has no GSC secondary locations. These three origins come from first-party service-area data and require confirmation before publishing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--mist">
+      <div class="wrap faq">
+        <div class="eyebrow">Questions before an appointment</div>
+        <h2>Good to know before you book</h2>
+        <details><summary>Is Brio Dental Care accepting new patients?</summary><p>The practice has a dedicated new-patient process and online appointment request page. Contact the office to confirm current appointment availability and the type of visit you need.</p></details>
+        <details><summary>Does the practice see children and adults?</summary><p>Brio Dental Care states that it provides dental care for patients of all ages. When booking for a child, share their age and the reason for the visit so the team can confirm the right appointment.</p></details>
+        <details><summary>Which dental insurance plans are accepted?</summary><p>The website displays several insurance networks, but participation and benefits can change. Give the office your plan details before treatment so the team can verify current coverage.</p></details>
+        <details><summary>What should I do if I have a dental emergency?</summary><p>Call the office when you have significant tooth pain, swelling, trauma, or another urgent concern. The team can ask about your symptoms and advise how quickly you should be evaluated.</p></details>
+        <details><summary>Can the team assist patients in languages other than English?</summary><p>The practice states that its team speaks English, Spanish, Arabic, and Italian. Mention your preferred language when scheduling so the office can plan appropriately.</p></details>
+      </div>
+    </section>
+
+    <section class="band--ink final-cta">
+      <div class="wrap">
+        <div class="eyebrow" style="justify-content:center">Ready when you are</div>
+        <h2>Start with a conversation about what you need</h2>
+        <p>Request an appointment online, or call the Springfield office to explain your concern and find the right type of visit.</p>
+        <div class="button-row">
+          <a class="button button--gold" href="https://briodentalcarespringfield.com/appointments/">Book an appointment</a>
+          <a class="button button--light" href="tel:+17034516100">Call (703) 451-6100</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <img src="https://briodentalcarespringfield.com/wp-content/uploads/2026/05/brio-dental-care-logo-horizontal.webp" alt="Brio Dental Care Springfield">
+      <span>6230 Rolling Rd. Suite E, Springfield, VA 22152 &nbsp; | &nbsp; (703) 451-6100</span>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    });
+  </script>
+</body>
+</html>
