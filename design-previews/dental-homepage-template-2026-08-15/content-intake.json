@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "client_key": null,
+    "prepared_by": null,
+    "date_checked": null,
+    "status": "intake"
+  },
+  "practice": {
+    "public_name": null,
+    "legal_name": null,
+    "primary_category": null,
+    "care_scope": [],
+    "patient_audiences": [],
+    "primary_location": {
+      "city": null,
+      "state": null,
+      "street_address": null,
+      "postal_code": null
+    },
+    "contact": {
+      "phone": null,
+      "appointment_url": null,
+      "appointment_method": null
+    },
+    "hours": {},
+    "languages": [],
+    "website": {
+      "homepage_url": null,
+      "canonical_url": null
+    }
+  },
+  "seo": {
+    "primary_topic": null,
+    "primary_location": null,
+    "secondary_locations": [
+      {
+        "name": null,
+        "selection_reason": null,
+        "source": null,
+        "route_url": null
+      }
+    ],
+    "title": null,
+    "meta_description": null,
+    "pages_not_to_promote": []
+  },
+  "providers": [
+    {
+      "full_name": null,
+      "credentials": [],
+      "title": null,
+      "treatment_responsibilities": [],
+      "education_and_training": [
+        {
+          "credential": null,
+          "institution": null,
+          "patient_relevant_meaning": null,
+          "authoritative_url": null
+        }
+      ],
+      "experience_facts": [],
+      "bio_url": null,
+      "portrait": {
+        "file_or_url": null,
+        "identity_confirmed": false,
+        "usage_approved": false,
+        "source": null
+      }
+    }
+  ],
+  "service_architecture": {
+    "hubs": [
+      {
+        "name": null,
+        "url": null,
+        "verified_offered": false
+      }
+    ],
+    "priority_treatment": {
+      "enabled": false,
+      "name": null,
+      "url": null,
+      "provider": null,
+      "patient_concern": null,
+      "supporting_evidence": []
+    },
+    "concern_to_service_map": [
+      {
+        "patient_concern": null,
+        "primary_hub_name": null,
+        "primary_hub_url": null,
+        "priority_treatment_name": null,
+        "priority_treatment_url": null
+      }
+    ]
+  },
+  "hero": {
+    "practical_benefit": null,
+    "benefit_source": null,
+    "practice_specific_distinction": null,
+    "distinction_source": null,
+    "primary_action_label": null,
+    "primary_action_url": null,
+    "alternate_phone": null
+  },
+  "trust_facts": [
+    {
+      "heading": null,
+      "supporting_sentence": null,
+      "source": null,
+      "confidence": "unverified"
+    }
+  ],
+  "practice_evidence": {
+    "enabled": false,
+    "media": [
+      {
+        "asset": null,
+        "asset_type": null,
+        "claim_supported": null,
+        "owner_or_source": null,
+        "consent_confirmed": false,
+        "usage_approved": false,
+        "alt_text": null
+      }
+    ],
+    "reviews": [
+      {
+        "exact_excerpt": null,
+        "attribution": null,
+        "source_url": null,
+        "usage_approved": false,
+        "patient_decision_supported": null
+      }
+    ],
+    "credentials_cases_or_technology": [
+      {
+        "name": null,
+        "care_relevance": null,
+        "source": null
+      }
+    ]
+  },
+  "new_patient": {
+    "request_process": null,
+    "confirmation_process": null,
+    "when_to_call": null,
+    "urgent_instructions": null,
+    "forms_url": null,
+    "insurance_wording": null,
+    "financing_wording": null,
+    "payment_wording": null,
+    "preparation_or_documents": null
+  },
+  "location_access": {
+    "map_destination_url": null,
+    "parking": null,
+    "accessibility": null,
+    "building_or_entry_details": null,
+    "office_image": null
+  },
+  "faqs": {
+    "enabled": false,
+    "items": [
+      {
+        "question": null,
+        "answer": null,
+        "supporting_url": null,
+        "already_answered_elsewhere": false,
+        "source": null
+      }
+    ]
+  },
+  "recent_articles": {
+    "enabled": false,
+    "hub_url": null,
+    "dynamic_query_required": true,
+    "exclusions": [
+      "test",
+      "thin",
+      "duplicate",
+      "unrelated",
+      "noindex"
+    ],
+    "posts": [
+      {
+        "title": null,
+        "url": null,
+        "publication_date": null,
+        "category": null,
+        "excerpt": null,
+        "featured_image": null,
+        "indexable": null
+      }
+    ]
+  },
+  "technical_handoff": {
+    "canonical_url": null,
+    "nap_verified": false,
+    "practice_schema_type": null,
+    "practice_entity_id": null,
+    "dentist_schema": [],
+    "provider_practice_relationships": [],
+    "same_as_urls": [],
+    "internal_link_map": [],
+    "image_alt_text_complete": false
+  },
+  "claim_register": [
+    {
+      "claim": null,
+      "proposed_wording": null,
+      "source": null,
+      "source_type": null,
+      "confidence": "unverified",
+      "owner_or_approver": null,
+      "date_checked": null,
+      "allowed_public_wording": null
+    }
+  ],
+  "approvals": {
+    "facts_approved": false,
+    "copy_approved": false,
+    "media_approved": false,
+    "metadata_approved": false,
+    "schema_approved": false,
+    "unresolved_items": []
+  }
+}
