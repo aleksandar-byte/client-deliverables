@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "record_type": "entity_registry",
+  "client_key": null,
+  "last_updated": null,
+  "entities": {
+    "practices": [
+      {
+        "id": "practice:main",
+        "schema_type": "Dentist",
+        "public_name": null,
+        "legal_name": null,
+        "alternate_names": [],
+        "primary_category": null,
+        "care_scope": [],
+        "patient_audiences": [],
+        "location_ids": [],
+        "provider_ids": [],
+        "service_ids": [],
+        "website_id": "website:main",
+        "logo_asset_id": null,
+        "authoritative_profile_urls": []
+      }
+    ],
+    "locations": [
+      {
+        "id": "location:main",
+        "practice_id": "practice:main",
+        "schema_type": "Dentist",
+        "public_name": null,
+        "address": {
+          "street_address": null,
+          "address_locality": null,
+          "address_region": null,
+          "postal_code": null,
+          "address_country": "US"
+        },
+        "telephone": null,
+        "email": null,
+        "opening_hours": [],
+        "appointment_url": null,
+        "map_url": null,
+        "geo": {
+          "latitude": null,
+          "longitude": null
+        },
+        "parking": null,
+        "accessibility": null,
+        "entry_details": null,
+        "office_asset_ids": []
+      }
+    ],
+    "people": [
+      {
+        "id": "person:dr-lastname",
+        "schema_type": "Person",
+        "full_name": null,
+        "credentials_display": null,
+        "honorific_prefix": "Dr.",
+        "job_title": "Dentist",
+        "practice_ids": ["practice:main"],
+        "location_ids": ["location:main"],
+        "service_ids": [],
+        "education_and_training": [],
+        "professional_memberships": [],
+        "experience_facts": [],
+        "bio_url": null,
+        "portrait_asset_id": null,
+        "authoritative_profile_urls": []
+      }
+    ],
+    "services": [
+      {
+        "id": "service:example",
+        "schema_type": "Service",
+        "name": null,
+        "service_kind": "treatment",
+        "verified_offered": false,
+        "practice_ids": ["practice:main"],
+        "provider_ids": [],
+        "parent_service_id": null,
+        "related_service_ids": [],
+        "canonical_url": null,
+        "patient_concerns": []
+      }
+    ],
+    "web_properties": [
+      {
+        "id": "website:main",
+        "schema_type": "WebSite",
+        "url": null,
+        "homepage_url": null,
+        "publisher_practice_id": "practice:main"
+      }
+    ],
+    "media_assets": [
+      {
+        "id": "asset:example",
+        "asset_type": null,
+        "file_or_url": null,
+        "depicts_entity_ids": [],
+        "owner_or_source": null,
+        "identity_confirmed": false,
+        "consent_confirmed": false,
+        "usage_approved": false,
+        "approved_uses": [],
+        "alt_text": null
+      }
+    ]
+  }
+}

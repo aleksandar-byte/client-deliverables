@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "record_type": "evidence_register",
+  "client_key": null,
+  "last_updated": null,
+  "sources": [
+    {
+      "id": "source:example",
+      "source_type": null,
+      "title": null,
+      "url_or_file": null,
+      "publisher_or_owner": null,
+      "authority_note": null,
+      "date_accessed": null
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim:example",
+      "subject_entity_id": null,
+      "claim_type": null,
+      "factual_statement": null,
+      "proposed_public_wording": null,
+      "patient_relevant_meaning": null,
+      "source_ids": [],
+      "verification_status": "unverified",
+      "confidence": "unverified",
+      "last_verified": null,
+      "owner_or_approver": null,
+      "approved_for_public_copy": false,
+      "approved_for_schema": false,
+      "approved_for_same_as": false,
+      "visible_on_page": false,
+      "allowed_public_wording": null,
+      "limitations": null
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "conflict:example",
+      "entity_id": null,
+      "field_or_claim": null,
+      "source_ids": [],
+      "conflicting_values": [],
+      "resolution_status": "unresolved",
+      "resolution_note": null,
+      "resolved_by": null,
+      "resolved_on": null
+    }
+  ],
+  "approvals": {
+    "facts_approved": false,
+    "copy_approved": false,
+    "media_approved": false,
+    "metadata_approved": false,
+    "schema_approved": false,
+    "unresolved_items": []
+  }
+}

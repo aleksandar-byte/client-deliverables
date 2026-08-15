@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "record_type": "homepage_brief",
+  "client_key": null,
+  "page": {
+    "id": "page:homepage",
+    "canonical_url": null,
+    "primary_practice_id": "practice:main",
+    "primary_location_id": "location:main",
+    "featured_provider_ids": [],
+    "featured_service_ids": []
+  },
+  "search_focus": {
+    "primary_topic": null,
+    "primary_location": null,
+    "primary_audience": null,
+    "primary_intent": null,
+    "pages_not_to_compete_with": [],
+    "pages_not_to_promote": []
+  },
+  "hero": {
+    "heading_direction": null,
+    "supporting_message": null,
+    "practical_benefit_claim_id": null,
+    "distinction_claim_id": null,
+    "primary_action": {"label": null, "url": null},
+    "secondary_action": {"label": null, "url": null},
+    "media_asset_id": null
+  },
+  "section_order": [],
+  "concern_to_service_navigation": [
+    {
+      "patient_situation": null,
+      "context": null,
+      "primary_service_id": null,
+      "secondary_service_id": null
+    }
+  ],
+  "trust_items": [
+    {"heading": null, "supporting_sentence": null, "claim_id": null}
+  ],
+  "provider_introduction": {
+    "provider_ids": [],
+    "credential_claim_ids": [],
+    "portrait_asset_ids": []
+  },
+  "location_routes": [
+    {
+      "origin_name": null,
+      "selection_reason": null,
+      "source_id": null,
+      "destination_location_id": "location:main",
+      "route_url": null
+    }
+  ],
+  "practice_evidence": {
+    "enabled": false,
+    "claim_ids": [],
+    "media_asset_ids": [],
+    "review_source_ids": []
+  },
+  "priority_treatment": {
+    "enabled": false,
+    "service_id": null,
+    "provider_ids": [],
+    "supporting_claim_ids": [],
+    "media_asset_ids": []
+  },
+  "new_patient": {
+    "request_process_claim_id": null,
+    "urgent_instruction_claim_id": null,
+    "insurance_claim_id": null,
+    "financing_claim_id": null,
+    "forms_url": null
+  },
+  "faqs": {
+    "enabled": false,
+    "items": [
+      {
+        "question": null,
+        "answer": null,
+        "answer_claim_ids": [],
+        "supporting_url": null
+      }
+    ]
+  },
+  "recent_articles": {
+    "enabled": false,
+    "hub_url": null,
+    "dynamic_query_required": true,
+    "item_limit": 3,
+    "include_categories": [],
+    "exclude_statuses_or_types": ["test", "thin", "duplicate", "unrelated", "noindex"]
+  },
+  "internal_links": [
+    {
+      "section": null,
+      "context": null,
+      "destination_entity_id": null,
+      "destination_url": null,
+      "priority": null
+    }
+  ],
+  "external_evidence_links": [
+    {"claim_id": null, "source_id": null, "placement": null}
+  ],
+  "metadata": {
+    "title": null,
+    "meta_description": null,
+    "canonical_url": null,
+    "social_title": null,
+    "social_description": null,
+    "social_image_asset_id": null
+  },
+  "generated_outputs": {
+    "homepage_html": null,
+    "jsonld_file": null,
+    "validation_report": null,
+    "generated_at": null,
+    "generator_version": null
+  }
+}
