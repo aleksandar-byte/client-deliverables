@@ -808,6 +808,30 @@ Using the verified practice name, address, phone, opening hours, access details,
       </div>
     </aside>
 
+    <section class="section" id="homepage-questions" aria-label="Optional focused questions">
+      <div class="container faq-wrap reveal">
+        <div class="eyebrow">Optional unresolved questions</div>
+        <h2>Questions to answer before an appointment</h2>
+        <p class="section-intro">Keep this section only when verified pre-appointment questions remain unanswered elsewhere on the homepage.</p>
+        <details><summary>[Verified question not answered above]</summary><p>[Answer directly and link to a useful destination when additional detail is needed.]</p></details>
+        <details><summary>[Second unresolved question, if one exists]</summary><p>[Concise verified answer.]</p></details>
+      </div>
+    </section>
+
+    <aside class="build-guide" aria-label="FAQ implementation instructions">
+      <div class="container">
+        <div class="build-guide-header"><div><div class="guide-label">Section instructions</div><h2>Focused homepage questions</h2></div><span class="guide-label">Optional residual FAQ</span></div>
+        <div class="guide-grid">
+          <article class="guide-card"><h3>When to use it</h3><p>Use an FAQ only for verified, important pre-appointment questions that remain unanswered elsewhere. The section is not required and should disappear when it adds no new information.</p></article>
+          <article class="guide-card"><h3>Information needed</h3><ul><li>Real recurring patient questions.</li><li>Verified direct answers.</li><li>Any useful supporting patient or service destination.</li><li>Confirmation that the answer is not already clear above.</li></ul></article>
+          <article class="guide-card"><h3>How to construct it</h3><ul><li>Use natural patient wording.</li><li>Answer directly in the first sentence.</li><li>Keep each answer concise and link only when more detail helps.</li><li>Move treatment-specific education to the relevant service page.</li></ul></article>
+          <article class="guide-card"><h3>Do / do not</h3><ul><li>Do delete duplicated questions.</li><li>Do keep unrelated concerns separate.</li><li>Do not use FAQs to repeat target keywords or service lists.</li><li>Do not invent questions solely to make the page longer.</li></ul></article>
+        </div>
+        <pre class="prompt-box"><code>FAQ PROMPT
+Review the completed homepage and list only verified pre-appointment questions that remain materially unanswered. Write each question in natural patient language and answer it directly and concisely, with a contextual link only when additional detail helps. Remove questions already answered in the body, treatment-specific educational queries, keyword variations, and any FAQ that adds no new information.</code></pre>
+      </div>
+    </aside>
+
     <section class="section" id="recent-insights" aria-labelledby="recent-insights-title">
       <div class="container">
         <div class="posts-heading reveal">
@@ -838,35 +862,11 @@ Using the verified practice name, address, phone, opening hours, access details,
         <div class="guide-grid">
           <article class="guide-card"><h3>What it must do</h3><p>Surface genuinely useful recent articles, strengthen internal pathways to informational content, broaden visible subject coverage, and keep a maintained homepage connected to current publishing.</p></article>
           <article class="guide-card"><h3>Information needed</h3><ul><li>Three recent, relevant, indexable posts with live URLs.</li><li>Accurate titles, publication dates, categories and concise excerpts.</li><li>Approved featured images with meaningful alt text.</li><li>A live blog or patient-resources hub URL.</li></ul></article>
-          <article class="guide-card"><h3>How to construct it</h3><ul><li>Use a dynamic CMS query for the latest three relevant posts.</li><li>Show one featured image, date, useful title, short excerpt and one article link per post.</li><li>Exclude test, thin, unrelated, duplicate or noindex posts.</li><li>Place the module near the bottom, before residual FAQs and the final action.</li></ul></article>
+          <article class="guide-card"><h3>How to construct it</h3><ul><li>Use a dynamic CMS query for the latest three relevant posts.</li><li>Show one featured image, date, useful title, short excerpt and one article link per post.</li><li>Exclude test, thin, unrelated, duplicate or noindex posts.</li><li>Place the module near the bottom, after residual FAQs and before the final action.</li></ul></article>
           <article class="guide-card"><h3>Do / do not</h3><ul><li>Do prioritize articles that support core services and real patient questions.</li><li>Do keep dates and excerpts accurate to the source post.</li><li>Do not publish filler, rotate dates, or edit timestamps merely to appear fresh.</li><li>Do not imply that automatic recency alone creates rankings or authority.</li></ul></article>
         </div>
         <pre class="prompt-box"><code>RECENT ARTICLES PROMPT
 Using the live, indexable blog inventory for [practice], select the three most recent posts that are genuinely relevant to the practice’s core services and common patient questions. For each, use the approved featured image, accurate publication date, real title, a concise source-faithful excerpt, and one internal link to the article. Add one link to the main blog or patient-resource hub. Exclude test, thin, unrelated, duplicate, outdated, and noindex content. Implement this as a dynamic CMS query so newly published relevant posts can replace older entries without manually changing the homepage. Do not change dates or publish filler merely to create artificial freshness.</code></pre>
-      </div>
-    </aside>
-
-    <section class="section" id="homepage-questions" aria-label="Optional focused questions">
-      <div class="container faq-wrap reveal">
-        <div class="eyebrow">Optional unresolved questions</div>
-        <h2>Questions to answer before an appointment</h2>
-        <p class="section-intro">Keep this section only when verified pre-appointment questions remain unanswered elsewhere on the homepage.</p>
-        <details><summary>[Verified question not answered above]</summary><p>[Answer directly and link to a useful destination when additional detail is needed.]</p></details>
-        <details><summary>[Second unresolved question, if one exists]</summary><p>[Concise verified answer.]</p></details>
-      </div>
-    </section>
-
-    <aside class="build-guide" aria-label="FAQ implementation instructions">
-      <div class="container">
-        <div class="build-guide-header"><div><div class="guide-label">Section instructions</div><h2>Focused homepage questions</h2></div><span class="guide-label">Optional residual FAQ</span></div>
-        <div class="guide-grid">
-          <article class="guide-card"><h3>When to use it</h3><p>Use an FAQ only for verified, important pre-appointment questions that remain unanswered elsewhere. The section is not required and should disappear when it adds no new information.</p></article>
-          <article class="guide-card"><h3>Information needed</h3><ul><li>Real recurring patient questions.</li><li>Verified direct answers.</li><li>Any useful supporting patient or service destination.</li><li>Confirmation that the answer is not already clear above.</li></ul></article>
-          <article class="guide-card"><h3>How to construct it</h3><ul><li>Use natural patient wording.</li><li>Answer directly in the first sentence.</li><li>Keep each answer concise and link only when more detail helps.</li><li>Move treatment-specific education to the relevant service page.</li></ul></article>
-          <article class="guide-card"><h3>Do / do not</h3><ul><li>Do delete duplicated questions.</li><li>Do keep unrelated concerns separate.</li><li>Do not use FAQs to repeat target keywords or service lists.</li><li>Do not invent questions solely to make the page longer.</li></ul></article>
-        </div>
-        <pre class="prompt-box"><code>FAQ PROMPT
-Review the completed homepage and list only verified pre-appointment questions that remain materially unanswered. Write each question in natural patient language and answer it directly and concisely, with a contextual link only when additional detail helps. Remove questions already answered in the body, treatment-specific educational queries, keyword variations, and any FAQ that adds no new information.</code></pre>
       </div>
     </aside>
 
@@ -950,7 +950,7 @@ The copy sounds natural without the design; no section could be transferred unch
       const previewTargets = [
         'site-header-preview', 'top', 'practice-facts', 'care', 'dentists',
         'practice-evidence', 'priority-treatment', 'new-patients', 'visit',
-        'recent-insights', 'homepage-questions', 'appointment', 'site-footer-preview'
+        'homepage-questions', 'recent-insights', 'appointment', 'site-footer-preview'
       ];
 
       guideOverview.id = 'guide-section-1';
