@@ -1,0 +1,1206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Annotated Dental Homepage Template and Implementation Guide</title>
+  <meta name="description" content="Meet Dr. [Full Name] at [Practice Name] for [primary dental category] in [City, State]. Learn about [verified distinction] and request an appointment.">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <style>
+    :root {
+      --ink: #172d3c;
+      --muted: #5d6c75;
+      --teal: #176c68;
+      --teal-dark: #0e4f4d;
+      --coral: #d46a50;
+      --gold: #e6b84c;
+      --sky: #dceff0;
+      --soft: #f4f7f6;
+      --paper: #ffffff;
+      --line: #d8e1df;
+      --max: 1180px;
+      --shadow: 0 18px 48px rgba(18, 45, 56, .12);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: var(--teal-dark); text-underline-offset: 3px; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { letter-spacing: 0; line-height: 1.08; }
+    h1 { margin-bottom: 24px; color: #fff; font-family: Georgia, "Times New Roman", serif; font-size: 64px; font-weight: 500; }
+    h2 { margin-bottom: 20px; font-family: Georgia, "Times New Roman", serif; font-size: 44px; font-weight: 500; }
+    h3 { margin-bottom: 10px; font-size: 22px; }
+    p { margin-bottom: 0; }
+    .container { width: min(calc(100% - 48px), var(--max)); margin: 0 auto; }
+    .section { padding: 96px 0; }
+    .section-soft { background: var(--soft); }
+    .eyebrow {
+      margin-bottom: 14px;
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .section-intro { max-width: 720px; color: var(--muted); font-size: 19px; }
+
+    .site-header {
+      position: relative;
+      z-index: 20;
+      border-bottom: 1px solid rgba(216, 225, 223, .9);
+      background: rgba(255, 255, 255, .96);
+    }
+    .header-inner { display: flex; min-height: 82px; align-items: center; justify-content: space-between; gap: 28px; }
+    .brand { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); font-weight: 800; text-decoration: none; }
+    .brand-mark { display: grid; width: 42px; height: 42px; place-items: center; border-radius: 50%; background: var(--teal); color: #fff; }
+    .brand-text { display: grid; line-height: 1.15; }
+    .brand-text small { color: var(--muted); font-size: 11px; font-weight: 700; text-transform: uppercase; }
+    .nav { display: flex; align-items: center; gap: 24px; }
+    .nav a { color: var(--ink); font-size: 15px; font-weight: 700; text-decoration: none; }
+    .nav a:hover { color: var(--teal); }
+    .header-actions { display: flex; align-items: center; gap: 10px; }
+    .menu-button { display: none; width: 42px; height: 42px; place-items: center; border: 1px solid var(--line); background: #fff; color: var(--ink); cursor: pointer; }
+
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 12px 20px;
+      border: 1px solid var(--teal);
+      border-radius: 6px;
+      background: var(--teal);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 800;
+      text-decoration: none;
+      transition: transform .2s ease, background .2s ease;
+    }
+    .button:hover { background: var(--teal-dark); transform: translateY(-1px); }
+    .button-outline { border-color: currentColor; background: transparent; color: var(--teal-dark); }
+    .button-light { border-color: #fff; background: #fff; color: var(--teal-dark); }
+    .button-light-outline { border-color: rgba(255,255,255,.72); background: transparent; color: #fff; }
+    .button svg { width: 18px; height: 18px; }
+
+    .media-placeholder {
+      position: relative;
+      overflow: hidden;
+      background-color: #eef2f2 !important;
+      background-image:
+        linear-gradient(90deg, rgba(30, 70, 78, .1) 1px, transparent 1px),
+        linear-gradient(rgba(30, 70, 78, .1) 1px, transparent 1px) !important;
+      background-position: center !important;
+      background-size: 28px 28px !important;
+      color: #38525b !important;
+    }
+    .media-placeholder::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: rgba(30, 70, 78, .34);
+      content: "×";
+      font: 300 92px/1 Inter, sans-serif;
+      transform: translate(-50%, -50%);
+    }
+    .media-placeholder[data-placeholder-label]::after {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      left: 14px;
+      padding: 7px 9px;
+      border: 1px solid rgba(30,70,78,.18);
+      border-radius: 3px;
+      background: rgba(255,255,255,.9);
+      color: #38525b;
+      content: attr(data-placeholder-label);
+      font: 800 11px/1.3 Inter, sans-serif;
+      text-align: center;
+    }
+
+    .hero {
+      position: relative;
+      display: flex;
+      min-height: min(760px, calc(100svh - 82px));
+      align-items: center;
+      overflow: hidden;
+      background-color: #2e4b55;
+      background-image:
+        linear-gradient(90deg, rgba(255,255,255,.07) 1px, transparent 1px),
+        linear-gradient(rgba(255,255,255,.07) 1px, transparent 1px);
+      background-position: center;
+      background-size: 42px 42px;
+    }
+    .hero::before { position: absolute; inset: 0; background: rgba(15, 43, 55, .72); content: ""; }
+    .hero::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: rgba(255,255,255,.08);
+      content: "×";
+      font: 300 190px/1 Inter, sans-serif;
+      transform: translate(-50%, -50%);
+    }
+    .hero-placeholder-label {
+      position: absolute;
+      right: 24px;
+      bottom: 20px;
+      z-index: 1;
+      padding: 7px 10px;
+      border: 1px solid rgba(255,255,255,.24);
+      border-radius: 3px;
+      background: rgba(15,43,55,.78);
+      color: rgba(255,255,255,.86);
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .hero-content { position: relative; z-index: 1; max-width: 800px; padding: 88px 0; }
+    .hero .eyebrow { color: #bce7e4; }
+    .hero-copy { max-width: 700px; color: #eef7f6; font-size: 21px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+    .hero-note { display: flex; align-items: center; gap: 9px; margin-top: 18px; color: #d6e7e5; font-size: 14px; }
+    .hero-note svg { width: 17px; height: 17px; }
+
+    .fact-band { border-bottom: 1px solid var(--line); background: #fff; }
+    .fact-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .fact { min-height: 158px; padding: 30px; border-right: 1px solid var(--line); }
+    .fact:first-child { border-left: 1px solid var(--line); }
+    .fact strong { display: block; margin-bottom: 8px; color: var(--teal-dark); font-size: 19px; }
+    .fact span { display: block; color: var(--muted); font-size: 15px; line-height: 1.5; }
+
+    .care-heading { display: flex; align-items: end; justify-content: space-between; gap: 48px; }
+    .care-heading .section-intro { max-width: 560px; }
+    .care-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 44px; }
+    .care-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 260px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+    }
+    .care-card:hover { border-color: var(--teal); box-shadow: var(--shadow); transform: translateY(-3px); }
+    .care-number { display: block; margin-bottom: 34px; color: var(--coral); font-size: 13px; font-weight: 900; }
+    .care-card p { flex: 1; color: var(--muted); font-size: 16px; }
+    .care-card .care-link { display: inline-flex; align-items: center; gap: 7px; margin-top: 18px; color: var(--teal-dark); font-size: 14px; font-weight: 800; text-decoration: none; }
+    .care-card .care-link::after { content: "→"; transition: transform .2s ease; }
+    .care-card:hover .care-link::after { transform: translateX(3px); }
+
+    .doctor-layout { display: grid; grid-template-columns: .92fr 1.08fr; gap: 72px; align-items: center; }
+    .doctor-media { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .portrait-slot {
+      display: flex;
+      min-height: 430px;
+      align-items: end;
+      padding: 20px;
+      border: 1px solid #b9ceca;
+      border-radius: 8px;
+      background: #dcebea;
+      color: var(--teal-dark);
+      font-weight: 800;
+    }
+    .portrait-slot:nth-child(2) { margin-top: 38px; }
+    .doctor-copy > p { max-width: 650px; color: var(--muted); font-size: 18px; }
+    .doctor-list { display: grid; gap: 18px; margin: 30px 0 0; padding: 0; list-style: none; }
+    .doctor-list li { padding-left: 18px; border-left: 3px solid var(--gold); }
+    .doctor-list strong { display: block; color: var(--ink); }
+    .doctor-list span { color: var(--muted); font-size: 15px; }
+    .doctor-list a { color: var(--teal-dark); font-weight: 800; }
+    .text-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+
+    .evidence-grid { display: grid; grid-template-columns: 1.2fr .8fr .8fr; gap: 14px; margin-top: 42px; }
+    .evidence-item { min-height: 320px; padding: 28px; border-radius: 8px; background: var(--ink); color: #fff; }
+    .evidence-item:first-child {
+      min-height: 430px;
+    }
+    .evidence-item:nth-child(2) { background: var(--teal); }
+    .evidence-item:nth-child(3) { background: #b95742; }
+    .evidence-item { display: flex; flex-direction: column; justify-content: end; }
+    .evidence-item p { color: rgba(255,255,255,.83); font-size: 15px; }
+
+    .priority { background: var(--teal-dark); color: #fff; }
+    .priority-layout { display: grid; grid-template-columns: 1fr .88fr; gap: 64px; align-items: center; }
+    .priority h2 { color: #fff; }
+    .priority p { max-width: 650px; color: #d9ecea; font-size: 18px; }
+    .priority-media { display: grid; min-height: 420px; place-items: center; border: 1px solid rgba(255,255,255,.28); border-radius: 8px; background: #174f52; color: #d9ecea; font-weight: 800; text-align: center; }
+
+    .visit-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; align-items: start; }
+    .visit-copy p { color: var(--muted); font-size: 18px; }
+    .visit-options { border-top: 1px solid var(--line); }
+    .visit-option { padding: 24px 0; border-bottom: 1px solid var(--line); }
+    .visit-option p { color: var(--muted); font-size: 16px; }
+
+    .location-layout { display: grid; grid-template-columns: 1.05fr .95fr; gap: 54px; align-items: stretch; }
+    .map-slot {
+      display: grid;
+      min-height: 480px;
+      place-items: center;
+      border: 1px solid #b8cfcb;
+      border-radius: 8px;
+      background-color: #dcebea;
+      background-image: linear-gradient(90deg, rgba(23,108,104,.08) 1px, transparent 1px), linear-gradient(rgba(23,108,104,.08) 1px, transparent 1px);
+      background-size: 38px 38px;
+      color: var(--teal-dark);
+      font-weight: 800;
+    }
+    .location-copy p { color: var(--muted); }
+    .nap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin: 30px 0; }
+    .nap-grid strong { display: block; margin-bottom: 5px; }
+    .nap-grid span { color: var(--muted); font-size: 15px; }
+    .route-list { display: grid; gap: 8px; }
+    .route-list a { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 13px 0; border-bottom: 1px solid var(--line); font-weight: 800; text-decoration: none; }
+
+    .posts-heading { display: flex; align-items: end; justify-content: space-between; gap: 48px; }
+    .posts-heading .section-intro { max-width: 560px; }
+    .posts-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 42px; }
+    .post-card { display: flex; min-width: 0; flex-direction: column; border: 1px solid var(--line); border-radius: 8px; background: #fff; overflow: hidden; }
+    .post-image { display: grid; aspect-ratio: 16 / 9; place-items: center; padding: 24px; background: #dcebea; color: var(--teal-dark); font-size: 13px; font-weight: 800; text-align: center; }
+    .post-body { display: flex; flex: 1; flex-direction: column; padding: 24px; }
+    .post-meta { display: flex; flex-wrap: wrap; gap: 8px 14px; margin-bottom: 14px; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .post-meta span { color: var(--teal-dark); text-transform: uppercase; }
+    .post-card h3 { font-size: 22px; }
+    .post-card h3 a { color: var(--ink); text-decoration: none; }
+    .post-card h3 a:hover { color: var(--teal); }
+    .post-card p { flex: 1; color: var(--muted); font-size: 15px; }
+    .post-link { display: inline-flex; align-items: center; gap: 7px; margin-top: 16px; color: var(--teal-dark); font-size: 14px; font-weight: 800; text-decoration: none; }
+    .post-link::after { content: "→"; }
+    .posts-action { margin-top: 28px; }
+
+    .faq-wrap { max-width: 900px; }
+    details { border-bottom: 1px solid var(--line); }
+    summary { padding: 23px 0; color: var(--ink); cursor: pointer; font-size: 18px; font-weight: 800; }
+    details p { max-width: 760px; padding: 0 0 24px; color: var(--muted); }
+
+    .final-action { background: var(--ink); color: #fff; }
+    .final-inner { display: flex; align-items: center; justify-content: space-between; gap: 48px; }
+    .final-action h2 { max-width: 650px; color: #fff; }
+    .final-action p { color: #d9e3e8; }
+    .final-actions { display: flex; flex-wrap: wrap; justify-content: end; gap: 12px; }
+
+    footer { padding: 34px 0; background: #0f2330; color: #d7e0e4; font-size: 14px; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 30px; }
+    footer a { color: #fff; }
+
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .55s ease, transform .55s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+
+    .guide-overview, .build-guide { color: #2b2a25; }
+    .guide-overview { position: relative; padding: 74px 0 64px; border: 4px dashed #c58000; background: #fff8d7; }
+    .guide-overview::before { position: absolute; top: 0; right: 0; left: 0; padding: 10px 16px; background: #f2c94c; color: #302400; content: "INTERNAL HOMEPAGE BUILD GUIDE — NOT PART OF THE WEBSITE"; font: 800 12px/1.2 Inter, sans-serif; text-align: center; }
+    .guide-kicker { margin-bottom: 10px; color: #8a4f00; font-size: 12px; font-weight: 800; text-transform: uppercase; }
+    .guide-overview h2, .build-guide h2, .build-guide h3 { color: #211f1a; }
+    .guide-overview > .container > h2 { max-width: 850px; margin-bottom: 18px; font-size: 48px; }
+    .guide-overview .guide-lead { max-width: 820px; color: #524d40; font-size: 19px; }
+    .guide-overview-grid, .guide-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 30px; }
+    .guide-card { padding: 22px; border: 1px solid #d5c98f; border-radius: 6px; background: #fffdf4; }
+    .guide-card h2, .guide-card h3 { margin: 0 0 10px; font-family: Inter, sans-serif; font-size: 17px; }
+    .guide-card p, .guide-card li { color: #514c40; font-size: 14px; }
+    .guide-card ul { margin: 0; padding-left: 19px; }
+    .guide-card li + li { margin-top: 7px; }
+    .build-guide { position: relative; padding: 72px 0 64px; border-top: 4px dashed #c58000; border-bottom: 4px dashed #c58000; background-color: #fff8d7; background-image: repeating-linear-gradient(135deg, rgba(197,128,0,.035) 0, rgba(197,128,0,.035) 8px, transparent 8px, transparent 18px); }
+    .build-guide::before, .build-guide::after { position: absolute; right: 0; left: 0; padding: 10px 16px; background: #f2c94c; color: #302400; font: 800 12px/1.2 Inter, sans-serif; text-align: center; }
+    .build-guide::before { top: 0; content: "INTERNAL BUILD NOTES — NOT PART OF THE WEBSITE"; }
+    .build-guide::after { bottom: 0; content: "END INTERNAL NOTES — WEBSITE PREVIEW CONTINUES BELOW"; }
+    .build-guide-header { display: flex; align-items: end; justify-content: space-between; gap: 24px; }
+    .build-guide-header h2 { margin: 0; font-size: 28px; }
+    .guide-header-actions { display: flex; align-items: center; gap: 14px; }
+    .guide-toggle { display: inline-flex; align-items: center; gap: 8px; min-height: 38px; padding: 8px 12px; border: 1px solid #8a4f00; border-radius: 4px; background: #fff; color: #3a2c13; cursor: pointer; font: 700 13px/1 Inter, sans-serif; }
+    .guide-toggle:hover, .guide-toggle:focus-visible { border-color: #3a2c13; background: #fff3b5; }
+    .guide-toggle svg { width: 16px; height: 16px; transition: transform .2s ease; }
+    .build-guide:not(.is-collapsed) .guide-toggle svg { transform: rotate(180deg); }
+    .build-guide.is-collapsed { padding: 62px 0 52px; }
+    .build-guide.is-collapsed .guide-grid,
+    .build-guide.is-collapsed .prompt-box,
+    .build-guide.is-collapsed .guide-note { display: none; }
+    .guide-label { color: #8a4f00; font-size: 12px; font-weight: 800; text-transform: uppercase; }
+    .prompt-box { margin-top: 16px; padding: 20px; overflow-x: auto; border: 1px solid #355563; border-left: 4px solid var(--gold); border-radius: 4px; background: #06161f; color: #cceeea; white-space: pre-wrap; font: 13px/1.65 Consolas, "Courier New", monospace; }
+    .guide-note { margin-top: 18px; padding: 14px 16px; border: 1px solid #d5c98f; border-radius: 4px; background: #fffdf4; color: #514c40; font-size: 13px; }
+
+    /* Review interface: keep the website canvas separate from implementation documentation. */
+    .review-toolbar { position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #111827; background: #1f2937; color: #fff; box-shadow: 0 3px 10px rgba(15, 23, 42, .18); }
+    .review-toolbar-inner { display: flex; min-height: 58px; align-items: center; justify-content: space-between; gap: 20px; }
+    .review-file { display: flex; align-items: baseline; gap: 10px; }
+    .review-file span { color: #9ca3af; font-size: 12px; font-weight: 700; text-transform: uppercase; }
+    .review-file strong { font-size: 14px; }
+    .review-modes { display: inline-flex; padding: 3px; border: 1px solid #4b5563; border-radius: 6px; background: #111827; }
+    .review-mode { display: inline-flex; min-height: 36px; align-items: center; gap: 8px; padding: 8px 13px; border: 0; border-radius: 4px; background: transparent; color: #cbd5e1; cursor: pointer; font: 700 13px/1 Inter, sans-serif; }
+    .review-mode svg { width: 16px; height: 16px; }
+    .review-mode:hover { color: #fff; }
+    .review-mode.is-active { background: #fff; color: #111827; }
+    .review-preview .guide-overview, .review-preview .guide-documentation, .review-preview .build-guide { display: none; }
+    .review-guide .site-header, .review-guide main, .review-guide footer { display: none; }
+
+    .guide-overview { padding: 58px 0; border: 0; border-bottom: 1px solid #d9dde3; background: #f6f7f9; }
+    .guide-overview::before, .build-guide::before, .build-guide::after { display: none; }
+    .guide-kicker, .guide-label { color: #5e6672; }
+    .guide-overview .guide-lead { color: #5e6672; }
+    .guide-card { border-color: #d9dde3; background: #fff; }
+    .guide-card p, .guide-card li { color: #4b5563; }
+    .build-guide { padding: 40px 0; border-top: 1px solid #d9dde3; border-bottom: 1px solid #d9dde3; background: #f6f7f9; }
+    .build-guide.is-collapsed { padding: 0; border-top: 1px solid #d9dde3; border-bottom: 0; background: #fff; }
+    .build-guide.is-collapsed .build-guide-header { min-height: 48px; align-items: center; }
+    .build-guide.is-collapsed .build-guide-header > div { display: flex; align-items: center; }
+    .build-guide.is-collapsed .build-guide-header > div > .guide-label { display: none; }
+    .build-guide.is-collapsed .build-guide-header h2 { font: 600 14px/1.3 Inter, sans-serif; }
+    .build-guide.is-collapsed .build-guide-header h2::before { color: #8a929d; content: "Implementation notes · "; font-weight: 500; }
+    .build-guide.is-collapsed .guide-header-actions > .guide-label { color: #8a929d; font-size: 10px; }
+    .build-guide.is-collapsed .guide-toggle { min-height: 0; padding: 4px 0; border: 0; background: transparent; color: #4b5563; font-size: 12px; }
+    .build-guide.is-collapsed .guide-toggle:hover, .build-guide.is-collapsed .guide-toggle:focus-visible { background: transparent; color: #111827; text-decoration: underline; }
+    .guide-toggle { border-color: #c8ced6; background: #fff; color: #374151; }
+    .guide-toggle:hover, .guide-toggle:focus-visible { border-color: #6b7280; background: #eef1f4; }
+    .guide-note { border-color: #d9dde3; background: #fff; color: #4b5563; }
+
+    .guide-documentation { padding: 48px 0 96px; background: #fff; }
+    .guide-layout { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 64px; align-items: start; }
+    .guide-toc { position: sticky; top: 82px; padding: 20px 0; border-top: 1px solid #d9dde3; border-bottom: 1px solid #d9dde3; }
+    .guide-toc h2 { margin: 0 0 14px; font-family: Inter, sans-serif; font-size: 13px; text-transform: uppercase; }
+    .guide-toc nav { display: grid; }
+    .guide-toc a { padding: 7px 0; color: #58606b; font-size: 13px; text-decoration: none; }
+    .guide-toc a:hover, .guide-toc a:focus-visible { color: #111827; text-decoration: underline; }
+    .guide-content { min-width: 0; }
+    .guide-content .guide-overview {
+      display: block;
+      padding: 0 0 48px;
+      border: 0;
+      border-bottom: 1px solid #d9dde3;
+      background: #fff;
+      scroll-margin-top: 78px;
+    }
+    .guide-content .guide-overview > .container { width: 100%; }
+    .guide-content .guide-overview > .container > h2 { font-size: 36px; }
+    .guide-content .build-guide { display: block; padding: 0 0 48px; border: 0; border-bottom: 1px solid #d9dde3; background: #fff; scroll-margin-top: 78px; }
+    .guide-content .guide-overview + .build-guide,
+    .guide-content .build-guide + .build-guide { padding-top: 48px; }
+    .guide-content .build-guide-header { align-items: flex-start; }
+    .guide-content .build-guide-header h2 { font-size: 30px; }
+    .guide-content .guide-grid { margin-top: 24px; }
+    .guide-content .guide-header-actions { align-items: center; }
+    .guide-preview-link { display: inline-flex; align-items: center; gap: 7px; min-height: 36px; padding: 8px 11px; border: 1px solid #c8ced6; border-radius: 4px; color: #374151; font-size: 12px; font-weight: 700; text-decoration: none; }
+    .guide-preview-link:hover, .guide-preview-link:focus-visible { border-color: #6b7280; background: #f6f7f9; }
+    .guide-preview-link svg { width: 15px; height: 15px; }
+    .prompt-disclosure { margin-top: 18px; border-top: 1px solid #d9dde3; }
+    .prompt-disclosure summary { padding: 14px 0; color: #374151; cursor: pointer; font-size: 13px; font-weight: 800; }
+    .prompt-disclosure .prompt-box { margin-top: 0; }
+
+    @media (max-width: 980px) {
+      h1 { font-size: 52px; }
+      h2 { font-size: 38px; }
+      .nav { display: none; position: absolute; top: 82px; right: 24px; left: 24px; padding: 20px; border: 1px solid var(--line); background: #fff; box-shadow: var(--shadow); }
+      .nav.is-open { display: grid; }
+      .menu-button { display: grid; }
+      .header-actions .button-outline { display: none; }
+      .care-grid { grid-template-columns: repeat(2, 1fr); }
+      .posts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .post-card:last-child { grid-column: 1 / -1; }
+      .doctor-layout, .priority-layout, .visit-layout, .location-layout { grid-template-columns: 1fr; }
+      .doctor-layout, .priority-layout, .visit-layout, .location-layout { gap: 46px; }
+      .evidence-grid { grid-template-columns: 1fr 1fr; }
+      .evidence-item:first-child { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 680px) {
+      body { font-size: 16px; }
+      .container { width: min(calc(100% - 32px), var(--max)); }
+      .section { padding: 70px 0; }
+      h1 { font-size: 42px; }
+      h2 { font-size: 33px; }
+      .brand-text small { display: none; }
+      .header-actions .button { display: none; }
+      .hero { min-height: 690px; background-position: 62% center; }
+      .hero-content { padding: 70px 0; }
+      .hero-copy { font-size: 18px; }
+      .hero-actions, .text-actions, .final-actions { align-items: stretch; flex-direction: column; }
+      .button { width: 100%; }
+      .fact-grid, .care-grid, .doctor-media, .evidence-grid, .nap-grid { grid-template-columns: 1fr; }
+      .fact { min-height: 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); border-left: 1px solid var(--line); }
+      .fact:first-child { border-top: 1px solid var(--line); }
+      .care-heading { align-items: start; flex-direction: column; gap: 8px; }
+      .posts-heading { align-items: start; flex-direction: column; gap: 8px; }
+      .posts-grid { grid-template-columns: 1fr; }
+      .post-card:last-child { grid-column: auto; }
+      .care-card { min-height: 0; }
+      .portrait-slot { min-height: 360px; }
+      .portrait-slot:nth-child(2) { margin-top: 0; }
+      .evidence-item:first-child { grid-column: auto; min-height: 360px; }
+      .priority-media, .map-slot { min-height: 330px; }
+      .final-inner, .footer-inner { align-items: flex-start; flex-direction: column; }
+      .final-actions { width: 100%; }
+      .guide-overview > .container > h2 { font-size: 36px; }
+      .guide-overview-grid, .guide-grid { grid-template-columns: 1fr; }
+      .build-guide-header { align-items: flex-start; flex-direction: column; gap: 8px; }
+      .guide-header-actions { align-items: flex-start; justify-content: space-between; width: 100%; }
+      .build-guide.is-collapsed .build-guide-header { align-items: center; flex-direction: row; }
+      .build-guide.is-collapsed .guide-header-actions { align-items: center; justify-content: flex-end; width: auto; }
+      .build-guide.is-collapsed .guide-header-actions > .guide-label { display: none; }
+      .review-file span { display: none; }
+      .review-file strong { font-size: 12px; }
+      .review-mode { padding: 8px 10px; }
+      .guide-layout { grid-template-columns: 1fr; gap: 34px; }
+      .guide-toc { position: static; top: auto; }
+      .guide-toc nav { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 18px; }
+      .guide-content .build-guide-header { align-items: flex-start; flex-direction: column; }
+      .guide-content .guide-header-actions { justify-content: space-between; width: 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+    /* Annotated review layout: website example and matching implementation notes. */
+    .annotated-view {
+      display: none;
+      padding: 54px 0 90px;
+      background: #111b28;
+      color: #eef3f7;
+    }
+    .review-guide .annotated-view { display: block; }
+    .review-guide > .guide-overview,
+    .review-guide > .guide-documentation { display: none; }
+    .annotated-intro {
+      display: flex;
+      width: min(calc(100% - 48px), 1420px);
+      margin: 0 auto 28px;
+      align-items: end;
+      justify-content: space-between;
+      gap: 36px;
+    }
+    .annotated-intro h1 {
+      max-width: 820px;
+      margin: 0;
+      color: #fff;
+      font-family: Inter, Arial, sans-serif;
+      font-size: 44px;
+      font-weight: 700;
+    }
+    .annotated-intro p { max-width: 470px; color: #b7c3ce; font-size: 15px; }
+    .annotated-general {
+      width: min(calc(100% - 48px), 1420px);
+      margin: 0 auto 28px;
+      overflow: hidden;
+      border: 1px solid #314153;
+      border-radius: 8px;
+      background: #f6f7f9;
+      color: #2b2a25;
+    }
+    .annotated-general .guide-overview {
+      display: block;
+      padding: 48px 0;
+      border: 0;
+      background: #f6f7f9;
+    }
+    .annotated-general .guide-overview > .container { width: min(calc(100% - 48px), 1280px); }
+    .annotated-general .prompt-box { margin-bottom: 0; }
+    .annotated-page-frame {
+      width: min(calc(100% - 48px), 1420px);
+      margin: 0 auto;
+      overflow: hidden;
+      border: 1px solid #314153;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 28px 80px rgba(0,0,0,.25);
+    }
+    .annotated-browser-bar {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 14px;
+      border-bottom: 1px solid #263749;
+      background: #1d2a39;
+    }
+    .annotated-browser-dot { width: 9px; height: 9px; border-radius: 50%; background: #718096; }
+    .annotated-address {
+      min-width: 0;
+      margin-left: 8px;
+      padding: 6px 12px;
+      overflow: hidden;
+      border: 1px solid #3e4d5d;
+      border-radius: 4px;
+      background: #111b28;
+      color: #aebbc7;
+      font: 12px/1.2 Consolas, monospace;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .annotated-module {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 380px;
+      align-items: stretch;
+      border-top: 1px solid #d8dee5;
+      background: #fff;
+    }
+    .annotated-module:first-child { border-top: 0; }
+    .annotated-canvas { min-width: 0; overflow: hidden; background: #fff; color: var(--ink); }
+    .annotated-canvas > * { width: 100%; }
+    .annotated-view .reveal { opacity: 1; transform: none; }
+    .annotated-notes {
+      min-width: 0;
+      padding: 28px;
+      border-left: 4px solid #e1b744;
+      background: #fff9e8;
+      color: #3d392e;
+    }
+    .annotated-notes .build-guide {
+      display: block !important;
+      padding: 0;
+      border: 0;
+      background: transparent;
+    }
+    .annotated-notes .build-guide > .container { width: 100%; }
+    .annotated-notes .build-guide-header {
+      display: block;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #ddcf9c;
+    }
+    .annotated-notes .build-guide-header h2 {
+      margin: 5px 0 0;
+      color: #252117;
+      font-family: Inter, Arial, sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .annotated-notes .guide-header-actions { margin-top: 8px; }
+    .annotated-notes .guide-grid { grid-template-columns: 1fr; gap: 0; margin-top: 18px; }
+    .annotated-notes .guide-card {
+      padding: 0 0 17px;
+      border: 0;
+      border-bottom: 1px solid #e2d6aa;
+      border-radius: 0;
+      background: transparent;
+    }
+    .annotated-notes .guide-card + .guide-card { padding-top: 17px; }
+    .annotated-notes .guide-card:last-child { border-bottom: 0; }
+    .annotated-notes .guide-card h3 { color: #252117; font-size: 15px; }
+    .annotated-notes .guide-card p,
+    .annotated-notes .guide-card li { color: #585043; font-size: 13px; }
+    .annotated-notes .prompt-disclosure { border-color: #ddcf9c; }
+    .annotated-notes .prompt-disclosure summary { color: #50462f; }
+    .annotated-notes .prompt-box { max-height: 360px; font-size: 12px; }
+    .annotated-notes .guide-note { border-color: #ddcf9c; background: #fffdf5; }
+    .review-guide .annotated-view .site-header,
+    .review-guide .annotated-view footer { display: block; }
+
+    @media (max-width: 1100px) {
+      .annotated-module { grid-template-columns: 1fr; }
+      .annotated-notes { border-top: 4px solid #e1b744; border-left: 0; }
+      .annotated-intro { align-items: flex-start; flex-direction: column; gap: 12px; }
+    }
+
+    @media (max-width: 680px) {
+      .annotated-view { padding: 30px 0 60px; }
+      .annotated-intro,
+      .annotated-general,
+      .annotated-page-frame { width: min(calc(100% - 24px), 1420px); }
+      .annotated-intro h1 { font-size: 31px; }
+      .annotated-general .guide-overview { padding: 34px 0; }
+      .annotated-general .guide-overview > .container { width: min(calc(100% - 28px), 1280px); }
+      .annotated-notes { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body class="review-preview">
+  <div class="review-toolbar" aria-label="Mockup review controls">
+    <div class="container review-toolbar-inner">
+      <div class="review-file"><span>Review file</span><strong>Dental homepage</strong></div>
+      <div class="review-modes" role="group" aria-label="Choose review mode">
+        <button class="review-mode is-active" type="button" data-review-mode="preview" aria-pressed="true"><i data-lucide="monitor" aria-hidden="true"></i>Website preview</button>
+        <button class="review-mode" type="button" data-review-mode="guide" aria-pressed="false"><i data-lucide="file-code-2" aria-hidden="true"></i>Annotated guide</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="guide-overview" aria-labelledby="implementation-guide-title">
+    <div class="container">
+      <div class="guide-kicker">Homepage optimization implementation guide</div>
+      <h2 id="implementation-guide-title">Before building the dental homepage</h2>
+      <p class="guide-lead">Complete the research and architecture work first. This implementation guide is documentation for the team and must never be published as patient-facing website content.</p>
+      <div class="guide-overview-grid">
+        <article class="guide-card">
+          <h2>Information required before writing</h2>
+          <ul>
+            <li>Exact practice name, primary location, address, phone, hours, booking method and primary conversion.</li>
+            <li>Dentist names, credentials, treatment responsibilities and verified first-party portraits.</li>
+            <li>Core service hubs, priority treatments, recent indexable articles, new-patient process, emergency route, insurance and financing facts.</li>
+            <li>Original media, attributable reviews, technology, cases, associations and authoritative credential sources.</li>
+            <li>Top three relevant secondary locations, internal destination URLs, metadata, schema and current homepage content.</li>
+          </ul>
+        </article>
+        <article class="guide-card">
+          <h2>Research and source order</h2>
+          <ul>
+            <li>Start with confirmed information supplied by the practice or project owner.</li>
+            <li>Then inspect the website CMS, page-builder content, media, menus, metadata, schema and rendered output when access is available.</li>
+            <li>Confirm public facts through official business listings, official profiles, licensing bodies, universities, hospitals, associations or manufacturers.</li>
+            <li>Record each claim, source, confidence, conflict, allowed wording and missing information in a project research brief.</li>
+            <li>Never store passwords or credentials in the research brief.</li>
+          </ul>
+        </article>
+        <article class="guide-card">
+          <h2>Whole-page construction rules</h2>
+          <ul>
+            <li>Order the page from identity and patient needs to services, providers, evidence, visit information, recent guidance and action.</li>
+            <li>Give every section one patient purpose and one useful relationship to the practice.</li>
+            <li>Use homepage-level summaries; move treatment depth, risks, recovery and candidacy to service pages.</li>
+            <li>Preserve strong existing copy, facts and first-party media. Merge duplication and remove unsupported filler.</li>
+            <li>Use visible review placeholders for unresolved facts. Never invent reviews, awards, statistics, credentials or services.</li>
+          </ul>
+        </article>
+        <article class="guide-card">
+          <h2>Final quality gates</h2>
+          <ul>
+            <li>Public copy must sound human and practice-specific without SEO or workflow terminology.</li>
+            <li>Internal links belong naturally inside useful sentences and never in headings.</li>
+            <li>External links must be sparse, authoritative and directly support a nearby credential or factual claim.</li>
+            <li>Inspect desktop and mobile for hero readability, clipping, overlap, missing media and awkward transitions.</li>
+            <li>Run an independent text-only review before implementation; resolve every rewrite, merge, move, remove or missing finding.</li>
+          </ul>
+        </article>
+      </div>
+      <pre class="prompt-box"><code>OVERALL HOMEPAGE PROMPT
+Audit and prepare a dental-practice homepage using confirmed practice information, available website or CMS content, rendered-page evidence, official public business information, official dentist sources, first-party media, and the approved homepage structure.
+
+Before drafting, create: (1) a Keep/Rewrite/Merge/Move/Remove/Missing section audit, (2) a sourced homepage entity brief, and (3) an internal-link, external-source, doctor-media, and location-route map. Resolve conflicts or mark them for confirmation. Do not invent facts.
+
+Write natural patient-facing copy that clearly connects the practice, primary location, dentists, patient needs, core services, evidence, visit process, and appointment action. Keep treatment depth on service pages. Preserve useful existing wording. Remove duplicated, generic, robotic, keyword-led, or unsupported copy. Build a review-only HTML mockup, visually inspect desktop and mobile, then run an independent text-only editorial and semantic review.</code></pre>
+    </div>
+  </section>
+
+  <section class="guide-documentation" id="implementation-guide" aria-label="Homepage implementation documentation">
+    <div class="container guide-layout">
+      <aside class="guide-toc" aria-label="Implementation guide contents">
+        <h2>On this page</h2>
+        <nav id="guide-toc-links"></nav>
+      </aside>
+      <div class="guide-content" id="guide-content"></div>
+    </div>
+  </section>
+
+  <header class="site-header" id="site-header-preview">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="[Practice Name] home">
+        <span class="brand-mark"><i data-lucide="sparkles" aria-hidden="true"></i></span>
+        <span class="brand-text">[Practice Name]<small>[Verified practice scope]</small></span>
+      </a>
+      <nav class="nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#care">Services</a>
+        <a href="#dentists">Dentists</a>
+        <a href="#new-patients">New patients</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-outline" href="tel:+10000000000"><i data-lucide="phone" aria-hidden="true"></i>Call</a>
+        <a class="button" href="#appointment"><i data-lucide="calendar-days" aria-hidden="true"></i>Request appointment</a>
+        <button class="menu-button" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation"><i data-lucide="menu" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <span class="hero-placeholder-label">Hero image or video placeholder</span>
+      <div class="container">
+        <div class="hero-content reveal">
+          <div class="eyebrow">[Practice Name] · [Primary city, state]</div>
+          <h1>[Type of dentistry] in [Primary city, state]</h1>
+          <p class="hero-copy">Dr. [Full Name] and the team provide [verified care scope] for [verified patient audience]. [Practice-specific distinction supported by a source.]</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#appointment"><i data-lucide="calendar-days" aria-hidden="true"></i>Request an appointment</a>
+            <a class="button button-light-outline" href="tel:+10000000000"><i data-lucide="phone" aria-hidden="true"></i>Call (000) 000-0000</a>
+          </div>
+          <div class="hero-note"><i data-lucide="circle-check" aria-hidden="true"></i>[Verified practical benefit, such as emergency access or family scheduling]</div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="build-guide" aria-label="Hero implementation instructions">
+      <div class="container">
+        <div class="build-guide-header"><div><div class="guide-label">Section instructions</div><h2>Hero</h2></div><span class="guide-label">Required</span></div>
+        <div class="guide-grid">
+          <article class="guide-card"><h3>What it must do</h3><p>Establish the practice as the central entity: who it is, what kind of dentistry it provides, where it is located, who it serves and how to contact it.</p></article>
+          <article class="guide-card"><h3>Information needed</h3><ul><li>Exact practice and dentist names.</li><li>Primary city and state.</li><li>Verified care scope and patient audience.</li><li>Primary appointment action, phone and one supported patient benefit when available.</li><li>Readable first-party hero image or video with a working poster.</li></ul></article>
+          <article class="guide-card"><h3>How to construct it</h3><ul><li>Use one clear H1 joining practice function and primary location.</li><li>Write one concise opening that adds the provider, audience and useful distinction.</li><li>Show one primary CTA and one phone alternative.</li><li>Add at most one short, verified practical benefit; omit the line when no meaningful benefit is supported.</li><li>Check contrast, cropping and text fit at mobile width.</li></ul></article>
+          <article class="guide-card"><h3>Do / do not</h3><ul><li>Do align title, H1, opening and conversion action.</li><li>Do not stack keywords or use unsupported superlatives.</li><li>Do not add obstructive widgets, repeated mobile buttons or vague slogans.</li></ul></article>
+        </div>
+        <pre class="prompt-box"><code>HERO PROMPT
+Using only verified facts, write a dental homepage hero that identifies [practice], [dentist/provider], [type of dentistry], [primary city/state], and [patient audience]. Create one natural H1, a concise supporting paragraph, one primary appointment action, one phone alternative, and at most one short patient-relevant practical benefit. Omit the benefit line when no meaningful benefit is supported. Put appointment-confirmation mechanics in the new-patient section, not the hero. Reject slogans, keyword repetition, unsupported superiority claims, duplicated CTAs, and copy that could belong to any dental practice.</code></pre>
+      </div>
+    </aside>
+
+    <section class="fact-band" id="practice-facts" aria-label="Verified practice facts">
+      <div class="container fact-grid">
+        <div class="fact"><strong>[Meaningful training]</strong><span>[Additional training or relevant credential in patient language.]</span></div>
+        <div class="fact"><strong>[Relevant experience]</strong><span>[Useful provider or practice distinction.]</span></div>
+        <div class="fact"><strong>[Practical access fact]</strong><span>[Emergency, hours, language, or access attribute.]</span></div>
+      </div>
+    </section>
+
+    <aside class="build-guide" aria-label="Trust facts implementation instructions">
+      <div class="container">
+        <div class="build-guide-header"><div><div class="guide-label">Section instructions</div><h2>Verified facts and trust elements</h2></div><span class="guide-label">Three to five items</span></div>
+        <div class="guide-grid">
+          <article class="guide-card"><h3>What it must do</h3><p>Give patients three to five quickly scannable, supportable reasons to understand the practice. Each item must contain one fact or one close fact-and-meaning pair.</p></article>
+          <article class="guide-card"><h3>Information needed</h3><ul><li>Verified training, experience, practice history or access attributes.</li><li>Source and confidence for every item.</li><li>The patient-relevant meaning of a credential, when supported.</li></ul></article>
+          <article class="guide-card"><h3>Construction limits</h3><ul><li>Heading: two to six words.</li><li>Support: one 12–20-word sentence; never more than 24 words.</li><li>Move dates, lists and detailed explanations to the dentist or evidence section.</li></ul></article>
+          <article class="guide-card"><h3>Do / do not</h3><ul><li>Do translate professional terms into factual plain language.</li><li>Do keep each item understandable without its icon.</li><li>Do not imply guaranteed quality, safety, eligibility or outcomes.</li><li>Do not use generic claims such as “best care” or “state-of-the-art” without evidence.</li></ul></article>
+        </div>
+        <pre class="prompt-box"><code>VERIFIED FACTS PROMPT
+From the sourced entity brief, select three to five distinctive homepage facts. For each, write a two-to-six-word heading and one 12–20-word supporting sentence, never exceeding 24 words. Connect a credential to a supported patient-relevant meaning without promising an outcome. Remove any item that is generic, duplicated, unsupported, or requires a paragraph to explain.</code></pre>
+      </div>
+    </aside>
+
+    <section class="section" id="care">
+      <div class="container">
+        <div class="care-heading reveal">
+          <div><div class="eyebrow">How we can help</div><h2>Find the care you need</h2></div>
+          <p class="section-intro">You do not need to know the treatment name before you call. Start with the concern that feels closest to yours.</p>
+        </div>
+        <div class="care-grid">
+          <article class="care-card reveal"><span class="care-number">01</span><h3>Keep up with routine care</h3><p>Regular <a href="#">dental exams</a> and professional cleanings give the dentist a chance to monitor changes and recommend care based on what they find.</p><a class="care-link" href="#">Explore preventive care</a></article>
+          <article class="care-card reveal"><span class="care-number">02</span><h3>Get help for pain or swelling</h3><p>Significant tooth pain, facial swelling, dental trauma, or a <a href="#">broken tooth</a> may need prompt attention rather than a routine visit.</p><a class="care-link" href="#">See emergency dental care</a></article>
+          <article class="care-card reveal"><span class="care-number">03</span><h3>Repair a damaged tooth</h3><p>Decay, cracks, wear, or an older restoration can affect comfort and function. A <a href="#">dental crown</a> may be one option when a tooth needs more support.</p><a class="care-link" href="#">Explore restorative care</a></article>
+          <article class="care-card reveal"><span class="care-number">04</span><h3>Replace missing teeth</h3><p>The right option depends on how many teeth are missing, oral health, and chewing needs. <a href="#">Dental implants</a> are one possible fixed approach.</p><a class="care-link" href="#">Compare tooth replacement</a></article>
+          <article class="care-card reveal"><span class="care-number">05</span><h3>Change something about your smile</h3><p>Color, shape, spacing, alignment, or worn teeth can call for different treatments. <a href="#">Porcelain veneers</a> may address selected shape, color, or spacing concerns.</p><a class="care-link" href="#">Explore cosmetic dentistry</a></article>
+          <article class="care-card reveal"><span class="care-number">06</span><h3>Feel more comfortable at the dentist</h3><p>If anxiety has made it difficult to schedule or complete care, ask how the practice supports comfort and whether <a href="#">sedation dentistry</a> is available.</p><a class="care-link" href="#">Review comfort options</a></article>
+        </div>
+      </div>
+    </section>
+
+    <aside class="build-guide" aria-label="Care navigation implementation instructions">
+      <div class="container">
+        <div class="build-guide-header"><div><div class="guide-label">Section instructions</div><h2>Care and service navigation</h2></div><span class="guide-label">Required when service hubs exist</span></div>
+        <div class="guide-grid">
+          <article class="guide-card"><h3>What it must do</h3><p>Connect recognizable patient needs to the most relevant service hubs. It introduces core care clusters without turning the homepage into a treatment encyclopedia.</p></article>
+          <article class="guide-card"><h3>Information needed</h3><ul><li>Verified services actually offered.</li><li>Approved service hubs and their live URLs.</li><li>Common patient reasons for visiting.</li><li>Primary service target for each concern and any important gap.</li></ul></article>
+          <article class="guide-card"><h3>How to construct it</h3><ul><li>Make each card represent one recognizable patient situation.</li><li>Explain the symptoms, goal, or decision in enough detail for a patient to recognize themselves.</li><li>Use one primary link to the service hub.</li><li>Add at most one priority treatment link inside the supporting context when it is directly relevant.</li></ul></article>
+          <article class="guide-card"><h3>Do / do not</h3><ul><li>Do prioritize the patient’s issue before naming the service.</li><li>Do use the priority link to clarify a meaningful option, not merely to place an anchor.</li><li>Do not exceed two destinations per card, link headings, or link every treatment noun.</li><li>Do not use “learn more,” “service page,” “click here,” or unsupported services.</li></ul></article>
+        </div>
+        <pre class="prompt-box"><code>CARE NAVIGATION PROMPT
+Using verified services, live service-hub and priority-treatment URLs, and common patient reasons for visiting, create a concern-to-service section. Each card must cover one recognizable patient situation and explain the relevant symptoms, goal, or decision in useful human language. Include one primary link to the service hub and, when directly relevant, one contextual link to the most important specific treatment page. Never exceed two destinations per card. Do not link every treatment noun, combine unrelated concerns, use generic CTA language, or turn the card into detailed treatment education.</code></pre>
+      </div>
+    </aside>
+
+    <section class="section section-soft" id="dentists">
+      <div class="container doctor-layout">
+        <div class="doctor-media reveal" aria-label="Verified dentist portraits">
+          <div class="portrait-slot media-placeholder" data-placeholder-label="Portrait of Dr. [Full Name]"></div>
+          <div class="portrait-slot media-placeholder" data-placeholder-label="Portrait of Dr. [Full Name]"></div>
+        </div>
+        <div class="doctor-copy reveal">
+          <div class="eyebrow">Your dentists</div>
+          <h2>Meet the dentists at [Practice Name]</h2>
+          <p>Dr. [Full Name] provides [verified treatment responsibilities], supported by [verified training or experience]. [Practice-specific approach or continuity-of-care fact.]</p>
+          <ul class="doctor-list">
+            <li><strong>[Dentist-specific responsibility]</strong><span>[Relevant experience, training, or treatment role.]</span></li>
+            <li><strong>[Meaningful postgraduate training]</strong><span>Dr. [Full Name] completed [verified program] at <a href="#">[authoritative institution]</a>.</span></li>
+            <li><strong>[Practice-specific strength]</strong><span>[Practice history, language, access, collaboration, or continuity-of-care fact.]</span></li>
+          </ul>
+          <div class="text-actions"><a class="button" href="#">Meet the dentists</a></div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="build-guide" aria-label="Dentist section implementation instructions">
+      <div class="container">
+        <div class="build-guide-header"><div><div class="guide-label">Section instructions</div><h2>Dentists and practice introduction</h2></div><span class="guide-label">Required</span></div>
+        <div class="guide-grid">
+          <article class="guide-card"><h3>What it must do</h3><p>Explain who provides care, each dentist’s real responsibilities, and which verified training, experience or practice attributes support those responsibilities.</p></article>
+          <article class="guide-card"><h3>Information needed</h3><ul><li>Full names and professional credentials.</li><li>Official bios, treatment responsibilities and meaningful training.</li><li>Verified first-party portraits with identity and usage source.</li><li>Doctor bio URLs and one to three authoritative sources where useful.</li></ul></article>
+          <article class="guide-card"><h3>How to construct it</h3><ul><li>Use named portraits, a natural introduction and two or three specific facts.</li><li>Link doctor names or useful phrases to their biographies.</li><li>Link credential phrases only to authoritative sources that truly support them.</li><li>Connect credentials to factual patient meaning without overclaiming.</li></ul></article>
+          <article class="guide-card"><h3>Do / do not</h3><ul><li>Do request a named portrait when no verified asset exists.</li><li>Do preserve useful details from existing bios.</li><li>Do not use stock clinicians, patients, staff, AI likenesses or directory photos as substitutes.</li><li>Do not imply an institution verifies a dentist unless it names that dentist.</li></ul></article>
+        </div>
+        <pre class="prompt-box"><code>DENTIST SECTION PROMPT
+From official bios, verified treatment responsibilities, credentials, and first-party media, introduce the dentists responsible for care at [practice]. State who provides which care and why the cited training or experience is relevant in factual patient language. Use identified first-party portraits, contextual bio links, and only directly supportive authoritative external links. Mark missing portraits or conflicting credentials for confirmation; never invent or substitute identities.</code></pre>
+      </div>
+    </aside>
+
+    <section class="section" id="practice-evidence" aria-label="Optional verified practice evidence">
+      <div class="container">
+        <div class="reveal"><div class="eyebrow">Inside the practice</div><h2>A closer look at [Practice Name]</h2><p class="section-intro">Meet the team, see the office, and learn about the experience or technology that may be relevant to your visit.</p></div>
+        <div class="evidence-grid">
+          <article class="evidence-item media-placeholder reveal" data-placeholder-label="Original office or team image"></article>
+          <article class="evidence-item reveal"><h3>[Specific patient-experience theme]</h3><p>“[Exact attributable review excerpt.]” — [Reviewer name or approved attribution]</p></article>
+          <article class="evidence-item reveal"><h3>[Relevant credential or technology]</h3><p>[How this credential or technology relates to care.]</p></article>
+        </div>
+      </div>
+    </section>
+
+    <aside class="build-guide" aria-label="Practice evidence implementation instructions">
+      <div class="container">
+        <div class="build-guide-header"><div><div class="guide-label">Section instructions</div><h2>Practice evidence</h2></div><span class="guide-label">Optional</span></div>
+        <div class="guide-grid">
+          <article class="guide-card"><h3>When to use it</h3><p>Keep this section only when original media, attributable reviews, cases, credentials or technology substantiate an important nearby claim. Remove it when the evidence is weak or generic.</p></article>
+          <article class="guide-card"><h3>Information needed</h3><ul><li>Approved original office, team, technology or case media.</li><li>Exact attributable review excerpts and source URLs.</li><li>Verified credential or technology facts.</li><li>Consent and allowed usage for cases or patient media.</li></ul></article>
+          <article class="guide-card"><h3>How to construct it</h3><ul><li>Pair every asset with one concise claim it genuinely supports.</li><li>Place proof near the claim or decision it helps.</li><li>Explain how a named technology is used rather than merely listing it.</li><li>Use review themes only when specific and relevant to a patient decision.</li></ul></article>
+          <article class="guide-card"><h3>Do / do not</h3><ul><li>Do identify the source and permitted use of every asset.</li><li>Do quote reviews exactly and attribute them.</li><li>Do not fabricate testimonials, awards, cases or outcomes.</li><li>Do not create a decorative gallery with no factual purpose.</li></ul></article>
+        </div>
+        <pre class="prompt-box"><code>PRACTICE EVIDENCE PROMPT
+Evaluate the approved first-party media, attributable reviews, cases, credentials, and technology for [practice]. Keep only evidence that supports a specific homepage claim or patient decision. For each item, write one concise factual explanation and record its source and usage status. Remove the section if the material is generic, unverified, repetitive, decorative, or cannot be published with confidence.</code></pre>
+      </div>
+    </aside>
+
+    <section class="section priority" id="priority-treatment" aria-label="Optional priority treatment">
+      <div class="container priority-layout">
+        <div class="reveal">
+          <div class="eyebrow" style="color:#bce7e4">[Priority treatment category]</div>
+          <h2>[Verified priority treatment] at [Practice Name]</h2>
+          <p>For patients dealing with [recognizable concern], [treatment] may be one option after an examination. Dr. [Full Name] provides [verified treatment role or capability] and can explain whether it fits your needs.</p>
+          <div class="text-actions"><a class="button button-light" href="#">Explore [treatment]</a><a class="button button-light-outline" href="#appointment">Request a consultation</a></div>
+        </div>
+        <div class="priority-media media-placeholder reveal" data-placeholder-label="Treatment image, consented case, or educational media"></div>
+      </div>
+    </section>
+
+    <aside class="build-guide" aria-label="Priority treatment implementation instructions">
+      <div class="container">
+        <div class="build-guide-header"><div><div class="guide-label">Section instructions</div><h2>Priority treatment</h2></div><span class="guide-label">Optional and evidence-dependent</span></div>
+        <div class="guide-grid">
+          <article class="guide-card"><h3>When to use it</h3><p>Feature one treatment only when search demand, business priority, provider responsibility, supporting evidence and a complete service page justify a stronger homepage path.</p></article>
+          <article class="guide-card"><h3>Information needed</h3><ul><li>Approved priority treatment and target destination.</li><li>Which dentist provides or plans the care.</li><li>Relevant technology, case, media or credential evidence.</li><li>A complete service page that can carry treatment depth.</li></ul></article>
+          <article class="guide-card"><h3>How to construct it</h3><ul><li>State the treatment and practice naturally.</li><li>Use a short homepage-level explanation tied to verified capability.</li><li>Link to the full service page and offer the appropriate appointment action.</li><li>Use original or approved educational media.</li></ul></article>
+          <article class="guide-card"><h3>Do / do not</h3><ul><li>Do remove the section if any key support is missing.</li><li>Do keep candidacy, risks and recovery on the service page.</li><li>Do not force several priority treatments into one block.</li><li>Do not make outcome promises or imply universal eligibility.</li></ul></article>
+        </div>
+        <pre class="prompt-box"><code>PRIORITY TREATMENT PROMPT
+Decide whether [treatment] deserves a dedicated homepage section using verified demand, business priority, provider responsibility, available evidence, and the completeness of its service page. If justified, write a concise introduction that connects [practice], [provider], [patient need], and [verified capability], then link naturally to the full treatment page and appointment action. Otherwise remove the section.</code></pre>
+      </div>
+    </aside>
+
+    <section class="section section-soft" id="insurance-financing">
+      <div class="container visit-layout">
+        <div class="visit-copy reveal">
+          <div class="eyebrow">Insurance and financing</div>
+          <h2>Understand your payment options before treatment</h2>
+          <p>[Practice Name] can explain its verified insurance process, how treatment estimates are prepared, and which financing or payment options are currently available.</p>
+          <div class="text-actions"><a class="button" href="#">Review insurance information</a><a class="button button-outline" href="#">Explore financing options</a></div>
+        </div>
+        <div class="visit-options reveal">
+          <article class="visit-option"><h3>Insurance</h3><p>[Verified participation, claim-submission, and out-of-network information.]</p></article>
+          <article class="visit-option"><h3>Treatment estimates</h3><p>[How estimates are prepared and why final patient responsibility can vary.]</p></article>
+          <article class="visit-option"><h3>Financing and payment</h3><p>[Verified financing providers, payment methods, eligibility process, and destination links.]</p></article>
+        </div>
+      </div>
+    </section>
+
+    <aside class="build-guide" aria-label="Insurance and financing implementation instructions">
+      <div class="container">
+        <div class="build-guide-header"><div><div class="guide-label">Section instructions</div><h2>Insurance and financing</h2></div><span class="guide-label">Recommended when verified information exists</span></div>
+        <div class="guide-grid">
+          <article class="guide-card"><h3>What it must do</h3><p>Help patients understand how the practice handles insurance, estimates, payment methods, and financing without implying guaranteed coverage, approval, affordability, or a fixed final cost.</p></article>
+          <article class="guide-card"><h3>Information needed</h3><ul><li>Verified insurance participation and claim-submission process.</li><li>Out-of-network or self-pay information, when applicable.</li><li>How treatment estimates are prepared and communicated.</li><li>Current payment methods and financing providers.</li><li>Eligibility, application, or disclosure links supplied by the practice or financing provider.</li></ul></article>
+          <article class="guide-card"><h3>How to construct it</h3><ul><li>Separate insurance, estimates, and financing so their meanings do not blur together.</li><li>Explain participation as a practice fact and coverage as plan-specific.</li><li>State that estimates are not guarantees when final benefits or treatment can change.</li><li>Link natural phrases to complete insurance, financing, or provider information when those destinations exist.</li></ul></article>
+          <article class="guide-card"><h3>Do / do not</h3><ul><li>Do use the practice's current terminology and confirmed process.</li><li>Do identify third-party financing when relevant.</li><li>Do not claim that insurance “covers” a treatment without plan-specific evidence.</li><li>Do not promise approval, monthly payments, discounts, affordability, or final prices.</li><li>Do not list outdated plans, providers, or terms.</li></ul></article>
+        </div>
+        <pre class="prompt-box"><code>INSURANCE AND FINANCING PROMPT
+Using only the practice's verified insurance participation, claim process, estimate process, payment methods, financing providers, eligibility steps, disclosures, and destination URLs, create a concise homepage insurance and financing section. Separate insurance, treatment estimates, and financing. Distinguish practice participation from plan-specific coverage, and estimates from guaranteed final responsibility. Add useful contextual links. Do not infer coverage, approval, affordability, monthly payments, discounts, prices, or current provider terms.</code></pre>
+      </div>
+    </aside>
+
+    <section class="section" id="new-patients">
+      <div class="container visit-layout">
+        <div class="visit-copy reveal">
+          <div class="eyebrow">Planning your visit</div>
+          <h2>Know what happens before you arrive</h2>
+          <p>Request a visit online or by phone. The team will [verified confirmation process] and let you know what to bring before your appointment.</p>
+          <div class="text-actions"><a class="button" href="#appointment">Request an appointment</a><a class="button button-outline" href="#">New-patient information</a></div>
+        </div>
+        <div class="visit-options reveal">
+          <article class="visit-option"><h3>Appointment confirmation</h3><p>[How appointment requests are confirmed and when to call.]</p></article>
+          <article class="visit-option"><h3>Urgent dental concerns</h3><p>[Telephone instructions for pain, swelling, injury, or urgent concerns.]</p></article>
+          <article class="visit-option"><h3>Forms and preparation</h3><p>[Verified forms, records, arrival time, accessibility, or other preparation details.]</p></article>
+        </div>
+      </div>
+    </section>
+
+    <aside class="build-guide" aria-label="New patient section implementation instructions">
+      <div class="container">
+        <div class="build-guide-header"><div><div class="guide-label">Section instructions</div><h2>New-patient and visit planning</h2></div><span class="guide-label">Recommended</span></div>
+        <div class="guide-grid">
+          <article class="guide-card"><h3>What it must do</h3><p>Answer practical questions that affect whether and how a patient contacts and prepares for the practice: appointment requests, urgent concerns, forms, records, arrival, and accessibility.</p></article>
+          <article class="guide-card"><h3>Information needed</h3><ul><li>Verified appointment-request and confirmation process.</li><li>Urgent or emergency telephone instructions.</li><li>New-patient forms and resource URLs.</li><li>Records, arrival, accessibility, and preparation details supplied by the practice.</li></ul></article>
+          <article class="guide-card"><h3>How to construct it</h3><ul><li>Answer only questions that are both verified and useful before arrival.</li><li>Link natural phrases to the relevant patient resource.</li><li>Separate urgent instructions from routine appointment information.</li><li>State uncertainty or request confirmation rather than generalizing.</li></ul></article>
+          <article class="guide-card"><h3>Do / do not</h3><ul><li>Do describe how a request becomes a confirmed appointment.</li><li>Do give urgent concerns a clear telephone route.</li><li>Do not invent routine imaging, treatment, arrival, or preparation steps.</li><li>Do not claim emergency availability or accessibility features without evidence.</li></ul></article>
+        </div>
+        <pre class="prompt-box"><code>NEW-PATIENT PROMPT
+Using verified appointment, emergency, forms, records, arrival, accessibility, and preparation information, create a concise pre-visit section for [practice]. Explain how appointment requests are confirmed, what urgent patients should do, what patients may need before arrival, and where useful resources live. Add contextual links inside helpful sentences. Do not infer routine procedures, availability, accessibility, or preparation requirements.</code></pre>
+      </div>
+    </aside>
+
+    <section class="section section-soft" id="visit">
+      <div class="container location-layout">
+        <div class="map-slot media-placeholder reveal" data-placeholder-label="Embedded map or original office image"></div>
+        <div class="location-copy reveal">
+          <div class="eyebrow">Location and hours</div>
+          <h2>Visit [Practice Name] in [Primary city]</h2>
+          <p>Find the office at [street address], with [verified parking, accessibility, or entry detail]. Use the map or choose a nearby starting point for directions.</p>
+          <div class="nap-grid">
+            <div><strong>Address</strong><span>[Street address]<br>[City, State ZIP]</span></div>
+            <div><strong>Hours</strong><span>[Verified opening hours]</span></div>
+            <div><strong>Phone</strong><span>(000) 000-0000</span></div>
+            <div><strong>Access</strong><span>[Verified parking or accessibility fact]</span></div>
+          </div>
+          <div class="route-list">
+            <a href="#">Directions from [secondary location 1]<i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            <a href="#">Directions from [secondary location 2]<i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            <a href="#">Directions from [secondary location 3]<i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="build-guide" aria-label="Location implementation instructions">
+      <div class="container">
+        <div class="build-guide-header"><div><div class="guide-label">Section instructions</div><h2>Location, access and directions</h2></div><span class="guide-label">Required for a local practice</span></div>
+        <div class="guide-grid">
+          <article class="guide-card"><h3>What it must do</h3><p>Provide practical information for visiting the real office and connect the practice to its legitimate primary location without producing thin location-keyword prose.</p></article>
+          <article class="guide-card"><h3>Information needed</h3><ul><li>Verified address, phone, hours and map destination.</li><li>Parking, accessibility or building-entry facts.</li><li>Top three relevant secondary locations, selected and approved for this practice.</li><li>Original office image and valid route URLs.</li></ul></article>
+          <article class="guide-card"><h3>How to construct it</h3><ul><li>Display a consistent practice name, address and phone, along with hours and a usable map.</li><li>Describe only practical access information.</li><li>Create map direction links from the selected origins to the verified address.</li><li>Label nearby places as route origins, never additional practice locations.</li></ul></article>
+          <article class="guide-card"><h3>Do / do not</h3><ul><li>Do choose secondary locations from approved service-area research, search-demand data, patient-origin data or confirmed practice knowledge.</li><li>Do document how each location was selected and flag conflicting information.</li><li>Do not guess nearby cities or imply false locations.</li><li>Do not write a paragraph for each route merely to repeat place names.</li></ul></article>
+        </div>
+        <pre class="prompt-box"><code>LOCATION PROMPT
+Using the verified practice name, address, phone, opening hours, access details, map destination, original office media, and the top three approved secondary locations, create a practical visit section for [practice]. Build valid map direction URLs from each selected origin to the verified address. Treat nearby communities only as route origins. Record how the locations were selected, flag conflicts or missing origins, and never invent locations or add keyword-heavy local paragraphs.</code></pre>
+      </div>
+    </aside>
+
+    <section class="section" id="homepage-questions" aria-label="Optional focused questions">
+      <div class="container faq-wrap reveal">
+        <div class="eyebrow">Before your appointment</div>
+        <h2>Questions to answer before an appointment</h2>
+        <p class="section-intro">Here are a few practical questions patients often ask before contacting the office.</p>
+        <details><summary>[Verified question not answered above]</summary><p>[Direct answer with an optional useful internal link.]</p></details>
+        <details><summary>[Second unresolved question]</summary><p>[Second concise answer.]</p></details>
+      </div>
+    </section>
+
+    <aside class="build-guide" aria-label="FAQ implementation instructions">
+      <div class="container">
+        <div class="build-guide-header"><div><div class="guide-label">Section instructions</div><h2>Focused homepage questions</h2></div><span class="guide-label">Optional residual FAQ</span></div>
+        <div class="guide-grid">
+          <article class="guide-card"><h3>When to use it</h3><p>Use an FAQ only for verified, important pre-appointment questions that remain unanswered elsewhere. The section is not required and should disappear when it adds no new information.</p></article>
+          <article class="guide-card"><h3>Information needed</h3><ul><li>Real recurring patient questions.</li><li>Verified direct answers.</li><li>Any useful supporting patient or service destination.</li><li>Confirmation that the answer is not already clear above.</li></ul></article>
+          <article class="guide-card"><h3>How to construct it</h3><ul><li>Use natural patient wording.</li><li>Answer directly in the first sentence.</li><li>Keep each answer concise and link only when more detail helps.</li><li>Move treatment-specific education to the relevant service page.</li></ul></article>
+          <article class="guide-card"><h3>Do / do not</h3><ul><li>Do delete duplicated questions.</li><li>Do keep unrelated concerns separate.</li><li>Do not use FAQs to repeat target keywords or service lists.</li><li>Do not invent questions solely to make the page longer.</li></ul></article>
+        </div>
+        <pre class="prompt-box"><code>FAQ PROMPT
+Review the completed homepage and list only verified pre-appointment questions that remain materially unanswered. Write each question in natural patient language and answer it directly and concisely, with a contextual link only when additional detail helps. Remove questions already answered in the body, treatment-specific educational queries, keyword variations, and any FAQ that adds no new information.</code></pre>
+      </div>
+    </aside>
+
+    <section class="section" id="recent-insights" aria-labelledby="recent-insights-title">
+      <div class="container">
+        <div class="posts-heading reveal">
+          <div><div class="eyebrow">Recent dental guidance</div><h2 id="recent-insights-title">Answers for questions that come up between visits</h2></div>
+          <p class="section-intro">The practice’s latest articles can help patients understand symptoms, treatment choices, and when to contact the office.</p>
+        </div>
+        <div class="posts-grid">
+          <article class="post-card reveal">
+            <div class="post-image media-placeholder" data-placeholder-label="Article featured-image placeholder"></div>
+            <div class="post-body"><div class="post-meta"><span>Urgent care</span><time datetime="[YYYY-MM-DD]">[Publication date]</time></div><h3><a href="#">What can cause a tooth to hurt suddenly?</a></h3><p>Learn which symptoms may need prompt attention and what information to share when you call.</p></div>
+          </article>
+          <article class="post-card reveal">
+            <div class="post-image media-placeholder" data-placeholder-label="Article featured-image placeholder"></div>
+            <div class="post-body"><div class="post-meta"><span>Tooth replacement</span><time datetime="[YYYY-MM-DD]">[Publication date]</time></div><h3><a href="#">Dental implant or bridge: what affects the choice?</a></h3><p>Compare the factors a dentist considers when discussing an implant, bridge, or another tooth-replacement option.</p></div>
+          </article>
+          <article class="post-card reveal">
+            <div class="post-image media-placeholder" data-placeholder-label="Article featured-image placeholder"></div>
+            <div class="post-body"><div class="post-meta"><span>Preventive care</span><time datetime="[YYYY-MM-DD]">[Publication date]</time></div><h3><a href="#">How often should your family schedule dental exams?</a></h3><p>See how age, oral health, risk factors, and previous treatment may affect the timing recommended for dental exams.</p></div>
+          </article>
+        </div>
+        <div class="posts-action reveal"><a class="button button-outline" href="#">Browse dental resources</a></div>
+      </div>
+    </section>
+
+    <aside class="build-guide" aria-label="Recent posts implementation instructions">
+      <div class="container">
+        <div class="build-guide-header"><div><div class="guide-label">Section instructions</div><h2>Recent articles and patient guidance</h2></div><span class="guide-label">Recommended when an active blog exists</span></div>
+        <div class="guide-grid">
+          <article class="guide-card"><h3>What it must do</h3><p>Surface genuinely useful recent articles, strengthen internal pathways to informational content, broaden visible subject coverage, and keep a maintained homepage connected to current publishing.</p></article>
+          <article class="guide-card"><h3>Information needed</h3><ul><li>Three recent, relevant, indexable posts with live URLs.</li><li>Accurate titles, publication dates, categories and concise excerpts.</li><li>Approved featured images with meaningful alt text.</li><li>A live blog or patient-resources hub URL.</li></ul></article>
+          <article class="guide-card"><h3>How to construct it</h3><ul><li>Use a dynamic CMS query for the latest three relevant posts.</li><li>Show one featured image, date, useful title, short excerpt and one article link per post.</li><li>Exclude test, thin, unrelated, duplicate or noindex posts.</li><li>Place the module near the bottom, after residual FAQs and before the final action.</li></ul></article>
+          <article class="guide-card"><h3>Do / do not</h3><ul><li>Do prioritize articles that support core services and real patient questions.</li><li>Do keep dates and excerpts accurate to the source post.</li><li>Do not publish filler, rotate dates, or edit timestamps merely to appear fresh.</li><li>Do not imply that automatic recency alone creates rankings or authority.</li></ul></article>
+        </div>
+        <pre class="prompt-box"><code>RECENT ARTICLES PROMPT
+Using the live, indexable blog inventory for [practice], select the three most recent posts that are genuinely relevant to the practice’s core services and common patient questions. For each, use the approved featured image, accurate publication date, real title, a concise source-faithful excerpt, and one internal link to the article. Add one link to the main blog or patient-resource hub. Exclude test, thin, unrelated, duplicate, outdated, and noindex content. Implement this as a dynamic CMS query so newly published relevant posts can replace older entries without manually changing the homepage. Do not change dates or publish filler merely to create artificial freshness.</code></pre>
+      </div>
+    </aside>
+
+    <section class="section final-action" id="appointment">
+      <div class="container final-inner">
+        <div><div class="eyebrow" style="color:#bce7e4">Ready to contact the practice?</div><h2>Request an appointment with [Practice Name]</h2><p>Request an appointment online or call the office with questions about your visit.</p></div>
+        <div class="final-actions"><a class="button button-light" href="#"><i data-lucide="calendar-days" aria-hidden="true"></i>Request an appointment</a><a class="button button-light-outline" href="tel:+10000000000"><i data-lucide="phone" aria-hidden="true"></i>Call the office</a></div>
+      </div>
+    </section>
+
+    <aside class="build-guide" aria-label="Final action implementation instructions">
+      <div class="container">
+        <div class="build-guide-header"><div><div class="guide-label">Section instructions</div><h2>Final appointment action</h2></div><span class="guide-label">Required</span></div>
+        <div class="guide-grid">
+          <article class="guide-card"><h3>What it must do</h3><p>Repeat the appropriate next step for a reader who has reached the end of the page. It should close the journey without introducing a new service, claim or decision.</p></article>
+          <article class="guide-card"><h3>Information needed</h3><ul><li>Verified practice name.</li><li>Primary appointment method and destination.</li><li>Correct phone number and call handling route.</li><li>Any essential qualification already established above.</li></ul></article>
+          <article class="guide-card"><h3>How to construct it</h3><ul><li>Use one short, natural heading.</li><li>Repeat one primary appointment action and one alternate contact method.</li><li>Keep supporting text to one concise sentence.</li><li>Ensure button labels accurately describe what happens next.</li></ul></article>
+          <article class="guide-card"><h3>Do / do not</h3><ul><li>Do use the same conversion logic as the hero.</li><li>Do verify tel and booking URLs.</li><li>Do not introduce urgency, guarantees or promotional claims.</li><li>Do not add several competing CTAs.</li></ul></article>
+        </div>
+        <pre class="prompt-box"><code>FINAL ACTION PROMPT
+Create the closing action for [practice] using the same verified appointment route and telephone alternative established in the hero. Write one natural heading, one concise supporting sentence, and clear action labels that accurately describe the next step. Add no new claim, service, urgency, incentive, or competing conversion path.</code></pre>
+      </div>
+    </aside>
+  </main>
+
+  <footer id="site-footer-preview">
+    <div class="container footer-inner"><span>[Practice Name] | [Street address], [City, State ZIP] | (000) 000-0000</span><span><a href="#">Privacy policy</a></span></div>
+  </footer>
+
+  <aside class="build-guide" aria-label="Footer and final review instructions">
+    <div class="container">
+      <div class="build-guide-header"><div><div class="guide-label">Section instructions</div><h2>Footer and final review</h2></div><span class="guide-label">Sitewide and pre-handoff</span></div>
+      <div class="guide-grid">
+        <article class="guide-card"><h3>Footer requirements</h3><ul><li>Use a consistent verified practice name, address and phone, plus essential legal links.</li><li>Include useful sitewide destinations without recreating the entire sitemap.</li><li>Check privacy, accessibility and required practice-policy destinations.</li><li>Keep identity and phone consistent with the header, structured data and official public business listings.</li></ul></article>
+        <article class="guide-card"><h3>Visual review</h3><ul><li>Inspect desktop and mobile hero readability, hierarchy and cropping.</li><li>Fix clipping, overflow, overlap, missing media and awkward section transitions.</li><li>Confirm doctor images are identified first-party assets.</li><li>Confirm internal links are contextual and headings contain no links.</li></ul></article>
+        <article class="guide-card"><h3>Independent content review</h3><ul><li>Extract visible text and review it without CSS.</li><li>Classify every section Keep, Tighten, Rewrite, Merge, Move, Remove or Missing.</li><li>Quote robotic, generic, duplicated or unsupported phrases.</li><li>Require exact replacements and resolve all actionable findings.</li></ul></article>
+        <article class="guide-card"><h3>Acceptance gate</h3><ul><li>No internal workflow language appears publicly.</li><li>No unsupported claim, filler or duplicated FAQ remains.</li><li>Practice distinctions and useful entity relationships are clear.</li><li>Verify title, meta description, canonical URL, NAP, practice and dentist schema, and authoritative profile relationships against the entity brief.</li><li>Return sources, confirmations, link map, route origins, schema relationships and media provenance with the mockup.</li></ul></article>
+      </div>
+      <pre class="prompt-box"><code>FINAL INDEPENDENT REVIEW PROMPT
+Review only the extracted visible homepage text, final section order, verified entity brief, homepage template guidance, and link map. You did not write the draft. For every section assign Keep, Tighten, Rewrite, Merge, Move, Remove, or Missing. Quote robotic, generic, repetitive, keyword-led, unsupported, or internally worded phrases exactly and provide exact replacements. Check meaningful relationships among practice, location, dentists, services, evidence, visit process, and action. Do not invent facts or rewrite for novelty.
+
+PASS ONLY WHEN
+The copy sounds natural without the design; no section could be transferred unchanged to an unrelated practice; trust elements meet length limits; FAQs add new information; contextual links help their sentences; claims match sources; and unresolved facts remain visibly marked for confirmation.</code></pre>
+      <div class="guide-note">Handoff must include: mockup URL and HTML path, Insert/Move/Merge/Remove/Rewrite summary, stakeholder confirmations, contextual links, recent-post query requirements, authoritative sources, direction origins and selection sources, doctor media provenance or named asset requests, and concise web-team implementation notes.</div>
+    </div>
+  </aside>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide) window.lucide.createIcons();
+
+      const button = document.querySelector('.menu-button');
+      const nav = document.querySelector('#site-nav');
+      button.addEventListener('click', () => {
+        const open = nav.classList.toggle('is-open');
+        button.setAttribute('aria-expanded', String(open));
+      });
+      nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+        nav.classList.remove('is-open');
+        button.setAttribute('aria-expanded', 'false');
+      }));
+
+      const modeButtons = document.querySelectorAll('[data-review-mode]');
+      const setReviewMode = mode => {
+        document.body.classList.toggle('review-preview', mode === 'preview');
+        document.body.classList.toggle('review-guide', mode === 'guide');
+        modeButtons.forEach(modeButton => {
+          const active = modeButton.dataset.reviewMode === mode;
+          modeButton.classList.toggle('is-active', active);
+          modeButton.setAttribute('aria-pressed', String(active));
+        });
+      };
+      modeButtons.forEach(modeButton => modeButton.addEventListener('click', () => {
+        setReviewMode(modeButton.dataset.reviewMode);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }));
+
+      const guideOverview = document.querySelector('.guide-overview');
+      const previewTargets = [
+        'top', 'practice-facts', 'care', 'dentists',
+        'practice-evidence', 'priority-treatment', 'insurance-financing', 'new-patients', 'visit',
+        'homepage-questions', 'recent-insights', 'appointment', 'site-footer-preview'
+      ];
+
+      const makePromptDisclosure = root => {
+        const prompt = root.querySelector('.prompt-box');
+        if (!prompt) return;
+        const disclosure = document.createElement('details');
+        disclosure.className = 'prompt-disclosure';
+        const summary = document.createElement('summary');
+        summary.textContent = 'Show reusable prompt';
+        prompt.parentNode.insertBefore(disclosure, prompt);
+        disclosure.append(summary, prompt);
+      };
+
+      const annotatedView = document.createElement('section');
+      annotatedView.className = 'annotated-view';
+      annotatedView.setAttribute('aria-label', 'Annotated homepage implementation guide');
+      annotatedView.innerHTML = `
+        <div class="annotated-intro">
+          <h1>Dental homepage mock and implementation guide</h1>
+          <p>Each website section is paired with the requirements, source inputs, construction rules, and reusable prompt needed to implement it.</p>
+        </div>
+        <div class="annotated-general"></div>
+        <div class="annotated-page-frame">
+          <div class="annotated-browser-bar" aria-hidden="true">
+            <span class="annotated-browser-dot"></span><span class="annotated-browser-dot"></span><span class="annotated-browser-dot"></span>
+            <div class="annotated-address">https://www.exampledental.com/</div>
+          </div>
+          <div class="annotated-modules"></div>
+        </div>`;
+      document.querySelector('.review-toolbar').insertAdjacentElement('afterend', annotatedView);
+
+      const overviewClone = guideOverview.cloneNode(true);
+      overviewClone.id = 'annotated-guide-section-1';
+      makePromptDisclosure(overviewClone);
+      annotatedView.querySelector('.annotated-general').appendChild(overviewClone);
+
+      const moduleList = annotatedView.querySelector('.annotated-modules');
+      const guides = [...document.querySelectorAll('.build-guide')];
+      previewTargets.forEach((targetId, index) => {
+        const target = document.getElementById(targetId);
+        const guide = guides[index];
+        if (!target || !guide) return;
+
+        const module = document.createElement('section');
+        module.className = 'annotated-module';
+        module.id = `annotated-guide-section-${index + 2}`;
+
+        const canvas = document.createElement('div');
+        canvas.className = 'annotated-canvas';
+        canvas.appendChild(target.cloneNode(true));
+
+        const notes = document.createElement('aside');
+        notes.className = 'annotated-notes';
+        const guideClone = guide.cloneNode(true);
+        makePromptDisclosure(guideClone);
+        notes.appendChild(guideClone);
+
+        module.append(canvas, notes);
+        moduleList.appendChild(module);
+      });
+
+      annotatedView.querySelectorAll('[id]').forEach(element => {
+        if (!element.id.startsWith('annotated-')) element.id = `annotated-${element.id}`;
+      });
+      annotatedView.querySelectorAll('a[href^="#"]').forEach(link => {
+        const destination = link.getAttribute('href').slice(1);
+        if (destination) link.setAttribute('href', `#annotated-${destination}`);
+      });
+
+      if (window.lucide) window.lucide.createIcons();
+
+      if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: .12 });
+        document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+      } else {
+        document.querySelectorAll('.reveal').forEach(element => element.classList.add('is-visible'));
+      }
+    });
+  </script>
+</body>
+</html>
