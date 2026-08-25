@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Treatment] in [City] | Service Page Review</title>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <style>
+    :root {
+      --navy: #072b4f;
+      --blue: #145da0;
+      --yellow: #f2cf33;
+      --green: #28785c;
+      --ink: #17324a;
+      --muted: #5d6d7b;
+      --line: #d8e1e8;
+      --soft: #f5f8fa;
+      --white: #fff;
+      --max: 1160px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--white); font: 16px/1.65 Arial, sans-serif; }
+    a { color: var(--blue); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    img { max-width: 100%; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .container { width: min(calc(100% - 40px), var(--max)); margin-inline: auto; }
+    .modebar { position: sticky; top: 0; z-index: 20; background: #061f39; color: white; border-bottom: 1px solid #244560; }
+    .modebar-inner { min-height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .modebar strong { font-size: 14px; }
+    .mode-switch { display: inline-flex; border: 1px solid #557188; border-radius: 6px; overflow: hidden; }
+    .mode-switch button { border: 0; padding: 9px 14px; background: transparent; color: white; font-weight: 700; cursor: pointer; }
+    .mode-switch button[aria-pressed="true"] { background: white; color: var(--navy); }
+    header { border-bottom: 1px solid var(--line); background: white; }
+    .nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { color: var(--navy); font-weight: 800; font-size: 20px; text-decoration: none; }
+    .nav-links { display: flex; align-items: center; gap: 22px; }
+    .nav-links a { color: var(--ink); text-decoration: none; font-size: 14px; font-weight: 700; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; padding: 11px 18px; border: 1px solid var(--navy); border-radius: 6px; background: var(--navy); color: white; font-weight: 700; text-decoration: none; }
+    .button.outline { background: transparent; color: var(--navy); }
+    .button.light { background: white; color: var(--navy); border-color: white; }
+    .button svg { width: 18px; height: 18px; }
+    .hero { min-height: 620px; display: grid; align-items: end; color: white; background-color: #25465f; background-image: linear-gradient(rgba(4,31,55,.26), rgba(4,31,55,.88)), repeating-linear-gradient(0deg, transparent 0 31px, rgba(255,255,255,.12) 32px), repeating-linear-gradient(90deg, transparent 0 31px, rgba(255,255,255,.12) 32px); }
+    .hero-inner { padding: 100px 0 72px; max-width: 760px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 16px; color: var(--yellow); text-transform: uppercase; font-size: 13px; font-weight: 800; letter-spacing: 1px; }
+    .eyebrow::before { content: ""; width: 28px; height: 3px; background: currentColor; }
+    h1, h2, h3 { color: var(--navy); line-height: 1.15; margin-top: 0; }
+    h1 { color: white; max-width: 720px; font-size: clamp(40px, 6vw, 72px); margin-bottom: 20px; }
+    h2 { font-size: clamp(30px, 4vw, 46px); margin-bottom: 18px; }
+    h3 { font-size: 21px; }
+    .hero p { max-width: 680px; font-size: 20px; }
+    .hero-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; max-width: 760px; margin: 28px 0 0; padding: 0; list-style: none; background: rgba(255,255,255,.32); }
+    .hero-facts li { min-height: 62px; padding: 12px 16px; background: rgba(4,31,55,.72); color: white; font-size: 14px; font-weight: 700; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    section { padding: 80px 0; }
+    .soft { background: var(--soft); }
+    .dark { background: var(--navy); color: white; }
+    .dark h2, .dark h3 { color: white; }
+    .lead { max-width: 760px; color: var(--muted); font-size: 18px; }
+    .two-col { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr); gap: 64px; align-items: start; }
+    .checklist { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 14px; }
+    .checklist li { position: relative; padding-left: 34px; }
+    .checklist li::before { content: ""; position: absolute; left: 0; top: 5px; width: 18px; height: 18px; border-radius: 50%; background: var(--yellow); box-shadow: inset 0 0 0 5px white; border: 1px solid #c7a800; }
+    .media-placeholder { min-height: 410px; display: grid; place-items: center; position: relative; overflow: hidden; background-color: #edf2f5; background-image: repeating-linear-gradient(0deg, transparent 0 31px, #d4dde3 32px), repeating-linear-gradient(90deg, transparent 0 31px, #d4dde3 32px); border: 1px solid var(--line); border-radius: 8px; color: var(--muted); text-align: center; }
+    .media-placeholder::before, .media-placeholder::after { content: ""; position: absolute; width: 75%; height: 1px; background: #9bacb8; }
+    .media-placeholder::before { transform: rotate(32deg); }
+    .media-placeholder::after { transform: rotate(-32deg); }
+    .media-placeholder span { position: relative; z-index: 1; max-width: 250px; padding: 10px; background: rgba(245,248,250,.92); font-weight: 700; }
+    .steps { margin-top: 38px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .step { border-top: 4px solid var(--yellow); padding: 24px 20px; background: white; box-shadow: 0 8px 24px rgba(7,43,79,.08); }
+    .step b { display: block; color: var(--blue); margin-bottom: 8px; }
+    .info-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 34px; }
+    .info-panel { padding: 26px; border-top: 4px solid var(--yellow); background: white; box-shadow: 0 8px 24px rgba(7,43,79,.07); }
+    .clinical-note { padding: 28px; border-left: 4px solid var(--yellow); background: var(--soft); }
+    .comparison { margin-top: 36px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .option { border: 1px solid var(--line); border-radius: 8px; padding: 26px; background: white; }
+    .proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 34px; }
+    .proof { padding: 28px; border: 1px solid rgba(255,255,255,.23); border-radius: 8px; background: rgba(255,255,255,.06); }
+    .proof .icon { width: 42px; height: 42px; display: grid; place-items: center; margin-bottom: 18px; border: 1px solid var(--yellow); border-radius: 6px; color: var(--yellow); }
+    .proof svg { width: 21px; }
+    .provider-profile { align-items: center; }
+    .provider-profile .media-placeholder { min-height: 360px; }
+    .evidence-list { padding-left: 20px; }
+    .evidence-list li { margin-bottom: 10px; }
+    .quote { margin: 24px 0 0; padding: 24px; border-left: 4px solid var(--yellow); background: white; color: var(--ink); }
+    .quote p { margin-top: 0; font-size: 18px; }
+    .quote cite { color: var(--muted); font-style: normal; font-size: 14px; }
+    .location-facts { display: grid; gap: 18px; }
+    .location-facts div { padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+    .location-facts strong { display: block; color: var(--navy); margin-bottom: 4px; }
+    .faq { max-width: 900px; margin-top: 28px; }
+    details { border-top: 1px solid var(--line); padding: 20px 0; }
+    details:last-child { border-bottom: 1px solid var(--line); }
+    summary { cursor: pointer; color: var(--navy); font-weight: 800; }
+    .final { text-align: center; }
+    footer { padding: 26px 0; background: #061f39; color: #dbe6ef; font-size: 14px; }
+    .guide-view { display: none; background: #eef2f5; min-height: 100vh; padding: 58px 0 90px; }
+    body.guide-mode .preview-view { display: none; }
+    body.guide-mode .guide-view { display: block; }
+    .guide-layout { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 46px; align-items: start; }
+    .toc { position: sticky; top: 84px; border-left: 3px solid var(--yellow); padding-left: 18px; }
+    .toc a { display: block; padding: 5px 0; color: var(--ink); text-decoration: none; font-size: 14px; }
+    .guide-section { padding: 0 0 44px; margin-bottom: 44px; border-bottom: 1px solid #cbd6de; }
+    .guide-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .guide-card { padding: 22px; background: white; border: 1px solid #d3dde4; border-radius: 6px; }
+    .guide-card h3 { font-size: 17px; }
+    .guide-card ul { padding-left: 20px; margin-bottom: 0; }
+    code { white-space: pre-wrap; }
+    @media (max-width: 850px) {
+      .nav-links a:not(.button) { display: none; }
+      .hero { min-height: 560px; }
+      .two-col, .guide-layout { grid-template-columns: 1fr; gap: 34px; }
+      .steps, .comparison, .proof-grid, .info-grid, .guide-grid { grid-template-columns: 1fr 1fr; }
+      .hero-facts { grid-template-columns: 1fr; gap: 1px; }
+      .toc { position: static; }
+    }
+    @media (max-width: 560px) {
+      .container { width: min(calc(100% - 28px), var(--max)); }
+      .modebar-inner { padding: 8px 0; align-items: flex-start; flex-direction: column; }
+      .mode-switch { width: 100%; }
+      .mode-switch button { flex: 1; }
+      .nav { min-height: 64px; }
+      .nav-links .outline { display: none; }
+      .hero { min-height: 580px; }
+      .hero-inner { padding: 76px 0 48px; }
+      .hero p { font-size: 18px; }
+      section { padding: 58px 0; }
+      .steps, .comparison, .proof-grid, .info-grid, .guide-grid { grid-template-columns: 1fr; }
+      .media-placeholder { min-height: 300px; }
+      .actions .button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="modebar">
+    <div class="container modebar-inner">
+      <strong>Dental service-page working template</strong>
+      <div class="mode-switch" aria-label="Review mode">
+        <button type="button" data-mode="preview" aria-pressed="true">Website preview</button>
+        <button type="button" data-mode="guide" aria-pressed="false">Implementation guide</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="preview-view">
+    <header>
+      <div class="container nav">
+        <a class="brand" href="#top">[Practice Name]</a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#help">Who it helps</a><a href="#process">What to expect</a><a href="#cost">Cost</a>
+          <a class="button outline" href="tel:+10000000000"><i data-lucide="phone"></i>Call</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-inner">
+          <p class="eyebrow">[Treatment] in [City]</p>
+          <h1>[Treatment] for [patient concern or goal]</h1>
+          <p>[Explain the concern, what the practice can evaluate, and why a consultation is the next useful step.]</p>
+          <div class="actions">
+            <a class="button light" href="#appointment"><i data-lucide="calendar-days"></i>Request a consultation</a>
+            <a class="button" href="tel:+10000000000"><i data-lucide="phone"></i>Call the office</a>
+          </div>
+          <ul class="hero-facts" aria-label="Verified treatment facts">
+            <li>[Verified provider experience relevant to this treatment]</li>
+            <li>[Verified treatment-specific technology or planning fact]</li>
+            <li>[Verified practical access or payment fact]</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="help">
+        <div class="container two-col">
+          <div>
+            <p class="eyebrow">Start with what you are noticing</p>
+            <h2>Could this treatment help?</h2>
+            <p class="lead">[Connect recognizable symptoms, functional concerns, or appearance goals to an examination without diagnosing the visitor.]</p>
+            <ul class="checklist">
+              <li>[Patient situation or goal]</li><li>[Patient situation or goal]</li><li>[Patient situation or goal]</li><li>[Reason another option may be discussed]</li>
+            </ul>
+          </div>
+          <div class="media-placeholder"><span>[Approved treatment or provider image required]</span></div>
+        </div>
+      </section>
+
+      <section class="soft">
+        <div class="container two-col">
+          <div><p class="eyebrow">A clear explanation</p><h2>What [treatment] does</h2><p>[Explain what the treatment is, how it works, and what it may address in beginner-friendly language.]</p><p>[State meaningful limits and what the treatment cannot solve by itself.]</p></div>
+          <div><h3>What we consider first</h3><p>[Explain the examination, records, health considerations, provider judgment, and alternatives that shape the recommendation.]</p><a href="#alternatives">See options we may compare</a></div>
+        </div>
+      </section>
+
+      <section id="process">
+        <div class="container">
+          <p class="eyebrow">Your visit</p><h2>What to expect</h2><p class="lead">[Describe the practice-specific flow. Use visit counts and timing only when verified.]</p>
+          <div class="steps">
+            <article class="step"><b>01</b><h3>Consultation</h3><p>[Exam, concerns, records, and goals.]</p></article>
+            <article class="step"><b>02</b><h3>Planning</h3><p>[Options, estimate, timing, and preparation.]</p></article>
+            <article class="step"><b>03</b><h3>Treatment</h3><p>[Supported treatment steps and comfort considerations.]</p></article>
+            <article class="step"><b>04</b><h3>Follow-up</h3><p>[Recovery, aftercare, maintenance, and review.]</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="outcomes" class="soft">
+        <div class="container">
+          <p class="eyebrow">After treatment</p>
+          <h2>Results, limits, recovery, and ongoing care</h2>
+          <p class="lead">[Set realistic expectations and explain what may affect healing, adaptation, maintenance, and the durability of the result.]</p>
+          <div class="info-grid">
+            <article class="info-panel"><h3>What treatment may accomplish</h3><p>[Describe supported functional or appearance goals without guaranteeing an outcome.]</p></article>
+            <article class="info-panel"><h3>What can affect the result</h3><p>[Explain meaningful limits, health factors, habits, anatomy, healing, and reasons further care may be needed.]</p></article>
+            <article class="info-panel"><h3>Looking after your treatment</h3><p>[Give verified recovery, hygiene, maintenance, follow-up, replacement, or retention guidance.]</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="considerations">
+        <div class="container two-col">
+          <div>
+            <p class="eyebrow">Before you decide</p>
+            <h2>Important considerations</h2>
+            <p>[Explain treatment-relevant risks, preparation, contraindication considerations, recovery warnings, and reasons the plan may change. Keep this clinically reviewed and proportional to the treatment.]</p>
+          </div>
+          <div class="clinical-note">
+            <h3>When to contact the office sooner</h3>
+            <p>[When relevant, give concise guidance for symptoms or changes that warrant a prompt call. Route emergencies clearly without diagnosing the visitor.]</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cost" class="soft">
+        <div class="container two-col">
+          <div><p class="eyebrow">Planning the practical details</p><h2>What may affect the cost</h2><p>[Explain treatment-specific variables such as complexity, materials, diagnostics, preparatory care, and appointments.]</p></div>
+          <div><h3>Insurance and payment</h3><p>[Use only verified insurance and financing wording. Never guarantee coverage.]</p><p><a href="#">Review insurance information</a> or <a href="#">ask about financing options</a> before treatment begins.</p></div>
+        </div>
+      </section>
+
+      <section id="alternatives">
+        <div class="container">
+          <p class="eyebrow">Options to compare</p><h2>Other care we may discuss</h2><p class="lead">[Explain why another treatment may better suit a different diagnosis, goal, timeline, or maintenance preference.]</p>
+          <div class="comparison">
+            <article class="option"><h3><a href="#">[Close alternative]</a></h3><p>[When this option may be discussed.]</p></article>
+            <article class="option"><h3><a href="#">[Related treatment]</a></h3><p>[When this option may be discussed.]</p></article>
+            <article class="option"><h3><a href="#">[Parent service hub]</a></h3><p>[A broader place to compare relevant services.]</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="dark">
+        <div class="container two-col provider-profile">
+          <div class="media-placeholder"><span>[Approved image of the treating provider in a relevant practice setting]</span></div>
+          <div>
+            <p class="eyebrow">Your provider</p>
+            <h2>[Treatment] with Dr. [Full Name]</h2>
+            <p>[Explain this provider's verified responsibility for evaluation, planning, treatment, and follow-up.]</p>
+            <ul class="evidence-list">
+              <li>[Relevant verified training, experience, or responsibility]</li>
+              <li>[Relevant technology, materials, or planning process]</li>
+              <li>[How the practice coordinates follow-up or related care]</li>
+            </ul>
+            <a class="button light" href="[Provider profile URL]">Review Dr. [Last Name]'s credentials</a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="proof-grid">
+            <article class="proof"><div class="icon"><i data-lucide="badge-check"></i></div><h3>[Relevant provider experience]</h3><p>[Verified fact and careful patient relevance.]</p></article>
+            <article class="proof"><div class="icon"><i data-lucide="scan-line"></i></div><h3>[Relevant technology]</h3><p>[How it supports evaluation or treatment.]</p></article>
+            <article class="proof"><div class="icon"><i data-lucide="clipboard-check"></i></div><h3>[Practice-specific process]</h3><p>[Verified planning, coordination, scheduling, or follow-up detail.]</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="soft" id="patient-evidence">
+        <div class="container two-col">
+          <div class="media-placeholder"><span>[Approved treatment case or relevant first-party image]</span></div>
+          <div>
+            <p class="eyebrow">Relevant patient experience</p>
+            <h2>[Case or review heading grounded in the available evidence]</h2>
+            <p>[When a permitted case exists, explain the starting concern, options considered, broad plan, and outcome without promising the same result.]</p>
+            <blockquote class="quote">
+              <p>“[Attributable treatment-relevant excerpt selected from Client Records or another approved source.]”</p>
+              <cite>[Reviewer attribution] · [Verified source]</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="location">
+        <div class="container two-col">
+          <div class="media-placeholder"><span>[Embedded map, office exterior, or verified route image]</span></div>
+          <div>
+            <p class="eyebrow">Where care is provided</p>
+            <h2>[Treatment] appointments at [Practice Name]</h2>
+            <p>[Confirm that this treatment is available at the named office and explain the appropriate appointment route.]</p>
+            <div class="location-facts">
+              <div><strong>Office</strong><span>[Verified full address]</span></div>
+              <div><strong>Appointments</strong><span>[Verified consultation or scheduling detail]</span></div>
+              <div><strong>Access</strong><span>[Useful verified parking, accessibility, landmark, or direction fact]</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="soft">
+        <div class="container">
+          <p class="eyebrow">Before you schedule</p><h2>Questions patients often ask</h2>
+          <div class="faq">
+            <details><summary>How will I know whether this is right for me?</summary><p>[Direct answer that does not repeat the entire candidacy section.]</p></details>
+            <details><summary>How long might treatment take?</summary><p>[Verified range or explanation of the factors affecting timing.]</p></details>
+            <details><summary>What should I expect afterward?</summary><p>[Concise recovery or aftercare answer.]</p></details>
+            <details><summary>Does insurance commonly apply?</summary><p>[Careful practice-approved answer with a useful financial link.]</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section id="appointment" class="dark final">
+        <div class="container"><h2>Talk with us about [treatment]</h2><p>[Invite the patient to request an evaluation without adding a new claim.]</p><div class="actions" style="justify-content:center"><a class="button light" href="#"><i data-lucide="calendar-days"></i>Request a consultation</a><a class="button" href="tel:+10000000000"><i data-lucide="phone"></i>Call the office</a></div></div>
+      </section>
+    </main>
+    <footer><div class="container">[Practice Name] | [Verified address] | [Verified phone]</div></footer>
+  </div>
+
+  <div class="guide-view">
+    <div class="container guide-layout">
+      <nav class="toc" aria-label="Implementation guide"><strong>On this page</strong><a href="#g-overall">Overall workflow</a><a href="#g-hero">Hero</a><a href="#g-fit">Who it helps</a><a href="#g-explain">Explanation</a><a href="#g-process">Process</a><a href="#g-outcomes">Results and ongoing care</a><a href="#g-considerations">Clinical considerations</a><a href="#g-cost">Cost</a><a href="#g-options">Alternatives</a><a href="#g-proof">Provider evidence</a><a href="#g-patient-evidence">Case or review</a><a href="#g-location">Location and access</a><a href="#g-faq">FAQs and action</a></nav>
+      <main>
+        <section class="guide-section" id="g-overall"><h1 style="color:var(--navy)">Service-page implementation guide</h1><p class="lead">Research and verify the service before writing. Preserve valuable existing content, reference canonical entities and claims, and keep unresolved facts visibly labeled.</p><div class="guide-grid"><article class="guide-card"><h3>Required inputs</h3><ul><li>Canonical service and parent hub</li><li>Verified practice and provider facts</li><li>Existing content worth preserving</li><li>Cost, appointment, media, and link evidence</li></ul></article><article class="guide-card"><h3>Hard limits</h3><ul><li>No unsupported availability or outcomes</li><li>No city variants without local value</li><li>No framework language in public copy</li><li>No generic stock proof</li></ul></article></div></section>
+        <section class="guide-section" id="g-hero"><h2>Hero</h2><div class="guide-grid"><article class="guide-card"><h3>What to do</h3><p>Connect the treatment, patient concern, location when useful, practice relevance, and immediate next step. Add no more than three short support facts when each is verified and treatment-relevant.</p></article><article class="guide-card"><h3>What is needed</h3><p>Verified service availability, primary action, phone, location, first-party media, and source-backed support facts. Omit the support row when relevant evidence is unavailable.</p></article></div></section>
+        <section class="guide-section" id="g-fit"><h2>Who it helps</h2><div class="guide-grid"><article class="guide-card"><h3>How to construct it</h3><p>Use recognizable situations and explain why an examination matters. Mention meaningful limits.</p></article><article class="guide-card"><h3>Do not</h3><p>Diagnose visitors, promise eligibility, or publish a generic symptom checklist.</p></article></div></section>
+        <section class="guide-section" id="g-explain"><h2>Treatment explanation and evaluation</h2><p>Give a beginner-friendly explanation of what the treatment does, how it works, what it cannot solve, and how the dentist evaluates the choice.</p></section>
+        <section class="guide-section" id="g-process"><h2>What to expect</h2><p>Use the verified practice flow. Include timing, visits, preparation, treatment steps, and comfort considerations only where supported.</p></section>
+        <section class="guide-section" id="g-outcomes"><h2>Results, limits, recovery, and ongoing care</h2><p>Represent this information visibly. Explain realistic goals, meaningful limits, recovery or adaptation, result factors, hygiene, maintenance, follow-up, and replacement or retention needs. It may be merged with the process only for a simple procedure, but it may not disappear.</p></section>
+        <section class="guide-section" id="g-considerations"><h2>Clinical considerations and urgent guidance</h2><p>Use clinically reviewed language for treatment-relevant risks, contraindication considerations, recovery warnings, and reasons the plan may change. Add concise urgent guidance only when the service or presenting symptoms make it relevant; do not diagnose or alarm the visitor.</p></section>
+        <section class="guide-section" id="g-cost"><h2>Cost and payment</h2><p>Explain specific variables. Use approved prices only, qualify estimates, and never guarantee insurance coverage or financing.</p></section>
+        <section class="guide-section" id="g-options"><h2>Alternatives and related care</h2><p>Link the parent hub and only the closest alternatives. Explain when each may be discussed instead of building a service menu.</p></section>
+        <section class="guide-section" id="g-proof"><h2>Practice and provider evidence</h2><p>Integrate the treating provider with an approved image, verified responsibility, relevant training or experience, technology or planning details, follow-up process, and a contextual provider-profile link. Do not substitute a generic homepage biography.</p></section>
+        <section class="guide-section" id="g-patient-evidence"><h2>Patient case or review evidence</h2><p>Use this module only when suitable evidence is available. Check Client Records and its GBP review export first, then select an attributable excerpt for treatment relevance and patient decision value. A case requires permission, context, and an outcome disclaimer. Omit the module rather than filling it with generic praise.</p></section>
+        <section class="guide-section" id="g-location"><h2>Service location and access</h2><p>Confirm that the service is available at the named office. Include the verified address, appointment route, and useful parking, accessibility, landmark, or direction details. Keep it practical and do not duplicate a full location page or invent neighborhood prose.</p></section>
+        <section class="guide-section" id="g-faq"><h2>FAQs and final action</h2><p>Answer residual appointment questions without repeating the body. Finish with the appropriate call, booking, or consultation action.</p></section>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide) window.lucide.createIcons();
+      const buttons = document.querySelectorAll('[data-mode]');
+      buttons.forEach((button) => button.addEventListener('click', () => {
+        const guide = button.dataset.mode === 'guide';
+        document.body.classList.toggle('guide-mode', guide);
+        buttons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+        window.scrollTo({ top: 0, behavior: 'auto' });
+      }));
+    });
+  </script>
+</body>
+</html>
