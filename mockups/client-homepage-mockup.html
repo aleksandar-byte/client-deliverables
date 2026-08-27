@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Family &amp; Cosmetic Dentists in Greater Boston | SoftTouch Dentistry</title>
+  <meta name="description" content="SoftTouch Dentistry provides comprehensive family, cosmetic, implant, and specialty dental care from offices in Brighton/Allston, Newtonville, and Brookline.">
+  <script>document.documentElement.classList.add("has-js");</script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <style>
+    :root {
+      --ink: #1F2625;
+      --ink-soft: #4D5553;
+      --brand: #6A49A8;
+      --brand-dark: #423263;
+      --accent: #C56A54;
+      --paper: #FFFFFF;
+      --wash: #F4F2F6;
+      --warm: #F3EEE8;
+      --line: #D9D2E0;
+      --focus: #ffbf47;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: Arial, Helvetica, sans-serif;
+      --max: 1180px;
+      --radius: 4px;
+      --shadow: 0 18px 45px rgb(6 47 67 / 0.12);
+      --new-patient-image: https://www.softtouchdentistry.net/wp-content/uploads/2025/02/Featured-Services_1.2xpng.png;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); line-height: 1.6; }
+    img { display: block; width: 100%; height: auto; object-fit: cover; }
+    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+    a:hover { color: var(--brand-dark); }
+    button, summary { font: inherit; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    h1, h2 { margin: 0; font-family: var(--serif); font-weight: 400; line-height: 1.02; }
+    h1 { max-width: 850px; font-size: clamp(3rem, 7vw, 6.8rem); }
+    h2 { max-width: 760px; font-size: clamp(2.25rem, 4.7vw, 4.7rem); }
+    h3 { margin: 0 0 0.45rem; font-size: 1.15rem; line-height: 1.25; }
+    p { margin: 0 0 1rem; }
+    .container { width: min(calc(100% - 40px), var(--max)); margin-inline: auto; }
+    .section { padding: clamp(4.5rem, 8vw, 8rem) 0; }
+    .eyebrow { margin: 0 0 1rem; color: var(--brand); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; }
+    .lede { max-width: 700px; margin-top: 1.5rem; color: var(--ink-soft); font-size: 1.1rem; }
+    .button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 0.6rem; padding: 0.8rem 1.15rem; border: 1px solid var(--brand-dark); border-radius: var(--radius); background: var(--brand-dark); color: #fff; font-size: 0.88rem; font-weight: 700; text-decoration: none; }
+    .button:hover { background: var(--ink); color: #fff; }
+    .button--accent { border-color: var(--accent); background: var(--accent); color: #172d35; }
+    .text-link { display: inline-flex; gap: 0.55rem; align-items: center; color: var(--brand-dark); font-weight: 700; text-decoration: none; border-bottom: 1px solid var(--line); }
+    .text-link::after { content: "→"; }
+    .reveal { opacity: 1; transform: none; }
+    .has-js .reveal { opacity: 0; transform: translateY(18px); transition: opacity 520ms ease, transform 520ms ease; }
+    .has-js .reveal.is-visible { opacity: 1; transform: none; }
+
+    .site-header { position: relative; z-index: 10; border-bottom: 1px solid var(--line); background: rgb(255 255 255 / 0.96); }
+    .nav { min-height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+    .brand { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+    .brand-mark { width: 42px; aspect-ratio: 1; display: grid; place-items: center; border-radius: 50%; background: var(--brand); color: white; font-family: var(--serif); font-size: 1.55rem; }
+    .brand-name { display: block; font-weight: 700; line-height: 1.05; }
+    .brand-scope { display: block; color: var(--ink-soft); font-size: 0.72rem; }
+    .nav-links { display: flex; align-items: center; gap: 1.5rem; }
+    .nav-links > a:not(.button) { font-size: 0.88rem; font-weight: 700; text-decoration: none; }
+    .menu-toggle { display: none; width: 44px; height: 44px; border: 1px solid var(--brand-dark); background: white; color: var(--ink); font-size: 1.25rem; }
+
+    .hero { background: var(--warm); }
+    .hero-inner { min-height: min(760px, calc(100dvh - 84px)); display: grid; grid-template-columns: 1.08fr 0.92fr; align-items: stretch; }
+    .hero-copy { padding: clamp(4rem, 8vw, 8rem) max(2rem, calc((100vw - var(--max)) / 2)); padding-right: clamp(2rem, 5vw, 5rem); display: flex; flex-direction: column; justify-content: center; }
+    .hero-copy .lede { max-width: 620px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.25rem; }
+    .hero-image { min-height: 620px; }
+    .hero-image img { height: 100%; }
+
+    .value-band { background: var(--ink); color: white; }
+    .value-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .value { padding: 2rem; border-left: 1px solid rgb(255 255 255 / 0.25); }
+    .value:first-child { border-left: 0; }
+    .value p { margin: 0; color: rgb(255 255 255 / 0.78); font-size: 0.92rem; }
+
+    .location { background: var(--wash); }
+    .location-grid, .team-grid, .office-grid, .insurance-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 6vw, 6rem); align-items: center; }
+    .map { min-height: 430px; border: 1px solid var(--line); overflow: hidden; background: #dfeaec; }
+    .map iframe, .map #office-map { display: block; width: 100%; height: 430px; border: 0; }
+    .contact-list { margin-top: 2rem; border-top: 1px solid var(--line); }
+    .contact-row { padding: 1rem 0; display: flex; justify-content: space-between; gap: 1.5rem; border-bottom: 1px solid var(--line); }
+    .hours-status { color: var(--brand-dark); font-weight: 700; }
+    .hours-status.is-closed { color: #9a3b2e; }
+    .location-cards { display: grid; gap: 0; border-top: 1px solid var(--line); }
+    .location-card { position: relative; padding: 1.25rem 0; border-bottom: 1px solid var(--line); transition: background 180ms ease; }
+    .location-card:hover { background: rgb(255 255 255 / 0.55); }
+    .location-card > :not(.location-card-hitarea) { position: relative; z-index: 1; pointer-events: none; }
+    .location-card a:not(.location-card-hitarea) { pointer-events: auto; }
+    .location-card-hitarea { position: absolute; z-index: 0; inset: 0; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    .location-card p { margin: 0.35rem 0; color: var(--ink-soft); }
+    .location-card .location-live-status { color: var(--brand-dark); font-weight: 700; }
+    .location-card .location-live-status.is-closed { color: #9a3b2e; }
+    .location-card .location-links { display: flex; flex-wrap: wrap; gap: 0.8rem 1.2rem; margin-top: 0.7rem; }
+    .location-card .location-links a { color: var(--brand-dark); font-weight: 700; }
+
+    .team-photo, .office-photo { aspect-ratio: 4 / 3; }
+    .team-photo img, .office-photo img { height: 100%; }
+
+    .services { background: #f7faf9; }
+    .section-head { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 3rem; align-items: end; margin-bottom: 3rem; }
+    .service-grid { display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 4rem; }
+    .service { padding: 1.7rem 0; border-top: 1px solid var(--line); }
+    .service p { color: var(--ink-soft); }
+
+    .first-visit { background: var(--paper); }
+    .first-visit-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 3rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .first-visit-step { min-height: 210px; padding: 2rem; border-left: 1px solid var(--line); }
+    .first-visit-step:first-child { border-left: 0; }
+    .step-number { display: block; margin-bottom: 1.4rem; color: var(--brand); font-size: 0.75rem; font-weight: 700; }
+    .first-visit-step p { color: var(--ink-soft); }
+
+    .new-patients { position: relative; color: white; background: var(--ink); overflow: hidden; }
+    .new-patients::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgb(6 47 67 / 0.96), rgb(6 47 67 / 0.42)), var(--new-patient-image) center / cover; }
+    .new-patients .container { position: relative; }
+    .new-patients .lede { color: rgb(255 255 255 / 0.85); }
+    .offer-grid { display: grid; grid-template-columns: 1.08fr 1fr 1fr; margin-top: 3rem; background: white; color: var(--ink); box-shadow: var(--shadow); }
+    .offer { min-height: 220px; padding: 2rem; border-left: 1px solid var(--line); transition: background 180ms ease, transform 180ms ease; }
+    .offer:first-child { border-left: 4px solid var(--accent); background: #fff8f4; }
+    .offer:hover { background: var(--wash); transform: translateY(-4px); }
+    .offer-label { color: var(--brand); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; }
+    .price { margin: 0.6rem 0 0; font-family: var(--serif); font-size: 3rem; line-height: 1; }
+
+    .office { background: var(--paper); }
+    blockquote { margin: 2rem 0; padding: 0 0 0 1.5rem; border-left: 2px solid var(--brand); font-family: var(--serif); font-size: 1.55rem; font-style: italic; line-height: 1.35; }
+    blockquote cite { display: block; margin-top: 0.8rem; font-family: var(--sans); font-size: 0.75rem; font-style: normal; }
+
+    .smiles { background: var(--wash); }
+    .smile-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-top: 3rem; }
+    .smile-case { margin: 0; }
+    .smile-pair { display: grid; grid-template-columns: 1fr 1fr; aspect-ratio: 5 / 3; overflow: hidden; }
+    .smile-pair img { height: 100%; }
+    .smile-case figcaption { padding-top: 1rem; font-weight: 700; }
+
+    .testimonials { background: var(--warm); }
+    .quote-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
+    .quote-grid blockquote { margin: 0; font-size: 1.35rem; }
+
+    .insurance-logos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    .insurance-logos:empty { display: none; }
+    .insurance-logo { min-height: 96px; display: grid; place-items: center; gap: 0.4rem; padding: 0.8rem; border: 1px solid var(--line); color: var(--ink-soft); font-weight: 700; text-align: center; }
+    .insurance-logo img { width: auto; max-width: 120px; height: 36px; object-fit: contain; }
+    .payment-options { display: grid; border-top: 1px solid var(--line); }
+    .payment-option { padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+    .payment-option p { margin-bottom: 0; color: var(--ink-soft); }
+
+    .faq { background: #f7faf9; }
+    .faq-list { max-width: 880px; margin-top: 3rem; }
+    details { border-top: 1px solid var(--line); }
+    details:last-child { border-bottom: 1px solid var(--line); }
+    summary { padding: 1.25rem 2.5rem 1.25rem 0; cursor: pointer; font-weight: 700; }
+    details p { max-width: 760px; color: var(--ink-soft); }
+
+    .final-cta { padding: 5rem 0; background: var(--brand-dark); color: white; }
+    .final-cta .container { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+    .final-cta h2 { font-size: clamp(2.2rem, 4vw, 4rem); }
+    .footer { padding: 3rem 0; background: var(--ink); color: white; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 3rem; }
+    .footer a { color: white; }
+    .footer small { color: rgb(255 255 255 / 0.7); }
+
+    @media (max-width: 900px) {
+      .nav-links { display: none; position: absolute; inset: 84px 0 auto; padding: 1.5rem 20px 2rem; background: white; border-bottom: 1px solid var(--line); flex-direction: column; align-items: stretch; }
+      .nav-links.is-open { display: flex; }
+      .menu-toggle { display: block; }
+      .hero-inner, .location-grid, .team-grid, .office-grid, .insurance-grid, .section-head { grid-template-columns: 1fr; }
+      .hero-copy { padding: 4.5rem 20px; }
+      .hero-image { min-height: 480px; }
+      .value-grid, .offer-grid, .first-visit-grid { grid-template-columns: 1fr; }
+      .value, .offer { border-left: 0; border-top: 1px solid rgb(255 255 255 / 0.25); }
+      .first-visit-step { min-height: 0; border-left: 0; border-top: 1px solid var(--line); }
+      .first-visit-step:first-child { border-top: 0; }
+      .value:first-child { border-top: 0; }
+      .offer { border-color: var(--line); }
+      .service-grid, .quote-grid { grid-template-columns: 1fr; }
+      .smile-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 620px) {
+      h1 { font-size: clamp(2.4rem, 12vw, 3.4rem); overflow-wrap: anywhere; }
+      .container { width: min(calc(100% - 32px), var(--max)); }
+      .hero-copy { padding-inline: 16px; }
+      .hero-image { min-height: 360px; }
+      .hero-actions, .hero-actions .button { width: 100%; }
+      .smile-grid, .insurance-logos, .footer-grid { grid-template-columns: 1fr; }
+      .final-cta .container { align-items: flex-start; flex-direction: column; }
+      .contact-row { flex-direction: column; gap: 0.25rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="SoftTouch Dentistry mockup home">
+        <span class="brand-mark" aria-hidden="true">ST</span>
+        <span><span class="brand-name">SoftTouch Dentistry</span><span class="brand-scope">Family and Cosmetic Dentistry</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">☰</button>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a><a href="#dentists">Dentists</a><a href="#new-patients">New patients</a><a href="#location">Visit</a>
+        <a class="button" href="#location">Choose an office</a>
+        <a class="button button--accent" href="https://www.softtouchdentistry.net/contact/">Request an appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">SoftTouch Dentistry · Three Greater Boston offices</p>
+          <h1>Comprehensive dental care across Greater Boston</h1>
+          <p class="lede">Since 1987, SoftTouch Dentistry has provided gentle, comprehensive care from the first call through treatment. Choose from offices in Brighton/Allston, Newtonville, and Brookline.</p>
+          <div class="hero-actions"><a class="button button--accent" href="#location">Choose an office</a><a class="button" href="https://www.softtouchdentistry.net/contact/">Request an appointment</a></div>
+        </div>
+        <div class="hero-image"><img src="https://www.softtouchdentistry.net/wp-content/uploads/2024/02/NewtonOffice2.jpg" alt="Dr. Nazila Bidabadi with the SoftTouch Dentistry team in the Newtonville office"></div>
+      </div>
+    </section>
+
+    <section class="value-band" aria-label="Practice advantages"><div class="container value-grid">
+        <article class="value"><h3>Three Greater Boston offices</h3><p>Choose Brighton/Allston, Newtonville, or Brookline and contact that office directly.</p></article>
+        <article class="value"><h3>Serving the community since 1987</h3><p>SoftTouch has provided comprehensive dental care in the local market for more than three decades.</p></article>
+        <article class="value"><h3>Comprehensive care under one roof</h3><p>The team includes experienced general, cosmetic, endodontic, and periodontal providers.</p></article>
+      </div></section>
+
+    <section class="section location" id="location"><div class="container location-grid">
+      <div class="map reveal" data-map-mode="leaflet_multi"><div id="office-map" role="region" aria-label="Map showing practice offices"></div></div>
+      <div class="reveal"><p class="eyebrow">Location and directions</p><h2>Choose your office</h2><p class="lede">Choose from three SoftTouch offices serving patients from Boston, Brighton, Allston, Brookline, Cambridge, Watertown, Newton, Wellesley, Weston, and nearby communities. Compare each office's address, phone, hours, and current status.</p>
+        <div class="contact-list"><div class="location-cards">
+        <article class="location-card" data-location-place-id="ChIJm6Zefst544kRENWr3yKEXi4" data-location-gbp-url="https://www.google.com/maps/search/?api=1&amp;query=SoftTouch%20Dentistry%20of%20Brighton%2C%20599%20Cambridge%20St%2C%20Allston%2C%20MA%2002134&amp;query_place_id=ChIJm6Zefst544kRENWr3yKEXi4"><a class="location-card-hitarea" href="https://www.google.com/maps/search/?api=1&amp;query=SoftTouch%20Dentistry%20of%20Brighton%2C%20599%20Cambridge%20St%2C%20Allston%2C%20MA%2002134&amp;query_place_id=ChIJm6Zefst544kRENWr3yKEXi4" target="_blank" rel="noopener noreferrer" aria-label="Open Brighton/Allston office in Google Maps"><span class="sr-only">Open Brighton/Allston office in Google Maps</span></a><h3>Brighton/Allston office</h3><p>599 Cambridge St, Allston, MA 02134</p><p class="location-live-status" data-location-hours-status>Checking today's hours</p><p>Wednesday-Thursday 8 AM-6 PM; Friday 8 AM-2 PM; Saturday 9 AM-3 PM.</p><div class="location-links"><a href="tel:+16177829250">(617) 782-9250</a><a href="https://www.google.com/maps/search/?api=1&amp;query=SoftTouch%20Dentistry%20of%20Brighton%2C%20599%20Cambridge%20St%2C%20Allston%2C%20MA%2002134&amp;query_place_id=ChIJm6Zefst544kRENWr3yKEXi4" target="_blank" rel="noopener noreferrer">View exact Google listing</a></div></article>
+        <article class="location-card" data-location-place-id="ChIJhRiCwJaC44kRTHAIHxpJtPU" data-location-gbp-url="https://www.google.com/maps/search/?api=1&amp;query=SoftTouch%20Dentistry%20of%20Newton%2C%20130%20Walnut%20St%2C%20Newtonville%2C%20MA%2002460&amp;query_place_id=ChIJhRiCwJaC44kRTHAIHxpJtPU"><a class="location-card-hitarea" href="https://www.google.com/maps/search/?api=1&amp;query=SoftTouch%20Dentistry%20of%20Newton%2C%20130%20Walnut%20St%2C%20Newtonville%2C%20MA%2002460&amp;query_place_id=ChIJhRiCwJaC44kRTHAIHxpJtPU" target="_blank" rel="noopener noreferrer" aria-label="Open Newtonville office in Google Maps"><span class="sr-only">Open Newtonville office in Google Maps</span></a><h3>Newtonville office</h3><p>130 Walnut St, Newtonville, MA 02460</p><p class="location-live-status" data-location-hours-status>Checking today's hours</p><p>Monday, Tuesday, and Thursday 8 AM-6 PM.</p><div class="location-links"><a href="tel:+16173328146">(617) 332-8146</a><a href="https://www.google.com/maps/search/?api=1&amp;query=SoftTouch%20Dentistry%20of%20Newton%2C%20130%20Walnut%20St%2C%20Newtonville%2C%20MA%2002460&amp;query_place_id=ChIJhRiCwJaC44kRTHAIHxpJtPU" target="_blank" rel="noopener noreferrer">View exact Google listing</a></div></article>
+        <article class="location-card" data-location-place-id="ChIJNYIHO4Z544kROqyYDg9EWHA" data-location-gbp-url="https://www.google.com/maps/search/?api=1&amp;query=Brookline%20Dental%2C%201051%20Beacon%20St%20%23409%2C%20Brookline%2C%20MA%2002446&amp;query_place_id=ChIJNYIHO4Z544kROqyYDg9EWHA"><a class="location-card-hitarea" href="https://www.google.com/maps/search/?api=1&amp;query=Brookline%20Dental%2C%201051%20Beacon%20St%20%23409%2C%20Brookline%2C%20MA%2002446&amp;query_place_id=ChIJNYIHO4Z544kROqyYDg9EWHA" target="_blank" rel="noopener noreferrer" aria-label="Open Brookline office in Google Maps"><span class="sr-only">Open Brookline office in Google Maps</span></a><h3>Brookline office</h3><p>1051 Beacon St, Suite 409, Brookline, MA 02446</p><p class="location-live-status" data-location-hours-status>Checking today's hours</p><p>Monday, Tuesday, Thursday, and Friday 8 AM-4 PM; Wednesday 8 AM-1 PM.</p><div class="location-links"><a href="tel:+16172770033">(617) 277-0033</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Brookline%20Dental%2C%201051%20Beacon%20St%20%23409%2C%20Brookline%2C%20MA%2002446&amp;query_place_id=ChIJNYIHO4Z544kROqyYDg9EWHA" target="_blank" rel="noopener noreferrer">View exact Google listing</a></div></article>
+      </div></div>
+      </div>
+    </div></section>
+
+    <section class="section" id="dentists"><div class="container team-grid">
+      <div class="reveal"><p class="eyebrow">Meet the dentists</p><h2>Dr. Nazila Bidabadi and the SoftTouch Dentistry team</h2><p class="lede">Nazila Bidabadi, DMD, is President and Chief Cosmetic Dentist at SoftTouch Dentistry. She plans cosmetic and Invisalign care and uses laser dentistry where it supports a patient's treatment.</p><p>Patients can also see <a href="https://www.softtouchdentistry.net/jacqueline-jacobson/">Jacqueline Jacobson, DMD</a> for endodontic care and <a href="https://www.softtouchdentistry.net/mingfang-su/">Mingfang Su, DMD</a> for periodontal and implant care, helping the practice provide more treatment under one roof.</p><a class="text-link" href="https://www.softtouchdentistry.net/about/">Meet the dental team</a></div>
+      <div class="team-photo reveal"><img src="https://www.softtouchdentistry.net/wp-content/uploads/2025/02/drBidabadi_1.2x.png.png" alt="Nazila Bidabadi, DMD at SoftTouch Dentistry"></div>
+    </div></section>
+
+    <section class="section services" id="services"><div class="container">
+      <div class="section-head reveal"><div><p class="eyebrow">Services offered</p><h2>Comprehensive dental care under one roof</h2></div><p class="lede">Explore preventive, restorative, cosmetic, implant, orthodontic, and specialty care, with links to detailed treatment information and the providers involved.</p></div>
+      <div class="service-grid">
+        <article class="service reveal"><h3>Family and Preventive Dentistry</h3><p>Family care includes <a href="https://www.softtouchdentistry.net/dental-care-for-children/">children's dentistry</a>, <a href="https://www.softtouchdentistry.net/dental-cleanings/">dental cleanings</a>, and preventive visits for adults and seniors.</p><a class="text-link" href="https://www.softtouchdentistry.net/family-dentistry/">View family dentistry</a></article>
+        <article class="service reveal"><h3>Restorative Dentistry</h3><p>Restore damaged or missing teeth with <a href="https://softtouchdentistry.net/tooth-colored-fillings/">tooth-colored fillings</a>, crowns, <a href="https://softtouchdentistry.net/bridges/">bridges</a>, and no-wire partial dentures after an appropriate examination.</p><a class="text-link" href="https://softtouchdentistry.net/services/">Explore restorative care</a></article>
+        <article class="service reveal"><h3>Cosmetic Dentistry</h3><p>Dr. Bidabadi plans cosmetic care that may include <a href="https://www.softtouchdentistry.net/porcelain-veneers/">porcelain veneers</a>, whitening, bonding, and crowns.</p><a class="text-link" href="https://www.softtouchdentistry.net/cosmetic-services/">View cosmetic dentistry</a></article>
+        <article class="service reveal"><h3>Dental Implants and Periodontal Care</h3><p>Explore <a href="https://www.softtouchdentistry.net/dental-implants/">dental implant care</a> and periodontal treatment with <a href="https://www.softtouchdentistry.net/mingfang-su/">Mingfang Su, DMD</a>.</p><a class="text-link" href="https://www.softtouchdentistry.net/dental-implants/">Learn about dental implants</a></article>
+        <article class="service reveal"><h3>Invisalign and Cosmetic Alignment</h3><p>Dr. Bidabadi's published focus includes <a href="https://www.softtouchdentistry.net/invisalign/">Invisalign treatment planning</a> for selected alignment and bite concerns.</p><a class="text-link" href="https://www.softtouchdentistry.net/invisalign/">Explore Invisalign</a></article>
+        <article class="service reveal"><h3>Specialty and Advanced Care</h3><p>Care available within the practice includes endodontics, <a href="https://softtouchdentistry.net/laser-dentistry/">laser dentistry</a>, <a href="https://softtouchdentistry.net/sleep-apnea-treatment/">sleep apnea appliances</a>, and <a href="https://softtouchdentistry.net/services/botox-for-migraines/">Botox for migraines and TMJ concerns</a>.</p><a class="text-link" href="https://www.softtouchdentistry.net/about/">Meet the dental team</a></article>
+        <article class="service reveal"><h3>Emergency Dental Care</h3><p>Call for <a href="https://www.softtouchdentistry.net/emergency-dental-care/">urgent dental care</a>. The team makes a best effort to see urgent needs the same day; treatment is not guaranteed that day.</p><a class="text-link" href="https://www.softtouchdentistry.net/emergency-dental-care/">Get urgent-care guidance</a></article>
+      </div>
+    </div></section>
+
+    <section class="section first-visit" id="new-patients"><div class="container">
+      <div class="section-head reveal"><div><p class="eyebrow">Your first visit</p><h2>Plan your first visit</h2></div><p class="lede">The SoftTouch experience begins with a helpful first call and continues through comprehensive, gentle care. Choose an office, send your request, and confirm the details with the team.</p></div>
+      <div class="first-visit-grid">
+        <article class="first-visit-step reveal"><span class="step-number">01</span><h3>Choose an office</h3><p>Compare locations, hours, and phone numbers for Brighton/Allston, Newtonville, and Brookline.</p><a class="text-link" href="#location">Compare offices</a></article>
+        <article class="first-visit-step reveal"><span class="step-number">02</span><h3>Tell us what you need</h3><p>Call an office or use the online form and share the reason for your visit. A team member will follow up about the request.</p><a class="text-link" href="https://www.softtouchdentistry.net/contact/">Request an appointment</a></article>
+        <article class="first-visit-step reveal"><span class="step-number">03</span><h3>Confirm your visit</h3><p>The team can help confirm insurance, records, payment questions, and any preparation needed before your appointment.</p><a class="text-link" href="https://www.softtouchdentistry.net/patient-information/">Review patient information</a></article>
+      </div>
+    </div></section>
+
+    
+
+    <section class="section office" id="office"><div class="container office-grid">
+      <div class="reveal"><p class="eyebrow">Inside the practice</p><h2>See the practice before your visit</h2><p class="lede">Meet the team in the setting where care happens and browse first-party practice photos before choosing an office.</p><a class="text-link" href="https://www.softtouchdentistry.net/newton-office/">See the Newtonville office</a><blockquote><span>I always feel at home here — not to mention their wonderful service!</span><cite>Ruth Shiferaw, Google review</cite></blockquote></div>
+      <div class="office-photo reveal"><img src="https://www.softtouchdentistry.net/wp-content/uploads/2024/02/NewtonOffice2.jpg" alt="Dr. Nazila Bidabadi with the SoftTouch Dentistry team at the Newtonville reception desk"></div>
+    </div></section>
+
+    <section class="section smiles" id="smiles"><div class="container"><p class="eyebrow">Before and after</p><h2>See before-and-after cases from the practice gallery</h2>
+      <div class="smile-grid">
+        <figure class="smile-case reveal"><div class="smile-pair"><img src="https://www.softtouchdentistry.net/wp-content/uploads/2020/12/crowns-bridges-before-case-1.jpg" alt="Crowns and bridges case before treatment"><img src="https://www.softtouchdentistry.net/wp-content/uploads/2020/12/crowns-bridges-after-case-1.jpg" alt="Crowns and bridges case after treatment"></div><figcaption>Crowns and bridges restored damaged or missing tooth structure. Individual results vary.</figcaption></figure>
+        <figure class="smile-case reveal"><div class="smile-pair"><img src="https://www.softtouchdentistry.net/wp-content/uploads/2020/12/invisalign-before-case-1.jpg" alt="Invisalign case before treatment"><img src="https://www.softtouchdentistry.net/wp-content/uploads/2020/12/invisalign-after-case-1.jpg" alt="Invisalign case after treatment"></div><figcaption>Invisalign gradually changed tooth alignment in this practice case. Individual results vary.</figcaption></figure>
+        <figure class="smile-case reveal"><div class="smile-pair"><img src="https://www.softtouchdentistry.net/wp-content/uploads/2020/12/porcelin-veneer-before-case-1.jpg" alt="Porcelain veneer case before treatment"><img src="https://www.softtouchdentistry.net/wp-content/uploads/2020/12/porcelin-veneer-after-case-1.jpg" alt="Porcelain veneer case after treatment"></div><figcaption>Porcelain veneers changed the visible shape and color of selected teeth. Individual results vary.</figcaption></figure>
+      </div>
+    </div></section>
+
+    <section class="section testimonials" id="reviews"><div class="container"><p class="eyebrow">Patient experiences</p><h2>What patients say</h2><div class="quote-grid">
+        <blockquote><span>I love SoftTouch and feel very lucky to have a dentist I can trust.</span><cite>Corinna Parrish, Google review</cite></blockquote>
+        <blockquote><span>The staff is caring and professional.</span><cite>Shannon Hiltz, Google review</cite></blockquote>
+        <blockquote><span>I've been going to this location for years, and Dr Bidabadi and her team are the absolute kindest.</span><cite>Ruth Shiferaw, Google review</cite></blockquote>
+      </div></div></section>
+
+    <section class="section" id="insurance"><div class="container insurance-grid"><div class="reveal"><p class="eyebrow">Payment and financing</p><h2>Review payment and financing options</h2><p class="lede">SoftTouch lists major payment methods, CareCredit financing, and participation with plans including Blue Cross Blue Shield, Delta Dental, Cigna, Guardian, Aetna, and MetLife. Confirm current participation and expected costs before treatment.</p><a class="text-link" href="https://www.softtouchdentistry.net/patient-information/">Review patient information</a></div><div class="reveal"><div class="payment-options">
+        <article class="payment-option"><h3>Everyday payment methods</h3><p>The practice lists cash, checks, HSAs, Mastercard, Visa, Discover, and American Express.</p></article>
+        <article class="payment-option"><h3>CareCredit financing</h3><p>CareCredit is listed as a financing option; approval and account terms apply.</p></article>
+        <article class="payment-option"><h3>Insurance verification</h3><p>SoftTouch lists Blue Cross Blue Shield, Delta Dental, Cigna, Guardian, Aetna, and MetLife among accepted plans. Confirm current participation and expected costs with the office and your plan.</p></article>
+      </div><div class="insurance-logos"></div></div></div></section>
+
+    <section class="section faq" id="faq"><div class="container"><p class="eyebrow">Useful questions</p><h2>Plan your visit</h2><div class="faq-list">
+        <details><summary>Which SoftTouch office should I contact?</summary><p>Choose Brighton/Allston, Newtonville, or Brookline based on the address and published hours that work for you. Each location card provides that office's direct phone number and exact Google listing.</p></details>
+        <details><summary>Can I receive specialty dental care at SoftTouch?</summary><p>Yes. The published team includes providers for cosmetic dentistry, endodontic care, periodontics, and implant care. Available treatment also includes Invisalign, laser dentistry, sleep apnea appliances, dentures, and Botox for selected TMJ and migraine concerns. The team can confirm the appropriate provider and office for your needs.</p></details>
+        <details><summary>Which communities does SoftTouch Dentistry serve?</summary><p>SoftTouch has offices in Brighton/Allston, Newtonville, and Brookline and serves patients from Boston, Cambridge, Watertown, Wellesley, Weston, and nearby Greater Boston communities.</p></details>
+        <details><summary>How can I prepare for an appointment request?</summary><p>Choose an office, have your contact details and reason for visiting ready, then call or submit the <a href="https://www.softtouchdentistry.net/contact/">online form</a>. Confirm insurance, records, and visit preparation with the office.</p></details>
+        <details><summary>What should I do for an urgent dental need?</summary><p>Please call the practice. SoftTouch Dentistry makes a best effort to see urgent patients the same day, but same-day treatment is not guaranteed. Review the <a href="https://www.softtouchdentistry.net/emergency-dental-care/">urgent dental care</a> information.</p></details>
+        <details><summary>How do I verify insurance and payment options?</summary><p>The practice lists cash, checks, HSAs, major cards, CareCredit, and plans including Blue Cross Blue Shield, Delta Dental, Cigna, Guardian, Aetna, and MetLife. Contact the office and your plan to confirm current participation and expected costs, then review the <a href="https://www.softtouchdentistry.net/patient-information/">patient information</a> page.</p></details>
+      </div></div></section>
+
+    <section class="final-cta" id="appointment"><div class="container"><h2>Choose an office or request an appointment</h2><div><a class="button button--accent" href="#location">Choose an office</a> <a class="button" href="https://www.softtouchdentistry.net/contact/">Request an appointment</a></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-grid"><div><strong>SoftTouch Dentistry</strong><p>599 Cambridge St, Allston, MA 02134<br>130 Walnut St, Newtonville, MA 02460<br>1051 Beacon St, Suite 409, Brookline, MA 02446</p><small>© <span id="year"></span> <span>SoftTouch Dentistry</span></small></div><div><strong>Care</strong><p><a href="#services">Services</a><br><a href="#dentists">Dentists</a><br><a href="#new-patients">New patients</a></p></div><div><strong>Visit</strong><p><a href="#location">Location and hours</a><br><a href="#appointment">Request appointment</a><br><a href="https://www.softtouchdentistry.net/privacy-policy/">Privacy</a></p></div></div></footer>
+
+  
+  <script type="application/json" id="location-map-data">[{"name":"Brighton/Allston office","address":"599 Cambridge St, Allston, MA 02134","placeId":"ChIJm6Zefst544kRENWr3yKEXi4","gbpUrl":"https://www.google.com/maps/search/?api=1&query=SoftTouch%20Dentistry%20of%20Brighton%2C%20599%20Cambridge%20St%2C%20Allston%2C%20MA%2002134&query_place_id=ChIJm6Zefst544kRENWr3yKEXi4","coordinates":[42.3521534,-71.1420748],"hoursConfig":{"timeZone":"America/New_York","schedule":{"0":null,"1":null,"2":null,"3":[["08:00","18:00"]],"4":[["08:00","18:00"]],"5":[["08:00","14:00"]],"6":[["09:00","15:00"]]},"exceptions":{}}},{"name":"Newtonville office","address":"130 Walnut St, Newtonville, MA 02460","placeId":"ChIJhRiCwJaC44kRTHAIHxpJtPU","gbpUrl":"https://www.google.com/maps/search/?api=1&query=SoftTouch%20Dentistry%20of%20Newton%2C%20130%20Walnut%20St%2C%20Newtonville%2C%20MA%2002460&query_place_id=ChIJhRiCwJaC44kRTHAIHxpJtPU","coordinates":[42.3552649,-71.2085091],"hoursConfig":{"timeZone":"America/New_York","schedule":{"0":null,"1":[["08:00","18:00"]],"2":[["08:00","18:00"]],"3":null,"4":[["08:00","18:00"]],"5":null,"6":null},"exceptions":{}}},{"name":"Brookline office","address":"1051 Beacon St, Suite 409, Brookline, MA 02446","placeId":"ChIJNYIHO4Z544kROqyYDg9EWHA","gbpUrl":"https://www.google.com/maps/search/?api=1&query=Brookline%20Dental%2C%201051%20Beacon%20St%20%23409%2C%20Brookline%2C%20MA%2002446&query_place_id=ChIJNYIHO4Z544kROqyYDg9EWHA","coordinates":[42.3452723,-71.1088151],"hoursConfig":{"timeZone":"America/New_York","schedule":{"0":null,"1":[["08:00","16:00"]],"2":[["08:00","16:00"]],"3":[["08:00","13:00"]],"4":[["08:00","16:00"]],"5":[["08:00","16:00"]],"6":null},"exceptions":{}}}]</script>
+  <script>const locationMapData = JSON.parse(document.getElementById("location-map-data").textContent);</script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script id="leaflet-map-behavior">
+    const officeMap = L.map("office-map", { scrollWheelZoom: false });
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(officeMap);
+    locationMapData.forEach(location => {
+      const marker = L.marker(location.coordinates, {
+        title: `${location.name} - Open in Google Maps`,
+        alt: `${location.name} - Open in Google Maps`
+      }).addTo(officeMap);
+      marker.bindTooltip(location.name);
+      marker.on("click", () => window.open(location.gbpUrl, "_blank", "noopener,noreferrer"));
+    });
+    officeMap.fitBounds(L.latLngBounds(locationMapData.map(location => location.coordinates)).pad(0.2));
+    setTimeout(() => officeMap.invalidateSize(), 100);
+  </script>
+
+  <script>
+    const practiceHoursNode = document.getElementById("practice-hours-data");
+    const practiceHours = practiceHoursNode ? JSON.parse(practiceHoursNode.textContent) : null;
+
+    function minutes(value) {
+      const [hour, minute] = value.split(":").map(Number);
+      return hour * 60 + minute;
+    }
+
+    function formatClock(value) {
+      const [hour, minute] = value.split(":").map(Number);
+      const suffix = hour >= 12 ? "PM" : "AM";
+      return `${hour % 12 || 12}:${String(minute).padStart(2, "0")} ${suffix}`;
+    }
+
+    function currentHours(config) {
+      const parts = new Intl.DateTimeFormat("en-US", {
+        timeZone: config.timeZone,
+        weekday: "short",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        hourCycle: "h23"
+      }).formatToParts(new Date());
+      const values = Object.fromEntries(parts.map(part => [part.type, part.value]));
+      const dayMap = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+      const localDate = `${values.year}-${values.month}-${values.day}`;
+      const ranges = Object.prototype.hasOwnProperty.call(config.exceptions || {}, localDate)
+        ? config.exceptions[localDate]
+        : config.schedule[String(dayMap[values.weekday])];
+      const now = Number(values.hour) * 60 + Number(values.minute);
+      const active = ranges && ranges.find(([start, end]) => now >= minutes(start) && now < minutes(end));
+      return active ? `Open now · Closes at ${formatClock(active[1])}` : "Closed now · View office hours";
+    }
+
+    function updateHours() {
+      const status = document.getElementById("hours-status");
+      if (status && practiceHours) {
+        status.textContent = currentHours(practiceHours);
+        status.classList.toggle("is-closed", status.textContent.startsWith("Closed"));
+      }
+
+      document.querySelectorAll(".location-card").forEach(card => {
+        const location = locationMapData.find(item => item.placeId === card.dataset.locationPlaceId);
+        const locationStatus = card.querySelector("[data-location-hours-status]");
+        if (!location || !location.hoursConfig || !locationStatus) return;
+        locationStatus.textContent = currentHours(location.hoursConfig);
+        locationStatus.classList.toggle("is-closed", locationStatus.textContent.startsWith("Closed"));
+      });
+    }
+
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.getElementById("primary-nav");
+    toggle.addEventListener("click", () => {
+      const open = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!open));
+      nav.classList.toggle("is-open", !open);
+    });
+
+    document.querySelectorAll("#primary-nav a").forEach(link => link.addEventListener("click", () => {
+      toggle.setAttribute("aria-expanded", "false");
+      nav.classList.remove("is-open");
+    }));
+
+    const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reducedMotion) {
+      document.querySelectorAll(".reveal").forEach(element => element.classList.add("is-visible"));
+    } else {
+      const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      }), { threshold: 0.05 });
+      document.querySelectorAll(".reveal").forEach(element => observer.observe(element));
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    updateHours();
+  </script>
+</body>
+</html>
