@@ -116,6 +116,7 @@
     .source-status.warning .icon { color: var(--amber); }
     .optional { margin-left: 5px; color: var(--muted); font-size: 11px; font-weight: 400; }
     .clear-detail { color: #94a2a6; }
+    .mobile-detail { display: none; }
 
     .disclosure-list { margin-top: 22px; border-top: 1px solid var(--line); }
     .disclosure { border-bottom: 1px solid var(--line); }
@@ -192,6 +193,8 @@
       .source-table td:nth-child(2) { justify-self: end; text-align: right; }
       .source-table td:last-child { grid-column: 1 / -1; }
       .source-table td.clear-detail { display: none; }
+      .desktop-detail { display: none; }
+      .mobile-detail { display: inline; }
       .source-status { justify-content: flex-end; text-align: right; }
       .disclosure-list { margin-top: 16px; }
       .disclosure > summary { min-height: 56px; padding: 9px 2px; }
@@ -284,7 +287,7 @@
             <tr><th scope="row">WhatConverts</th><td><span class="source-status muted"><i class="icon" data-lucide="minus"></i>Not configured</span></td><td>Not included in this run.</td></tr>
             <tr><th scope="row">Google Ads</th><td><span class="source-status muted"><i class="icon" data-lucide="minus"></i>Not configured</span></td><td>Not included in this run.</td></tr>
             <tr><th scope="row">External booking sessions</th><td><span class="source-status muted"><i class="icon" data-lucide="minus"></i>Not configured</span></td><td>Not included in this run.</td></tr>
-            <tr><th scope="row">GBP call clicks <span class="optional">Optional</span></th><td><span class="source-status warning"><i class="icon" data-lucide="circle-alert"></i>Partial data</span></td><td>Profile and date coverage. Check source access and coverage.</td></tr>
+            <tr><th scope="row">GBP call clicks <span class="optional">Optional</span></th><td><span class="source-status warning"><i class="icon" data-lucide="circle-alert"></i>Partial data</span></td><td><span class="desktop-detail">Profile and date coverage. Check source access and coverage.</span><span class="mobile-detail">Coverage needs review.</span></td></tr>
             <tr><th scope="row">Monday work items</th><td><span class="source-status"><i class="icon" data-lucide="circle-check"></i>Data available</span></td><td class="clear-detail"><span aria-hidden="true">-</span><span class="sr-only">No source errors recorded.</span></td></tr>
             <tr><th scope="row">Content plan</th><td><span class="source-status"><i class="icon" data-lucide="circle-check"></i>Data available</span></td><td class="clear-detail"><span aria-hidden="true">-</span><span class="sr-only">No source errors recorded.</span></td></tr>
             <tr><th scope="row">GBP posts</th><td><span class="source-status"><i class="icon" data-lucide="circle-check"></i>Successful - zero activity</span></td><td class="clear-detail"><span aria-hidden="true">-</span><span class="sr-only">No source errors recorded.</span></td></tr>
