@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Supremia Dentistry run 933 - Review mockup</title>
+  <link rel="icon" href="https://client-report-orchestrator.vercel.app/favicon.ico">
+  <script defer src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <style>
+    :root {
+      --bg: #faf8f5;
+      --paper: #fff;
+      --ink: #103346;
+      --body: #385669;
+      --muted: #657c88;
+      --line: #d3dfe4;
+      --line-soft: #e5ecef;
+      --accent: #137389;
+      --green: #25704f;
+      --amber: #7b5900;
+      --amber-soft: #fff0b5;
+      --red: #a33c36;
+      --soft: #edf3f5;
+    }
+
+    * { box-sizing: border-box; }
+    html { min-width: 320px; background: var(--bg); }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.5 Inter, Arial, sans-serif; letter-spacing: 0; }
+    h1, h2, h3, p, dl, dd { margin: 0; }
+    button, textarea { font: inherit; letter-spacing: 0; }
+    button, summary, a { touch-action: manipulation; }
+    button, summary { cursor: pointer; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    button:focus-visible, a:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    [hidden] { display: none !important; }
+
+    .shell { width: min(1160px, calc(100% - 44px)); margin: auto; padding: 22px 0 60px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    .icon { width: 17px; height: 17px; flex: none; stroke-width: 1.8; }
+
+    .topnav { display: flex; align-items: center; gap: 28px; min-height: 58px; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--line); }
+    .brand { display: flex; align-items: center; padding-right: 26px; border-right: 1px solid var(--line); }
+    .brand img { display: block; width: 122px; height: auto; filter: brightness(0) saturate(100%) invert(15%) sepia(22%) saturate(1799%) hue-rotate(158deg) brightness(91%) contrast(96%); }
+    .navlinks { display: flex; align-self: stretch; align-items: stretch; gap: 24px; }
+    .navlinks > a, .navlinks > details > summary { display: flex; align-items: center; min-height: 58px; color: var(--body); font-size: 14px; font-weight: 600; }
+    .navlinks summary { gap: 5px; list-style: none; }
+    .navlinks summary::-webkit-details-marker { display: none; }
+    .prototype-label { margin-left: auto; color: var(--muted); font-size: 11px; white-space: nowrap; }
+
+    .menu { position: relative; }
+    .menu > summary { list-style: none; }
+    .menu > summary::-webkit-details-marker { display: none; }
+    .menu[open] > summary { background: var(--soft); color: var(--ink); }
+    .menu-panel { position: absolute; top: calc(100% + 5px); right: 0; z-index: 15; width: 226px; padding: 5px; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); box-shadow: 0 10px 24px #10334618; }
+    .menu-panel a, .menu-panel button { display: flex; align-items: center; gap: 8px; width: 100%; min-height: 38px; padding: 8px 10px; border: 0; border-radius: 3px; background: transparent; color: var(--ink); font-size: 13px; text-align: left; }
+    .menu-panel a:hover, .menu-panel button:hover { background: var(--soft); text-decoration: none; }
+    .menu-panel hr { margin: 4px; border: 0; border-top: 1px solid var(--line); }
+    .menu-panel .danger-text { color: var(--red); }
+
+    .icon-button { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; padding: 0; border: 1px solid transparent; border-radius: 4px; background: transparent; color: var(--muted); }
+    .icon-button:hover { background: var(--soft); color: var(--ink); }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 40px; padding: 8px 14px; border: 1px solid var(--ink); border-radius: 4px; background: var(--ink); color: #fff; font-size: 13px; font-weight: 600; white-space: nowrap; }
+    .button:hover { background: #204a5a; text-decoration: none; }
+    .button.secondary { border-color: var(--line); background: var(--paper); color: var(--ink); }
+    .button.secondary:hover { background: var(--soft); }
+    .button.danger { border-color: var(--red); background: var(--red); }
+    .button:active, .icon-button:active { transform: translateY(1px); }
+
+    .breadcrumb { display: flex; align-items: center; gap: 7px; margin: 26px 0 18px; color: var(--muted); font-size: 12px; }
+    .breadcrumb a { color: var(--muted); }
+    .breadcrumb .icon { width: 12px; height: 12px; }
+
+    .page-header { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 24px; padding-bottom: 22px; }
+    .page-header h1 { font-size: 36px; font-weight: 400; line-height: 1.22; text-wrap: balance; }
+    .page-subtitle { display: flex; flex-wrap: wrap; gap: 7px 10px; margin-top: 9px; color: var(--muted); font-size: 13px; }
+    .page-subtitle a { color: var(--ink); font-weight: 600; }
+    .status-label { display: inline-flex; align-items: center; gap: 7px; align-self: center; color: var(--green); font-size: 12px; font-weight: 600; }
+
+    .status-band { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 24px; padding: 18px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .status-band h2 { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; }
+    .status-band h2 .icon { color: var(--green); }
+    .status-band p { max-width: 72ch; margin-top: 4px; color: var(--body); font-size: 13px; }
+    .status-facts { display: grid; gap: 3px; text-align: right; color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .status-facts strong { color: var(--body); font-size: 12px; font-weight: 600; }
+
+    .action-strip { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 16px 0 20px; }
+    .primary-actions, .navigation-links { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+    .navigation-links { gap: 18px; font-size: 12px; font-weight: 600; }
+
+    .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; padding: 16px 0 9px; border-top: 1px solid var(--ink); }
+    .section-heading h2 { font-size: 17px; font-weight: 600; }
+    .section-heading p { margin-top: 2px; color: var(--muted); font-size: 12px; }
+    .section-heading a { flex: none; font-size: 12px; font-weight: 600; }
+
+    .source-summary { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; padding: 5px 0 11px; color: var(--muted); font-size: 12px; }
+    .source-summary span { display: inline-flex; align-items: center; gap: 6px; }
+    .source-summary .success { color: var(--green); }
+    .source-summary .warning { color: var(--amber); }
+
+    .source-table-wrap { width: 100%; overflow-x: auto; }
+    .source-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 12px; }
+    .source-table th, .source-table td { padding: 8px 10px; border: 0; text-align: left; vertical-align: middle; line-height: 18px; overflow-wrap: anywhere; }
+    .source-table thead th { border-bottom: 1px solid var(--line); color: var(--muted); font-size: 11px; font-weight: 500; }
+    .source-table thead th:nth-child(1) { width: 31%; }
+    .source-table thead th:nth-child(2) { width: 30%; }
+    .source-table tbody tr:hover { background: #10334604; }
+    .source-table tbody th { color: var(--ink); font-weight: 500; }
+    .source-table td:last-child { color: var(--muted); font-size: 11px; }
+    .source-status { display: inline-flex; align-items: center; gap: 6px; color: var(--body); }
+    .source-status .icon { width: 13px; height: 13px; color: var(--green); }
+    .source-status.muted { color: var(--muted); }
+    .source-status.muted .icon { color: var(--muted); }
+    .source-status.warning { border-radius: 2px; background: var(--amber-soft); box-shadow: 0 0 0 3px var(--amber-soft); color: var(--amber); }
+    .source-status.warning .icon { color: var(--amber); }
+    .optional { margin-left: 5px; color: var(--muted); font-size: 11px; font-weight: 400; }
+    .clear-detail { color: #94a2a6; }
+
+    .disclosure-list { margin-top: 22px; border-top: 1px solid var(--line); }
+    .disclosure { border-bottom: 1px solid var(--line); }
+    .disclosure > summary { display: grid; grid-template-columns: minmax(0, 1fr) auto 18px; align-items: center; gap: 16px; min-height: 64px; padding: 12px 2px; list-style: none; }
+    .disclosure > summary::-webkit-details-marker { display: none; }
+    .disclosure > summary:hover { background: #ffffff70; }
+    .disclosure > summary strong, .disclosure > summary small { display: block; }
+    .disclosure > summary strong { font-size: 14px; font-weight: 600; }
+    .disclosure > summary small { margin-top: 2px; color: var(--muted); font-size: 11px; }
+    .disclosure-summary { color: var(--muted); font-size: 11px; text-align: right; }
+    .disclosure .chevron { width: 15px; height: 15px; color: var(--muted); transition: transform .18s ease; }
+    .disclosure[open] .chevron { transform: rotate(90deg); }
+    .disclosure-content { padding: 3px 2px 20px; }
+
+    .facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px 30px; }
+    .facts div { min-width: 0; }
+    .facts dt { color: var(--muted); font-size: 11px; }
+    .facts dd { margin-top: 3px; color: var(--body); font-size: 12px; overflow-wrap: anywhere; }
+
+    .notes-help { max-width: 68ch; color: var(--body); font-size: 12px; }
+    .notes-form { margin-top: 12px; }
+    .notes-form textarea { display: block; width: 100%; min-height: 120px; padding: 12px; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); color: var(--ink); line-height: 1.5; resize: vertical; }
+    .save-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 10px; }
+    .save-row span { color: var(--muted); font-size: 11px; }
+
+    .prototype-footer { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-top: 24px; color: var(--muted); font-size: 11px; }
+
+    dialog { width: min(500px, calc(100% - 28px)); max-height: calc(100dvh - 36px); padding: 0; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); color: var(--ink); box-shadow: 0 22px 64px #10334630; }
+    dialog::backdrop { background: #102b3b66; }
+    .dialog-header { display: flex; align-items: start; justify-content: space-between; gap: 18px; padding: 20px 22px 16px; border-bottom: 1px solid var(--line); }
+    .dialog-header h2 { font-size: 20px; font-weight: 500; }
+    .dialog-header p { margin-top: 3px; color: var(--muted); font-size: 12px; }
+    .dialog-body { padding: 20px 22px; color: var(--body); font-size: 13px; }
+    .confirm-info { margin-top: 14px; padding: 12px; border-radius: 4px; background: var(--soft); color: var(--muted); font-size: 12px; }
+    .dialog-footer { display: flex; align-items: center; justify-content: flex-end; gap: 8px; padding: 15px 22px; border-top: 1px solid var(--line); }
+    .toast { position: fixed; bottom: 24px; left: 50%; z-index: 40; width: max-content; max-width: calc(100% - 28px); padding: 12px 16px; border-radius: 4px; background: var(--ink); color: #fff; box-shadow: 0 6px 20px #10334620; font-size: 13px; transform: translateX(-50%); }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+    }
+
+    @media (max-width: 720px) {
+      .shell { width: calc(100% - 28px); padding-top: 14px; }
+      .topnav { gap: 17px; }
+      .brand { padding-right: 15px; }
+      .brand img { width: 108px; }
+      .navlinks { gap: 16px; }
+      .navlinks > a, .navlinks > details > summary { font-size: 12px; }
+      .prototype-label { display: none; }
+      .breadcrumb { margin-top: 20px; }
+      .page-header { grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 12px; }
+      .page-header h1 { font-size: 28px; }
+      .page-subtitle { font-size: 12px; }
+      .status-label { margin-top: 8px; }
+      .status-band { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+      .status-facts { text-align: left; white-space: normal; }
+      .action-strip { align-items: stretch; flex-direction: column; gap: 12px; }
+      .primary-actions { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 36px; }
+      .primary-actions .button { width: 100%; }
+      .navigation-links { justify-content: flex-start; }
+      .section-heading { align-items: flex-start; }
+      .source-table, .source-table tbody { display: block; }
+      .source-table { width: 100%; }
+      .source-table thead { display: none; }
+      .source-table tr { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 4px 12px; padding: 9px 0; }
+      .source-table th, .source-table td { display: block; width: auto !important; padding: 0; }
+      .source-table td:nth-child(2) { justify-self: end; text-align: right; }
+      .source-table td:last-child { grid-column: 1 / -1; }
+      .source-table td.clear-detail { display: none; }
+      .source-status { justify-content: flex-end; text-align: right; }
+      .facts { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+      .save-row { align-items: stretch; flex-direction: column; }
+      .save-row .button { width: 100%; }
+    }
+
+    @media (max-width: 460px) {
+      .topnav { gap: 12px; }
+      .brand { padding-right: 12px; }
+      .brand img { width: 97px; }
+      .navlinks { gap: 13px; }
+      .breadcrumb span:first-of-type, .breadcrumb .batch-separator { display: none; }
+      .page-header { grid-template-columns: minmax(0, 1fr); }
+      .page-header h1 { font-size: 26px; }
+      .status-label { justify-self: start; margin-top: 0; }
+      .primary-actions { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 36px; }
+      .button { padding-inline: 10px; }
+      .navigation-links { gap: 14px; }
+      .source-summary { gap: 9px 14px; }
+      .source-summary span { font-size: 11px; }
+      .section-heading { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; }
+      .disclosure > summary { grid-template-columns: minmax(0, 1fr) 15px; gap: 10px; }
+      .disclosure-summary { display: none; }
+      .facts { grid-template-columns: minmax(0, 1fr); }
+      .menu-panel { width: 210px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <nav class="topnav" aria-label="Workspace navigation">
+      <a class="brand" href="https://client-report-orchestrator.vercel.app/" target="_blank" rel="noreferrer"><img src="https://ascendpoint.agency/wp-content/uploads/2025/05/AscendPoint-Agency-white-logo.png" alt="AscendPoint Agency"></a>
+      <div class="navlinks">
+        <a href="https://client-report-orchestrator.vercel.app/" target="_blank" rel="noreferrer">Overview</a>
+        <a href="https://client-report-orchestrator.vercel.app/clients" target="_blank" rel="noreferrer">Clients</a>
+        <details class="menu"><summary>Tools <i class="icon" data-lucide="chevron-down"></i></summary><div class="menu-panel"><a href="https://client-report-orchestrator.vercel.app/weekly-reports" target="_blank" rel="noreferrer">Weekly reports</a><a href="https://client-report-orchestrator.vercel.app/keyword-lab" target="_blank" rel="noreferrer">Keyword Lab</a><a href="https://client-report-orchestrator.vercel.app/api/health" target="_blank" rel="noreferrer">System health</a></div></details>
+      </div>
+      <span class="prototype-label">Review mockup</span>
+    </nav>
+
+    <div class="breadcrumb">
+      <a href="https://client-report-orchestrator.vercel.app/" target="_blank" rel="noreferrer">Overview</a>
+      <i class="icon" data-lucide="chevron-right"></i>
+      <a href="https://client-report-orchestrator.vercel.app/runs/933" target="_blank" rel="noreferrer"><span>Batch 933</span></a>
+      <i class="icon batch-separator" data-lucide="chevron-right"></i>
+      <span>Supremia Dentistry</span>
+    </div>
+
+    <header class="page-header">
+      <div>
+        <h1>Aug 17 - Sep 15, 2026</h1>
+        <div class="page-subtitle"><a href="https://client-report-orchestrator.vercel.app/clients/supremia-dentistry" target="_blank" rel="noreferrer">Supremia Dentistry</a><span>supremiadentistry.com</span><span>Wake Forest, NC</span><span>Single report</span></div>
+      </div>
+      <span class="status-label"><i class="icon" data-lucide="circle-check"></i>Completed</span>
+    </header>
+
+    <section class="status-band" aria-labelledby="run-status-title">
+      <div>
+        <h2 id="run-status-title"><i class="icon" data-lucide="circle-check"></i>Generation complete</h2>
+        <p>Ready for review. Lead tracking is client managed in Patient Prism, so WhatConverts is not included in this report.</p>
+      </div>
+      <div class="status-facts"><strong>5 sources ready</strong><span>1 optional source has partial coverage</span><span>Generated Sep 18, 2:08 PM</span></div>
+    </section>
+
+    <div class="action-strip" aria-label="Report actions and navigation">
+      <div class="primary-actions">
+        <a class="button" href="https://client-report-orchestrator.vercel.app/clients/supremia-dentistry/reports/933" target="_blank" rel="noreferrer"><i class="icon" data-lucide="external-link"></i>View report</a>
+        <a class="button secondary" href="https://client-report-orchestrator.vercel.app/clients/supremia-dentistry/reports/933/edit" target="_blank" rel="noreferrer"><i class="icon" data-lucide="pencil"></i>Edit report</a>
+        <details class="menu" id="reportMenu"><summary class="icon-button" aria-label="More report actions" title="More report actions"><i class="icon" data-lucide="ellipsis"></i></summary><div class="menu-panel"><a href="https://client-report-orchestrator.vercel.app/clients/supremia-dentistry" target="_blank" rel="noreferrer"><i class="icon" data-lucide="building-2"></i>Client hub</a><a href="https://client-report-orchestrator.vercel.app/runs/933" target="_blank" rel="noreferrer"><i class="icon" data-lucide="list"></i>Batch 933</a><a href="https://client-report-orchestrator.vercel.app/clients/supremia-dentistry?tab=settings" target="_blank" rel="noreferrer"><i class="icon" data-lucide="settings-2"></i>Source settings</a><hr><button class="danger-text" id="deleteReport"><i class="icon" data-lucide="trash-2"></i>Delete report...</button></div></details>
+      </div>
+      <nav class="navigation-links" aria-label="Related pages"><a href="https://client-report-orchestrator.vercel.app/runs/933" target="_blank" rel="noreferrer">Batch 933</a><a href="https://client-report-orchestrator.vercel.app/clients/supremia-dentistry" target="_blank" rel="noreferrer">Client hub</a></nav>
+    </div>
+
+    <section aria-labelledby="sources-title">
+      <header class="section-heading">
+        <div><h2 id="sources-title">Sources &amp; connections</h2><p>Saved results from this report run</p></div>
+        <a href="https://client-report-orchestrator.vercel.app/clients/supremia-dentistry?tab=settings" target="_blank" rel="noreferrer">Source settings <span aria-hidden="true">↗</span></a>
+      </header>
+      <div class="source-summary" aria-label="Source result summary"><span class="success"><i class="icon" data-lucide="circle-check"></i>5 ready</span><span class="warning"><i class="icon" data-lucide="circle-alert"></i>1 partial, optional</span><span><i class="icon" data-lucide="minus"></i>3 not configured</span></div>
+      <div class="source-table-wrap">
+        <table class="source-table" aria-label="Saved source checks for Supremia Dentistry">
+          <thead><tr><th scope="col">Source</th><th scope="col">Run result</th><th scope="col">Details</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">GA4</th><td><span class="source-status"><i class="icon" data-lucide="circle-check"></i>Data available</span></td><td class="clear-detail"><span aria-hidden="true">-</span><span class="sr-only">No source errors recorded.</span></td></tr>
+            <tr><th scope="row">Google Search Console</th><td><span class="source-status"><i class="icon" data-lucide="circle-check"></i>Data available</span></td><td class="clear-detail"><span aria-hidden="true">-</span><span class="sr-only">No source errors recorded.</span></td></tr>
+            <tr><th scope="row">WhatConverts</th><td><span class="source-status muted"><i class="icon" data-lucide="minus"></i>Not configured</span></td><td>Not included in this run.</td></tr>
+            <tr><th scope="row">Google Ads</th><td><span class="source-status muted"><i class="icon" data-lucide="minus"></i>Not configured</span></td><td>Not included in this run.</td></tr>
+            <tr><th scope="row">External booking sessions</th><td><span class="source-status muted"><i class="icon" data-lucide="minus"></i>Not configured</span></td><td>Not included in this run.</td></tr>
+            <tr><th scope="row">GBP call clicks <span class="optional">Optional</span></th><td><span class="source-status warning"><i class="icon" data-lucide="circle-alert"></i>Partial data</span></td><td>Profile and date coverage. Check source access and coverage.</td></tr>
+            <tr><th scope="row">Monday work items</th><td><span class="source-status"><i class="icon" data-lucide="circle-check"></i>Data available</span></td><td class="clear-detail"><span aria-hidden="true">-</span><span class="sr-only">No source errors recorded.</span></td></tr>
+            <tr><th scope="row">Content plan</th><td><span class="source-status"><i class="icon" data-lucide="circle-check"></i>Data available</span></td><td class="clear-detail"><span aria-hidden="true">-</span><span class="sr-only">No source errors recorded.</span></td></tr>
+            <tr><th scope="row">GBP posts</th><td><span class="source-status"><i class="icon" data-lucide="circle-check"></i>Successful - zero activity</span></td><td class="clear-detail"><span aria-hidden="true">-</span><span class="sr-only">No source errors recorded.</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="disclosure-list">
+      <details class="disclosure">
+        <summary><span><strong>Run details</strong><small>Dates, run state, and report type</small></span><span class="disclosure-summary">Run and entry completed</span><i class="icon chevron" data-lucide="chevron-right"></i></summary>
+        <div class="disclosure-content"><dl class="facts"><div><dt>Current period</dt><dd>Aug 17 - Sep 15, 2026</dd></div><div><dt>Previous period</dt><dd>Jul 18 - Aug 16, 2026</dd></div><div><dt>Generated</dt><dd>Sep 18, 2026, 2:08 PM</dd></div><div><dt>Run</dt><dd>Completed</dd></div><div><dt>Entry</dt><dd>Completed</dd></div><div><dt>Type</dt><dd>Single report</dd></div></dl></div>
+      </details>
+
+      <details class="disclosure" id="notesDisclosure">
+        <summary><span><strong>Review notes</strong><small>Manual edits, data issues, or instructions for the next version</small></span><span class="disclosure-summary" id="notesSummary">No notes saved</span><i class="icon chevron" data-lucide="chevron-right"></i></summary>
+        <div class="disclosure-content">
+          <p class="notes-help">These notes apply only to this report run. Saving here is simulated and does not update production.</p>
+          <form class="notes-form" id="notesForm">
+            <label class="sr-only" for="reviewNotes">Report review notes</label>
+            <textarea id="reviewNotes" placeholder="Add review notes, manual edits, data issues, or instructions for the next version."></textarea>
+            <div class="save-row"><span id="notesSavedState">Mockup draft only</span><button class="button" type="submit">Save note (demo)</button></div>
+          </form>
+        </div>
+      </details>
+    </div>
+
+    <footer class="prototype-footer"><span>Review mockup. Snapshot of run 933 on Sep 20, 2026.</span><span>Save and delete actions are simulated. Live navigation links open the current app.</span></footer>
+  </main>
+
+  <dialog id="confirmDialog" aria-labelledby="confirmTitle">
+    <header class="dialog-header"><div><h2 id="confirmTitle">Delete this report?</h2><p>Simulated action</p></div><button class="icon-button" type="button" data-close="confirmDialog" aria-label="Close confirmation" title="Close"><i class="icon" data-lucide="x"></i></button></header>
+    <div class="dialog-body"><p>Deleting this report would remove the run entry and saved report edits.</p><div class="confirm-info">This review mockup cannot delete the live report. Confirming below only demonstrates the flow.</div></div>
+    <footer class="dialog-footer"><button class="button secondary" type="button" data-close="confirmDialog">Cancel</button><button class="button danger" type="button" id="confirmDelete">Simulate delete</button></footer>
+  </dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script>
+    const $ = id => document.getElementById(id);
+    let toastTimer;
+    let restoreFocus = null;
+
+    function renderIcons() {
+      if (window.lucide) window.lucide.createIcons({ attrs: { 'stroke-width': 1.8 } });
+    }
+
+    function closeMenus(except = null) {
+      document.querySelectorAll('.menu[open]').forEach(menu => {
+        if (menu !== except) menu.open = false;
+      });
+    }
+
+    function showToast(message) {
+      clearTimeout(toastTimer);
+      $('toast').textContent = message;
+      $('toast').hidden = false;
+      toastTimer = setTimeout(() => { $('toast').hidden = true; }, 4800);
+    }
+
+    function openDialog(dialog) {
+      restoreFocus = document.activeElement;
+      closeMenus();
+      dialog.showModal();
+    }
+
+    function closeDialog(dialog) {
+      dialog.close();
+      if (restoreFocus && restoreFocus.isConnected) restoreFocus.focus();
+    }
+
+    $('deleteReport').addEventListener('click', () => openDialog($('confirmDialog')));
+    $('confirmDelete').addEventListener('click', () => {
+      closeDialog($('confirmDialog'));
+      showToast('Demo confirmed. No live report was deleted.');
+    });
+
+    document.querySelectorAll('[data-close]').forEach(button => {
+      button.addEventListener('click', () => closeDialog($(button.dataset.close)));
+    });
+
+    $('notesForm').addEventListener('submit', event => {
+      event.preventDefault();
+      const value = $('reviewNotes').value.trim();
+      $('notesSummary').textContent = value ? 'Draft saved in mockup' : 'No notes saved';
+      $('notesSavedState').textContent = value ? 'Saved locally for this preview' : 'Mockup draft only';
+      showToast(value ? 'Demo note saved. Live data is unchanged.' : 'Empty demo note cleared. Live data is unchanged.');
+    });
+
+    document.addEventListener('click', event => {
+      if (!event.target.closest('.menu')) closeMenus();
+    });
+
+    document.addEventListener('toggle', event => {
+      if (event.target.matches('.menu') && event.target.open) closeMenus(event.target);
+    }, true);
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') closeMenus();
+    });
+
+    window.addEventListener('DOMContentLoaded', renderIcons, { once: true });
+  </script>
+</body>
+</html>
