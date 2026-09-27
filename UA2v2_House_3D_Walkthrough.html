@@ -207,7 +207,9 @@ function update(){
  drawReview();$('#areas').replaceChildren();
  $('#labels-label').hidden=mode!=='plan';$('#room-key').hidden=mode!=='plan'||!$('#room-labels').checked;$('#room-key').replaceChildren();
  for(const [i,r] of (floorData().rooms||[]).entries()){
-  const row=document.createElement('div'),n=document.createElement('b'),name=document.createElement('span');n.textContent=String(i+1);name.textContent=r.label;row.append(n,name);$('#room-key').append(row);
+  const row=document.createElement('div'),n=document.createElement('b'),name=document.createElement('span');n.textContent=String(i+1);name.textContent=r.label;
+  if(r.reference_area_m2!=null){const area=document.createElement('small');area.textContent=r.reference_area_m2+' m²';area.title='Published reference area';name.append(' · ',area);}
+  row.append(n,name);$('#room-key').append(row);
  }
  for(const r of floorData().rooms||[]){const p=document.createElement('p');p.textContent=r.label+(r.reference_area_m2!=null?' · reference '+r.reference_area_m2+' m²':'')+(r.modeled_area_m2!=null?' · modeled '+r.modeled_area_m2+' m²':'')+(r.area_basis?' · '+r.area_basis:'');$('#areas').append(p);}
 }
