@@ -228,7 +228,8 @@ function update(){
  }
  for(const r of floorData().rooms||[]){const p=document.createElement('p');p.textContent=r.label+(r.reference_area_m2!=null?' · reference '+r.reference_area_m2+' m²':'')+(r.modeled_area_m2!=null?' · modeled '+r.modeled_area_m2+' m²':'')+(r.area_basis?' · '+r.area_basis:'');$('#areas').append(p);}
 }
-function resize(){const w=view.clientWidth,h=view.clientHeight;renderer.setSize(w,h,false);eye.aspect=w/h;eye.fov=Math.min(90,Math.max(53,THREE.MathUtils.radToDeg(2*Math.atan(Math.tan(Math.PI/5)/(w/h)))));eye.updateProjectionMatrix();}
+// Three.js takes vertical FOV; preserve an explicit 90-degree horizontal view across aspect ratios.
+function resize(){const w=view.clientWidth,h=view.clientHeight;renderer.setSize(w,h,false);eye.aspect=w/h;eye.fov=THREE.MathUtils.radToDeg(2*Math.atan(Math.tan(Math.PI/4)/eye.aspect));eye.updateProjectionMatrix();}
 function syncEye(){const s=walker.state;eye.position.set(s.x,s.z+world.avatar.eye_height,-s.y);const cp=Math.cos(s.pitch);eye.lookAt(s.x+Math.sin(s.yaw)*cp,s.z+world.avatar.eye_height+Math.sin(s.pitch),-s.y-Math.cos(s.yaw)*cp);}
 function fit(){
  resize();if(mode==='walk'){syncEye();return;}
