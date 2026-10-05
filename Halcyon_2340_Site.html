@@ -53,7 +53,7 @@ function updateSlope(){
     for(const m of slopes){m.visible=enabled;const p=m.geometry.attributes.position;for(let i=0;i<p.count;i++)p.setY(i,data.slope.reference_z+Math.tan(angle*Math.PI/180)*(p.getX(i)-data.slope.reference_x));p.needsUpdate=true;m.geometry.computeBoundingSphere();}
     $('#slope-note').hidden=!enabled;
 }
-new GLTFLoader().load('halcyon-mobile-assets/model-site-r06.glb',gltf=>{
+new GLTFLoader().load('halcyon-mobile-assets/model-site-r06.glb?v=stools-removed-20261005',gltf=>{
     root=gltf.scene;scene.add(root);
     root.traverse(ob=>{
         if(ob.userData.conditions)ob.visible=Object.values(JSON.parse(ob.userData.conditions)).every(v=>v===false);
