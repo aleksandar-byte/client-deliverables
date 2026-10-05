@@ -1,0 +1,584 @@
+{
+  "revision": "realistic-r03",
+  "textures": {
+    "sparse_grass": {
+      "repeat_metres": 3,
+      "maps": {
+        "Diffuse": "sparse_grass-Diffuse.jpg",
+        "nor_gl": "sparse_grass-nor_gl.jpg",
+        "Rough": "sparse_grass-Rough.jpg"
+      }
+    },
+    "withered_grass": {
+      "repeat_metres": 3,
+      "maps": {
+        "Diffuse": "withered_grass-Diffuse.jpg",
+        "nor_gl": "withered_grass-nor_gl.jpg",
+        "Rough": "withered_grass-Rough.jpg"
+      }
+    },
+    "gravel_road": {
+      "repeat_metres": 2,
+      "maps": {
+        "Diffuse": "gravel_road-Diffuse.jpg",
+        "nor_gl": "gravel_road-nor_gl.jpg",
+        "Rough": "gravel_road-Rough.jpg"
+      }
+    },
+    "asphalt_02": {
+      "repeat_metres": 3,
+      "maps": {
+        "Diffuse": "asphalt_02-Diffuse.jpg",
+        "nor_gl": "asphalt_02-nor_gl.jpg",
+        "Rough": "asphalt_02-Rough.jpg"
+      }
+    },
+    "white_plaster_02": {
+      "repeat_metres": 2,
+      "maps": {
+        "Diffuse": "white_plaster_02-Diffuse.jpg",
+        "nor_gl": "white_plaster_02-nor_gl.jpg",
+        "Rough": "white_plaster_02-Rough.jpg"
+      }
+    },
+    "clay_roof_tiles": {
+      "repeat_metres": 2,
+      "maps": {
+        "Diffuse": "clay_roof_tiles-Diffuse.jpg",
+        "nor_gl": "clay_roof_tiles-nor_gl.jpg",
+        "Rough": "clay_roof_tiles-Rough.jpg"
+      }
+    }
+  },
+  "tree_positions": [
+    {
+      "x": -6.305315315082583,
+      "y": -51.75961817831882,
+      "height": 3,
+      "rotation": 1.418470529301186,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -5.867528817805384,
+      "y": -48.79173290715321,
+      "height": 3,
+      "rotation": 3.4211039583322407,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -5.4297423205281845,
+      "y": -45.823847635987605,
+      "height": 3,
+      "rotation": 4.11508138805249,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -4.991955823250985,
+      "y": -42.85596236482199,
+      "height": 3,
+      "rotation": 0.44481579588983394,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -4.554169325973786,
+      "y": -39.888077093656385,
+      "height": 3,
+      "rotation": 5.619133406222239,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -4.116382828696586,
+      "y": -36.92019182249077,
+      "height": 3,
+      "rotation": 5.914230713047669,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -3.6785963314193864,
+      "y": -33.952306551325165,
+      "height": 3,
+      "rotation": 5.58888848422227,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -3.2408098341421865,
+      "y": -30.984421280159555,
+      "height": 3,
+      "rotation": 3.365047763102039,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -2.803023336864987,
+      "y": -28.016536008993945,
+      "height": 3,
+      "rotation": 4.6333296344844355,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -2.589313412447487,
+      "y": -25.033968997024072,
+      "height": 3,
+      "rotation": 6.1541924763157425,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -2.636101481971098,
+      "y": -22.034333873121458,
+      "height": 3,
+      "rotation": 5.6407094756076335,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -2.682889551494709,
+      "y": -19.034698749218844,
+      "height": 3,
+      "rotation": 2.2367525836561293,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -2.72967762101832,
+      "y": -16.03506362531623,
+      "height": 3,
+      "rotation": 3.4869939198259057,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -2.776465690541931,
+      "y": -13.035428501413614,
+      "height": 3,
+      "rotation": 0.4824983354106658,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -2.823253760065542,
+      "y": -10.035793377510998,
+      "height": 3,
+      "rotation": 4.352003032595515,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -2.870041829589153,
+      "y": -7.036158253608388,
+      "height": 3,
+      "rotation": 3.1959973743257972,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -2.988441706332717,
+      "y": -4.038966520605923,
+      "height": 3,
+      "rotation": 2.4210676518324643,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -3.146219195110368,
+      "y": -1.0431183495473473,
+      "height": 3,
+      "rotation": 4.260740577325347,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -3.3039966838880197,
+      "y": 1.9527298215112294,
+      "height": 3,
+      "rotation": 0.0003513865767548254,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -3.4617741726656712,
+      "y": 4.948577992569806,
+      "height": 3,
+      "rotation": 0.1221557748598458,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -3.6195516614433227,
+      "y": 7.9444261636283855,
+      "height": 3,
+      "rotation": 3.6752137671154848,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -3.777329150220974,
+      "y": 10.940274334686963,
+      "height": 3,
+      "rotation": 5.271970900671975,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -4.040409010013094,
+      "y": 13.926887661845157,
+      "height": 3,
+      "rotation": 1.9229174972261283,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -4.4064913153470595,
+      "y": 16.90446784476574,
+      "height": 3,
+      "rotation": 5.6182141865911035,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -4.772573620681026,
+      "y": 19.882048027686324,
+      "height": 3,
+      "rotation": 2.5333746996898507,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -5.138655926014992,
+      "y": 22.859628210606907,
+      "height": 3,
+      "rotation": 3.617121291859893,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -5.5047382313489575,
+      "y": 25.83720839352749,
+      "height": 3,
+      "rotation": 6.1064352396726145,
+      "basis": "user-reported 3 m tree band; existing approximate positions"
+    },
+    {
+      "x": -63.114209392959594,
+      "y": 56.16985287636203,
+      "height": 4.8435295894735,
+      "rotation": 5.474001089147047,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -52.185887333394206,
+      "y": 47.43101069885218,
+      "height": 3.3229252230843427,
+      "rotation": 2.647357208836097,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -45.71514433619244,
+      "y": 41.15792558412657,
+      "height": 4.969064827685308,
+      "rotation": 3.5488262051762747,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -26.44694638614974,
+      "y": -16.343348005913455,
+      "height": 4.600162096275582,
+      "rotation": 1.6732293286827704,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -24.20525203117458,
+      "y": 52.4994287900773,
+      "height": 3.518023296231392,
+      "rotation": 4.568779385425282,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -15.506055085395964,
+      "y": -53.44297056020724,
+      "height": 4.72620104276895,
+      "rotation": 3.308146918660033,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -28.141111344934934,
+      "y": 63.091311752616946,
+      "height": 4.473827147076153,
+      "rotation": 2.6146879954218827,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -66.99314292028467,
+      "y": -47.86342688055216,
+      "height": 3.2332588407249125,
+      "rotation": 5.569102687348162,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -60.502932266440645,
+      "y": 40.33858931599271,
+      "height": 5.299140619860342,
+      "rotation": 2.2457327438047323,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -19.490929376267232,
+      "y": 41.84540619924073,
+      "height": 5.595349266190099,
+      "rotation": 1.0695563446466065,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -38.13459370633406,
+      "y": -67.82234560395187,
+      "height": 4.665720372816345,
+      "rotation": 1.235806490125101,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -64.61160566078972,
+      "y": -51.322592896811926,
+      "height": 3.8533458869725647,
+      "rotation": 0.16297742401557364,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -63.46655899916041,
+      "y": -54.51608603820783,
+      "height": 4.460109081703478,
+      "rotation": 3.0443019939431033,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -16.253252798068786,
+      "y": 31.911659142435326,
+      "height": 4.9161814669051545,
+      "rotation": 1.7348607371218938,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -69.02628631032907,
+      "y": -8.85535340526068,
+      "height": 3.6591490867865417,
+      "rotation": 1.2550328732045497,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -27.15021451380798,
+      "y": 10.682671205673046,
+      "height": 3.253901352118823,
+      "rotation": 3.2749060695125634,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -47.418803026548105,
+      "y": -24.72954075333393,
+      "height": 3.3324925454786327,
+      "rotation": 5.322380379328783,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -38.014247707581504,
+      "y": -62.91166969057181,
+      "height": 5.458599834771427,
+      "rotation": 4.985389325777702,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -64.41673647034625,
+      "y": -41.98308043343075,
+      "height": 5.197697824800606,
+      "rotation": 2.1436709437470163,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -21.94590202674619,
+      "y": -65.10400717187277,
+      "height": 5.5043334976938585,
+      "rotation": 5.99520135074191,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -55.259046773786366,
+      "y": -52.99913528373904,
+      "height": 4.866678868566496,
+      "rotation": 4.99558352145541,
+      "basis": "illustrative outer vegetation"
+    },
+    {
+      "x": -65.65975629214573,
+      "y": 15.22378251999396,
+      "height": 4.889741507808486,
+      "rotation": 2.1826683786063588,
+      "basis": "illustrative outer vegetation"
+    }
+  ],
+  "shrub_positions": [
+    {
+      "x": -11.821469897676995,
+      "y": -47.56445451798685,
+      "height": 0.8109125062161213,
+      "rotation": 4.765121446598288
+    },
+    {
+      "x": -17.423443745847724,
+      "y": 13.736165241192722,
+      "height": 1.0591562822096676,
+      "rotation": 5.758777081366585
+    },
+    {
+      "x": -13.700410204636299,
+      "y": 17.016249045033874,
+      "height": 0.5461907678981391,
+      "rotation": 0.41532019096392425
+    },
+    {
+      "x": -13.498250728118443,
+      "y": -14.500635952016097,
+      "height": 0.8302179474660937,
+      "rotation": 4.135193598083313
+    },
+    {
+      "x": -11.54446333539422,
+      "y": -31.6346537758552,
+      "height": 0.5337312704645609,
+      "rotation": 3.228470692141229
+    },
+    {
+      "x": -17.104868001793538,
+      "y": -2.841938036961885,
+      "height": 1.0306871560316189,
+      "rotation": 6.16021734345765
+    },
+    {
+      "x": -12.17672726653722,
+      "y": -1.8719897554185465,
+      "height": 1.2431669290098548,
+      "rotation": 2.242023132717884
+    },
+    {
+      "x": -15.275823087263559,
+      "y": 24.609069104161463,
+      "height": 0.5894902711100031,
+      "rotation": 5.0594639878266054
+    },
+    {
+      "x": -15.985172766882798,
+      "y": -38.00714393007109,
+      "height": 1.0741801810960743,
+      "rotation": 1.702486758483531
+    },
+    {
+      "x": -12.486791294365654,
+      "y": -54.151347118945814,
+      "height": 0.88031897059987,
+      "rotation": 5.377623611344279
+    },
+    {
+      "x": -13.498044127100037,
+      "y": -1.8558579214617268,
+      "height": 1.020643034081273,
+      "rotation": 3.8036861225650647
+    },
+    {
+      "x": -10.920554930776714,
+      "y": 31.161616703352465,
+      "height": 1.0415171111257426,
+      "rotation": 3.1572114986868955
+    },
+    {
+      "x": -12.089161488249083,
+      "y": 21.307620179017064,
+      "height": 0.6970805537020492,
+      "rotation": 4.314843358979972
+    },
+    {
+      "x": -10.381614563172013,
+      "y": -50.84548685946631,
+      "height": 0.5394597751759984,
+      "rotation": 3.2620324276397397
+    },
+    {
+      "x": -13.006851847506752,
+      "y": 0.006639091212626624,
+      "height": 0.7321853088696789,
+      "rotation": 0.8098847484609232
+    },
+    {
+      "x": -16.224458167938998,
+      "y": -40.828014129558454,
+      "height": 1.072253435853709,
+      "rotation": 4.174137464193993
+    },
+    {
+      "x": -14.471140550797546,
+      "y": -3.999338795686157,
+      "height": 1.0338709005981772,
+      "rotation": 6.002183005613798
+    },
+    {
+      "x": -16.58258211632248,
+      "y": -41.734515888972034,
+      "height": 0.7743535322718893,
+      "rotation": 6.2274307405166445
+    },
+    {
+      "x": -10.52883530136581,
+      "y": 0.7579470656274907,
+      "height": 0.8984766592304068,
+      "rotation": 2.0682220447798336
+    },
+    {
+      "x": -11.254741773645087,
+      "y": 29.2199614676273,
+      "height": 1.0221636523985589,
+      "rotation": 2.9091591291788506
+    },
+    {
+      "x": -15.178608165648274,
+      "y": 1.8040088306460333,
+      "height": 0.7224547985392504,
+      "rotation": 4.57585232196823
+    },
+    {
+      "x": -16.797930551652083,
+      "y": 29.295836539783707,
+      "height": 1.1777833965755868,
+      "rotation": 5.862385237446994
+    },
+    {
+      "x": -15.177147433482476,
+      "y": -16.12640854150507,
+      "height": 0.604701180870335,
+      "rotation": 4.563443516372032
+    },
+    {
+      "x": -12.091156552793306,
+      "y": -38.5707192278968,
+      "height": 0.5686051247833591,
+      "rotation": 0.4008659935741711
+    },
+    {
+      "x": -14.760013019293641,
+      "y": -52.58652043178811,
+      "height": 0.6997764664867133,
+      "rotation": 4.291425322028968
+    },
+    {
+      "x": -17.5276842489015,
+      "y": 29.08797206945185,
+      "height": 1.016826786332829,
+      "rotation": 1.1780231118829692
+    },
+    {
+      "x": -12.135014086185635,
+      "y": 33.62973294611547,
+      "height": 0.5800069375129399,
+      "rotation": 5.6190217878584034
+    },
+    {
+      "x": -13.340089538523422,
+      "y": -50.06570389290494,
+      "height": 0.6171151009145638,
+      "rotation": 4.17524395375753
+    },
+    {
+      "x": -17.44848712754766,
+      "y": 27.15787808129319,
+      "height": 1.049232067473804,
+      "rotation": 4.780170462470573
+    },
+    {
+      "x": -15.60701158102922,
+      "y": -53.76808284194419,
+      "height": 0.6017049399385093,
+      "rotation": 3.2363992768349568
+    }
+  ],
+  "ground_z": -0.205,
+  "lighting": "Fixed presentation daylight, not local time or a solar study",
+  "terrain": "Existing flat datum retained; no new elevation claims",
+  "species": "Generic imported broadleaf / shrub substitutes, not verified local species"
+}
