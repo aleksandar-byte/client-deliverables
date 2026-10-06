@@ -1,0 +1,276 @@
+[
+  {
+    "node": {
+      "snippet": "<img id=\"thumbImage\" style=\"opacity: 1;\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhREfjt_WfF-z6HT\u2026\">",
+      "type": "node",
+      "lhId": "page-9-IMG",
+      "selector": "div.visualizer > div.viewer > div#thumb > img#thumbImage",
+      "nodeLabel": "div.visualizer > div.viewer > div#thumb > img#thumbImage",
+      "boundingRect": {
+        "top": 7078,
+        "right": 374,
+        "width": 114,
+        "bottom": 7154,
+        "left": 260,
+        "height": 76
+      },
+      "path": "1,HTML,1,BODY,17,DIV,8,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,4,DIV,3,DIV,2,DIV,1,DIV,0,IMG"
+    },
+    "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhREfjt_WfF-z6HTRyIsmSbbmM-gQ_-hvRS66J0f6UFZIvcejIgYa03IguQHTa-PY4arqZ7iSTowe9jxP5RIVMT3dIzg9Jh4i-9kCkFJ_K2fXXfJ9PamNJJkR_AMCyw6PaIhjKpw1UHlH7EoeoczN7qccsUIsqfZOGa1du2gXM5irKFejSvu7hMjGmXRho/s0/3M-Prestige-90-exterior-day.jpg",
+    "subItems": {
+      "type": "subitems",
+      "items": [
+        {
+          "wastedBytes": 205271,
+          "reason": "This image file is larger than it needs to be (1500x1000) for its displayed dimensions (200x133). Use responsive images to reduce the image download size."
+        }
+      ]
+    },
+    "wastedBytes": 205271,
+    "totalBytes": 208967
+  },
+  {
+    "subItems": {
+      "items": [
+        {
+          "reason": "This image file is larger than it needs to be (2560x1707) for its displayed dimensions (518x345). Use responsive images to reduce the image download size.",
+          "wastedBytes": 159766
+        }
+      ],
+      "type": "subitems"
+    },
+    "totalBytes": 166586,
+    "node": {
+      "boundingRect": {
+        "top": 7787,
+        "right": 354,
+        "left": 58,
+        "height": 197,
+        "bottom": 7985,
+        "width": 296
+      },
+      "lhId": "page-12-IMG",
+      "nodeLabel": "Before Decorative Film",
+      "type": "node",
+      "snippet": "<img decoding=\"async\" src=\"https://mgtfilms.com/wp-content/uploads/2026/03/slider-before-decorative-s\u2026\" alt=\"Before Decorative Film\" class=\"ba-img ba-after\" id=\"ba-after\">",
+      "selector": "div.elementor-element > div.elementor-widget-container > div#ba-slider > img#ba-after",
+      "path": "1,HTML,1,BODY,17,DIV,10,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,3,IMG"
+    },
+    "url": "https://mgtfilms.com/wp-content/uploads/2026/03/slider-before-decorative-scaled.jpg",
+    "wastedBytes": 159766
+  },
+  {
+    "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFTiSRut-m_HevPL7sXrbgwClI8vpG9h1fZGE_GXyQzB6DD17ewmol1aTafh61qyI-_oL-oSo-tvF_E7NZcuwN3NTCgibsq8opExZd4qPaIMIpf8DhOuHBrRte99-GKggZypzgoUZWZD-yJKjsCo2tlg-uK5_1aGFsZku8QnlGTddOV-dADHa9ry-Hyyg/s0/3M-Prestige-90-Interior-day.jpg",
+    "wastedBytes": 158400,
+    "subItems": {
+      "items": [
+        {
+          "reason": "This image file is larger than it needs to be (1500x1000) for its displayed dimensions (634x422). Use responsive images to reduce the image download size.",
+          "wastedBytes": 158400
+        }
+      ],
+      "type": "subitems"
+    },
+    "totalBytes": 192785,
+    "node": {
+      "path": "1,HTML,1,BODY,17,DIV,8,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,4,DIV,3,DIV,2,DIV,0,IMG",
+      "selector": "div.container > div.visualizer > div.viewer > img#mainImage",
+      "nodeLabel": "div.container > div.visualizer > div.viewer > img#mainImage",
+      "snippet": "<img id=\"mainImage\" style=\"opacity: 1;\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFTiSRut-m_HevP\u2026\">",
+      "boundingRect": {
+        "height": 241,
+        "top": 6926,
+        "bottom": 7167,
+        "left": 25,
+        "width": 362,
+        "right": 387
+      },
+      "type": "node",
+      "lhId": "page-8-IMG"
+    }
+  },
+  {
+    "node": {
+      "nodeLabel": "After Decorative Film",
+      "path": "1,HTML,1,BODY,17,DIV,10,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,IMG",
+      "selector": "div.elementor-element > div.elementor-widget-container > div#ba-slider > img.ba-img",
+      "type": "node",
+      "lhId": "page-13-IMG",
+      "snippet": "<img decoding=\"async\" src=\"https://mgtfilms.com/wp-content/uploads/2026/03/slider-after-decorative-sc\u2026\" alt=\"After Decorative Film\" class=\"ba-img\">",
+      "boundingRect": {
+        "bottom": 7985,
+        "width": 296,
+        "top": 7787,
+        "height": 197,
+        "left": 58,
+        "right": 354
+      }
+    },
+    "subItems": {
+      "items": [
+        {
+          "wastedBytes": 139975,
+          "reason": "This image file is larger than it needs to be (2560x1707) for its displayed dimensions (518x345). Use responsive images to reduce the image download size."
+        }
+      ],
+      "type": "subitems"
+    },
+    "wastedBytes": 139975,
+    "url": "https://mgtfilms.com/wp-content/uploads/2026/03/slider-after-decorative-scaled.jpg",
+    "totalBytes": 145950
+  },
+  {
+    "subItems": {
+      "type": "subitems",
+      "items": [
+        {
+          "wastedBytes": 32290,
+          "reason": "Increasing the image compression factor could improve this image's download size."
+        },
+        {
+          "reason": "This image file is larger than it needs to be (704x558) for its displayed dimensions (560x444). Use responsive images to reduce the image download size.",
+          "wastedBytes": 35906
+        }
+      ]
+    },
+    "totalBytes": 97762,
+    "wastedBytes": 56337,
+    "node": {
+      "path": "1,HTML,1,BODY,17,DIV,4,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,A,0,DIV,0,DIV,0,IMG",
+      "nodeLabel": "Rectangle 81 1",
+      "boundingRect": {
+        "width": 320,
+        "left": 46,
+        "height": 254,
+        "right": 366,
+        "bottom": 3502,
+        "top": 3248
+      },
+      "snippet": "<img loading=\"lazy\" decoding=\"async\" width=\"704\" height=\"558\" src=\"https://mgtfilms.com/wp-content/uploads/2026/03/Rectangle-81-1.jpg\" class=\"attachment-large size-large wp-image-22294\" alt=\"Rectangle 81 1\" srcset=\"https://mgtfilms.com/wp-content/uploads/2026/03/Rectangle-81-1.jpg 704w, h\u2026\" sizes=\"(max-width: 704px) 100vw, 704px\">",
+      "lhId": "page-14-IMG",
+      "type": "node",
+      "selector": "a.elementor-element > div.elementor-element > div.elementor-widget-container > img.attachment-large"
+    },
+    "url": "https://mgtfilms.com/wp-content/uploads/2026/03/Rectangle-81-1.jpg"
+  },
+  {
+    "wastedBytes": 23131,
+    "url": "https://mgtfilms.com/wp-content/uploads/2026/03/Rectangle-66-768x416.jpg",
+    "node": {
+      "lhId": "page-15-IMG",
+      "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > img.attachment-large",
+      "type": "node",
+      "snippet": "<img loading=\"lazy\" decoding=\"async\" width=\"800\" height=\"433\" src=\"https://mgtfilms.com/wp-content/uploads/2026/03/Rectangle-66-768x416.jpg\" class=\"attachment-large size-large wp-image-22289\" alt=\"Rectangle 66\" srcset=\"https://mgtfilms.com/wp-content/uploads/2026/03/Rectangle-66.jpg 1016w, ht\u2026\" sizes=\"(max-width: 800px) 100vw, 800px\">",
+      "nodeLabel": "Rectangle 66",
+      "path": "1,HTML,1,BODY,17,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,IMG",
+      "boundingRect": {
+        "top": 1444,
+        "width": 310,
+        "left": 51,
+        "right": 361,
+        "bottom": 1612,
+        "height": 168
+      }
+    },
+    "totalBytes": 46164,
+    "subItems": {
+      "items": [
+        {
+          "reason": "This image file is larger than it needs to be (768x416) for its displayed dimensions (543x294). Use responsive images to reduce the image download size.",
+          "wastedBytes": 23131
+        }
+      ],
+      "type": "subitems"
+    }
+  },
+  {
+    "node": {
+      "boundingRect": {
+        "height": 254,
+        "bottom": 3963,
+        "top": 3710,
+        "right": 366,
+        "left": 46,
+        "width": 320
+      },
+      "path": "1,HTML,1,BODY,17,DIV,4,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,A,0,DIV,0,DIV,0,IMG",
+      "snippet": "<img loading=\"lazy\" decoding=\"async\" width=\"704\" height=\"558\" src=\"https://mgtfilms.com/wp-content/uploads/2026/03/Rectangle-81-2.jpg\" class=\"attachment-large size-large wp-image-22295\" alt=\"Rectangle 81 2\" srcset=\"https://mgtfilms.com/wp-content/uploads/2026/03/Rectangle-81-2.jpg 704w, h\u2026\" sizes=\"(max-width: 704px) 100vw, 704px\">",
+      "type": "node",
+      "selector": "a.elementor-element > div.elementor-element > div.elementor-widget-container > img.attachment-large",
+      "lhId": "page-16-IMG",
+      "nodeLabel": "Rectangle 81 2"
+    },
+    "subItems": {
+      "items": [
+        {
+          "wastedBytes": 23117,
+          "reason": "This image file is larger than it needs to be (704x558) for its displayed dimensions (560x444). Use responsive images to reduce the image download size."
+        }
+      ],
+      "type": "subitems"
+    },
+    "totalBytes": 62940,
+    "url": "https://mgtfilms.com/wp-content/uploads/2026/03/Rectangle-81-2.jpg",
+    "wastedBytes": 23117
+  },
+  {
+    "subItems": {
+      "items": [
+        {
+          "wastedBytes": 20164,
+          "reason": "This image file is larger than it needs to be (768x517) for its displayed dimensions (252x170). Use responsive images to reduce the image download size."
+        }
+      ],
+      "type": "subitems"
+    },
+    "totalBytes": 22606,
+    "node": {
+      "nodeLabel": "div.elementor-element > div.elementor-widget-container > a > img.attachment-large",
+      "type": "node",
+      "lhId": "page-17-IMG",
+      "selector": "div.elementor-element > div.elementor-widget-container > a > img.attachment-large",
+      "snippet": "<img fetchpriority=\"high\" width=\"800\" height=\"539\" src=\"https://mgtfilms.com/wp-content/uploads/2025/07/MGT_Glass_Solutions_EDH_sm\u2026\" class=\"attachment-large size-large wp-image-21572\" alt=\"\" srcset=\"https://mgtfilms.com/wp-content/uploads/2025/07/MGT_Glass_Solutions_EDH_sm\u2026\" sizes=\"(max-width: 800px) 100vw, 800px\">",
+      "boundingRect": {
+        "top": 96,
+        "left": 30,
+        "height": 97,
+        "width": 144,
+        "bottom": 193,
+        "right": 174
+      },
+      "path": "1,HTML,1,BODY,16,HEADER,5,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,A,0,IMG"
+    },
+    "url": "https://mgtfilms.com/wp-content/uploads/2025/07/MGT_Glass_Solutions_EDH_small-768x517.jpg",
+    "wastedBytes": 20164
+  },
+  {
+    "node": {
+      "boundingRect": {
+        "width": 310,
+        "bottom": 2156,
+        "right": 361,
+        "height": 168,
+        "top": 1989,
+        "left": 51
+      },
+      "selector": "div.elementor-element > div.elementor-element > div.elementor-widget-container > img.attachment-large",
+      "path": "1,HTML,1,BODY,17,DIV,2,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,IMG",
+      "nodeLabel": "Rectangle 67",
+      "type": "node",
+      "lhId": "page-11-IMG",
+      "snippet": "<img loading=\"lazy\" decoding=\"async\" width=\"800\" height=\"433\" src=\"https://mgtfilms.com/wp-content/uploads/2026/03/Rectangle-67-768x416.jpg\" class=\"attachment-large size-large wp-image-22290\" alt=\"Rectangle 67\" srcset=\"https://mgtfilms.com/wp-content/uploads/2026/03/Rectangle-67.jpg 1016w, ht\u2026\" sizes=\"(max-width: 800px) 100vw, 800px\">"
+    },
+    "subItems": {
+      "type": "subitems",
+      "items": [
+        {
+          "wastedBytes": 16205,
+          "reason": "This image file is larger than it needs to be (768x416) for its displayed dimensions (543x294). Use responsive images to reduce the image download size."
+        }
+      ]
+    },
+    "url": "https://mgtfilms.com/wp-content/uploads/2026/03/Rectangle-67-768x416.jpg",
+    "wastedBytes": 16205,
+    "totalBytes": 32342
+  }
+]

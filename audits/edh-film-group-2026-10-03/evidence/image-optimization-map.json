@@ -1,0 +1,242 @@
+[
+  {
+    "wastedBytes": 369095,
+    "node": {
+      "snippet": "<img class=\"skip-lazy twentytwenty-before\" data-skip-lazy=\"\" src=\"https://edhfilmgroup.com/wp-content/uploads/2025/12/before-scaled.jpg\" alt=\"\" style=\"clip: rect(0px, 186px, 248.047px, 0px);\">",
+      "path": "1,HTML,1,BODY,3,DIV,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,DIV,7,DIV,0,DIV,0,DIV,0,DIV,1,DIV,1,DIV,0,DIV,0,IMG",
+      "lhId": "page-0-IMG",
+      "boundingRect": {
+        "top": 6839,
+        "width": 372,
+        "right": 392,
+        "bottom": 7087,
+        "left": 20,
+        "height": 248
+      },
+      "type": "node",
+      "nodeLabel": "div.x-col > div.twentytwenty-wrapper > div.bafg-twentytwenty-container > img.skip-lazy",
+      "selector": "div.x-col > div.twentytwenty-wrapper > div.bafg-twentytwenty-container > img.skip-lazy"
+    },
+    "totalBytes": 394613,
+    "subItems": {
+      "items": [
+        {
+          "reason": "This image file is larger than it needs to be (2560x1707) for its displayed dimensions (651x434). Use responsive images to reduce the image download size.",
+          "wastedBytes": 369095
+        }
+      ],
+      "type": "subitems"
+    },
+    "url": "https://edhfilmgroup.com/wp-content/uploads/2025/12/before-scaled.jpg"
+  },
+  {
+    "totalBytes": 367949,
+    "node": {
+      "path": "1,HTML,1,BODY,3,DIV,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,DIV,7,DIV,0,DIV,0,DIV,0,DIV,1,DIV,1,DIV,0,DIV,1,IMG",
+      "nodeLabel": "div.x-col > div.twentytwenty-wrapper > div.bafg-twentytwenty-container > img.skip-lazy",
+      "selector": "div.x-col > div.twentytwenty-wrapper > div.bafg-twentytwenty-container > img.skip-lazy",
+      "lhId": "page-1-IMG",
+      "snippet": "<img class=\"skip-lazy twentytwenty-after\" data-skip-lazy=\"\" src=\"https://edhfilmgroup.com/wp-content/uploads/2025/12/Custom-Plotted-scaled.\u2026\" alt=\"\" style=\"clip: rect(0px, 372px, 248.047px, 186px);\">",
+      "type": "node",
+      "boundingRect": {
+        "bottom": 7087,
+        "top": 6839,
+        "width": 372,
+        "right": 392,
+        "height": 248,
+        "left": 20
+      }
+    },
+    "subItems": {
+      "type": "subitems",
+      "items": [
+        {
+          "wastedBytes": 344155,
+          "reason": "This image file is larger than it needs to be (2560x1707) for its displayed dimensions (651x434). Use responsive images to reduce the image download size."
+        }
+      ]
+    },
+    "url": "https://edhfilmgroup.com/wp-content/uploads/2025/12/Custom-Plotted-scaled.jpg",
+    "wastedBytes": 344155
+  },
+  {
+    "node": {
+      "selector": "div.x-row-inner > div.x-col > a.x-image > img.lazyloaded",
+      "type": "node",
+      "snippet": "<img decoding=\"async\" src=\"https://edhfilmgroup.com/wp-content/uploads/2026/04/Rectangle-66-1.jpg\" width=\"1144\" height=\"556\" alt=\"Menu Item\" class=\"lazyloaded\" data-ll-status=\"loaded\">",
+      "lhId": "page-2-IMG",
+      "nodeLabel": "Menu Item",
+      "boundingRect": {
+        "bottom": 1011,
+        "top": 831,
+        "height": 180,
+        "left": 21,
+        "width": 370,
+        "right": 391
+      },
+      "path": "1,HTML,1,BODY,3,DIV,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,DIV,2,DIV,0,DIV,0,DIV,0,DIV,1,A,0,IMG"
+    },
+    "url": "https://edhfilmgroup.com/wp-content/uploads/2026/04/Rectangle-66-1.jpg",
+    "totalBytes": 230313,
+    "subItems": {
+      "items": [
+        {
+          "reason": "This image file is larger than it needs to be (2288x1112) for its displayed dimensions (648x315). Use responsive images to reduce the image download size.",
+          "wastedBytes": 211869
+        }
+      ],
+      "type": "subitems"
+    },
+    "wastedBytes": 211869
+  },
+  {
+    "totalBytes": 166852,
+    "node": {
+      "snippet": "<img id=\"thumbImage\" class=\"\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9eUmJpoEpC0fZ6\u2026\">",
+      "path": "1,HTML,1,BODY,3,DIV,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,DIV,5,DIV,0,DIV,0,DIV,0,DIV,0,DIV,3,DIV,2,DIV,1,DIV,0,IMG",
+      "boundingRect": {
+        "height": 103,
+        "bottom": 5512,
+        "width": 154,
+        "right": 369,
+        "left": 215,
+        "top": 5409
+      },
+      "lhId": "page-3-IMG",
+      "type": "node",
+      "nodeLabel": "div.visualizer > div.viewer > div#thumb > img#thumbImage",
+      "selector": "div.visualizer > div.viewer > div#thumb > img#thumbImage"
+    },
+    "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9eUmJpoEpC0fZ6n9tk05iKd0VEI6f0iMtZc8zyhqSD0-HMQymyFP-6CJ4r8uLGKphrl73rsgcpShVFHeZSeV3Zx4Ctoex-AVcWFPWUIMicIDzZvyOfZbvB_RgUMC0sKDbqP7wtPvbO-CugnnfK9ndGZgm05tDpl7dewpWEm_cPg9FAzX4RpPXH7fpXxo/s0/3m-90-exterior-day.jpg",
+    "subItems": {
+      "items": [
+        {
+          "wastedBytes": 161467,
+          "reason": "This image file is larger than it needs to be (1500x1000) for its displayed dimensions (270x180). Use responsive images to reduce the image download size."
+        }
+      ],
+      "type": "subitems"
+    },
+    "wastedBytes": 161467
+  },
+  {
+    "node": {
+      "lhId": "page-4-IMG",
+      "nodeLabel": "div.container > div.visualizer > div.viewer > img#mainImage",
+      "path": "1,HTML,1,BODY,3,DIV,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,DIV,5,DIV,0,DIV,0,DIV,0,DIV,0,DIV,3,DIV,2,DIV,0,IMG",
+      "boundingRect": {
+        "left": 25,
+        "height": 241,
+        "width": 362,
+        "right": 387,
+        "bottom": 5530,
+        "top": 5288
+      },
+      "type": "node",
+      "snippet": "<img id=\"mainImage\" class=\"\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPr5Am5D5aodh1W\u2026\">",
+      "selector": "div.container > div.visualizer > div.viewer > img#mainImage"
+    },
+    "wastedBytes": 130589,
+    "subItems": {
+      "items": [
+        {
+          "wastedBytes": 130589,
+          "reason": "This image file is larger than it needs to be (1500x1000) for its displayed dimensions (634x422). Use responsive images to reduce the image download size."
+        }
+      ],
+      "type": "subitems"
+    },
+    "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPr5Am5D5aodh1WUee9YSKVM0J9_DCJA0X7v86C68Mm7nCsB6wJO03pM3oFEAJQyndt6lGnIU9xjM968WvkEu2fsufcq_NB7SbNtYPv25AffCAX3W6yXI-Afc_TaMSs6KUGitMb57wExJy3OQSySCcGZe0Du7vlELgkJxPCQD7HnuU4C-59W8W-bS-RlA/s0/3m-90-interior-day.jpg",
+    "totalBytes": 158937
+  },
+  {
+    "totalBytes": 26320,
+    "subItems": {
+      "items": [
+        {
+          "wastedBytes": 24502,
+          "reason": "This image file is larger than it needs to be (1598x203) for its displayed dimensions (420x53). Use responsive images to reduce the image download size."
+        }
+      ],
+      "type": "subitems"
+    },
+    "wastedBytes": 24502,
+    "node": {
+      "nodeLabel": "Image",
+      "path": "1,HTML,1,BODY,3,DIV,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,SPAN,0,IMG",
+      "boundingRect": {
+        "top": 552,
+        "width": 240,
+        "right": 326,
+        "height": 30,
+        "bottom": 582,
+        "left": 86
+      },
+      "lhId": "page-5-IMG",
+      "selector": "div.x-row-inner > div.x-col > span.x-image > img.lazyloaded",
+      "type": "node",
+      "snippet": "<img decoding=\"async\" src=\"https://edhfilmgroup.com/wp-content/uploads/2026/02/3M-Prestiege-Dealer-Em\u2026\" width=\"1598\" height=\"203\" alt=\"Image\" class=\"lazyloaded\" data-ll-status=\"loaded\">"
+    },
+    "url": "https://edhfilmgroup.com/wp-content/uploads/2026/02/3M-Prestiege-Dealer-Email.png"
+  },
+  {
+    "wastedBytes": 12239,
+    "node": {
+      "type": "node",
+      "boundingRect": {
+        "left": 0,
+        "width": 412,
+        "right": 412,
+        "bottom": 520,
+        "top": 100,
+        "height": 420
+      },
+      "selector": "div#cs-content > div.x-section > div.hero-slider > div.hero-slide",
+      "lhId": "page-6-DIV",
+      "path": "1,HTML,1,BODY,3,DIV,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,DIV,0,DIV,1,DIV,1,DIV",
+      "snippet": "<div class=\"hero-slide rocket-lazyload lazyloaded\" style=\"background-image: url(&quot;https://edhfilmgroup.com/wp-content/uploads/2026/03\u2026&quot;);\" data-ll-status=\"loaded\">",
+      "nodeLabel": "div#cs-content > div.x-section > div.hero-slider > div.hero-slide"
+    },
+    "totalBytes": 271439,
+    "url": "https://edhfilmgroup.com/wp-content/uploads/2026/03/slider-2.jpg",
+    "subItems": {
+      "items": [
+        {
+          "reason": "Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size.",
+          "wastedBytes": 12239
+        }
+      ],
+      "type": "subitems"
+    }
+  },
+  {
+    "url": "https://edhfilmgroup.com/wp-content/uploads/2025/07/serve-1.png",
+    "totalBytes": 15060,
+    "wastedBytes": 6533,
+    "node": {
+      "snippet": "<img decoding=\"async\" src=\"https://edhfilmgroup.com/wp-content/uploads/2025/07/serve-1.png\" width=\"231\" height=\"67\" alt=\"Image\" class=\"lazyloaded\" data-ll-status=\"loaded\">",
+      "path": "1,HTML,1,BODY,3,DIV,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,2,DIV,0,SPAN,0,IMG",
+      "lhId": "page-7-IMG",
+      "nodeLabel": "Image",
+      "type": "node",
+      "boundingRect": {
+        "bottom": 780,
+        "top": 711,
+        "height": 70,
+        "left": 86,
+        "right": 326,
+        "width": 240
+      },
+      "selector": "div.x-row-inner > div.x-col > span.x-image > img.lazyloaded"
+    },
+    "subItems": {
+      "type": "subitems",
+      "items": [
+        {
+          "wastedBytes": 4742,
+          "reason": "Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size."
+        }
+      ]
+    }
+  }
+]

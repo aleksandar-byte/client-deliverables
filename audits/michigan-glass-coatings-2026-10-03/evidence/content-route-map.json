@@ -1,0 +1,36 @@
+{
+  "analyzed_at": "2026-10-03T20:02:55.543571+00:00",
+  "domain": "michgc.com",
+  "routes": [
+    {
+      "url": "https://michgc.com/",
+      "selector": ".e5120-e89",
+      "current_label": "Explore Commercial Services",
+      "current_href": "/commercial/",
+      "new_label": "Explore Residential Services",
+      "new_href": "/residential/",
+      "viewport": "desktop and mobile",
+      "evidence": "home-residential-rendered.html + browser-homepage.json"
+    },
+    {
+      "url": "https://michgc.com/locations/grand-rapids/",
+      "selector": ".e5741-e13",
+      "current_label": "Request a Quote",
+      "current_href": "#",
+      "new_label": "Request a Quote",
+      "new_href": "/contact-us/",
+      "viewport": "mobile; desktop separate link already correct",
+      "evidence": "grand-rapids-captures.json + grand-rapids-mobile-rendered.html"
+    },
+    {
+      "url": "https://michgc.com/locations/grand-rapids/",
+      "selector": ".e5741-e14",
+      "current_label": "Find Location",
+      "current_href": "#",
+      "new_label": "Find Location",
+      "new_href": "/locations/",
+      "viewport": "mobile; desktop separate link already correct",
+      "evidence": "grand-rapids-captures.json + grand-rapids-mobile-rendered.html"
+    }
+  ]
+}

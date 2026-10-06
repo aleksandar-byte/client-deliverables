@@ -1,0 +1,96 @@
+{
+  "analyzed_at": "2026-10-03",
+  "domain": "mgtfilms.com",
+  "status": "review only; no implementation",
+  "routes": [
+    {
+      "url": "https://mgtfilms.com/",
+      "selector": "[data-id=\"060c6ca\"] a",
+      "label": "About Us",
+      "current": "https://mgtfilms.com/#",
+      "proposed": null,
+      "action": "Confirm approved About page; if none is available, remove standalone footer link. Do not alter header dropdown parent.",
+      "evidence": "Normal desktop/mobile homepage + fresh source"
+    },
+    {
+      "url": "https://mgtfilms.com/services/solar-control-film/",
+      "selector": "[data-id=\"3b302d2\"] a.btn",
+      "label": "Get a Free Estimate",
+      "current": "#",
+      "proposed": "https://mgtfilms.com/contact-mgt-films/",
+      "evidence": "Fresh source; final contact200; no tap test"
+    },
+    {
+      "url": "https://mgtfilms.com/locations/madison/",
+      "selector": "[data-id=\"58da5d58\"] a",
+      "label": "Find a location",
+      "current": "/#",
+      "proposed": "https://mgtfilms.com/locations/",
+      "evidence": "Fresh source; normal capture blocked, no live tap test"
+    },
+    {
+      "url": "https://mgtfilms.com/locations/baton-rouge/",
+      "selector": "[data-id=\"56784714\"] a",
+      "label": "Find a location",
+      "current": "/#",
+      "proposed": "https://mgtfilms.com/locations/",
+      "evidence": "Fresh source; normal capture blocked, no live tap test"
+    },
+    {
+      "url": "https://mgtfilms.com/locations/jackson-ms/",
+      "selector": "[data-id=\"7f597e93\"] a",
+      "label": "Find a location",
+      "current": "/#",
+      "proposed": "https://mgtfilms.com/locations/",
+      "evidence": "Fresh source; normal capture blocked, no live tap test"
+    },
+    {
+      "url": "https://mgtfilms.com/locations/central-il/",
+      "selector": "[data-id=\"52ed45de\"] a",
+      "label": "Find a location",
+      "current": "/#",
+      "proposed": "https://mgtfilms.com/locations/",
+      "evidence": "Fresh source; normal capture blocked, no live tap test"
+    },
+    {
+      "url": "https://mgtfilms.com/locations/chicago/",
+      "selector": "[data-id=\"80b01ce\"] a",
+      "label": "Find a location",
+      "current": "/#",
+      "proposed": "https://mgtfilms.com/locations/",
+      "evidence": "Fresh source; normal capture blocked, no live tap test"
+    },
+    {
+      "url": "https://mgtfilms.com/locations/new-orleans/",
+      "selector": "[data-id=\"5a865db0\"] a",
+      "label": "Find a location",
+      "current": "/#",
+      "proposed": "https://mgtfilms.com/locations/",
+      "evidence": "Fresh source; normal capture blocked, no live tap test"
+    },
+    {
+      "url": "https://mgtfilms.com/locations/milwaukee/",
+      "selector": "[data-id=\"69019134\"] a",
+      "label": "Find a location",
+      "current": "/#",
+      "proposed": "https://mgtfilms.com/locations/",
+      "evidence": "Fresh source; normal capture blocked, no live tap test"
+    },
+    {
+      "url": "https://mgtfilms.com/blog/best-window-film-for-hotels/",
+      "label": "commercial window film",
+      "current": "https://mgtfilms.com/commercial-window-tinting-in-milwaukee/",
+      "current_status": 404,
+      "proposed": "https://mgtfilms.com/commercial-window-tinting/",
+      "evidence": "Fresh source + technical response check; broad hotel context"
+    },
+    {
+      "url": "https://mgtfilms.com/blog/best-window-film-for-hotels/",
+      "label": "Contact MGT",
+      "current": "https://mgtfilms.com/contact/",
+      "current_status": 301,
+      "proposed": "https://mgtfilms.com/contact-mgt-films/",
+      "evidence": "Fresh source + verified current redirect; not404"
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "node": {
+      "selector": "div#cs-content > div.x-section > div.x-bg > div.x-bg-layer-lower-image",
+      "boundingRect": {
+        "width": 412,
+        "height": 586,
+        "bottom": 679,
+        "top": 93,
+        "left": 0,
+        "right": 412
+      },
+      "nodeLabel": "div#cs-content > div.x-section > div.x-bg > div.x-bg-layer-lower-image",
+      "lhId": "page-0-DIV",
+      "snippet": "<div class=\"x-bg-layer-lower-image\" data-x-element-bg-layer=\"{&quot;parallaxSize&quot;:&quot;100%&quot;,&quot;parallaxDir&quot;:&quot;v&quot;,&quot;parallaxRev&quot;:false}\" style=\"opacity: 1; top: auto; bottom: 0px; height: 100%;\">",
+      "path": "1,HTML,1,BODY,0,DIV,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV",
+      "type": "node"
+    },
+    "subItems": {
+      "type": "subitems",
+      "items": [
+        {
+          "wastedBytes": 858007,
+          "reason": "Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size."
+        }
+      ]
+    },
+    "url": "https://michgc.com/wp-content/uploads/2026/01/Screenshot-2026-01-07-at-5.13.26-AM-scaled.png",
+    "wastedBytes": 858007,
+    "totalBytes": 970024
+  },
+  {
+    "node": {
+      "boundingRect": {
+        "top": 2036,
+        "bottom": 2386,
+        "right": 2256,
+        "height": 350,
+        "left": 1885,
+        "width": 371
+      },
+      "selector": "div.x-slide-container > div.x-slide > span.x-image > img",
+      "lhId": "page-1-IMG",
+      "type": "node",
+      "nodeLabel": "Placeholder Image",
+      "snippet": "<img decoding=\"async\" src=\"https://michgc.com/wp-content/uploads/2026/01/021A0292-scaled.jpg\" width=\"550\" height=\"366\" alt=\"Placeholder Image\" loading=\"lazy\">",
+      "path": "1,HTML,1,BODY,0,DIV,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,DIV,3,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,8,DIV,0,SPAN,0,IMG"
+    },
+    "url": "https://michgc.com/wp-content/uploads/2026/01/021A0292-scaled.jpg",
+    "wastedBytes": 173797,
+    "totalBytes": 267628,
+    "subItems": {
+      "type": "subitems",
+      "items": [
+        {
+          "reason": "Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size.",
+          "wastedBytes": 172664
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://michgc.com/wp-content/uploads/2026/01/021A9682-scaled.jpg",
+    "subItems": {
+      "type": "subitems",
+      "items": [
+        {
+          "wastedBytes": 140004,
+          "reason": "This image file is larger than it needs to be (1100x1452) for its displayed dimensions (649x1101). Use responsive images to reduce the image download size."
+        }
+      ]
+    },
+    "totalBytes": 253355,
+    "wastedBytes": 140004,
+    "node": {
+      "type": "node",
+      "snippet": "<img decoding=\"async\" src=\"https://michgc.com/wp-content/uploads/2026/01/021A9682-scaled.jpg\" width=\"550\" height=\"933\" alt=\"Placeholder Image\" loading=\"lazy\">",
+      "boundingRect": {
+        "left": 1512,
+        "top": 3477,
+        "width": 371,
+        "right": 1883,
+        "height": 490,
+        "bottom": 3967
+      },
+      "path": "1,HTML,1,BODY,0,DIV,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,DIV,5,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,7,DIV,0,SPAN,0,IMG",
+      "nodeLabel": "Placeholder Image",
+      "lhId": "page-2-IMG",
+      "selector": "div.x-slide-container > div.x-slide > span.x-image > img"
+    }
+  },
+  {
+    "wastedBytes": 136591,
+    "totalBytes": 230422,
+    "url": "https://michgc.com/wp-content/uploads/2026/01/021A0167-scaled.jpg",
+    "subItems": {
+      "type": "subitems",
+      "items": [
+        {
+          "wastedBytes": 135458,
+          "reason": "Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size."
+        }
+      ]
+    },
+    "node": {
+      "type": "node",
+      "path": "1,HTML,1,BODY,0,DIV,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,DIV,3,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,6,DIV,0,SPAN,0,IMG",
+      "lhId": "page-3-IMG",
+      "boundingRect": {
+        "bottom": 2386,
+        "height": 350,
+        "right": 1510,
+        "width": 371,
+        "top": 2036,
+        "left": 1139
+      },
+      "snippet": "<img decoding=\"async\" src=\"https://michgc.com/wp-content/uploads/2026/01/021A0167-scaled.jpg\" width=\"550\" height=\"366\" alt=\"Placeholder Image\" loading=\"lazy\">",
+      "nodeLabel": "Placeholder Image",
+      "selector": "div.x-slide-container > div.x-slide > span.x-image > img"
+    }
+  },
+  {
+    "totalBytes": 216273,
+    "subItems": {
+      "items": [
+        {
+          "wastedBytes": 121745,
+          "reason": "Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size."
+        }
+      ],
+      "type": "subitems"
+    },
+    "url": "https://michgc.com/wp-content/uploads/2026/01/021A6913-scaled.jpg",
+    "wastedBytes": 122442,
+    "node": {
+      "snippet": "<img decoding=\"async\" src=\"https://michgc.com/wp-content/uploads/2026/01/021A6913-scaled.jpg\" width=\"550\" height=\"366\" alt=\"Placeholder Image\" loading=\"lazy\">",
+      "lhId": "page-4-IMG",
+      "nodeLabel": "Placeholder Image",
+      "selector": "div.x-slide-container > div.x-slide > span.x-image > img",
+      "path": "1,HTML,1,BODY,0,DIV,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,DIV,3,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,7,DIV,0,SPAN,0,IMG",
+      "boundingRect": {
+        "right": 1883,
+        "bottom": 2386,
+        "width": 371,
+        "top": 2036,
+        "left": 1512,
+        "height": 350
+      },
+      "type": "node"
+    }
+  },
+  {
+    "totalBytes": 174991,
+    "subItems": {
+      "type": "subitems",
+      "items": [
+        {
+          "wastedBytes": 107159,
+          "reason": "Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size."
+        }
+      ]
+    },
+    "url": "https://michgc.com/wp-content/uploads/2026/01/021A7420-scaled.jpg",
+    "node": {
+      "type": "node",
+      "boundingRect": {
+        "right": 1510,
+        "left": 1139,
+        "bottom": 3967,
+        "height": 490,
+        "top": 3477,
+        "width": 371
+      },
+      "selector": "div.x-slide-container > div.x-slide > span.x-image > img",
+      "path": "1,HTML,1,BODY,0,DIV,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,DIV,5,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,6,DIV,0,SPAN,0,IMG",
+      "snippet": "<img decoding=\"async\" src=\"https://michgc.com/wp-content/uploads/2026/01/021A7420-scaled.jpg\" width=\"550\" height=\"366\" alt=\"Placeholder Image\" loading=\"lazy\">",
+      "lhId": "page-5-IMG",
+      "nodeLabel": "Placeholder Image"
+    },
+    "wastedBytes": 107159
+  },
+  {
+    "totalBytes": 160665,
+    "wastedBytes": 92833,
+    "subItems": {
+      "type": "subitems",
+      "items": [
+        {
+          "reason": "Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size.",
+          "wastedBytes": 92833
+        }
+      ]
+    },
+    "url": "https://michgc.com/wp-content/uploads/2026/01/021A4789-scaled.jpg",
+    "node": {
+      "nodeLabel": "Placeholder Image",
+      "boundingRect": {
+        "width": 371,
+        "left": 1885,
+        "top": 3477,
+        "height": 490,
+        "bottom": 3967,
+        "right": 2256
+      },
+      "path": "1,HTML,1,BODY,0,DIV,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,DIV,5,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,8,DIV,0,SPAN,0,IMG",
+      "snippet": "<img decoding=\"async\" src=\"https://michgc.com/wp-content/uploads/2026/01/021A4789-scaled.jpg\" width=\"550\" height=\"366\" alt=\"Placeholder Image\" loading=\"lazy\">",
+      "type": "node",
+      "selector": "div.x-slide-container > div.x-slide > span.x-image > img",
+      "lhId": "page-6-IMG"
+    }
+  },
+  {
+    "wastedBytes": 5337,
+    "totalBytes": 7503,
+    "node": {
+      "selector": "div.x-row-inner > div.x-col > a.x-image > img",
+      "snippet": "<img src=\"https://michgc.com/wp-content/uploads/2025/12/MGC_Logo.png\" width=\"568\" height=\"168\" alt=\"Logo\" loading=\"lazy\">",
+      "type": "node",
+      "boundingRect": {
+        "bottom": 73,
+        "height": 52,
+        "width": 174,
+        "top": 21,
+        "right": 196,
+        "left": 22
+      },
+      "path": "1,HTML,1,BODY,0,DIV,0,DIV,0,HEADER,1,DIV,0,DIV,0,DIV,0,DIV,0,A,0,IMG",
+      "lhId": "page-7-IMG",
+      "nodeLabel": "Logo"
+    },
+    "url": "https://michgc.com/wp-content/uploads/2025/12/MGC_Logo.png",
+    "subItems": {
+      "type": "subitems",
+      "items": [
+        {
+          "reason": "This image file is larger than it needs to be (568x168) for its displayed dimensions (305x90). Use responsive images to reduce the image download size.",
+          "wastedBytes": 5337
+        }
+      ]
+    }
+  }
+]

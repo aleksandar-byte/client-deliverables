@@ -1,0 +1,3 @@
+Source page,Anchor,Broken destination,Observed HTTP,Verified replacement,Action
+https://michgc.com/services/decorative-window-film/,Contact Us,https://michgc.com/services/decorative-window-film/contact-us/,404,https://michgc.com/contact-us/,Correct source href to absolute replacement; assess optional exact 301 separately
+https://michgc.com/commercial/,Di-Noc Architectural Finishes,https://michgc.com/commercial/com/services/di-noc-resourfacing/,404,https://michgc.com/services/di-noc-resourfacing/,Correct source href to absolute replacement; keep existing replacement slug spelling
