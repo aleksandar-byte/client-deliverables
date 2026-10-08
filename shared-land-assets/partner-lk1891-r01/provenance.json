@@ -1,0 +1,69 @@
+{
+  "source": {
+    "url": "https://lk-projekt.pl/en/projekty-domow/projekt-domu-lk1891",
+    "retrieved": "2026-10-08",
+    "calibration": {
+      "pixels_per_metre": 82.24,
+      "x_check_m": 12.5,
+      "y_check_m": 13.497081712062258,
+      "upper_y_registration_px": 74
+    },
+    "official": {
+      "usable_m2": 113.16,
+      "ground_m2": 53.61,
+      "upper_m2": 59.56,
+      "store_m2": 6,
+      "carport_m2": 24,
+      "building_area_m2": 108.25,
+      "total_area_m2": 183.25,
+      "height_m": 7.55,
+      "room_height_m": 2.7
+    }
+  },
+  "files": [
+    {
+      "file": "sources\\elevation1.jpg",
+      "sha256": "2599d9b4254682a650fa9501bc4800101381f1d75de4bb661c84db15478ec69a"
+    },
+    {
+      "file": "sources\\elevation2.jpg",
+      "sha256": "20e636cadb644d9275100f32f4ac880c328d3b385491a50b7b0cd76007390f06"
+    },
+    {
+      "file": "sources\\elevation3.jpg",
+      "sha256": "ef8a7a2e4939d1b41e626a36765b36dd2a2d7e940be5b7db42ad32d0225e32c1"
+    },
+    {
+      "file": "sources\\elevation4.jpg",
+      "sha256": "607820581507024e00d4b9020fe61df3f7efcb9f3f0d08fa53c4923503d95983"
+    },
+    {
+      "file": "sources\\front.jpg",
+      "sha256": "3d5fbb93cd99b40730fc3d3ea6e63cfa367f420698838c3ab0a275f504bddc1b"
+    },
+    {
+      "file": "sources\\garden.jpg",
+      "sha256": "1777d2ed98944be01ccabb43750224a59b09b30dbae1b940b20a25d4bc6f9036"
+    },
+    {
+      "file": "sources\\ground-original.jpg",
+      "sha256": "1d1fdc1bc5278329d7701c57bf748397b1124396df398ca01ff48fc9d4df5113"
+    },
+    {
+      "file": "sources\\ground.jpg",
+      "sha256": "56221274607c6b89871cf73dfadb0506e4aa5350fa0105b9d391afc91baba647"
+    },
+    {
+      "file": "sources\\site.jpg",
+      "sha256": "03010502b07b7c857a12235d29597f4d5cdd39668373067a074b58f6f3263381"
+    },
+    {
+      "file": "sources\\upper-original.jpg",
+      "sha256": "28ca54e6e87be2407c04db00aaeb0a4b9c810c7bf6724669f39452d6cd7867bb"
+    },
+    {
+      "file": "sources\\upper.jpg",
+      "sha256": "01e986ffd9c3e6c31264ed56535d74dcea4f29d0f7bc87f436d982e3996963c2"
+    }
+  ]
+}

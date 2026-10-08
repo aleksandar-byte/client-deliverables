@@ -1,0 +1,2180 @@
+{
+  "id": "partner-lk1891",
+  "title": "Partner\u2019s house \u00b7 LK1891",
+  "units": "metres",
+  "floors": [
+    {
+      "id": "ground",
+      "label": "Ground floor",
+      "z": 0,
+      "height": 2.7,
+      "slab_thickness": 0.2,
+      "ceiling": false,
+      "slabs": [
+        [
+          2.50486,
+          0.0,
+          8.00097,
+          11.49076
+        ],
+        [
+          0.0,
+          2.4927,
+          2.50486,
+          8.98589
+        ],
+        [
+          8.00097,
+          0.0,
+          12.5,
+          8.98589
+        ]
+      ],
+      "rooms": [
+        {
+          "id": "1",
+          "label": "1 \u00b7 Lobby",
+          "at": [
+            4.47471,
+            1.54426
+          ],
+          "reference_area_m2": 6.75,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "2",
+          "label": "2 \u00b7 WC",
+          "at": [
+            6.78502,
+            1.60506
+          ],
+          "reference_area_m2": 3.12,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "3",
+          "label": "3 \u00b7 Hall",
+          "at": [
+            4.34095,
+            4.40175
+          ],
+          "reference_area_m2": 4.58,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "4",
+          "label": "4 \u00b7 Kitchen",
+          "at": [
+            1.79961,
+            4.40175
+          ],
+          "reference_area_m2": 9.9,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "5",
+          "label": "5 \u00b7 Dining",
+          "at": [
+            2.52918,
+            7.19844
+          ],
+          "reference_area_m2": 6.92,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "6",
+          "label": "6 \u00b7 Living",
+          "at": [
+            5.25292,
+            8.8035
+          ],
+          "reference_area_m2": 22.34,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "7",
+          "label": "7 \u00b7 Store",
+          "at": [
+            9.9465,
+            7.79426
+          ],
+          "reference_area_m2": 6,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "8",
+          "label": "8 \u00b7 Carport",
+          "at": [
+            10.06809,
+            3.55058
+          ],
+          "reference_area_m2": 24,
+          "area_basis": "Publisher area"
+        }
+      ]
+    },
+    {
+      "id": "upper",
+      "label": "Upper floor",
+      "z": 3.3,
+      "height": 2.7,
+      "slab_thickness": 0.2,
+      "ceiling": false,
+      "slabs": [
+        [
+          0.0,
+          -0.99708,
+          5.42315,
+          8.99805
+        ],
+        [
+          2.50486,
+          6.07977,
+          8.00097,
+          10.49368
+        ],
+        [
+          7.50243,
+          2.93045,
+          8.00097,
+          6.07977
+        ],
+        [
+          5.42315,
+          -0.99708,
+          8.00097,
+          2.99125
+        ]
+      ],
+      "rooms": [
+        {
+          "id": "1",
+          "label": "1 \u00b7 Hall",
+          "at": [
+            4.07344,
+            4.57198
+          ],
+          "reference_area_m2": 8.07,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "2",
+          "label": "2 \u00b7 Bedroom 2",
+          "at": [
+            5.81226,
+            0.86333
+          ],
+          "reference_area_m2": 11.11,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "3",
+          "label": "3 \u00b7 Bedroom 3",
+          "at": [
+            2.06712,
+            0.86333
+          ],
+          "reference_area_m2": 11.12,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "4",
+          "label": "4 \u00b7 Laundry",
+          "at": [
+            1.70233,
+            3.78161
+          ],
+          "reference_area_m2": 4.15,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "5",
+          "label": "5 \u00b7 Bathroom",
+          "at": [
+            1.67802,
+            6.61479
+          ],
+          "reference_area_m2": 8.06,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "6",
+          "label": "6 \u00b7 Main bedroom",
+          "at": [
+            4.5963,
+            8.45088
+          ],
+          "reference_area_m2": 17.05,
+          "area_basis": "Publisher area"
+        }
+      ]
+    }
+  ],
+  "walls": [
+    {
+      "id": "ground/entrance",
+      "floor": "ground",
+      "a": [
+        2.74805,
+        0.25535
+      ],
+      "b": [
+        7.75778,
+        0.25535
+      ],
+      "thickness": 0.5,
+      "openings": [
+        {
+          "start": 1.240272,
+          "width": 1.009241,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.25
+        },
+        {
+          "start": 2.249514,
+          "width": 0.997082,
+          "type": "window",
+          "bottom": 0,
+          "height": 2.45
+        }
+      ]
+    },
+    {
+      "id": "ground/lobby-left",
+      "floor": "ground",
+      "a": [
+        2.74805,
+        2.85749
+      ],
+      "b": [
+        2.74805,
+        0.25535
+      ],
+      "thickness": 0.5,
+      "openings": []
+    },
+    {
+      "id": "ground/lobby-hall",
+      "floor": "ground",
+      "a": [
+        2.74805,
+        2.86965
+      ],
+      "b": [
+        7.75778,
+        2.86965
+      ],
+      "thickness": 0.23,
+      "openings": [
+        {
+          "start": 1.240272,
+          "width": 1.009241,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.25
+        }
+      ]
+    },
+    {
+      "id": "ground/east",
+      "floor": "ground",
+      "a": [
+        7.75778,
+        11.24757
+      ],
+      "b": [
+        7.75778,
+        0.25535
+      ],
+      "thickness": 0.5,
+      "openings": []
+    },
+    {
+      "id": "ground/living-rear",
+      "floor": "ground",
+      "a": [
+        2.74805,
+        11.24757
+      ],
+      "b": [
+        7.75778,
+        11.24757
+      ],
+      "thickness": 0.5,
+      "openings": [
+        {
+          "start": 0.25535,
+          "width": 4.000486,
+          "type": "window",
+          "bottom": 0,
+          "height": 2.6
+        }
+      ]
+    },
+    {
+      "id": "ground/living-west",
+      "floor": "ground",
+      "a": [
+        2.74805,
+        11.24757
+      ],
+      "b": [
+        2.74805,
+        8.7427
+      ],
+      "thickness": 0.5,
+      "openings": [
+        {
+          "start": 0.25535,
+          "width": 1.994163,
+          "type": "window",
+          "bottom": 0,
+          "height": 2.6
+        }
+      ]
+    },
+    {
+      "id": "ground/dining-rear",
+      "floor": "ground",
+      "a": [
+        0.24319,
+        8.7427
+      ],
+      "b": [
+        2.74805,
+        8.7427
+      ],
+      "thickness": 0.5,
+      "openings": [
+        {
+          "start": 0.26751,
+          "width": 1.994163,
+          "type": "window",
+          "bottom": 0,
+          "height": 2.6
+        }
+      ]
+    },
+    {
+      "id": "ground/kitchen-west",
+      "floor": "ground",
+      "a": [
+        0.24319,
+        8.7427
+      ],
+      "b": [
+        0.24319,
+        2.73589
+      ],
+      "thickness": 0.5,
+      "openings": [
+        {
+          "start": 0.243191,
+          "width": 0.498541,
+          "type": "window",
+          "bottom": 0,
+          "height": 2.6
+        },
+        {
+          "start": 5.240759,
+          "width": 0.498541,
+          "type": "window",
+          "bottom": 0,
+          "height": 2.6
+        }
+      ]
+    },
+    {
+      "id": "ground/kitchen-front",
+      "floor": "ground",
+      "a": [
+        0.24319,
+        2.73589
+      ],
+      "b": [
+        2.74805,
+        2.73589
+      ],
+      "thickness": 0.5,
+      "openings": [
+        {
+          "start": 0.26751,
+          "width": 1.994163,
+          "type": "window",
+          "bottom": 0,
+          "height": 2.6
+        }
+      ]
+    },
+    {
+      "id": "ground/wc",
+      "floor": "ground",
+      "a": [
+        6.04329,
+        2.85749
+      ],
+      "b": [
+        6.04329,
+        0.25535
+      ],
+      "thickness": 0.115,
+      "openings": [
+        {
+          "start": 0.936284,
+          "width": 0.814689,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.25
+        }
+      ]
+    },
+    {
+      "id": "ground/kitchen-hall",
+      "floor": "ground",
+      "a": [
+        3.52626,
+        4.88813
+      ],
+      "b": [
+        3.52626,
+        2.99125
+      ],
+      "thickness": 0.25,
+      "openings": []
+    },
+    {
+      "id": "ground/store-rear",
+      "floor": "ground",
+      "a": [
+        7.75778,
+        8.7427
+      ],
+      "b": [
+        12.25681,
+        8.7427
+      ],
+      "thickness": 0.5,
+      "openings": []
+    },
+    {
+      "id": "ground/store-east",
+      "floor": "ground",
+      "a": [
+        12.25681,
+        8.7427
+      ],
+      "b": [
+        12.25681,
+        6.73638
+      ],
+      "thickness": 0.5,
+      "openings": []
+    },
+    {
+      "id": "ground/store-front",
+      "floor": "ground",
+      "a": [
+        7.75778,
+        6.73638
+      ],
+      "b": [
+        12.25681,
+        6.73638
+      ],
+      "thickness": 0.5,
+      "openings": [
+        {
+          "start": 1.750973,
+          "width": 0.997082,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.25
+        }
+      ]
+    },
+    {
+      "id": "upper/front",
+      "floor": "upper",
+      "a": [
+        0.24319,
+        -0.74173
+      ],
+      "b": [
+        7.75778,
+        -0.74173
+      ],
+      "thickness": 0.5,
+      "openings": [
+        {
+          "start": 1.763132,
+          "width": 1.860409,
+          "type": "window",
+          "bottom": 0,
+          "height": 2.6
+        },
+        {
+          "start": 3.878891,
+          "width": 1.872568,
+          "type": "window",
+          "bottom": 0,
+          "height": 2.6
+        }
+      ]
+    },
+    {
+      "id": "upper/west",
+      "floor": "upper",
+      "a": [
+        0.24319,
+        8.75486
+      ],
+      "b": [
+        0.24319,
+        -0.74173
+      ],
+      "thickness": 0.5,
+      "openings": []
+    },
+    {
+      "id": "upper/east",
+      "floor": "upper",
+      "a": [
+        7.75778,
+        10.23833
+      ],
+      "b": [
+        7.75778,
+        -0.74173
+      ],
+      "thickness": 0.5,
+      "openings": []
+    },
+    {
+      "id": "upper/primary-rear",
+      "floor": "upper",
+      "a": [
+        2.74805,
+        10.23833
+      ],
+      "b": [
+        7.75778,
+        10.23833
+      ],
+      "thickness": 0.5,
+      "openings": [
+        {
+          "start": 0.25535,
+          "width": 3.988327,
+          "type": "window",
+          "bottom": 0,
+          "height": 2.6
+        }
+      ]
+    },
+    {
+      "id": "upper/primary-west",
+      "floor": "upper",
+      "a": [
+        2.74805,
+        10.23833
+      ],
+      "b": [
+        2.74805,
+        6.06761
+      ],
+      "thickness": 0.5,
+      "openings": [
+        {
+          "start": 0.26751,
+          "width": 0.972763,
+          "type": "window",
+          "bottom": 0,
+          "height": 2.6
+        }
+      ]
+    },
+    {
+      "id": "upper/bath-rear",
+      "floor": "upper",
+      "a": [
+        0.24319,
+        8.75486
+      ],
+      "b": [
+        2.74805,
+        8.75486
+      ],
+      "thickness": 0.5,
+      "openings": [
+        {
+          "start": 0.26751,
+          "width": 0.997082,
+          "type": "window",
+          "bottom": 0,
+          "height": 2.6
+        }
+      ]
+    },
+    {
+      "id": "upper/bath-east",
+      "floor": "upper",
+      "a": [
+        2.82101,
+        8.75486
+      ],
+      "b": [
+        2.82101,
+        4.96109
+      ],
+      "thickness": 0.115,
+      "openings": [
+        {
+          "start": 2.881809,
+          "width": 0.802529,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.25
+        }
+      ]
+    },
+    {
+      "id": "upper/bath-front",
+      "floor": "upper",
+      "a": [
+        0.24319,
+        4.97325
+      ],
+      "b": [
+        2.82101,
+        4.97325
+      ],
+      "thickness": 0.115,
+      "openings": []
+    },
+    {
+      "id": "upper/laundry-east",
+      "floor": "upper",
+      "a": [
+        2.74805,
+        4.96109
+      ],
+      "b": [
+        2.74805,
+        2.99125
+      ],
+      "thickness": 0.115,
+      "openings": [
+        {
+          "start": 0.972763,
+          "width": 0.911965,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.25
+        }
+      ]
+    },
+    {
+      "id": "upper/laundry-front",
+      "floor": "upper",
+      "a": [
+        0.24319,
+        2.86965
+      ],
+      "b": [
+        2.74805,
+        2.86965
+      ],
+      "thickness": 0.115,
+      "openings": []
+    },
+    {
+      "id": "upper/kids-rear-left",
+      "floor": "upper",
+      "a": [
+        2.74805,
+        2.86965
+      ],
+      "b": [
+        4.00049,
+        2.86965
+      ],
+      "thickness": 0.115,
+      "openings": [
+        {
+          "start": 0.279669,
+          "width": 0.729572,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.25
+        }
+      ]
+    },
+    {
+      "id": "upper/kids-rear-right",
+      "floor": "upper",
+      "a": [
+        4.00049,
+        2.86965
+      ],
+      "b": [
+        7.75778,
+        2.86965
+      ],
+      "thickness": 0.25,
+      "openings": [
+        {
+          "start": 0.26751,
+          "width": 0.741732,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.25
+        }
+      ]
+    },
+    {
+      "id": "upper/kids-divider",
+      "floor": "upper",
+      "a": [
+        4.00049,
+        2.86965
+      ],
+      "b": [
+        4.00049,
+        -0.74173
+      ],
+      "thickness": 0.115,
+      "openings": []
+    },
+    {
+      "id": "upper/primary-front",
+      "floor": "upper",
+      "a": [
+        2.82101,
+        6.07977
+      ],
+      "b": [
+        7.75778,
+        6.07977
+      ],
+      "thickness": 0.115,
+      "openings": [
+        {
+          "start": 0.972763,
+          "width": 0.802529,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.25
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "rear-west",
+      "floor": "ground",
+      "center": [
+        0.5,
+        9.75,
+        0.0
+      ],
+      "size": [
+        4.0,
+        4.5,
+        0.2
+      ],
+      "kind": "slab",
+      "material": "wood"
+    },
+    {
+      "id": "rear-strip",
+      "floor": "ground",
+      "center": [
+        5.0,
+        11.75,
+        0.0
+      ],
+      "size": [
+        5.0,
+        0.5,
+        0.2
+      ],
+      "kind": "slab",
+      "material": "wood"
+    },
+    {
+      "id": "front-deck",
+      "floor": "ground",
+      "center": [
+        1.45,
+        -1.25,
+        0.0
+      ],
+      "size": [
+        4.1,
+        2.5,
+        0.2
+      ],
+      "kind": "slab",
+      "material": "wood"
+    },
+    {
+      "id": "front-deck-side",
+      "floor": "ground",
+      "center": [
+        0.95,
+        1.25,
+        0.0
+      ],
+      "size": [
+        3.1,
+        2.5,
+        0.2
+      ],
+      "kind": "slab",
+      "material": "wood"
+    },
+    {
+      "id": "carport-apron",
+      "floor": "ground",
+      "center": [
+        8.0,
+        -1.25,
+        -0.07
+      ],
+      "size": [
+        9.0,
+        2.5,
+        0.2
+      ],
+      "kind": "slab",
+      "material": "floor"
+    },
+    {
+      "id": "front-balcony",
+      "floor": "upper",
+      "center": [
+        4.0,
+        -1.75,
+        3.2
+      ],
+      "size": [
+        8,
+        1.5,
+        0.2
+      ],
+      "kind": "slab",
+      "material": "floor"
+    },
+    {
+      "id": "rear-balcony-west",
+      "floor": "upper",
+      "center": [
+        -0.75,
+        9.25,
+        3.2
+      ],
+      "size": [
+        1.5,
+        5.5,
+        0.2
+      ],
+      "kind": "slab",
+      "material": "floor"
+    },
+    {
+      "id": "rear-balcony-north",
+      "floor": "upper",
+      "center": [
+        4.0,
+        11.25,
+        3.2
+      ],
+      "size": [
+        8,
+        1.5,
+        0.2
+      ],
+      "kind": "slab",
+      "material": "floor"
+    },
+    {
+      "id": "rear-balcony-inset",
+      "floor": "upper",
+      "center": [
+        1.25,
+        9.25,
+        3.2
+      ],
+      "size": [
+        2.5,
+        2.5,
+        0.2
+      ],
+      "kind": "slab",
+      "material": "floor"
+    },
+    {
+      "id": "ground-ceiling-0",
+      "floor": "ground",
+      "center": [
+        2.711575,
+        4.000484999999999,
+        2.9000000000000004
+      ],
+      "size": [
+        5.42315,
+        9.99513,
+        0.4
+      ],
+      "kind": "ceiling",
+      "material": "white"
+    },
+    {
+      "id": "ground-ceiling-1",
+      "floor": "ground",
+      "center": [
+        5.252915,
+        8.286725,
+        2.9000000000000004
+      ],
+      "size": [
+        5.496110000000001,
+        4.41391,
+        0.4
+      ],
+      "kind": "ceiling",
+      "material": "white"
+    },
+    {
+      "id": "ground-ceiling-2",
+      "floor": "ground",
+      "center": [
+        7.7517000000000005,
+        4.50511,
+        2.9000000000000004
+      ],
+      "size": [
+        0.4985400000000002,
+        3.14932,
+        0.4
+      ],
+      "kind": "ceiling",
+      "material": "white"
+    },
+    {
+      "id": "ground-ceiling-3",
+      "floor": "ground",
+      "center": [
+        6.71206,
+        0.997085,
+        2.9000000000000004
+      ],
+      "size": [
+        2.577820000000001,
+        3.98833,
+        0.4
+      ],
+      "kind": "ceiling",
+      "material": "white"
+    },
+    {
+      "id": "main-roof-0",
+      "floor": "upper",
+      "center": [
+        3.25,
+        9.25,
+        6.45
+      ],
+      "size": [
+        9.5,
+        5.5,
+        0.9
+      ],
+      "kind": "ceiling",
+      "material": "white"
+    },
+    {
+      "id": "parapet-0-0",
+      "floor": "upper",
+      "center": [
+        -1.4100000000000001,
+        9.25,
+        7.2250000000000005
+      ],
+      "size": [
+        0.17999999999999994,
+        5.5,
+        0.65
+      ],
+      "kind": "ceiling",
+      "material": "white"
+    },
+    {
+      "id": "parapet-0-1",
+      "floor": "upper",
+      "center": [
+        7.91,
+        9.25,
+        7.2250000000000005
+      ],
+      "size": [
+        0.17999999999999972,
+        5.5,
+        0.65
+      ],
+      "kind": "ceiling",
+      "material": "white"
+    },
+    {
+      "id": "parapet-0-2",
+      "floor": "upper",
+      "center": [
+        3.25,
+        6.59,
+        7.2250000000000005
+      ],
+      "size": [
+        9.5,
+        0.17999999999999972,
+        0.65
+      ],
+      "kind": "ceiling",
+      "material": "white"
+    },
+    {
+      "id": "parapet-0-3",
+      "floor": "upper",
+      "center": [
+        3.25,
+        11.91,
+        7.2250000000000005
+      ],
+      "size": [
+        9.5,
+        0.17999999999999972,
+        0.65
+      ],
+      "kind": "ceiling",
+      "material": "white"
+    },
+    {
+      "id": "main-roof-1",
+      "floor": "upper",
+      "center": [
+        4.0,
+        2.0,
+        6.45
+      ],
+      "size": [
+        8,
+        9.0,
+        0.9
+      ],
+      "kind": "ceiling",
+      "material": "white"
+    },
+    {
+      "id": "parapet-1-0",
+      "floor": "upper",
+      "center": [
+        0.09,
+        2.0,
+        7.2250000000000005
+      ],
+      "size": [
+        0.18,
+        9.0,
+        0.65
+      ],
+      "kind": "ceiling",
+      "material": "white"
+    },
+    {
+      "id": "parapet-1-1",
+      "floor": "upper",
+      "center": [
+        7.91,
+        2.0,
+        7.2250000000000005
+      ],
+      "size": [
+        0.17999999999999972,
+        9.0,
+        0.65
+      ],
+      "kind": "ceiling",
+      "material": "white"
+    },
+    {
+      "id": "parapet-1-2",
+      "floor": "upper",
+      "center": [
+        4.0,
+        -2.41,
+        7.2250000000000005
+      ],
+      "size": [
+        8,
+        0.18000000000000016,
+        0.65
+      ],
+      "kind": "ceiling",
+      "material": "white"
+    },
+    {
+      "id": "parapet-1-3",
+      "floor": "upper",
+      "center": [
+        4.0,
+        6.41,
+        7.2250000000000005
+      ],
+      "size": [
+        8,
+        0.17999999999999972,
+        0.65
+      ],
+      "kind": "ceiling",
+      "material": "white"
+    },
+    {
+      "id": "carport-roof",
+      "floor": "ground",
+      "center": [
+        10.25,
+        4.5,
+        2.9000000000000004
+      ],
+      "size": [
+        4.5,
+        9,
+        0.4
+      ],
+      "kind": "ceiling",
+      "material": "dark"
+    },
+    {
+      "id": "carport-post-8",
+      "floor": "ground",
+      "center": [
+        8.25,
+        0.25,
+        1.35
+      ],
+      "size": [
+        0.5,
+        0.5,
+        2.7
+      ],
+      "kind": "wall",
+      "material": "dark"
+    },
+    {
+      "id": "carport-post-12.0",
+      "floor": "ground",
+      "center": [
+        12.25,
+        0.25,
+        1.35
+      ],
+      "size": [
+        0.5,
+        0.5,
+        2.7
+      ],
+      "kind": "wall",
+      "material": "dark"
+    },
+    {
+      "id": "carport-screen-0",
+      "floor": "ground",
+      "center": [
+        12.395,
+        3.5,
+        0.28500000000000003
+      ],
+      "size": [
+        0.08999999999999986,
+        6.0,
+        0.07
+      ],
+      "kind": "fixture",
+      "material": "dark"
+    },
+    {
+      "id": "carport-screen-1",
+      "floor": "ground",
+      "center": [
+        12.395,
+        3.5,
+        0.525
+      ],
+      "size": [
+        0.08999999999999986,
+        6.0,
+        0.07
+      ],
+      "kind": "fixture",
+      "material": "dark"
+    },
+    {
+      "id": "carport-screen-2",
+      "floor": "ground",
+      "center": [
+        12.395,
+        3.5,
+        0.765
+      ],
+      "size": [
+        0.08999999999999986,
+        6.0,
+        0.07
+      ],
+      "kind": "fixture",
+      "material": "dark"
+    },
+    {
+      "id": "carport-screen-3",
+      "floor": "ground",
+      "center": [
+        12.395,
+        3.5,
+        1.005
+      ],
+      "size": [
+        0.08999999999999986,
+        6.0,
+        0.07
+      ],
+      "kind": "fixture",
+      "material": "dark"
+    },
+    {
+      "id": "carport-screen-4",
+      "floor": "ground",
+      "center": [
+        12.395,
+        3.5,
+        1.2449999999999999
+      ],
+      "size": [
+        0.08999999999999986,
+        6.0,
+        0.07
+      ],
+      "kind": "fixture",
+      "material": "dark"
+    },
+    {
+      "id": "carport-screen-5",
+      "floor": "ground",
+      "center": [
+        12.395,
+        3.5,
+        1.4849999999999999
+      ],
+      "size": [
+        0.08999999999999986,
+        6.0,
+        0.07
+      ],
+      "kind": "fixture",
+      "material": "dark"
+    },
+    {
+      "id": "carport-screen-6",
+      "floor": "ground",
+      "center": [
+        12.395,
+        3.5,
+        1.7249999999999999
+      ],
+      "size": [
+        0.08999999999999986,
+        6.0,
+        0.07
+      ],
+      "kind": "fixture",
+      "material": "dark"
+    },
+    {
+      "id": "carport-screen-7",
+      "floor": "ground",
+      "center": [
+        12.395,
+        3.5,
+        1.9649999999999999
+      ],
+      "size": [
+        0.08999999999999986,
+        6.0,
+        0.07
+      ],
+      "kind": "fixture",
+      "material": "dark"
+    },
+    {
+      "id": "carport-screen-8",
+      "floor": "ground",
+      "center": [
+        12.395,
+        3.5,
+        2.205
+      ],
+      "size": [
+        0.08999999999999986,
+        6.0,
+        0.07
+      ],
+      "kind": "fixture",
+      "material": "dark"
+    },
+    {
+      "id": "carport-screen-9",
+      "floor": "ground",
+      "center": [
+        12.395,
+        3.5,
+        2.4450000000000003
+      ],
+      "size": [
+        0.08999999999999986,
+        6.0,
+        0.07
+      ],
+      "kind": "fixture",
+      "material": "dark"
+    },
+    {
+      "id": "balcony-frame-0",
+      "floor": "upper",
+      "center": [
+        0.25,
+        -1.75,
+        4.65
+      ],
+      "size": [
+        0.5,
+        1.5,
+        2.7
+      ],
+      "kind": "wall",
+      "material": "white"
+    },
+    {
+      "id": "balcony-frame-1",
+      "floor": "upper",
+      "center": [
+        7.75,
+        -1.75,
+        4.65
+      ],
+      "size": [
+        0.5,
+        1.5,
+        2.7
+      ],
+      "kind": "wall",
+      "material": "white"
+    },
+    {
+      "id": "balcony-frame-2",
+      "floor": "upper",
+      "center": [
+        -1.25,
+        6.75,
+        4.65
+      ],
+      "size": [
+        0.5,
+        0.5,
+        2.7
+      ],
+      "kind": "wall",
+      "material": "white"
+    },
+    {
+      "id": "balcony-frame-3",
+      "floor": "upper",
+      "center": [
+        7.25,
+        11.5,
+        4.65
+      ],
+      "size": [
+        0.5,
+        2.0,
+        2.7
+      ],
+      "kind": "wall",
+      "material": "white"
+    },
+    {
+      "id": "balcony-glass-0",
+      "floor": "upper",
+      "center": [
+        4.0,
+        -2.35,
+        3.875
+      ],
+      "size": [
+        7.050000000000001,
+        0.04999999999999982,
+        1.05
+      ],
+      "kind": "window",
+      "material": "glass"
+    },
+    {
+      "id": "balcony-glass-1",
+      "floor": "upper",
+      "center": [
+        -1.4,
+        9.5,
+        3.875
+      ],
+      "size": [
+        0.04999999999999982,
+        5.050000000000001,
+        1.05
+      ],
+      "kind": "window",
+      "material": "glass"
+    },
+    {
+      "id": "balcony-glass-2",
+      "floor": "upper",
+      "center": [
+        2.85,
+        12.0,
+        3.875
+      ],
+      "size": [
+        8.55,
+        0.05000000000000071,
+        1.05
+      ],
+      "kind": "window",
+      "material": "glass"
+    },
+    {
+      "id": "kitchen-base-0",
+      "floor": "ground",
+      "center": [
+        0.80861,
+        5.7393,
+        0.45
+      ],
+      "size": [
+        0.5958199999999999,
+        4.49902,
+        0.9
+      ],
+      "kind": "fixture",
+      "material": "wood"
+    },
+    {
+      "id": "kitchen-base-1",
+      "floor": "ground",
+      "center": [
+        2.942605,
+        3.99441,
+        0.45
+      ],
+      "size": [
+        0.8754900000000001,
+        2.0063199999999997,
+        0.9
+      ],
+      "kind": "fixture",
+      "material": "wood"
+    },
+    {
+      "id": "stair-guard-0",
+      "floor": "upper",
+      "center": [
+        5.41099,
+        3.623545,
+        3.8
+      ],
+      "size": [
+        0.07296000000000014,
+        1.26459,
+        1.0
+      ],
+      "kind": "window",
+      "material": "glass"
+    },
+    {
+      "id": "stair-guard-1",
+      "floor": "upper",
+      "center": [
+        5.98249,
+        3.003405,
+        3.8
+      ],
+      "size": [
+        1.21596,
+        0.07295000000000007,
+        1.0
+      ],
+      "kind": "window",
+      "material": "glass"
+    },
+    {
+      "id": "stair-guard-2",
+      "floor": "upper",
+      "center": [
+        6.55399,
+        3.623545,
+        3.8
+      ],
+      "size": [
+        0.07296000000000014,
+        1.26459,
+        1.0
+      ],
+      "kind": "window",
+      "material": "glass"
+    }
+  ],
+  "viewpoints": [
+    {
+      "id": "ground-1",
+      "floor": "ground",
+      "label": "Lobby",
+      "default": true,
+      "feet": [
+        4.47471,
+        1.54426,
+        0
+      ],
+      "look_at": [
+        4.47471,
+        2.76021,
+        1.5
+      ]
+    },
+    {
+      "id": "ground-2",
+      "floor": "ground",
+      "label": "WC",
+      "default": false,
+      "feet": [
+        6.78502,
+        1.60506,
+        0
+      ],
+      "look_at": [
+        6.78502,
+        2.82101,
+        1.5
+      ]
+    },
+    {
+      "id": "ground-3",
+      "floor": "ground",
+      "label": "Hall",
+      "default": false,
+      "feet": [
+        4.34095,
+        4.40175,
+        0
+      ],
+      "look_at": [
+        4.34095,
+        5.6177,
+        1.5
+      ]
+    },
+    {
+      "id": "ground-4",
+      "floor": "ground",
+      "label": "Kitchen",
+      "default": false,
+      "feet": [
+        1.79961,
+        4.40175,
+        0
+      ],
+      "look_at": [
+        1.79961,
+        5.6177,
+        1.5
+      ]
+    },
+    {
+      "id": "ground-5",
+      "floor": "ground",
+      "label": "Dining",
+      "default": false,
+      "feet": [
+        2.52918,
+        7.19844,
+        0
+      ],
+      "look_at": [
+        2.52918,
+        8.4144,
+        1.5
+      ]
+    },
+    {
+      "id": "ground-6",
+      "floor": "ground",
+      "label": "Living",
+      "default": false,
+      "feet": [
+        5.25292,
+        8.8035,
+        0
+      ],
+      "look_at": [
+        5.25292,
+        10.01946,
+        1.5
+      ]
+    },
+    {
+      "id": "ground-7",
+      "floor": "ground",
+      "label": "Store",
+      "default": false,
+      "feet": [
+        9.9465,
+        7.79426,
+        0
+      ],
+      "look_at": [
+        9.9465,
+        9.01021,
+        1.5
+      ]
+    },
+    {
+      "id": "ground-8",
+      "floor": "ground",
+      "label": "Carport",
+      "default": false,
+      "feet": [
+        10.06809,
+        3.55058,
+        0
+      ],
+      "look_at": [
+        10.06809,
+        4.76654,
+        1.5
+      ]
+    },
+    {
+      "id": "upper-1",
+      "floor": "upper",
+      "label": "Hall",
+      "default": true,
+      "feet": [
+        4.07344,
+        4.57198,
+        3.3
+      ],
+      "look_at": [
+        4.07344,
+        5.78794,
+        4.8
+      ]
+    },
+    {
+      "id": "upper-2",
+      "floor": "upper",
+      "label": "Bedroom 2",
+      "default": false,
+      "feet": [
+        5.81226,
+        0.86333,
+        3.3
+      ],
+      "look_at": [
+        5.81226,
+        2.07928,
+        4.8
+      ]
+    },
+    {
+      "id": "upper-3",
+      "floor": "upper",
+      "label": "Bedroom 3",
+      "default": false,
+      "feet": [
+        2.06712,
+        0.86333,
+        3.3
+      ],
+      "look_at": [
+        2.06712,
+        2.07928,
+        4.8
+      ]
+    },
+    {
+      "id": "upper-4",
+      "floor": "upper",
+      "label": "Laundry",
+      "default": false,
+      "feet": [
+        1.70233,
+        3.78161,
+        3.3
+      ],
+      "look_at": [
+        1.70233,
+        4.99757,
+        4.8
+      ]
+    },
+    {
+      "id": "upper-5",
+      "floor": "upper",
+      "label": "Bathroom",
+      "default": false,
+      "feet": [
+        1.67802,
+        6.61479,
+        3.3
+      ],
+      "look_at": [
+        1.67802,
+        7.83074,
+        4.8
+      ]
+    },
+    {
+      "id": "upper-6",
+      "floor": "upper",
+      "label": "Main bedroom",
+      "default": false,
+      "feet": [
+        4.5963,
+        8.45088,
+        3.3
+      ],
+      "look_at": [
+        4.5963,
+        9.66683,
+        4.8
+      ]
+    }
+  ],
+  "source": {
+    "url": "https://lk-projekt.pl/en/projekty-domow/projekt-domu-lk1891",
+    "retrieved": "2026-10-08",
+    "calibration": {
+      "pixels_per_metre": 82.24,
+      "x_check_m": 12.5,
+      "y_check_m": 13.497081712062258,
+      "upper_y_registration_px": 74
+    },
+    "official": {
+      "usable_m2": 113.16,
+      "ground_m2": 53.61,
+      "upper_m2": 59.56,
+      "store_m2": 6,
+      "carport_m2": 24,
+      "building_area_m2": 108.25,
+      "total_area_m2": 183.25,
+      "height_m": 7.55,
+      "room_height_m": 2.7
+    }
+  },
+  "assumptions": [
+    "Traced from the official LK1891 drawings; the publisher\u2019s linked image filenames use 1480. No rooms have been added or mirrored.",
+    "Room areas are the publisher\u2019s values, not measured from this simplified mesh. The floor subtotals differ by 0.01 m\u00b2 from the published usable total due to rounding.",
+    "Scale: 1,028 pixels = 12.50 m, cross-checked against 1,110 pixels = 13.50 m. Upper drawing registered on the stair core.",
+    "Floor-to-floor height 3.30 m is inferred. Clear room height 2.70 m and overall height 7.55 m are published; parapet and roof build-up are approximate.",
+    "Doors, window sill heights, railings and stair risers are conceptual details inferred from the drawings and exterior images. Furniture is omitted in this first architectural pass.",
+    "On site: rotated 180\u00b0, entrance toward shared parking. Carport stays in the original layout; vehicle access is not validated.",
+    "The full visible envelope including terraces is approximately 14 \u00d7 15 m. Placement uses the earlier sketch and image-derived plot; it is not a surveyed or approved setback study."
+  ],
+  "stair_polygons": [
+    {
+      "id": "stair-1",
+      "points": [
+        [
+          5.15564,
+          3.91537
+        ],
+        [
+          5.44261,
+          3.91537
+        ],
+        [
+          5.44261,
+          2.99125
+        ],
+        [
+          5.15564,
+          2.99125
+        ]
+      ],
+      "top": 0.183333
+    },
+    {
+      "id": "stair-2",
+      "points": [
+        [
+          5.44261,
+          3.91537
+        ],
+        [
+          5.72957,
+          3.91537
+        ],
+        [
+          5.72957,
+          2.99125
+        ],
+        [
+          5.44261,
+          2.99125
+        ]
+      ],
+      "top": 0.366667
+    },
+    {
+      "id": "stair-3",
+      "points": [
+        [
+          5.72957,
+          3.91537
+        ],
+        [
+          6.01654,
+          3.91537
+        ],
+        [
+          6.01654,
+          2.99125
+        ],
+        [
+          5.72957,
+          2.99125
+        ]
+      ],
+      "top": 0.55
+    },
+    {
+      "id": "stair-4",
+      "points": [
+        [
+          6.01654,
+          3.91537
+        ],
+        [
+          6.3035,
+          3.91537
+        ],
+        [
+          6.3035,
+          2.99125
+        ],
+        [
+          6.01654,
+          2.99125
+        ]
+      ],
+      "top": 0.733333
+    },
+    {
+      "id": "stair-5",
+      "points": [
+        [
+          6.3035,
+          3.91537
+        ],
+        [
+          6.59047,
+          3.91537
+        ],
+        [
+          6.59047,
+          2.99125
+        ],
+        [
+          6.3035,
+          2.99125
+        ]
+      ],
+      "top": 0.916667
+    },
+    {
+      "id": "stair-6",
+      "points": [
+        [
+          6.59047,
+          3.91537
+        ],
+        [
+          6.59047,
+          2.99125
+        ],
+        [
+          7.12401,
+          2.99125
+        ]
+      ],
+      "top": 1.1
+    },
+    {
+      "id": "stair-7",
+      "points": [
+        [
+          6.59047,
+          3.91537
+        ],
+        [
+          7.12401,
+          2.99125
+        ],
+        [
+          7.50243,
+          3.0034
+        ],
+        [
+          7.50243,
+          3.38885
+        ]
+      ],
+      "top": 1.283333
+    },
+    {
+      "id": "stair-8",
+      "points": [
+        [
+          6.59047,
+          3.91537
+        ],
+        [
+          7.50243,
+          3.38885
+        ],
+        [
+          7.50243,
+          3.91537
+        ]
+      ],
+      "top": 1.466667
+    },
+    {
+      "id": "stair-9",
+      "points": [
+        [
+          6.59047,
+          3.91537
+        ],
+        [
+          7.50243,
+          3.91537
+        ],
+        [
+          7.50243,
+          4.23152
+        ],
+        [
+          6.59047,
+          4.23152
+        ]
+      ],
+      "top": 1.65
+    },
+    {
+      "id": "stair-10",
+      "points": [
+        [
+          6.59047,
+          4.23152
+        ],
+        [
+          7.50243,
+          4.23152
+        ],
+        [
+          7.50243,
+          4.54767
+        ],
+        [
+          6.59047,
+          4.54767
+        ]
+      ],
+      "top": 1.833333
+    },
+    {
+      "id": "stair-11",
+      "points": [
+        [
+          6.59047,
+          4.54767
+        ],
+        [
+          7.50243,
+          4.54767
+        ],
+        [
+          7.50243,
+          4.86381
+        ],
+        [
+          6.59047,
+          4.86381
+        ]
+      ],
+      "top": 2.016667
+    },
+    {
+      "id": "stair-12",
+      "points": [
+        [
+          6.59047,
+          4.86381
+        ],
+        [
+          7.50243,
+          4.86381
+        ],
+        [
+          7.50243,
+          5.17996
+        ],
+        [
+          6.59047,
+          5.17996
+        ]
+      ],
+      "top": 2.2
+    },
+    {
+      "id": "stair-13",
+      "points": [
+        [
+          6.59047,
+          5.17996
+        ],
+        [
+          7.50243,
+          5.17996
+        ],
+        [
+          7.50243,
+          5.70648
+        ]
+      ],
+      "top": 2.383333
+    },
+    {
+      "id": "stair-14",
+      "points": [
+        [
+          6.59047,
+          5.17996
+        ],
+        [
+          7.50243,
+          5.70648
+        ],
+        [
+          7.49027,
+          6.07977
+        ],
+        [
+          7.10997,
+          6.07977
+        ]
+      ],
+      "top": 2.566667
+    },
+    {
+      "id": "stair-15",
+      "points": [
+        [
+          6.59047,
+          5.17996
+        ],
+        [
+          7.10997,
+          6.07977
+        ],
+        [
+          6.59047,
+          6.07977
+        ]
+      ],
+      "top": 2.75
+    },
+    {
+      "id": "stair-16",
+      "points": [
+        [
+          6.59047,
+          6.07977
+        ],
+        [
+          6.59047,
+          5.17996
+        ],
+        [
+          6.20136,
+          5.17996
+        ],
+        [
+          6.20136,
+          6.07977
+        ]
+      ],
+      "top": 2.933333
+    },
+    {
+      "id": "stair-17",
+      "points": [
+        [
+          6.20136,
+          6.07977
+        ],
+        [
+          6.20136,
+          5.17996
+        ],
+        [
+          5.81226,
+          5.17996
+        ],
+        [
+          5.81226,
+          6.07977
+        ]
+      ],
+      "top": 3.116667
+    },
+    {
+      "id": "stair-18",
+      "points": [
+        [
+          5.81226,
+          6.07977
+        ],
+        [
+          5.81226,
+          5.17996
+        ],
+        [
+          5.42315,
+          5.17996
+        ],
+        [
+          5.42315,
+          6.07977
+        ]
+      ],
+      "top": 3.3
+    }
+  ]
+}
