@@ -154,6 +154,7 @@ const terrainWait=setInterval(async()=>{
 
 
 
+
 // PARTNER LK1891 START
 import {addPartner} from './shared-land-assets/partner-site-r01.mjs';
 const partnerWait=setInterval(async()=>{
@@ -165,7 +166,9 @@ const partnerWait=setInterval(async()=>{
   $('#status').textContent='Ready · both houses · LK1891 added';updateContext();
   data.frames.partner=[-3,16,-34,-13];data.frames.houses=[-3,19,-33,16];
   for(const [value,label] of [['houses','Both houses close-up'],['partner','Partner · LK1891']]){const opt=document.createElement('option');opt.value=value;opt.textContent=label;$('#frame').append(opt);}
-  const requested=new URLSearchParams(location.search).get('frame');if(['whole','houses','partner'].includes(requested)){$('#frame').value=requested;mode='3d';fit();}
+  const params=new URLSearchParams(location.search),requested=params.get('frame');
+  if(['whole','houses','partner'].includes(requested)){$('#frame').value=requested;mode='3d';fit();}
+  else if(params.get('view')!=='walk'){$('#frame').value='houses';mode='3d';fit();}
  }catch(e){document.body.dataset.partnerLoaded='error';$('#status').textContent='Partner house could not load; reload to retry.';console.error(e);}
 },180);
 // PARTNER LK1891 END
