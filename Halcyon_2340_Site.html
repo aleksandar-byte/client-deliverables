@@ -32,7 +32,7 @@ const vector=p=>new THREE.Vector3(p[0],p[2]??0,-p[1]);const clips=[],slopes=[],m
 function marker(text,p,cls=''){const el=document.createElement('span');el.textContent=text;el.className='label '+cls;$('#labels').append(el);markers.push({el,p:vector(p)});}
 function line(points,color){const mesh=new THREE.Line(new THREE.BufferGeometry().setFromPoints(points.map(vector)),new THREE.LineBasicMaterial({color,depthTest:false}));mesh.renderOrder=30;dimensions.add(mesh);}
 for(const [id,g] of Object.entries(data.clearances)){line([[...g.from,.08],[...g.to,.08]],0x904e28);marker('≈ '+g.gap_m.toFixed(1)+' m',[(g.from[0]+g.to[0])/2,(g.from[1]+g.to[1])/2,.25],'gap');}
-marker('Shared parking',[13.3,-13.7,.1]);marker('Our portion · 859 m²',[7,26,.1]);marker('Partner’s portion',[6,-31,.1]);marker('Entrance',[3.857,-3.6,.1]);
+marker('Shared parking',[13.3,-13.7,.1]);marker('Our portion · 859 m²',[7,26,.1]);marker('Igor’s portion',[6,-31,.1]);marker('Entrance',[3.857,-3.6,.1]);
 function resize(){const w=view.clientWidth,h=view.clientHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();if(mode==='plan')fit();}
 function fit(){
     const b=data.frames[$('#frame').value],cx=(b[0]+b[1])/2,cy=(b[2]+b[3])/2,span=Math.max(b[1]-b[0],b[3]-b[2]);
