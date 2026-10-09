@@ -1,0 +1,23 @@
+{
+  "revision": "igor-r06",
+  "basis": "Igor R06: kitchen refurnished as a continuous L-shaped wash/preparation run using the extension. Sink under a 2.50 m wide tree-side window; dishwasher beside sink; preparation run then fridge at dining end. Front return below 1.50 m wide counter-height glazing. Cooking peninsula retained in the wider bay. R05 footprint/areas and all other rooms retained.",
+  "baseline": "revisions/r05-extended",
+  "area_summary": {
+    "publisher_usable_m2": 113.16,
+    "extension_estimated_m2": 4.97,
+    "revised_usable_estimated_m2": 118.13,
+    "store_reference_m2": 6,
+    "carport_m2": 0,
+    "basis": "Added net modeled floor strip; original 113.16 m2 publisher usable total plus extension. Not a full measured area schedule."
+  },
+  "sink_window_m": [
+    2.5,
+    1.18
+  ],
+  "front_window_m": [
+    1.5,
+    1.18
+  ],
+  "minimum_extension_aisle_m": 1.3915319999999998,
+  "appliances": "Static positions; open-door use not simulated"
+}
