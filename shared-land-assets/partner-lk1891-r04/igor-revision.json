@@ -1,0 +1,36 @@
+{
+  "revision": "igor-r04",
+  "basis": "Igor R04: full horizontal mirror about source x=5.5 m; compact entrance-side kitchen; new 1.25 m dining window; ground rear terrace removed; upstairs room arrangement and balconies retained. Later mirror message treated as superseding the earlier all-bedrooms-east idea. Not the unmodified publisher design.",
+  "mirror_x_sum": 11,
+  "removed": [
+    "LK_end_base",
+    "LK_prep1",
+    "LK_prep2",
+    "rear-strip",
+    "rear-west"
+  ],
+  "kitchen_moves": {
+    "LK_fridge": [
+      0,
+      -3.7694552529182883,
+      0
+    ],
+    "LK_dishwasher": [
+      0,
+      -0.5836575875486382,
+      0
+    ],
+    "LK_sink": [
+      0,
+      0.12159533073929962,
+      0
+    ]
+  },
+  "dining_window_m": [
+    1.25,
+    1.5
+  ],
+  "upper_layout": "mirrored only",
+  "source": "private-documents/igor-review-2026-10-09",
+  "baseline": "revisions/r03-furnished"
+}

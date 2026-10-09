@@ -1,0 +1,285 @@
+{
+  "revision": "cadastral-review-r01",
+  "basis": "Manual trace of supplied cadastral screenshot 6647, aligned to existing 1718 m\u00b2 area-calibrated parcel. Approximate, not survey boundaries or verified access rights.",
+  "source_sha256": "fe532dc804ebfd8329503fc36e760588bba54fe3e7b138c15c14570ff9347ec6",
+  "lines": [
+    {
+      "id": "west-outer",
+      "points": [
+        [
+          34.2441,
+          -66.1301
+        ],
+        [
+          40.1577,
+          -37.2885
+        ],
+        [
+          47.0726,
+          -7.0676
+        ],
+        [
+          49.2728,
+          26.716
+        ]
+      ]
+    },
+    {
+      "id": "west-column",
+      "points": [
+        [
+          17.1146,
+          -60.7156
+        ],
+        [
+          22.4139,
+          -36.2016
+        ],
+        [
+          19.3394,
+          -35.7951
+        ],
+        [
+          21.2217,
+          -10.7662
+        ],
+        [
+          23.5037,
+          -7.7193
+        ]
+      ]
+    },
+    {
+      "id": "638-3-south",
+      "points": [
+        [
+          43.1239,
+          -38.0376
+        ],
+        [
+          15.3002,
+          -35.4603
+        ]
+      ]
+    },
+    {
+      "id": "638-2-south",
+      "points": [
+        [
+          47.0726,
+          -7.0676
+        ],
+        [
+          17.0397,
+          -4.9225
+        ]
+      ]
+    },
+    {
+      "id": "638-1-west",
+      "points": [
+        [
+          23.1355,
+          -2.3275
+        ],
+        [
+          27.915,
+          33.6554
+        ]
+      ]
+    },
+    {
+      "id": "638-1-south",
+      "points": [
+        [
+          27.915,
+          33.6554
+        ],
+        [
+          17.1943,
+          32.5223
+        ]
+      ]
+    },
+    {
+      "id": "637-roadside-north",
+      "points": [
+        [
+          10.2627,
+          -58.5498
+        ],
+        [
+          17.1146,
+          -60.7156
+        ]
+      ]
+    },
+    {
+      "id": "637-roadside-south",
+      "points": [
+        [
+          24.2725,
+          34.0531
+        ],
+        [
+          17.1943,
+          32.5223
+        ]
+      ]
+    },
+    {
+      "id": "634-east",
+      "points": [
+        [
+          -32.8053,
+          -47.5741
+        ],
+        [
+          -30.792,
+          27.3421
+        ]
+      ]
+    },
+    {
+      "id": "north-neighbours",
+      "points": [
+        [
+          34.2441,
+          -66.1301
+        ],
+        [
+          10.2627,
+          -58.5498
+        ],
+        [
+          -6.5242,
+          -53.2436
+        ],
+        [
+          -32.8053,
+          -47.5741
+        ]
+      ]
+    },
+    {
+      "id": "southern-strip",
+      "points": [
+        [
+          27.915,
+          33.6554
+        ],
+        [
+          -5.8075,
+          28.3
+        ],
+        [
+          -30.792,
+          27.3421
+        ]
+      ]
+    }
+  ],
+  "labels": [
+    {
+      "text": "634",
+      "at": [
+        -19.2257,
+        -11.1699
+      ]
+    },
+    {
+      "text": "633",
+      "at": [
+        -43.2858,
+        -27.6812
+      ]
+    },
+    {
+      "text": "638/3",
+      "at": [
+        26.2149,
+        -50.4034
+      ]
+    },
+    {
+      "text": "638/2",
+      "at": [
+        31.4975,
+        -21.1739
+      ]
+    },
+    {
+      "text": "638/1",
+      "at": [
+        27.4415,
+        16.6597
+      ]
+    },
+    {
+      "text": "637/5",
+      "at": [
+        15.4144,
+        -46.4242
+      ]
+    },
+    {
+      "text": "637/3\u20134",
+      "at": [
+        19.7047,
+        -19.142
+      ]
+    },
+    {
+      "text": "637/2",
+      "at": [
+        17.6865,
+        19.178
+      ]
+    },
+    {
+      "text": "603/6",
+      "at": [
+        -10.6934,
+        31.9169
+      ]
+    }
+  ],
+  "road_centerline": [
+    [
+      47.6164,
+      26.9247
+    ],
+    [
+      47.6164,
+      -7.4225
+    ],
+    [
+      19.5397,
+      -7.4225
+    ],
+    [
+      19.5397,
+      -31.7548
+    ]
+  ],
+  "marked_road_pixels": [
+    [
+      145,
+      970
+    ],
+    [
+      87,
+      799
+    ],
+    [
+      237,
+      755
+    ],
+    [
+      197,
+      611
+    ]
+  ],
+  "road_assumptions": "5 m width and two right-angle bends are user inputs. Treat red stroke as parcel-side corridor edge, offset centre by 2.5 m and square bends to local parcel axes. Northern extent follows visible marking; southern connection to main road remains inferred. Replaces previous straight road beside southern plot.",
+  "registration": "Exact reuse of the earlier cadastral-pixel to local-coordinate transform; screenshot itself is not metric survey evidence."
+}

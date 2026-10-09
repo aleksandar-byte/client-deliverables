@@ -1,0 +1,5608 @@
+{
+  "schema_version": 1,
+  "id": "partner-lk1891",
+  "title": "Igor\u00c3\u00a2\u00e2\u201a\u00ac\u00e2\u201e\u00a2s house \u00c3\u201a\u00c2\u00b7 LK1891 \u00c3\u201a\u00c2\u00b7 mirrored revision",
+  "units": "metres",
+  "floors": [
+    {
+      "id": "ground",
+      "label": "Ground floor",
+      "z": 0,
+      "height": 2.7,
+      "slab_thickness": 0.2,
+      "ceiling": false,
+      "slabs": [
+        [
+          2.9990299999999994,
+          0.0,
+          8.49514,
+          11.49076
+        ],
+        [
+          8.49514,
+          2.4927,
+          11.0,
+          8.98589
+        ],
+        [
+          -1.5,
+          0.0,
+          2.9990299999999994,
+          8.98589
+        ]
+      ],
+      "rooms": [
+        {
+          "id": "1",
+          "label": "1 \u00b7 Lobby",
+          "at": [
+            6.52529,
+            1.54426
+          ],
+          "reference_area_m2": 6.75,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "2",
+          "label": "2 \u00b7 WC",
+          "at": [
+            4.21498,
+            1.60506
+          ],
+          "reference_area_m2": 3.12,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "3",
+          "label": "3 \u00b7 Hall",
+          "at": [
+            6.65905,
+            4.40175
+          ],
+          "reference_area_m2": 4.58,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "4",
+          "label": "4 \u00b7 Kitchen",
+          "at": [
+            9.20039,
+            4.40175
+          ],
+          "reference_area_m2": 9.9,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "5",
+          "label": "5 \u00b7 Dining",
+          "at": [
+            8.47082,
+            7.19844
+          ],
+          "reference_area_m2": 6.92,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "6",
+          "label": "6 \u00b7 Living",
+          "at": [
+            5.74708,
+            8.8035
+          ],
+          "reference_area_m2": 22.34,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "7",
+          "label": "7 \u00b7 Store",
+          "at": [
+            1.0534999999999997,
+            7.79426
+          ],
+          "reference_area_m2": 6,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "8",
+          "label": "8 \u00b7 Carport",
+          "at": [
+            0.9319100000000002,
+            3.55058
+          ],
+          "reference_area_m2": 24,
+          "area_basis": "Publisher area"
+        }
+      ],
+      "bounds": [
+        0.0,
+        12.5,
+        0.0,
+        11.49076
+      ]
+    },
+    {
+      "id": "upper",
+      "label": "Upper floor",
+      "z": 3.3,
+      "height": 2.7,
+      "slab_thickness": 0.2,
+      "ceiling": false,
+      "slabs": [
+        [
+          5.57685,
+          -0.99708,
+          11.0,
+          8.99805
+        ],
+        [
+          2.9990299999999994,
+          6.07977,
+          8.49514,
+          10.49368
+        ],
+        [
+          2.9990299999999994,
+          2.93045,
+          3.4975699999999996,
+          6.07977
+        ],
+        [
+          2.9990299999999994,
+          -0.99708,
+          5.57685,
+          2.99125
+        ]
+      ],
+      "rooms": [
+        {
+          "id": "1",
+          "label": "1 \u00b7 Hall",
+          "at": [
+            6.92656,
+            4.57198
+          ],
+          "reference_area_m2": 8.07,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "2",
+          "label": "2 \u00b7 Bedroom 2",
+          "at": [
+            5.18774,
+            0.86333
+          ],
+          "reference_area_m2": 11.11,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "3",
+          "label": "3 \u00b7 Bedroom 3",
+          "at": [
+            8.93288,
+            0.86333
+          ],
+          "reference_area_m2": 11.12,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "4",
+          "label": "4 \u00b7 Laundry",
+          "at": [
+            9.29767,
+            3.78161
+          ],
+          "reference_area_m2": 4.15,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "5",
+          "label": "5 \u00b7 Bathroom",
+          "at": [
+            9.32198,
+            6.61479
+          ],
+          "reference_area_m2": 8.06,
+          "area_basis": "Publisher area"
+        },
+        {
+          "id": "6",
+          "label": "6 \u00b7 Main bedroom",
+          "at": [
+            6.4037,
+            8.45088
+          ],
+          "reference_area_m2": 17.05,
+          "area_basis": "Publisher area"
+        }
+      ],
+      "bounds": [
+        0.0,
+        8.00097,
+        -0.99708,
+        10.49368
+      ]
+    }
+  ],
+  "levels": {
+    "ground": 0,
+    "upper": 3.3
+  },
+  "defaults": {
+    "ground": "ground-1",
+    "upper": "upper-1"
+  },
+  "avatar": {
+    "eye_height": 1.65,
+    "body_height": 1.8,
+    "radius": 0.24,
+    "step_height": 0.22,
+    "speed": 3.465
+  },
+  "viewpoints": [
+    {
+      "id": "ground-1",
+      "floor": "ground",
+      "label": "Lobby",
+      "default": true,
+      "feet": [
+        6.513132295719844,
+        1.5442607003891051,
+        0
+      ],
+      "look_at": [
+        6.403696498054474,
+        4.5841439688715955,
+        0.75
+      ]
+    },
+    {
+      "id": "ground-2",
+      "floor": "ground",
+      "label": "WC",
+      "default": false,
+      "feet": [
+        4.360894941634241,
+        1.5442607003891051,
+        0
+      ],
+      "look_at": [
+        4.190661478599221,
+        2.3224708171206228,
+        0.75
+      ]
+    },
+    {
+      "id": "ground-3",
+      "floor": "ground",
+      "label": "Hall",
+      "default": false,
+      "feet": [
+        6.622568093385214,
+        4.401750972762646,
+        0
+      ],
+      "look_at": [
+        5.309338521400778,
+        5.313715953307393,
+        0.75
+      ]
+    },
+    {
+      "id": "ground-4",
+      "floor": "ground",
+      "label": "Kitchen",
+      "default": false,
+      "feet": [
+        9.200389105058365,
+        4.340953307392996,
+        0
+      ],
+      "look_at": [
+        10.233949416342412,
+        4.5841439688715955,
+        0.75
+      ]
+    },
+    {
+      "id": "ground-5",
+      "floor": "ground",
+      "label": "Dining",
+      "default": false,
+      "feet": [
+        6.9143968871595325,
+        6.955252918287938,
+        0
+      ],
+      "look_at": [
+        8.470817120622568,
+        6.955252918287938,
+        0.75
+      ]
+    },
+    {
+      "id": "ground-6",
+      "floor": "ground",
+      "label": "Living",
+      "default": false,
+      "feet": [
+        4.6162451361867705,
+        7.453793774319067,
+        0
+      ],
+      "look_at": [
+        6.646887159533073,
+        10.055933852140079,
+        0.75
+      ]
+    },
+    {
+      "id": "ground-7",
+      "floor": "ground",
+      "label": "Store",
+      "default": false,
+      "feet": [
+        1.0534999999999997,
+        7.79426,
+        0
+      ],
+      "look_at": [
+        1.0534999999999997,
+        9.01021,
+        1.5
+      ]
+    },
+    {
+      "id": "ground-8",
+      "floor": "ground",
+      "label": "Carport",
+      "default": false,
+      "feet": [
+        0.9319100000000002,
+        3.55058,
+        0
+      ],
+      "look_at": [
+        0.9319100000000002,
+        4.76654,
+        1.5
+      ]
+    },
+    {
+      "id": "upper-1",
+      "floor": "upper",
+      "label": "Hall",
+      "default": true,
+      "feet": [
+        6.926556420233463,
+        4.571984435797666,
+        3.3
+      ],
+      "look_at": [
+        5.272859922178988,
+        5.605544747081712,
+        4.05
+      ]
+    },
+    {
+      "id": "upper-2",
+      "floor": "upper",
+      "label": "Bedroom 2",
+      "default": false,
+      "feet": [
+        5.370136186770428,
+        0.9241245136186771,
+        3.3
+      ],
+      "look_at": [
+        4.069066147859922,
+        0.7417315175097277,
+        4.05
+      ]
+    },
+    {
+      "id": "upper-3",
+      "floor": "upper",
+      "label": "Bedroom 3",
+      "default": false,
+      "feet": [
+        8.726167315175097,
+        1.0457198443579767,
+        3.3
+      ],
+      "look_at": [
+        10.002918287937742,
+        0.7417315175097277,
+        4.05
+      ]
+    },
+    {
+      "id": "upper-4",
+      "floor": "upper",
+      "label": "Laundry",
+      "default": false,
+      "feet": [
+        9.163910505836576,
+        3.6721789883268485,
+        3.3
+      ],
+      "look_at": [
+        9.857003891050583,
+        4.620622568093386,
+        4.05
+      ]
+    },
+    {
+      "id": "upper-5",
+      "floor": "upper",
+      "label": "Bathroom",
+      "default": false,
+      "feet": [
+        9.200389105058365,
+        6.2378404669260705,
+        3.3
+      ],
+      "look_at": [
+        8.774805447470817,
+        8.000972762645915,
+        4.05
+      ]
+    },
+    {
+      "id": "upper-6",
+      "floor": "upper",
+      "label": "Main bedroom",
+      "default": false,
+      "feet": [
+        6.3550583657587545,
+        8.450875486381323,
+        3.3
+      ],
+      "look_at": [
+        4.56760700389105,
+        8.426556420233464,
+        4.05
+      ]
+    }
+  ],
+  "colliders": [
+    {
+      "id": "balcony-frame-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        10.5,
+        -2.5,
+        3.3
+      ],
+      "max": [
+        11.0,
+        -1.0,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "balcony-frame-1",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        3.0,
+        -2.5,
+        3.3
+      ],
+      "max": [
+        3.5,
+        -1.0,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "balcony-frame-2",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        12.0,
+        6.5,
+        3.3
+      ],
+      "max": [
+        12.5,
+        7.0,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "balcony-frame-3",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        3.5,
+        10.5,
+        3.3
+      ],
+      "max": [
+        4.0,
+        12.5,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "balcony-glass-0",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        3.4749999999999996,
+        -2.375,
+        3.35
+      ],
+      "max": [
+        10.525,
+        -2.325,
+        4.4
+      ],
+      "walkable": false
+    },
+    {
+      "id": "balcony-glass-1",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        12.375,
+        6.975,
+        3.35
+      ],
+      "max": [
+        12.425,
+        12.025,
+        4.4
+      ],
+      "walkable": false
+    },
+    {
+      "id": "balcony-glass-2",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        3.875,
+        11.975,
+        3.35
+      ],
+      "max": [
+        12.425,
+        12.025,
+        4.4
+      ],
+      "walkable": false
+    },
+    {
+      "id": "carport-apron",
+      "floor": "ground",
+      "kind": "slab",
+      "min": [
+        -1.5,
+        -2.5,
+        -0.17
+      ],
+      "max": [
+        7.5,
+        0.0,
+        0.03
+      ],
+      "walkable": true
+    },
+    {
+      "id": "carport-post-12.0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        -1.5,
+        0.0,
+        0.0
+      ],
+      "max": [
+        -1.0,
+        0.5,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "carport-post-8",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        2.5,
+        0.0,
+        0.0
+      ],
+      "max": [
+        3.0,
+        0.5,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "carport-roof",
+      "floor": "ground",
+      "kind": "ceiling",
+      "min": [
+        -1.5,
+        0.0,
+        2.7
+      ],
+      "max": [
+        3.0,
+        9.0,
+        3.1
+      ],
+      "walkable": false
+    },
+    {
+      "id": "carport-screen-0",
+      "floor": "ground",
+      "kind": "fixture",
+      "min": [
+        -1.4400010000000005,
+        0.5,
+        0.25
+      ],
+      "max": [
+        -1.3499999999999996,
+        6.5,
+        0.32
+      ],
+      "walkable": false
+    },
+    {
+      "id": "carport-screen-1",
+      "floor": "ground",
+      "kind": "fixture",
+      "min": [
+        -1.4400010000000005,
+        0.5,
+        0.49
+      ],
+      "max": [
+        -1.3499999999999996,
+        6.5,
+        0.56
+      ],
+      "walkable": false
+    },
+    {
+      "id": "carport-screen-2",
+      "floor": "ground",
+      "kind": "fixture",
+      "min": [
+        -1.4400010000000005,
+        0.5,
+        0.73
+      ],
+      "max": [
+        -1.3499999999999996,
+        6.5,
+        0.8
+      ],
+      "walkable": false
+    },
+    {
+      "id": "carport-screen-3",
+      "floor": "ground",
+      "kind": "fixture",
+      "min": [
+        -1.4400010000000005,
+        0.5,
+        0.97
+      ],
+      "max": [
+        -1.3499999999999996,
+        6.5,
+        1.04
+      ],
+      "walkable": false
+    },
+    {
+      "id": "carport-screen-4",
+      "floor": "ground",
+      "kind": "fixture",
+      "min": [
+        -1.4400010000000005,
+        0.5,
+        1.21
+      ],
+      "max": [
+        -1.3499999999999996,
+        6.5,
+        1.28
+      ],
+      "walkable": false
+    },
+    {
+      "id": "carport-screen-5",
+      "floor": "ground",
+      "kind": "fixture",
+      "min": [
+        -1.4400010000000005,
+        0.5,
+        1.45
+      ],
+      "max": [
+        -1.3499999999999996,
+        6.5,
+        1.52
+      ],
+      "walkable": false
+    },
+    {
+      "id": "carport-screen-6",
+      "floor": "ground",
+      "kind": "fixture",
+      "min": [
+        -1.4400010000000005,
+        0.5,
+        1.69
+      ],
+      "max": [
+        -1.3499999999999996,
+        6.5,
+        1.76
+      ],
+      "walkable": false
+    },
+    {
+      "id": "carport-screen-7",
+      "floor": "ground",
+      "kind": "fixture",
+      "min": [
+        -1.4400010000000005,
+        0.5,
+        1.93
+      ],
+      "max": [
+        -1.3499999999999996,
+        6.5,
+        2.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "carport-screen-8",
+      "floor": "ground",
+      "kind": "fixture",
+      "min": [
+        -1.4400010000000005,
+        0.5,
+        2.17
+      ],
+      "max": [
+        -1.3499999999999996,
+        6.5,
+        2.24
+      ],
+      "walkable": false
+    },
+    {
+      "id": "carport-screen-9",
+      "floor": "ground",
+      "kind": "fixture",
+      "min": [
+        -1.4400010000000005,
+        0.5,
+        2.41
+      ],
+      "max": [
+        -1.3499999999999996,
+        6.5,
+        2.48
+      ],
+      "walkable": false
+    },
+    {
+      "id": "Entrance leaf",
+      "floor": "ground",
+      "kind": "door",
+      "min": [
+        6.989173,
+        0.25535,
+        0.0
+      ],
+      "max": [
+        7.034173,
+        1.23535,
+        2.25
+      ],
+      "walkable": false
+    },
+    {
+      "id": "front-balcony",
+      "floor": "upper",
+      "kind": "slab",
+      "min": [
+        3.0,
+        -2.5,
+        3.1
+      ],
+      "max": [
+        11.0,
+        -1.0,
+        3.3
+      ],
+      "walkable": true
+    },
+    {
+      "id": "front-deck",
+      "floor": "ground",
+      "kind": "slab",
+      "min": [
+        7.5,
+        -2.5,
+        -0.1
+      ],
+      "max": [
+        11.6,
+        0.0,
+        0.1
+      ],
+      "walkable": true
+    },
+    {
+      "id": "front-deck-side",
+      "floor": "ground",
+      "kind": "slab",
+      "min": [
+        8.5,
+        0.0,
+        -0.1
+      ],
+      "max": [
+        11.6,
+        2.5,
+        0.1
+      ],
+      "walkable": true
+    },
+    {
+      "id": "ground-ceiling-0",
+      "floor": "ground",
+      "kind": "ceiling",
+      "min": [
+        5.57685,
+        -0.99708,
+        2.7
+      ],
+      "max": [
+        11.0,
+        8.99805,
+        3.1
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground-ceiling-1",
+      "floor": "ground",
+      "kind": "ceiling",
+      "min": [
+        2.9990299999999994,
+        6.07977,
+        2.7
+      ],
+      "max": [
+        8.49514,
+        10.49368,
+        3.1
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground-ceiling-2",
+      "floor": "ground",
+      "kind": "ceiling",
+      "min": [
+        2.9990299999999994,
+        2.93045,
+        2.7
+      ],
+      "max": [
+        3.4975699999999996,
+        6.07977,
+        3.1
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground-ceiling-3",
+      "floor": "ground",
+      "kind": "ceiling",
+      "min": [
+        2.9990299999999994,
+        -0.99708,
+        2.7
+      ],
+      "max": [
+        5.57685,
+        2.99125,
+        3.1
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-rear/end",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        8.25195,
+        8.4927,
+        0.0
+      ],
+      "max": [
+        8.495137,
+        8.9927,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-rear/glass-0",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        8.495137,
+        8.7302,
+        0.0
+      ],
+      "max": [
+        10.4893,
+        8.755199,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-rear/glass-0/frame-0",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.4643,
+        8.715199,
+        0.0
+      ],
+      "max": [
+        10.5143,
+        8.7702,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-rear/glass-0/frame-1",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        8.470137,
+        8.715199,
+        0.0
+      ],
+      "max": [
+        8.520137,
+        8.7702,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-rear/glass-0/frame-2",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        8.495137,
+        8.715199,
+        -0.025
+      ],
+      "max": [
+        10.4893,
+        8.7702,
+        0.025
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-rear/glass-0/frame-3",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        8.495137,
+        8.715199,
+        2.575
+      ],
+      "max": [
+        10.4893,
+        8.7702,
+        2.625
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-rear/header-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        8.495137,
+        8.4927,
+        2.6
+      ],
+      "max": [
+        10.4893,
+        8.9927,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-rear/pier-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        10.4893,
+        8.4927,
+        0.0
+      ],
+      "max": [
+        10.75681,
+        8.9927,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/east/end",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        2.9922199999999997,
+        0.25535,
+        0.0
+      ],
+      "max": [
+        3.4922199999999997,
+        11.24757,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/entrance/end",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        3.2422199999999997,
+        0.00535,
+        0.0
+      ],
+      "max": [
+        5.005354,
+        0.50535,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/entrance/glass-1",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        5.005354,
+        0.24285,
+        0.0
+      ],
+      "max": [
+        6.002436,
+        0.26785,
+        2.45
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/entrance/glass-1/frame-0",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        5.977436,
+        0.22785,
+        0.0
+      ],
+      "max": [
+        6.027436,
+        0.28285,
+        2.45
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/entrance/glass-1/frame-1",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        4.980354,
+        0.22785,
+        0.0
+      ],
+      "max": [
+        5.030354,
+        0.28285,
+        2.45
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/entrance/glass-1/frame-2",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        5.005354,
+        0.22785,
+        -0.025
+      ],
+      "max": [
+        6.002436,
+        0.28285,
+        0.025
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/entrance/glass-1/frame-3",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        5.005354,
+        0.22785,
+        2.425
+      ],
+      "max": [
+        6.002436,
+        0.28285,
+        2.475
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/entrance/header-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        6.002437,
+        0.00535,
+        2.25
+      ],
+      "max": [
+        7.011678,
+        0.50535,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/entrance/header-1",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        5.005354,
+        0.00535,
+        2.45
+      ],
+      "max": [
+        6.002436,
+        0.50535,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/entrance/pier-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        7.011678,
+        0.00535,
+        0.0
+      ],
+      "max": [
+        8.25195,
+        0.50535,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-front/end",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        8.25195,
+        2.48589,
+        0.0
+      ],
+      "max": [
+        8.495137,
+        2.98589,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-front/glass-0",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        8.495137,
+        2.72339,
+        0.0
+      ],
+      "max": [
+        10.4893,
+        2.74839,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-front/glass-0/frame-0",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.4643,
+        2.70839,
+        0.0
+      ],
+      "max": [
+        10.5143,
+        2.76339,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-front/glass-0/frame-1",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        8.470137,
+        2.70839,
+        0.0
+      ],
+      "max": [
+        8.520137,
+        2.76339,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-front/glass-0/frame-2",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        8.495137,
+        2.70839,
+        -0.025
+      ],
+      "max": [
+        10.4893,
+        2.76339,
+        0.025
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-front/glass-0/frame-3",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        8.495137,
+        2.70839,
+        2.575
+      ],
+      "max": [
+        10.4893,
+        2.76339,
+        2.625
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-front/header-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        8.495137,
+        2.48589,
+        2.6
+      ],
+      "max": [
+        10.4893,
+        2.98589,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-front/pier-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        10.4893,
+        2.48589,
+        0.0
+      ],
+      "max": [
+        10.75681,
+        2.98589,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-hall/end",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        7.348739999999999,
+        2.99125,
+        0.0
+      ],
+      "max": [
+        7.598739999999999,
+        4.88813,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-west/end",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        10.50681,
+        2.73589,
+        0.0
+      ],
+      "max": [
+        11.00681,
+        3.0034,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-west/glass-0",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.74431,
+        8.000968,
+        0.0
+      ],
+      "max": [
+        10.76931,
+        8.499509,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-west/glass-0/frame-0",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.72931,
+        8.474509,
+        0.0
+      ],
+      "max": [
+        10.78431,
+        8.524508,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-west/glass-0/frame-1",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.72931,
+        7.975968,
+        0.0
+      ],
+      "max": [
+        10.78431,
+        8.025968,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-west/glass-0/frame-2",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.72931,
+        8.000968,
+        -0.025
+      ],
+      "max": [
+        10.78431,
+        8.499509,
+        0.025
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-west/glass-0/frame-3",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.72931,
+        8.000968,
+        2.575
+      ],
+      "max": [
+        10.78431,
+        8.499509,
+        2.625
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-west/glass-1",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.74431,
+        3.0034,
+        0.0
+      ],
+      "max": [
+        10.76931,
+        3.501941,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-west/glass-1/frame-0",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.72931,
+        3.476941,
+        0.0
+      ],
+      "max": [
+        10.78431,
+        3.526941,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-west/glass-1/frame-1",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.72931,
+        2.9784,
+        0.0
+      ],
+      "max": [
+        10.78431,
+        3.0284,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-west/glass-1/frame-2",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.72931,
+        3.0034,
+        -0.025
+      ],
+      "max": [
+        10.78431,
+        3.501941,
+        0.025
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-west/glass-1/frame-3",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.72931,
+        3.0034,
+        2.575
+      ],
+      "max": [
+        10.78431,
+        3.501941,
+        2.625
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-west/header-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        10.50681,
+        8.000968,
+        2.6
+      ],
+      "max": [
+        11.00681,
+        8.499509,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-west/header-1",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        10.50681,
+        3.0034,
+        2.6
+      ],
+      "max": [
+        11.00681,
+        3.501941,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/kitchen-west/pier-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        10.50681,
+        8.499509,
+        0.0
+      ],
+      "max": [
+        11.00681,
+        8.7427,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/living-rear/end",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        3.2422190000000004,
+        10.99757,
+        0.0
+      ],
+      "max": [
+        3.9961140000000004,
+        11.49757,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/living-rear/glass-0",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        3.9961140000000004,
+        11.23507,
+        0.0
+      ],
+      "max": [
+        7.9966,
+        11.26007,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/living-rear/glass-0/frame-0",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        7.9716000000000005,
+        11.22007,
+        0.0
+      ],
+      "max": [
+        8.0216,
+        11.27507,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/living-rear/glass-0/frame-1",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        3.971114,
+        11.22007,
+        0.0
+      ],
+      "max": [
+        4.021114,
+        11.27507,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/living-rear/glass-0/frame-2",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        3.9961140000000004,
+        11.22007,
+        -0.025
+      ],
+      "max": [
+        7.9966,
+        11.27507,
+        0.025
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/living-rear/glass-0/frame-3",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        3.9961140000000004,
+        11.22007,
+        2.575
+      ],
+      "max": [
+        7.9966,
+        11.27507,
+        2.625
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/living-rear/header-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        3.9961140000000004,
+        10.99757,
+        2.6
+      ],
+      "max": [
+        7.9966,
+        11.49757,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/living-rear/pier-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        7.9966,
+        10.99757,
+        0.0
+      ],
+      "max": [
+        8.25195,
+        11.49757,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/living-west/end",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        8.00195,
+        8.7427,
+        0.0
+      ],
+      "max": [
+        8.50195,
+        8.998057,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/living-west/glass-0",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        8.23945,
+        8.998056,
+        0.0
+      ],
+      "max": [
+        8.26445,
+        10.99222,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/living-west/glass-0/frame-0",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        8.224450000000001,
+        10.96722,
+        0.0
+      ],
+      "max": [
+        8.27945,
+        11.01722,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/living-west/glass-0/frame-1",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        8.224450000000001,
+        8.973057,
+        0.0
+      ],
+      "max": [
+        8.27945,
+        9.023056,
+        2.6
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/living-west/glass-0/frame-2",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        8.224450000000001,
+        8.998056,
+        -0.025
+      ],
+      "max": [
+        8.27945,
+        10.99222,
+        0.025
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/living-west/glass-0/frame-3",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        8.224450000000001,
+        8.998056,
+        2.575
+      ],
+      "max": [
+        8.27945,
+        10.99222,
+        2.625
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/living-west/header-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        8.00195,
+        8.998056,
+        2.6
+      ],
+      "max": [
+        8.50195,
+        10.99222,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/living-west/pier-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        8.00195,
+        10.99222,
+        0.0
+      ],
+      "max": [
+        8.50195,
+        11.24757,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/lobby-hall/end",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        3.2422190000000004,
+        2.75465,
+        0.0
+      ],
+      "max": [
+        6.002437,
+        2.98465,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/lobby-hall/header-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        6.002437,
+        2.75465,
+        2.25
+      ],
+      "max": [
+        7.011678,
+        2.98465,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/lobby-hall/pier-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        7.011678,
+        2.75465,
+        0.0
+      ],
+      "max": [
+        8.25195,
+        2.98465,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/lobby-left/end",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        8.00195,
+        0.25535,
+        0.0
+      ],
+      "max": [
+        8.50195,
+        2.85749,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/slab/0",
+      "floor": "ground",
+      "kind": "slab",
+      "min": [
+        2.9990299999999994,
+        0.0,
+        -0.2
+      ],
+      "max": [
+        8.49514,
+        11.49076,
+        0.0
+      ],
+      "walkable": true
+    },
+    {
+      "id": "ground/slab/1",
+      "floor": "ground",
+      "kind": "slab",
+      "min": [
+        8.49514,
+        2.4927,
+        -0.2
+      ],
+      "max": [
+        11.0,
+        8.985889,
+        0.0
+      ],
+      "walkable": true
+    },
+    {
+      "id": "ground/slab/2",
+      "floor": "ground",
+      "kind": "slab",
+      "min": [
+        -1.5,
+        0.0,
+        -0.2
+      ],
+      "max": [
+        2.999029,
+        8.98589,
+        0.0
+      ],
+      "walkable": true
+    },
+    {
+      "id": "ground/store-east/end",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        -1.5068099999999998,
+        6.73638,
+        0.0
+      ],
+      "max": [
+        -1.0068099999999998,
+        8.7427,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/store-front/end",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        -1.2568099999999998,
+        6.48638,
+        0.0
+      ],
+      "max": [
+        0.4941639999999996,
+        6.98638,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/store-front/header-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        0.49416500000000063,
+        6.48638,
+        2.25
+      ],
+      "max": [
+        1.4912469999999995,
+        6.98638,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/store-front/pier-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        1.4912469999999995,
+        6.48638,
+        0.0
+      ],
+      "max": [
+        3.2422199999999997,
+        6.98638,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/store-rear/end",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        -1.2568110000000008,
+        8.4927,
+        0.0
+      ],
+      "max": [
+        3.2422190000000004,
+        8.9927,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/wc/end",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        4.89921,
+        0.25535,
+        0.0
+      ],
+      "max": [
+        5.01421,
+        1.106517,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/wc/header-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        4.89921,
+        1.106517,
+        2.25
+      ],
+      "max": [
+        5.01421,
+        1.921206,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/wc/pier-0",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        4.89921,
+        1.921206,
+        0.0
+      ],
+      "max": [
+        5.01421,
+        2.85749,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "main-roof-0",
+      "floor": "upper",
+      "kind": "ceiling",
+      "min": [
+        3.0,
+        6.5,
+        6.0
+      ],
+      "max": [
+        12.5,
+        12.0,
+        6.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "main-roof-1",
+      "floor": "upper",
+      "kind": "ceiling",
+      "min": [
+        3.0,
+        -2.5,
+        6.0
+      ],
+      "max": [
+        11.0,
+        6.5,
+        6.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "parapet-0-0",
+      "floor": "upper",
+      "kind": "ceiling",
+      "min": [
+        12.32,
+        6.5,
+        6.9
+      ],
+      "max": [
+        12.5,
+        12.0,
+        7.55
+      ],
+      "walkable": false
+    },
+    {
+      "id": "parapet-0-1",
+      "floor": "upper",
+      "kind": "ceiling",
+      "min": [
+        3.0,
+        6.5,
+        6.9
+      ],
+      "max": [
+        3.1799999999999997,
+        12.0,
+        7.55
+      ],
+      "walkable": false
+    },
+    {
+      "id": "parapet-0-2",
+      "floor": "upper",
+      "kind": "ceiling",
+      "min": [
+        3.0,
+        6.5,
+        6.9
+      ],
+      "max": [
+        12.5,
+        6.68,
+        7.55
+      ],
+      "walkable": false
+    },
+    {
+      "id": "parapet-0-3",
+      "floor": "upper",
+      "kind": "ceiling",
+      "min": [
+        3.0,
+        11.82,
+        6.9
+      ],
+      "max": [
+        12.5,
+        12.0,
+        7.55
+      ],
+      "walkable": false
+    },
+    {
+      "id": "parapet-1-0",
+      "floor": "upper",
+      "kind": "ceiling",
+      "min": [
+        10.82,
+        -2.5,
+        6.9
+      ],
+      "max": [
+        11.0,
+        6.5,
+        7.55
+      ],
+      "walkable": false
+    },
+    {
+      "id": "parapet-1-1",
+      "floor": "upper",
+      "kind": "ceiling",
+      "min": [
+        3.0,
+        -2.5,
+        6.9
+      ],
+      "max": [
+        3.1799999999999997,
+        6.5,
+        7.55
+      ],
+      "walkable": false
+    },
+    {
+      "id": "parapet-1-2",
+      "floor": "upper",
+      "kind": "ceiling",
+      "min": [
+        3.0,
+        -2.5,
+        6.9
+      ],
+      "max": [
+        11.0,
+        -2.32,
+        7.55
+      ],
+      "walkable": false
+    },
+    {
+      "id": "parapet-1-3",
+      "floor": "upper",
+      "kind": "ceiling",
+      "min": [
+        3.0,
+        6.32,
+        6.9
+      ],
+      "max": [
+        11.0,
+        6.5,
+        7.55
+      ],
+      "walkable": false
+    },
+    {
+      "id": "rear-balcony-inset",
+      "floor": "upper",
+      "kind": "slab",
+      "min": [
+        8.5,
+        8.0,
+        3.1
+      ],
+      "max": [
+        11.0,
+        10.5,
+        3.3
+      ],
+      "walkable": true
+    },
+    {
+      "id": "rear-balcony-north",
+      "floor": "upper",
+      "kind": "slab",
+      "min": [
+        3.0,
+        10.5,
+        3.1
+      ],
+      "max": [
+        11.0,
+        12.0,
+        3.3
+      ],
+      "walkable": true
+    },
+    {
+      "id": "rear-balcony-west",
+      "floor": "upper",
+      "kind": "slab",
+      "min": [
+        11.0,
+        6.5,
+        3.1
+      ],
+      "max": [
+        12.5,
+        12.0,
+        3.3
+      ],
+      "walkable": true
+    },
+    {
+      "id": "stair-1",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        5.55739,
+        2.99125,
+        0.023333
+      ],
+      "max": [
+        5.84436,
+        3.91537,
+        0.183333
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          5.84436,
+          2.99125
+        ],
+        [
+          5.55739,
+          2.99125
+        ],
+        [
+          5.55739,
+          3.91537
+        ],
+        [
+          5.84436,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-10",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        3.4975699999999996,
+        4.23152,
+        1.673333
+      ],
+      "max": [
+        4.40953,
+        4.54767,
+        1.833333
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          4.40953,
+          4.54767
+        ],
+        [
+          3.4975699999999996,
+          4.54767
+        ],
+        [
+          3.4975699999999996,
+          4.23152
+        ],
+        [
+          4.40953,
+          4.23152
+        ]
+      ]
+    },
+    {
+      "id": "stair-11",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        3.4975699999999996,
+        4.54767,
+        1.856667
+      ],
+      "max": [
+        4.40953,
+        4.86381,
+        2.016667
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          4.40953,
+          4.86381
+        ],
+        [
+          3.4975699999999996,
+          4.86381
+        ],
+        [
+          3.4975699999999996,
+          4.54767
+        ],
+        [
+          4.40953,
+          4.54767
+        ]
+      ]
+    },
+    {
+      "id": "stair-12",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        3.4975699999999996,
+        4.86381,
+        2.04
+      ],
+      "max": [
+        4.40953,
+        5.17996,
+        2.2
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          4.40953,
+          5.17996
+        ],
+        [
+          3.4975699999999996,
+          5.17996
+        ],
+        [
+          3.4975699999999996,
+          4.86381
+        ],
+        [
+          4.40953,
+          4.86381
+        ]
+      ]
+    },
+    {
+      "id": "stair-13",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        3.4975699999999996,
+        5.17996,
+        2.223333
+      ],
+      "max": [
+        4.40953,
+        5.70648,
+        2.383333
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          3.4975699999999996,
+          5.70648
+        ],
+        [
+          3.4975699999999996,
+          5.17996
+        ],
+        [
+          4.40953,
+          5.17996
+        ]
+      ]
+    },
+    {
+      "id": "stair-14",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        3.4975699999999996,
+        5.17996,
+        2.406667
+      ],
+      "max": [
+        4.40953,
+        6.07977,
+        2.566667
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          3.8900300000000003,
+          6.07977
+        ],
+        [
+          3.5097300000000002,
+          6.07977
+        ],
+        [
+          3.4975699999999996,
+          5.70648
+        ],
+        [
+          4.40953,
+          5.17996
+        ]
+      ]
+    },
+    {
+      "id": "stair-15",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        3.8900300000000003,
+        5.17996,
+        2.59
+      ],
+      "max": [
+        4.40953,
+        6.07977,
+        2.75
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          4.40953,
+          6.07977
+        ],
+        [
+          3.8900300000000003,
+          6.07977
+        ],
+        [
+          4.40953,
+          5.17996
+        ]
+      ]
+    },
+    {
+      "id": "stair-16",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        4.40953,
+        5.17996,
+        2.773333
+      ],
+      "max": [
+        4.79864,
+        6.07977,
+        2.933333
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          4.79864,
+          6.07977
+        ],
+        [
+          4.79864,
+          5.17996
+        ],
+        [
+          4.40953,
+          5.17996
+        ],
+        [
+          4.40953,
+          6.07977
+        ]
+      ]
+    },
+    {
+      "id": "stair-17",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        4.79864,
+        5.17996,
+        2.956667
+      ],
+      "max": [
+        5.18774,
+        6.07977,
+        3.116667
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          5.18774,
+          6.07977
+        ],
+        [
+          5.18774,
+          5.17996
+        ],
+        [
+          4.79864,
+          5.17996
+        ],
+        [
+          4.79864,
+          6.07977
+        ]
+      ]
+    },
+    {
+      "id": "stair-18",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        5.18774,
+        5.17996,
+        3.14
+      ],
+      "max": [
+        5.57685,
+        6.07977,
+        3.3
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          5.57685,
+          6.07977
+        ],
+        [
+          5.57685,
+          5.17996
+        ],
+        [
+          5.18774,
+          5.17996
+        ],
+        [
+          5.18774,
+          6.07977
+        ]
+      ]
+    },
+    {
+      "id": "stair-2",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        5.27043,
+        2.99125,
+        0.206667
+      ],
+      "max": [
+        5.55739,
+        3.91537,
+        0.366667
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          5.55739,
+          2.99125
+        ],
+        [
+          5.27043,
+          2.99125
+        ],
+        [
+          5.27043,
+          3.91537
+        ],
+        [
+          5.55739,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-3",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        4.98346,
+        2.99125,
+        0.39
+      ],
+      "max": [
+        5.27043,
+        3.91537,
+        0.55
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          5.27043,
+          2.99125
+        ],
+        [
+          4.98346,
+          2.99125
+        ],
+        [
+          4.98346,
+          3.91537
+        ],
+        [
+          5.27043,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-4",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        4.6965,
+        2.99125,
+        0.573333
+      ],
+      "max": [
+        4.98346,
+        3.91537,
+        0.733333
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          4.98346,
+          2.99125
+        ],
+        [
+          4.6965,
+          2.99125
+        ],
+        [
+          4.6965,
+          3.91537
+        ],
+        [
+          4.98346,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-5",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        4.40953,
+        2.99125,
+        0.756667
+      ],
+      "max": [
+        4.6965,
+        3.91537,
+        0.916667
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          4.6965,
+          2.99125
+        ],
+        [
+          4.40953,
+          2.99125
+        ],
+        [
+          4.40953,
+          3.91537
+        ],
+        [
+          4.6965,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-6",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        3.87599,
+        2.99125,
+        0.94
+      ],
+      "max": [
+        4.40953,
+        3.91537,
+        1.1
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          3.87599,
+          2.99125
+        ],
+        [
+          4.40953,
+          2.99125
+        ],
+        [
+          4.40953,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-7",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        3.4975699999999996,
+        2.99125,
+        1.123333
+      ],
+      "max": [
+        4.40953,
+        3.91537,
+        1.283333
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          3.4975699999999996,
+          3.38885
+        ],
+        [
+          3.4975699999999996,
+          3.0034
+        ],
+        [
+          3.87599,
+          2.99125
+        ],
+        [
+          4.40953,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-8",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        3.4975699999999996,
+        3.38885,
+        1.306667
+      ],
+      "max": [
+        4.40953,
+        3.91537,
+        1.466667
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          3.4975699999999996,
+          3.91537
+        ],
+        [
+          3.4975699999999996,
+          3.38885
+        ],
+        [
+          4.40953,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-9",
+      "floor": "both",
+      "kind": "stair",
+      "min": [
+        3.4975699999999996,
+        3.91537,
+        1.49
+      ],
+      "max": [
+        4.40953,
+        4.23152,
+        1.65
+      ],
+      "walkable": true,
+      "polygon": [
+        [
+          4.40953,
+          4.23152
+        ],
+        [
+          3.4975699999999996,
+          4.23152
+        ],
+        [
+          3.4975699999999996,
+          3.91537
+        ],
+        [
+          4.40953,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-guard-0",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        5.55253,
+        3.91537,
+        3.3
+      ],
+      "max": [
+        5.62549,
+        5.17996,
+        4.3
+      ],
+      "walkable": false
+    },
+    {
+      "id": "stair-guard-1",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        4.40953,
+        3.91537,
+        3.3
+      ],
+      "max": [
+        5.62549,
+        3.98833,
+        4.3
+      ],
+      "walkable": false
+    },
+    {
+      "id": "stair-guard-2",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        4.40953,
+        3.91537,
+        3.3
+      ],
+      "max": [
+        4.48249,
+        5.17996,
+        4.3
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/bath-east/end",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        8.12149,
+        4.96109,
+        3.3
+      ],
+      "max": [
+        8.23649,
+        5.070522,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/bath-east/header-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        8.12149,
+        5.070522,
+        5.55
+      ],
+      "max": [
+        8.23649,
+        5.873051,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/bath-east/pier-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        8.12149,
+        5.873051,
+        3.3
+      ],
+      "max": [
+        8.23649,
+        8.75486,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/bath-front/end",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        8.17899,
+        4.91575,
+        3.3
+      ],
+      "max": [
+        10.75681,
+        5.03075,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/bath-rear/end",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        8.25195,
+        8.50486,
+        3.3
+      ],
+      "max": [
+        9.492218,
+        9.00486,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/bath-rear/glass-0",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        9.492218,
+        8.74236,
+        3.3
+      ],
+      "max": [
+        10.4893,
+        8.76736,
+        5.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/bath-rear/glass-0/frame-0",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        10.4643,
+        8.72736,
+        3.3
+      ],
+      "max": [
+        10.5143,
+        8.78236,
+        5.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/bath-rear/glass-0/frame-1",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        9.467217999999999,
+        8.72736,
+        3.3
+      ],
+      "max": [
+        9.517218,
+        8.78236,
+        5.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/bath-rear/glass-0/frame-2",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        9.492218,
+        8.72736,
+        3.275
+      ],
+      "max": [
+        10.4893,
+        8.78236,
+        3.325
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/bath-rear/glass-0/frame-3",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        9.492218,
+        8.72736,
+        5.875
+      ],
+      "max": [
+        10.4893,
+        8.78236,
+        5.925
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/bath-rear/header-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        9.492218,
+        8.50486,
+        5.9
+      ],
+      "max": [
+        10.4893,
+        9.00486,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/bath-rear/pier-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        10.4893,
+        8.50486,
+        3.3
+      ],
+      "max": [
+        10.75681,
+        9.00486,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/east/end",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        2.9922199999999997,
+        -0.741729,
+        3.3
+      ],
+      "max": [
+        3.4922199999999997,
+        10.238331,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/front/end",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        3.2422199999999997,
+        -0.99173,
+        3.3
+      ],
+      "max": [
+        5.005352,
+        -0.49173,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/front/glass-0",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        7.133269,
+        -0.75423,
+        3.3
+      ],
+      "max": [
+        8.993678,
+        -0.72923,
+        5.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/front/glass-0/frame-0",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        8.968678,
+        -0.76923,
+        3.3
+      ],
+      "max": [
+        9.018678,
+        -0.71423,
+        5.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/front/glass-0/frame-1",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        7.108269,
+        -0.76923,
+        3.3
+      ],
+      "max": [
+        7.158269000000001,
+        -0.71423,
+        5.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/front/glass-0/frame-2",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        7.133269,
+        -0.76923,
+        3.275
+      ],
+      "max": [
+        8.993678,
+        -0.71423,
+        3.325
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/front/glass-0/frame-3",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        7.133269,
+        -0.76923,
+        5.875
+      ],
+      "max": [
+        8.993678,
+        -0.71423,
+        5.925
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/front/glass-1",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        5.005352,
+        -0.75423,
+        3.3
+      ],
+      "max": [
+        6.87792,
+        -0.72923,
+        5.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/front/glass-1/frame-0",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        6.85292,
+        -0.76923,
+        3.3
+      ],
+      "max": [
+        6.90292,
+        -0.71423,
+        5.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/front/glass-1/frame-1",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        4.980351,
+        -0.76923,
+        3.3
+      ],
+      "max": [
+        5.030352,
+        -0.71423,
+        5.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/front/glass-1/frame-2",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        5.005352,
+        -0.76923,
+        3.275
+      ],
+      "max": [
+        6.87792,
+        -0.71423,
+        3.325
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/front/glass-1/frame-3",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        5.005352,
+        -0.76923,
+        5.875
+      ],
+      "max": [
+        6.87792,
+        -0.71423,
+        5.925
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/front/header-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        7.133269,
+        -0.99173,
+        5.9
+      ],
+      "max": [
+        8.993678,
+        -0.49173,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/front/header-1",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        5.005352,
+        -0.99173,
+        5.9
+      ],
+      "max": [
+        6.87792,
+        -0.49173,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/front/pier-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        8.993678,
+        -0.99173,
+        3.3
+      ],
+      "max": [
+        10.75681,
+        -0.49173,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/front/pier-1",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        6.877919,
+        -0.99173,
+        3.3
+      ],
+      "max": [
+        7.133269,
+        -0.49173,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/kids-divider/end",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        6.94201,
+        -0.74173,
+        3.3
+      ],
+      "max": [
+        7.05701,
+        2.86965,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/kids-rear-left/end",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        6.99951,
+        2.81215,
+        3.3
+      ],
+      "max": [
+        7.242709,
+        2.92715,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/kids-rear-left/header-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        7.242709,
+        2.81215,
+        5.55
+      ],
+      "max": [
+        7.972281000000001,
+        2.92715,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/kids-rear-left/pier-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        7.972281000000001,
+        2.81215,
+        3.3
+      ],
+      "max": [
+        8.25195,
+        2.92715,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/kids-rear-right/end",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        3.2422199999999997,
+        2.74465,
+        3.3
+      ],
+      "max": [
+        5.990268,
+        2.99465,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/kids-rear-right/header-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        5.990268,
+        2.74465,
+        5.55
+      ],
+      "max": [
+        6.731999,
+        2.99465,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/kids-rear-right/pier-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        6.731999,
+        2.74465,
+        3.3
+      ],
+      "max": [
+        6.99951,
+        2.99465,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/laundry-east/end",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        8.19445,
+        2.99125,
+        3.3
+      ],
+      "max": [
+        8.30945,
+        3.076362,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/laundry-east/header-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        8.19445,
+        3.076362,
+        5.55
+      ],
+      "max": [
+        8.30945,
+        3.988327,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/laundry-east/pier-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        8.19445,
+        3.988327,
+        3.3
+      ],
+      "max": [
+        8.30945,
+        4.96109,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/laundry-front/end",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        8.25195,
+        2.81215,
+        3.3
+      ],
+      "max": [
+        10.75681,
+        2.92715,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-front/end",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        3.2422199999999997,
+        6.02227,
+        3.3
+      ],
+      "max": [
+        6.403698,
+        6.13727,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-front/header-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        6.403697,
+        6.02227,
+        5.55
+      ],
+      "max": [
+        7.206227,
+        6.13727,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-front/pier-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        7.206227,
+        6.02227,
+        3.3
+      ],
+      "max": [
+        8.17899,
+        6.13727,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-rear/end",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        3.2422190000000004,
+        9.98833,
+        3.3
+      ],
+      "max": [
+        4.008273,
+        10.48833,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-rear/glass-0",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        4.008273,
+        10.22583,
+        3.3
+      ],
+      "max": [
+        7.9966,
+        10.25083,
+        5.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-rear/glass-0/frame-0",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        7.9716000000000005,
+        10.21083,
+        3.3
+      ],
+      "max": [
+        8.0216,
+        10.26583,
+        5.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-rear/glass-0/frame-1",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        3.9832729999999996,
+        10.21083,
+        3.3
+      ],
+      "max": [
+        4.033273,
+        10.26583,
+        5.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-rear/glass-0/frame-2",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        4.008273,
+        10.21083,
+        3.275
+      ],
+      "max": [
+        7.9966,
+        10.26583,
+        3.325
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-rear/glass-0/frame-3",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        4.008273,
+        10.21083,
+        5.875
+      ],
+      "max": [
+        7.9966,
+        10.26583,
+        5.925
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-rear/header-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        4.008273,
+        9.98833,
+        5.9
+      ],
+      "max": [
+        7.9966,
+        10.48833,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-rear/pier-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        7.9966,
+        9.98833,
+        3.3
+      ],
+      "max": [
+        8.25195,
+        10.48833,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-west/end",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        8.00195,
+        6.067609,
+        3.3
+      ],
+      "max": [
+        8.50195,
+        8.998056,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-west/glass-0",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        8.23945,
+        8.998056,
+        3.3
+      ],
+      "max": [
+        8.26445,
+        9.970819,
+        5.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-west/glass-0/frame-0",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        8.224450000000001,
+        9.94582,
+        3.3
+      ],
+      "max": [
+        8.27945,
+        9.995819,
+        5.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-west/glass-0/frame-1",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        8.224450000000001,
+        8.973057,
+        3.3
+      ],
+      "max": [
+        8.27945,
+        9.023056,
+        5.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-west/glass-0/frame-2",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        8.224450000000001,
+        8.998056,
+        3.275
+      ],
+      "max": [
+        8.27945,
+        9.970819,
+        3.325
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-west/glass-0/frame-3",
+      "floor": "upper",
+      "kind": "window",
+      "min": [
+        8.224450000000001,
+        8.998056,
+        5.875
+      ],
+      "max": [
+        8.27945,
+        9.970819,
+        5.925
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-west/header-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        8.00195,
+        8.998056,
+        5.9
+      ],
+      "max": [
+        8.50195,
+        9.970819,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/primary-west/pier-0",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        8.00195,
+        9.97082,
+        3.3
+      ],
+      "max": [
+        8.50195,
+        10.23833,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "upper/slab/0",
+      "floor": "upper",
+      "kind": "slab",
+      "min": [
+        5.57685,
+        -0.99708,
+        3.1
+      ],
+      "max": [
+        11.0,
+        8.99805,
+        3.3
+      ],
+      "walkable": true
+    },
+    {
+      "id": "upper/slab/1",
+      "floor": "upper",
+      "kind": "slab",
+      "min": [
+        2.9990299999999994,
+        6.07977,
+        3.1
+      ],
+      "max": [
+        8.49514,
+        10.49368,
+        3.3
+      ],
+      "walkable": true
+    },
+    {
+      "id": "upper/slab/2",
+      "floor": "upper",
+      "kind": "slab",
+      "min": [
+        2.9990299999999994,
+        2.93045,
+        3.1
+      ],
+      "max": [
+        3.4975699999999996,
+        6.07977,
+        3.3
+      ],
+      "walkable": true
+    },
+    {
+      "id": "upper/slab/3",
+      "floor": "upper",
+      "kind": "slab",
+      "min": [
+        2.9990299999999994,
+        -0.99708,
+        3.1
+      ],
+      "max": [
+        5.57685,
+        2.99125,
+        3.3
+      ],
+      "walkable": true
+    },
+    {
+      "id": "upper/west/end",
+      "floor": "upper",
+      "kind": "wall",
+      "min": [
+        10.50681,
+        -0.741729,
+        3.3
+      ],
+      "max": [
+        11.00681,
+        8.754861,
+        6.0
+      ],
+      "walkable": false
+    },
+    {
+      "id": "LK_sofa_rear",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        4.49465,
+        9.861382,
+        0.0
+      ],
+      "max": [
+        7.388619,
+        10.68823,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_sofa_return",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        6.58609,
+        8.475195,
+        0.0
+      ],
+      "max": [
+        7.388619,
+        9.849222,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_coffee",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        5.187743,
+        7.988813,
+        0.0
+      ],
+      "max": [
+        6.06323,
+        9.375,
+        0.4
+      ]
+    },
+    {
+      "id": "LK_media_cabinet",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.607004,
+        7.089008,
+        0.0
+      ],
+      "max": [
+        3.9961089999999997,
+        9.387159,
+        0.48
+      ]
+    },
+    {
+      "id": "LK_dining",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.996595,
+        6.006809,
+        0.0
+      ],
+      "max": [
+        8.896401000000001,
+        7.891537,
+        0.76
+      ]
+    },
+    {
+      "id": "LK_dining_left_0",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        8.969358,
+        7.368677,
+        0.0
+      ],
+      "max": [
+        9.382782,
+        7.782101,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_dining_right_0",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.5102139999999995,
+        7.368677,
+        0.0
+      ],
+      "max": [
+        7.923638,
+        7.782101,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_dining_left_1",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        8.969358,
+        6.724222,
+        0.0
+      ],
+      "max": [
+        9.382782,
+        7.137646,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_dining_right_1",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.5102139999999995,
+        6.724222,
+        0.0
+      ],
+      "max": [
+        7.923638,
+        7.137646,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_dining_left_2",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        8.969358,
+        6.079767,
+        0.0
+      ],
+      "max": [
+        9.382782,
+        6.493191,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_dining_right_2",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.5102139999999995,
+        6.079767,
+        0.0
+      ],
+      "max": [
+        7.923638,
+        6.493191,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_fridge",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        9.893482,
+        3.526264747081712,
+        0.0
+      ],
+      "max": [
+        10.47714,
+        4.2193577470817125,
+        2.15
+      ]
+    },
+    {
+      "id": "LK_dishwasher",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        9.893482,
+        5.119163412451362,
+        0.0
+      ],
+      "max": [
+        10.47714,
+        5.751458412451362,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_sink",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        9.893482,
+        4.219358330739299,
+        0.0
+      ],
+      "max": [
+        10.47714,
+        5.119163330739299,
+        0.94
+      ]
+    },
+    {
+      "id": "LK_cooking_prep1",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.61965,
+        4.41391,
+        0.0
+      ],
+      "max": [
+        8.482977,
+        4.985409,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_oven",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.619649,
+        3.696498,
+        0.0
+      ],
+      "max": [
+        8.482976,
+        4.401751,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_cooking_prep2",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.61965,
+        3.003405,
+        0.0
+      ],
+      "max": [
+        8.482977,
+        3.672179,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_entrance_storage",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.303502,
+        0.5107,
+        0.0
+      ],
+      "max": [
+        7.9844360000000005,
+        2.662938,
+        2.15
+      ]
+    },
+    {
+      "id": "LK_entry_bench",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        5.163424,
+        1.957685,
+        0.0
+      ],
+      "max": [
+        5.807879,
+        2.541342,
+        0.45
+      ]
+    },
+    {
+      "id": "LK_downstairs_wc",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.9717900000000004,
+        1.921206,
+        0.0
+      ],
+      "max": [
+        4.409533,
+        2.529183,
+        0.82
+      ]
+    },
+    {
+      "id": "LK_downstairs_basin",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.825875,
+        0.5107,
+        0.0
+      ],
+      "max": [
+        4.531128,
+        0.924124,
+        0.86
+      ]
+    },
+    {
+      "id": "LK_primary_bed",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.607004,
+        7.453794,
+        3.3
+      ],
+      "max": [
+        5.589008,
+        9.423638,
+        4.4
+      ]
+    },
+    {
+      "id": "LK_primary_bedside0",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.607004,
+        9.581712,
+        3.3
+      ],
+      "max": [
+        3.9961089999999997,
+        9.970818,
+        3.76
+      ]
+    },
+    {
+      "id": "LK_primary_bedside1",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.607004,
+        6.955253,
+        3.3
+      ],
+      "max": [
+        3.9961089999999997,
+        7.344358,
+        3.76
+      ]
+    },
+    {
+      "id": "LK_primary_wardrobe",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.509727,
+        6.201362,
+        3.3
+      ],
+      "max": [
+        6.099708,
+        6.821498,
+        5.4
+      ]
+    },
+    {
+      "id": "LK_primary_desk",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.449415999999999,
+        6.322957,
+        3.3
+      ],
+      "max": [
+        7.88716,
+        8.973736,
+        4.04
+      ]
+    },
+    {
+      "id": "LK_primary_desk_chair",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        6.975194,
+        8.025291,
+        3.3
+      ],
+      "max": [
+        7.3764590000000005,
+        8.414397,
+        4.23
+      ]
+    },
+    {
+      "id": "LK_bedroom2_bed",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.6191639999999996,
+        -0.401265,
+        3.3
+      ],
+      "max": [
+        4.49465,
+        1.592899,
+        4.24
+      ]
+    },
+    {
+      "id": "LK_bedroom2_desk",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        6.148346,
+        0.01216,
+        3.3
+      ],
+      "max": [
+        6.82928,
+        1.30107,
+        4.04
+      ]
+    },
+    {
+      "id": "LK_bedroom2_desk_chair",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        5.649806,
+        0.425584,
+        3.3
+      ],
+      "max": [
+        6.05107,
+        0.826848,
+        4.23
+      ]
+    },
+    {
+      "id": "LK_bedroom2_wardrobe",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.509727,
+        2.09144,
+        3.3
+      ],
+      "max": [
+        5.674125,
+        2.711576,
+        5.4
+      ]
+    },
+    {
+      "id": "LK_bedroom2_bedside",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        4.591926,
+        -0.389105,
+        3.3
+      ],
+      "max": [
+        4.981031,
+        0.0,
+        3.76
+      ]
+    },
+    {
+      "id": "LK_bedroom3_bed",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        9.516537,
+        -0.401265,
+        3.3
+      ],
+      "max": [
+        10.392023,
+        1.592899,
+        4.24
+      ]
+    },
+    {
+      "id": "LK_bedroom3_desk",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.1575880000000005,
+        0.01216,
+        3.3
+      ],
+      "max": [
+        7.838521,
+        1.30107,
+        4.04
+      ]
+    },
+    {
+      "id": "LK_bedroom3_desk_chair",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.935798,
+        0.425584,
+        3.3
+      ],
+      "max": [
+        8.337062,
+        0.826848,
+        4.23
+      ]
+    },
+    {
+      "id": "LK_bedroom3_wardrobe",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        8.312743000000001,
+        2.09144,
+        3.3
+      ],
+      "max": [
+        10.47714,
+        2.711576,
+        5.4
+      ]
+    },
+    {
+      "id": "LK_bedroom3_bedside",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        8.993677,
+        -0.389105,
+        3.3
+      ],
+      "max": [
+        9.382782,
+        0.0,
+        3.76
+      ]
+    },
+    {
+      "id": "LK_bath",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        8.555934,
+        7.696984,
+        3.3
+      ],
+      "max": [
+        10.112354,
+        8.487354,
+        3.85
+      ]
+    },
+    {
+      "id": "LK_upstairs_wc",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        9.723249,
+        6.882296,
+        3.3
+      ],
+      "max": [
+        10.306907,
+        7.271401,
+        4.1
+      ]
+    },
+    {
+      "id": "LK_bath_vanity",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        8.531615,
+        6.578308,
+        3.3
+      ],
+      "max": [
+        8.981518,
+        7.186284,
+        4.16
+      ]
+    },
+    {
+      "id": "LK_shower",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        9.613813,
+        5.058366,
+        3.3
+      ],
+      "max": [
+        10.47714,
+        5.885214,
+        3.345
+      ]
+    },
+    {
+      "id": "LK_shower_rail",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        10.355545,
+        5.265078,
+        4.35
+      ],
+      "max": [
+        10.452821,
+        5.72714,
+        5.4
+      ]
+    },
+    {
+      "id": "LK_laundry_sink",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        9.309825,
+        4.304475,
+        3.3
+      ],
+      "max": [
+        10.47714,
+        4.888132,
+        4.21
+      ]
+    },
+    {
+      "id": "LK_laundry_prep",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        8.349222000000001,
+        4.304475,
+        3.3
+      ],
+      "max": [
+        9.297665,
+        4.888132,
+        4.21
+      ]
+    },
+    {
+      "id": "LK_washer",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        9.771887,
+        3.076362,
+        3.3
+      ],
+      "max": [
+        10.392023,
+        3.708658,
+        4.16
+      ]
+    },
+    {
+      "id": "LK_store_shelves",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        1.9046690000000002,
+        8.013132,
+        0.0
+      ],
+      "max": [
+        2.804475,
+        8.341439,
+        1.9
+      ]
+    },
+    {
+      "id": "LK_television",
+      "kind": "furniture",
+      "floor": "ground",
+      "walkable": false,
+      "min": [
+        3.594844357976653,
+        7.551070038910506,
+        0.77
+      ],
+      "max": [
+        3.655642023346303,
+        9.083171206225682,
+        1.62
+      ]
+    },
+    {
+      "id": "LK_compact_prep",
+      "floor": "ground",
+      "kind": "furniture",
+      "min": [
+        9.893482446670532,
+        5.751459121704102,
+        0.0
+      ],
+      "max": [
+        10.477140069007874,
+        6.3229570388793945,
+        0.8999999761581421
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-east/south",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        10.50681,
+        3.501941,
+        0
+      ],
+      "max": [
+        11.00681,
+        6.45,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-east/north",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        10.50681,
+        7.7,
+        0
+      ],
+      "max": [
+        11.00681,
+        8.000968,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-east/sill",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        10.50681,
+        6.45,
+        0
+      ],
+      "max": [
+        11.00681,
+        7.7,
+        0.9
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-east/header",
+      "floor": "ground",
+      "kind": "wall",
+      "min": [
+        10.50681,
+        6.45,
+        2.4
+      ],
+      "max": [
+        11.00681,
+        7.7,
+        2.7
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-east/glass",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.74431,
+        6.45,
+        0.9
+      ],
+      "max": [
+        10.76931,
+        7.7,
+        2.4
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-east/frame-south",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.72931,
+        6.45,
+        0.9
+      ],
+      "max": [
+        10.78431,
+        6.5,
+        2.4
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-east/frame-north",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.72931,
+        7.65,
+        0.9
+      ],
+      "max": [
+        10.78431,
+        7.7,
+        2.4
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-east/frame-bottom",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.72931,
+        6.45,
+        0.9
+      ],
+      "max": [
+        10.78431,
+        7.7,
+        0.9500000000000001
+      ],
+      "walkable": false
+    },
+    {
+      "id": "ground/dining-east/frame-top",
+      "floor": "ground",
+      "kind": "window",
+      "min": [
+        10.72931,
+        6.45,
+        2.35
+      ],
+      "max": [
+        10.78431,
+        7.7,
+        2.4
+      ],
+      "walkable": false
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "carport-apron",
+      "floor": "ground",
+      "min": [
+        -1.5,
+        -2.5
+      ],
+      "max": [
+        7.5,
+        0.0
+      ],
+      "z": 0.03
+    },
+    {
+      "id": "front-balcony",
+      "floor": "upper",
+      "min": [
+        3.0,
+        -2.5
+      ],
+      "max": [
+        11.0,
+        -1.0
+      ],
+      "z": 3.3
+    },
+    {
+      "id": "front-deck",
+      "floor": "ground",
+      "min": [
+        7.5,
+        -2.5
+      ],
+      "max": [
+        11.6,
+        0.0
+      ],
+      "z": 0.1
+    },
+    {
+      "id": "front-deck-side",
+      "floor": "ground",
+      "min": [
+        8.5,
+        0.0
+      ],
+      "max": [
+        11.6,
+        2.5
+      ],
+      "z": 0.1
+    },
+    {
+      "id": "ground/slab/0",
+      "floor": "ground",
+      "min": [
+        2.9990299999999994,
+        0.0
+      ],
+      "max": [
+        8.49514,
+        11.49076
+      ],
+      "z": 0.0
+    },
+    {
+      "id": "ground/slab/1",
+      "floor": "ground",
+      "min": [
+        8.49514,
+        2.4927
+      ],
+      "max": [
+        11.0,
+        8.985889
+      ],
+      "z": 0.0
+    },
+    {
+      "id": "ground/slab/2",
+      "floor": "ground",
+      "min": [
+        -1.5,
+        0.0
+      ],
+      "max": [
+        2.999029,
+        8.98589
+      ],
+      "z": 0.0
+    },
+    {
+      "id": "rear-balcony-inset",
+      "floor": "upper",
+      "min": [
+        8.5,
+        8.0
+      ],
+      "max": [
+        11.0,
+        10.5
+      ],
+      "z": 3.3
+    },
+    {
+      "id": "rear-balcony-north",
+      "floor": "upper",
+      "min": [
+        3.0,
+        10.5
+      ],
+      "max": [
+        11.0,
+        12.0
+      ],
+      "z": 3.3
+    },
+    {
+      "id": "rear-balcony-west",
+      "floor": "upper",
+      "min": [
+        11.0,
+        6.5
+      ],
+      "max": [
+        12.5,
+        12.0
+      ],
+      "z": 3.3
+    },
+    {
+      "id": "stair-1",
+      "floor": "both",
+      "min": [
+        5.55739,
+        2.99125
+      ],
+      "max": [
+        5.84436,
+        3.91537
+      ],
+      "z": 0.183333,
+      "polygon": [
+        [
+          5.84436,
+          2.99125
+        ],
+        [
+          5.55739,
+          2.99125
+        ],
+        [
+          5.55739,
+          3.91537
+        ],
+        [
+          5.84436,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-10",
+      "floor": "both",
+      "min": [
+        3.4975699999999996,
+        4.23152
+      ],
+      "max": [
+        4.40953,
+        4.54767
+      ],
+      "z": 1.833333,
+      "polygon": [
+        [
+          4.40953,
+          4.54767
+        ],
+        [
+          3.4975699999999996,
+          4.54767
+        ],
+        [
+          3.4975699999999996,
+          4.23152
+        ],
+        [
+          4.40953,
+          4.23152
+        ]
+      ]
+    },
+    {
+      "id": "stair-11",
+      "floor": "both",
+      "min": [
+        3.4975699999999996,
+        4.54767
+      ],
+      "max": [
+        4.40953,
+        4.86381
+      ],
+      "z": 2.016667,
+      "polygon": [
+        [
+          4.40953,
+          4.86381
+        ],
+        [
+          3.4975699999999996,
+          4.86381
+        ],
+        [
+          3.4975699999999996,
+          4.54767
+        ],
+        [
+          4.40953,
+          4.54767
+        ]
+      ]
+    },
+    {
+      "id": "stair-12",
+      "floor": "both",
+      "min": [
+        3.4975699999999996,
+        4.86381
+      ],
+      "max": [
+        4.40953,
+        5.17996
+      ],
+      "z": 2.2,
+      "polygon": [
+        [
+          4.40953,
+          5.17996
+        ],
+        [
+          3.4975699999999996,
+          5.17996
+        ],
+        [
+          3.4975699999999996,
+          4.86381
+        ],
+        [
+          4.40953,
+          4.86381
+        ]
+      ]
+    },
+    {
+      "id": "stair-13",
+      "floor": "both",
+      "min": [
+        3.4975699999999996,
+        5.17996
+      ],
+      "max": [
+        4.40953,
+        5.70648
+      ],
+      "z": 2.383333,
+      "polygon": [
+        [
+          3.4975699999999996,
+          5.70648
+        ],
+        [
+          3.4975699999999996,
+          5.17996
+        ],
+        [
+          4.40953,
+          5.17996
+        ]
+      ]
+    },
+    {
+      "id": "stair-14",
+      "floor": "both",
+      "min": [
+        3.4975699999999996,
+        5.17996
+      ],
+      "max": [
+        4.40953,
+        6.07977
+      ],
+      "z": 2.566667,
+      "polygon": [
+        [
+          3.8900300000000003,
+          6.07977
+        ],
+        [
+          3.5097300000000002,
+          6.07977
+        ],
+        [
+          3.4975699999999996,
+          5.70648
+        ],
+        [
+          4.40953,
+          5.17996
+        ]
+      ]
+    },
+    {
+      "id": "stair-15",
+      "floor": "both",
+      "min": [
+        3.8900300000000003,
+        5.17996
+      ],
+      "max": [
+        4.40953,
+        6.07977
+      ],
+      "z": 2.75,
+      "polygon": [
+        [
+          4.40953,
+          6.07977
+        ],
+        [
+          3.8900300000000003,
+          6.07977
+        ],
+        [
+          4.40953,
+          5.17996
+        ]
+      ]
+    },
+    {
+      "id": "stair-16",
+      "floor": "both",
+      "min": [
+        4.40953,
+        5.17996
+      ],
+      "max": [
+        4.79864,
+        6.07977
+      ],
+      "z": 2.933333,
+      "polygon": [
+        [
+          4.79864,
+          6.07977
+        ],
+        [
+          4.79864,
+          5.17996
+        ],
+        [
+          4.40953,
+          5.17996
+        ],
+        [
+          4.40953,
+          6.07977
+        ]
+      ]
+    },
+    {
+      "id": "stair-17",
+      "floor": "both",
+      "min": [
+        4.79864,
+        5.17996
+      ],
+      "max": [
+        5.18774,
+        6.07977
+      ],
+      "z": 3.116667,
+      "polygon": [
+        [
+          5.18774,
+          6.07977
+        ],
+        [
+          5.18774,
+          5.17996
+        ],
+        [
+          4.79864,
+          5.17996
+        ],
+        [
+          4.79864,
+          6.07977
+        ]
+      ]
+    },
+    {
+      "id": "stair-18",
+      "floor": "both",
+      "min": [
+        5.18774,
+        5.17996
+      ],
+      "max": [
+        5.57685,
+        6.07977
+      ],
+      "z": 3.3,
+      "polygon": [
+        [
+          5.57685,
+          6.07977
+        ],
+        [
+          5.57685,
+          5.17996
+        ],
+        [
+          5.18774,
+          5.17996
+        ],
+        [
+          5.18774,
+          6.07977
+        ]
+      ]
+    },
+    {
+      "id": "stair-2",
+      "floor": "both",
+      "min": [
+        5.27043,
+        2.99125
+      ],
+      "max": [
+        5.55739,
+        3.91537
+      ],
+      "z": 0.366667,
+      "polygon": [
+        [
+          5.55739,
+          2.99125
+        ],
+        [
+          5.27043,
+          2.99125
+        ],
+        [
+          5.27043,
+          3.91537
+        ],
+        [
+          5.55739,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-3",
+      "floor": "both",
+      "min": [
+        4.98346,
+        2.99125
+      ],
+      "max": [
+        5.27043,
+        3.91537
+      ],
+      "z": 0.55,
+      "polygon": [
+        [
+          5.27043,
+          2.99125
+        ],
+        [
+          4.98346,
+          2.99125
+        ],
+        [
+          4.98346,
+          3.91537
+        ],
+        [
+          5.27043,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-4",
+      "floor": "both",
+      "min": [
+        4.6965,
+        2.99125
+      ],
+      "max": [
+        4.98346,
+        3.91537
+      ],
+      "z": 0.733333,
+      "polygon": [
+        [
+          4.98346,
+          2.99125
+        ],
+        [
+          4.6965,
+          2.99125
+        ],
+        [
+          4.6965,
+          3.91537
+        ],
+        [
+          4.98346,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-5",
+      "floor": "both",
+      "min": [
+        4.40953,
+        2.99125
+      ],
+      "max": [
+        4.6965,
+        3.91537
+      ],
+      "z": 0.916667,
+      "polygon": [
+        [
+          4.6965,
+          2.99125
+        ],
+        [
+          4.40953,
+          2.99125
+        ],
+        [
+          4.40953,
+          3.91537
+        ],
+        [
+          4.6965,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-6",
+      "floor": "both",
+      "min": [
+        3.87599,
+        2.99125
+      ],
+      "max": [
+        4.40953,
+        3.91537
+      ],
+      "z": 1.1,
+      "polygon": [
+        [
+          3.87599,
+          2.99125
+        ],
+        [
+          4.40953,
+          2.99125
+        ],
+        [
+          4.40953,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-7",
+      "floor": "both",
+      "min": [
+        3.4975699999999996,
+        2.99125
+      ],
+      "max": [
+        4.40953,
+        3.91537
+      ],
+      "z": 1.283333,
+      "polygon": [
+        [
+          3.4975699999999996,
+          3.38885
+        ],
+        [
+          3.4975699999999996,
+          3.0034
+        ],
+        [
+          3.87599,
+          2.99125
+        ],
+        [
+          4.40953,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-8",
+      "floor": "both",
+      "min": [
+        3.4975699999999996,
+        3.38885
+      ],
+      "max": [
+        4.40953,
+        3.91537
+      ],
+      "z": 1.466667,
+      "polygon": [
+        [
+          3.4975699999999996,
+          3.91537
+        ],
+        [
+          3.4975699999999996,
+          3.38885
+        ],
+        [
+          4.40953,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "stair-9",
+      "floor": "both",
+      "min": [
+        3.4975699999999996,
+        3.91537
+      ],
+      "max": [
+        4.40953,
+        4.23152
+      ],
+      "z": 1.65,
+      "polygon": [
+        [
+          4.40953,
+          4.23152
+        ],
+        [
+          3.4975699999999996,
+          4.23152
+        ],
+        [
+          3.4975699999999996,
+          3.91537
+        ],
+        [
+          4.40953,
+          3.91537
+        ]
+      ]
+    },
+    {
+      "id": "upper/slab/0",
+      "floor": "upper",
+      "min": [
+        5.57685,
+        -0.99708
+      ],
+      "max": [
+        11.0,
+        8.99805
+      ],
+      "z": 3.3
+    },
+    {
+      "id": "upper/slab/1",
+      "floor": "upper",
+      "min": [
+        2.9990299999999994,
+        6.07977
+      ],
+      "max": [
+        8.49514,
+        10.49368
+      ],
+      "z": 3.3
+    },
+    {
+      "id": "upper/slab/2",
+      "floor": "upper",
+      "min": [
+        2.9990299999999994,
+        2.93045
+      ],
+      "max": [
+        3.4975699999999996,
+        6.07977
+      ],
+      "z": 3.3
+    },
+    {
+      "id": "upper/slab/3",
+      "floor": "upper",
+      "min": [
+        2.9990299999999994,
+        -0.99708
+      ],
+      "max": [
+        5.57685,
+        2.99125
+      ],
+      "z": 3.3
+    }
+  ],
+  "review": {
+    "actions": {},
+    "measures": [],
+    "envelopes": []
+  },
+  "assumptions": [
+    "Room areas are the publisher\u2019s values, not measured from this simplified mesh. The floor subtotals differ by 0.01 m\u00b2 from the published usable total due to rounding.",
+    "Scale: 1,028 pixels = 12.50 m, cross-checked against 1,110 pixels = 13.50 m. Upper drawing registered on the stair core.",
+    "Floor-to-floor height 3.30 m is inferred. Clear room height 2.70 m and overall height 7.55 m are published; parapet and roof build-up are approximate.",
+    "Doors, window sill heights, railings and stair risers are conceptual details inferred from the drawings and exterior images. Furniture now follows the original drawing using licensed library derivatives.",
+    "On site: rotated 180\u00b0, entrance toward shared parking. Carport stays in the original layout; vehicle access is not validated.",
+    "The full visible envelope including terraces is approximately 14 \u00d7 15 m. Placement uses the earlier sketch and image-derived plot; it is not a surveyed or approved setback study.",
+    {
+      "item": "Furnishing R03",
+      "value": "Publisher arrangement followed; tucked dining chairs, three beds, desks and storage, kitchen, bathrooms and laundry. Bathroom tub and vanity shifted within the room to fit the existing traced wall thickness.",
+      "basis": "furniture-fit.json records explicit nonuniform study fitting and licensed source chain. No structural geometry changed."
+    },
+    "Igor R04: full horizontal mirror about source x=5.5 m; compact entrance-side kitchen; new 1.25 m dining window; ground rear terrace removed; upstairs room arrangement and balconies retained. Later mirror message treated as superseding the earlier all-bedrooms-east idea. Not the unmodified publisher design."
+  ],
+  "limitations": [
+    "Image-derived conceptual geometry, not construction or code approval.",
+    "Door is shown fixed open; windows and balcony rails remain solid.",
+    "Furnishings are static CC0 study derivatives; sizes and finishes are illustrative. Cabinet and appliance operation is not simulated."
+  ],
+  "revision": "igor-r04"
+}

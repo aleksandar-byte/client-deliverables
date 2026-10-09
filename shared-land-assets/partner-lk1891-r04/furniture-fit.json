@@ -1,0 +1,5634 @@
+{
+  "revision": "igor-r04",
+  "source_blend": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\plans\\halcyon-2340\\revisions\\before-island-stool-removal\\output\\model.blend",
+  "source_sha256": "ba59a1e2a499bd566e94e28d6f897e6a0396cbf1e342b3b6da2fe87fe8d8e6d1",
+  "parts": [
+    {
+      "id": "LK_sofa_rear",
+      "source_objects": [
+        "HF_living_sofa"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        1.1575875486381324,
+        0.8987478475538916,
+        0.9090909003335693
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        3.611381,
+        9.861382,
+        0.0
+      ],
+      "max": [
+        6.50535,
+        10.68823,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_sofa_return",
+      "source_objects": [
+        "HF_living_sofa"
+      ],
+      "rotation_delta_degrees": 180,
+      "scale_xyz": [
+        0.8723140308165506,
+        0.5496108949416346,
+        0.9090909003335693
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        3.611381,
+        8.475195,
+        0.0
+      ],
+      "max": [
+        4.41391,
+        9.849222,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_coffee",
+      "source_objects": [
+        "HF_coffee_table"
+      ],
+      "rotation_delta_degrees": 0,
+      "scale_xyz": [
+        1.4589204277243122,
+        1.1551558256304195,
+        0.8583083506080779
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        4.93677,
+        7.988813,
+        0.0
+      ],
+      "max": [
+        5.812257,
+        9.375,
+        0.4
+      ]
+    },
+    {
+      "id": "LK_media_cabinet",
+      "source_objects": [
+        "HF_prep"
+      ],
+      "rotation_delta_degrees": -90,
+      "scale_xyz": [
+        0.6079765823524854,
+        2.5535003220535093,
+        0.5333333121405716
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        7.003891,
+        7.089008,
+        0.0
+      ],
+      "max": [
+        7.392996,
+        9.387159,
+        0.48
+      ]
+    },
+    {
+      "id": "LK_dining",
+      "source_objects": [
+        "HF_dining_table"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        0.8996680617702184,
+        0.9423638132295724,
+        0.983099473071536
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        2.103599,
+        6.006809,
+        0.0
+      ],
+      "max": [
+        3.003405,
+        7.891537,
+        0.76
+      ]
+    },
+    {
+      "id": "LK_dining_left_0",
+      "source_objects": [
+        "HF_dining_rear0"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        0.7172274120191852,
+        0.9535329998460129,
+        0.8527008540058129
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        1.617218,
+        7.368677,
+        0.0
+      ],
+      "max": [
+        2.030642,
+        7.782101,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_dining_right_0",
+      "source_objects": [
+        "HF_dining_rear0"
+      ],
+      "rotation_delta_degrees": -90,
+      "scale_xyz": [
+        0.717227449101605,
+        0.9535329998460129,
+        0.8527008540058129
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        3.076362,
+        7.368677,
+        0.0
+      ],
+      "max": [
+        3.489786,
+        7.782101,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_dining_left_1",
+      "source_objects": [
+        "HF_dining_rear0"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        0.7172274120191852,
+        0.9535329998460129,
+        0.8527008540058129
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        1.617218,
+        6.724222,
+        0.0
+      ],
+      "max": [
+        2.030642,
+        7.137646,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_dining_right_1",
+      "source_objects": [
+        "HF_dining_rear0"
+      ],
+      "rotation_delta_degrees": -90,
+      "scale_xyz": [
+        0.717227449101605,
+        0.9535329998460129,
+        0.8527008540058129
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        3.076362,
+        6.724222,
+        0.0
+      ],
+      "max": [
+        3.489786,
+        7.137646,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_dining_left_2",
+      "source_objects": [
+        "HF_dining_rear0"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        0.7172274120191852,
+        0.9535329998460108,
+        0.8527008540058129
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        1.617218,
+        6.079767,
+        0.0
+      ],
+      "max": [
+        2.030642,
+        6.493191,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_dining_right_2",
+      "source_objects": [
+        "HF_dining_rear0"
+      ],
+      "rotation_delta_degrees": -90,
+      "scale_xyz": [
+        0.717227449101605,
+        0.9535329998460108,
+        0.8527008540058129
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        3.076362,
+        6.079767,
+        0.0
+      ],
+      "max": [
+        3.489786,
+        6.493191,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_fridge",
+      "source_objects": [
+        "HU_fridge_door_fridge_closed",
+        "HU_fridge_door_freezer_closed",
+        "HU_fridge_body"
+      ],
+      "rotation_delta_degrees": -90,
+      "scale_xyz": [
+        0.8843297228277684,
+        1.1551558256304195,
+        1.0643564456935584
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        0.52286,
+        7.29572,
+        0.0
+      ],
+      "max": [
+        1.106518,
+        7.988813,
+        2.15
+      ]
+    },
+    {
+      "id": "LK_prep1",
+      "source_objects": [
+        "HF_prep"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        0.9119648735287295,
+        1.0403148771245116,
+        0.9999999602635717
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        0.52286,
+        6.347276,
+        0.0
+      ],
+      "max": [
+        1.106518,
+        7.28356,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_dishwasher",
+      "source_objects": [
+        "HU_dishwasher_door_closed",
+        "HU_dishwasher_body"
+      ],
+      "rotation_delta_degrees": -90,
+      "scale_xyz": [
+        0.9119649159954001,
+        1.0573506143966807,
+        1.058823573960567
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        0.52286,
+        5.702821,
+        0.0
+      ],
+      "max": [
+        1.106518,
+        6.335116,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_prep2",
+      "source_objects": [
+        "HF_prep"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        0.9119648735287295,
+        0.7565926379087362,
+        0.9999999602635717
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        0.52286,
+        5.009727,
+        0.0
+      ],
+      "max": [
+        1.106518,
+        5.690661,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_sink",
+      "source_objects": [
+        "HF_sink"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        0.9119649159954001,
+        0.9997841880738189,
+        1.0444444721127741
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        0.52286,
+        4.097763,
+        0.0
+      ],
+      "max": [
+        1.106518,
+        4.997568,
+        0.94
+      ]
+    },
+    {
+      "id": "LK_end_base",
+      "source_objects": [
+        "HF_prep"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        0.9119648735287295,
+        0.6485079753503452,
+        0.9999999602635717
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        0.52286,
+        3.501945,
+        0.0
+      ],
+      "max": [
+        1.106518,
+        4.085603,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_cooking_prep1",
+      "source_objects": [
+        "HF_prep"
+      ],
+      "rotation_delta_degrees": -90,
+      "scale_xyz": [
+        1.3489480420945796,
+        0.6349974345847352,
+        0.9999999602635717
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        2.517023,
+        4.41391,
+        0.0
+      ],
+      "max": [
+        3.38035,
+        4.985409,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_oven",
+      "source_objects": [
+        "HU_oven_housing",
+        "HU_oven_door_oven_closed",
+        "HU_oven_body"
+      ],
+      "rotation_delta_degrees": 0,
+      "scale_xyz": [
+        1.3489474767572893,
+        0.8816053484990499,
+        1.0000000264909539
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        2.517024,
+        3.696498,
+        0.0
+      ],
+      "max": [
+        3.380351,
+        4.401751,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_hob",
+      "source_objects": [
+        "HU_hob_body"
+      ],
+      "rotation_delta_degrees": 0,
+      "scale_xyz": [
+        1.40302438502024,
+        1.1335159599264457,
+        0.8181817117801521
+      ],
+      "floor": "ground",
+      "collision": false,
+      "min": [
+        2.529184,
+        3.720817,
+        0.91
+      ],
+      "max": [
+        3.258755,
+        4.389591,
+        0.955
+      ]
+    },
+    {
+      "id": "LK_cooking_prep2",
+      "source_objects": [
+        "HF_prep"
+      ],
+      "rotation_delta_degrees": -90,
+      "scale_xyz": [
+        1.3489480420945796,
+        0.7430821043012861,
+        0.9999999602635717
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        2.517023,
+        3.003405,
+        0.0
+      ],
+      "max": [
+        3.38035,
+        3.672179,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_entrance_storage",
+      "source_objects": [
+        "HU_walkin_west_door_right_closed",
+        "HU_walkin_west_door_left_closed",
+        "HU_walkin_west_body"
+      ],
+      "rotation_delta_degrees": 180,
+      "scale_xyz": [
+        1.3094880751250173,
+        1.4843018187542814,
+        1.0643564456935584
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        3.015564,
+        0.5107,
+        0.0
+      ],
+      "max": [
+        3.696498,
+        2.662938,
+        2.15
+      ]
+    },
+    {
+      "id": "LK_entry_bench",
+      "source_objects": [
+        "HF_coffee_table"
+      ],
+      "rotation_delta_degrees": 0,
+      "scale_xyz": [
+        1.0739275370748402,
+        0.48638140026544013,
+        0.9655968944340876
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        5.192121,
+        1.957685,
+        0.0
+      ],
+      "max": [
+        5.836576,
+        2.541342,
+        0.45
+      ]
+    },
+    {
+      "id": "LK_downstairs_wc",
+      "source_objects": [
+        "HF_family_wc"
+      ],
+      "rotation_delta_degrees": 0,
+      "scale_xyz": [
+        1.0180066976523012,
+        0.9885956226839449,
+        0.9951308732941949
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        6.590467,
+        1.921206,
+        0.0
+      ],
+      "max": [
+        7.02821,
+        2.529183,
+        0.82
+      ]
+    },
+    {
+      "id": "LK_downstairs_basin",
+      "source_objects": [
+        "HF_family_vanity"
+      ],
+      "rotation_delta_degrees": 180,
+      "scale_xyz": [
+        0.9041695430144596,
+        0.780045867096526,
+        1.0361445247391579
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        6.468872,
+        0.5107,
+        0.0
+      ],
+      "max": [
+        7.174125,
+        0.924124,
+        0.86
+      ]
+    },
+    {
+      "id": "LK_primary_bed",
+      "source_objects": [
+        "HF_primary_bed"
+      ],
+      "rotation_delta_degrees": 180,
+      "scale_xyz": [
+        0.9175941549767852,
+        1.0206445521582892,
+        0.9954750959392031
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        5.410992,
+        7.453794,
+        3.3
+      ],
+      "max": [
+        7.392996,
+        9.423638,
+        4.4
+      ]
+    },
+    {
+      "id": "LK_primary_bedside0",
+      "source_objects": [
+        "HF_coffee_table"
+      ],
+      "rotation_delta_degrees": 0,
+      "scale_xyz": [
+        0.648409078988582,
+        0.324254266843627,
+        0.9870546031992895
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        7.003891,
+        9.581712,
+        3.3
+      ],
+      "max": [
+        7.392996,
+        9.970818,
+        3.76
+      ]
+    },
+    {
+      "id": "LK_primary_bedside1",
+      "source_objects": [
+        "HF_coffee_table"
+      ],
+      "rotation_delta_degrees": 0,
+      "scale_xyz": [
+        0.648409078988582,
+        0.324254266843627,
+        0.9870546031992895
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        7.003891,
+        6.955253,
+        3.3
+      ],
+      "max": [
+        7.392996,
+        7.344358,
+        3.76
+      ]
+    },
+    {
+      "id": "LK_primary_wardrobe",
+      "source_objects": [
+        "HU_bedroom2_closet_door_right_closed",
+        "HU_bedroom2_closet_door_left_closed",
+        "HU_bedroom2_closet_body"
+      ],
+      "rotation_delta_degrees": -90,
+      "scale_xyz": [
+        1.3281952810667832,
+        1.265584530334085,
+        1.039603970212313
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        4.900292,
+        6.201362,
+        3.3
+      ],
+      "max": [
+        7.490273,
+        6.821498,
+        5.4
+      ]
+    },
+    {
+      "id": "LK_primary_desk",
+      "source_objects": [
+        "RAW_38795_0",
+        "RAW_38795_1",
+        "RAW_38795_2",
+        "RAW_38795_3",
+        "RAW_38795_4",
+        "RAW_38795_5",
+        "RAW_38795_6",
+        "RAW_38795_7",
+        "RAW_38795_8"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        0.6252519135282999,
+        1.893413039470869,
+        0.9932161135519232
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        3.11284,
+        6.322957,
+        3.3
+      ],
+      "max": [
+        3.550584,
+        8.973736,
+        4.04
+      ]
+    },
+    {
+      "id": "LK_primary_desk_chair",
+      "source_objects": [
+        "RAW_38786_0",
+        "RAW_38786_1"
+      ],
+      "rotation_delta_degrees": -90,
+      "scale_xyz": [
+        0.6338216180653553,
+        0.6410466902193016,
+        0.8945251781246356
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        3.623541,
+        8.025291,
+        3.3
+      ],
+      "max": [
+        4.024806,
+        8.414397,
+        4.23
+      ]
+    },
+    {
+      "id": "LK_bedroom2_bed",
+      "source_objects": [
+        "RAW_38771_0",
+        "RAW_38771_1",
+        "RAW_38771_2",
+        "RAW_38771_3"
+      ],
+      "rotation_delta_degrees": 0,
+      "scale_xyz": [
+        0.8932883447058589,
+        0.9970817120622568,
+        0.8952731009955613
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        6.50535,
+        -0.401265,
+        3.3
+      ],
+      "max": [
+        7.380836,
+        1.592899,
+        4.24
+      ]
+    },
+    {
+      "id": "LK_bedroom2_desk",
+      "source_objects": [
+        "RAW_38795_0",
+        "RAW_38795_1",
+        "RAW_38795_2",
+        "RAW_38795_3",
+        "RAW_38795_4",
+        "RAW_38795_5",
+        "RAW_38795_6",
+        "RAW_38795_7",
+        "RAW_38795_8"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        0.9726140877106885,
+        0.9206503769904224,
+        0.9932161135519232
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        4.17072,
+        0.01216,
+        3.3
+      ],
+      "max": [
+        4.851654,
+        1.30107,
+        4.04
+      ]
+    },
+    {
+      "id": "LK_bedroom2_desk_chair",
+      "source_objects": [
+        "RAW_38786_0",
+        "RAW_38786_1"
+      ],
+      "rotation_delta_degrees": -90,
+      "scale_xyz": [
+        0.6338216180653546,
+        0.6610793992886541,
+        0.8945251781246356
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        4.94893,
+        0.425584,
+        3.3
+      ],
+      "max": [
+        5.350194,
+        0.826848,
+        4.23
+      ]
+    },
+    {
+      "id": "LK_bedroom2_wardrobe",
+      "source_objects": [
+        "HU_bedroom2_closet_door_right_closed",
+        "HU_bedroom2_closet_door_left_closed",
+        "HU_bedroom2_closet_body"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        1.1099472301872644,
+        1.2655844533598604,
+        1.039603970212313
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        5.325875,
+        2.09144,
+        3.3
+      ],
+      "max": [
+        7.490273,
+        2.711576,
+        5.4
+      ]
+    },
+    {
+      "id": "LK_bedroom2_bedside",
+      "source_objects": [
+        "HF_coffee_table"
+      ],
+      "rotation_delta_degrees": 0,
+      "scale_xyz": [
+        0.6484090789885835,
+        0.3242542668436267,
+        0.9870546031992895
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        6.018969,
+        -0.389105,
+        3.3
+      ],
+      "max": [
+        6.408074,
+        0.0,
+        3.76
+      ]
+    },
+    {
+      "id": "LK_bedroom3_bed",
+      "source_objects": [
+        "RAW_38771_0",
+        "RAW_38771_1",
+        "RAW_38771_2",
+        "RAW_38771_3"
+      ],
+      "rotation_delta_degrees": 0,
+      "scale_xyz": [
+        0.8932883447058585,
+        0.9970817120622568,
+        0.8952731009955613
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        0.607977,
+        -0.401265,
+        3.3
+      ],
+      "max": [
+        1.483463,
+        1.592899,
+        4.24
+      ]
+    },
+    {
+      "id": "LK_bedroom3_desk",
+      "source_objects": [
+        "RAW_38795_0",
+        "RAW_38795_1",
+        "RAW_38795_2",
+        "RAW_38795_3",
+        "RAW_38795_4",
+        "RAW_38795_5",
+        "RAW_38795_6",
+        "RAW_38795_7",
+        "RAW_38795_8"
+      ],
+      "rotation_delta_degrees": -90,
+      "scale_xyz": [
+        0.9726141705156431,
+        0.9206503769904224,
+        0.9932161135519232
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        3.161479,
+        0.01216,
+        3.3
+      ],
+      "max": [
+        3.842412,
+        1.30107,
+        4.04
+      ]
+    },
+    {
+      "id": "LK_bedroom3_desk_chair",
+      "source_objects": [
+        "RAW_38786_0",
+        "RAW_38786_1"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        0.6338215882284789,
+        0.6610793992886541,
+        0.8945251781246356
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        2.662938,
+        0.425584,
+        3.3
+      ],
+      "max": [
+        3.064202,
+        0.826848,
+        4.23
+      ]
+    },
+    {
+      "id": "LK_bedroom3_wardrobe",
+      "source_objects": [
+        "HU_bedroom2_closet_door_right_closed",
+        "HU_bedroom2_closet_door_left_closed",
+        "HU_bedroom2_closet_body"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        1.1099472301872648,
+        1.2655844533598604,
+        1.039603970212313
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        0.52286,
+        2.09144,
+        3.3
+      ],
+      "max": [
+        2.687257,
+        2.711576,
+        5.4
+      ]
+    },
+    {
+      "id": "LK_bedroom3_bedside",
+      "source_objects": [
+        "HF_coffee_table"
+      ],
+      "rotation_delta_degrees": 0,
+      "scale_xyz": [
+        0.6484090789885828,
+        0.3242542668436267,
+        0.9870546031992895
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        1.617218,
+        -0.389105,
+        3.3
+      ],
+      "max": [
+        2.006323,
+        0.0,
+        3.76
+      ]
+    },
+    {
+      "id": "LK_bath",
+      "source_objects": [
+        "HF_family_bath"
+      ],
+      "rotation_delta_degrees": -90,
+      "scale_xyz": [
+        1.0376134889753568,
+        1.1290981729605851,
+        1.0000000866976728
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        0.887646,
+        7.696984,
+        3.3
+      ],
+      "max": [
+        2.444066,
+        8.487354,
+        3.85
+      ]
+    },
+    {
+      "id": "LK_upstairs_wc",
+      "source_objects": [
+        "HF_family_wc"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        0.9490517977765868,
+        0.9048948423576015,
+        0.9708593885797024
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        0.693093,
+        6.882296,
+        3.3
+      ],
+      "max": [
+        1.276751,
+        7.271401,
+        4.1
+      ]
+    },
+    {
+      "id": "LK_bath_vanity",
+      "source_objects": [
+        "HF_family_vanity"
+      ],
+      "rotation_delta_degrees": -90,
+      "scale_xyz": [
+        0.8488734436050434,
+        0.7794565621617329,
+        1.0361445247391579
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        2.018482,
+        6.578308,
+        3.3
+      ],
+      "max": [
+        2.468385,
+        7.186284,
+        4.16
+      ]
+    },
+    {
+      "id": "LK_shower",
+      "source_objects": [
+        "HF_ensuite_shower_tray"
+      ],
+      "rotation_delta_degrees": 0,
+      "scale_xyz": [
+        0.5395792922161792,
+        1.0083518984778237,
+        0.8999999865889551
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        0.52286,
+        5.058366,
+        3.3
+      ],
+      "max": [
+        1.386187,
+        5.885214,
+        3.345
+      ]
+    },
+    {
+      "id": "LK_shower_rail",
+      "source_objects": [
+        "HF_ensuite_shower_rail"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        0.5432029120569686,
+        2.4841818403094718,
+        0.9813084724386991
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        0.547179,
+        5.265078,
+        4.35
+      ],
+      "max": [
+        0.644455,
+        5.72714,
+        5.4
+      ]
+    },
+    {
+      "id": "LK_laundry_sink",
+      "source_objects": [
+        "HF_laundry_sink"
+      ],
+      "rotation_delta_degrees": 0,
+      "scale_xyz": [
+        1.9455256010617605,
+        0.9119649584620743,
+        1.011111137896409
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        0.52286,
+        4.304475,
+        3.3
+      ],
+      "max": [
+        1.690175,
+        4.888132,
+        4.21
+      ]
+    },
+    {
+      "id": "LK_laundry_prep",
+      "source_objects": [
+        "HF_prep"
+      ],
+      "rotation_delta_degrees": 0,
+      "scale_xyz": [
+        1.053825529736369,
+        0.9119649159953996,
+        1.011111070933167
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        1.702335,
+        4.304475,
+        3.3
+      ],
+      "max": [
+        2.650778,
+        4.888132,
+        4.21
+      ]
+    },
+    {
+      "id": "LK_washer",
+      "source_objects": [
+        "HU_washer_door_drum_closed",
+        "HU_washer_body"
+      ],
+      "rotation_delta_degrees": 180,
+      "scale_xyz": [
+        1.0335602188765622,
+        0.9580237366179596,
+        1.0117647484512082
+      ],
+      "floor": "upper",
+      "collision": true,
+      "min": [
+        0.607977,
+        3.076362,
+        3.3
+      ],
+      "max": [
+        1.228113,
+        3.708658,
+        4.16
+      ]
+    },
+    {
+      "id": "LK_store_shelves",
+      "source_objects": [
+        "HF_living_millwork"
+      ],
+      "rotation_delta_degrees": 90,
+      "scale_xyz": [
+        1.4512971443448126,
+        0.9380199407415762,
+        0.9382716712201674
+      ],
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        8.195525,
+        8.013132,
+        0.0
+      ],
+      "max": [
+        9.095331,
+        8.341439,
+        1.9
+      ]
+    },
+    {
+      "id": "LK_dining_pendant",
+      "source_objects": [
+        "RAW_38801_0",
+        "RAW_38801_1",
+        "RAW_38801_2"
+      ],
+      "rotation_delta_degrees": 0,
+      "scale_xyz": [
+        1.1607998839675004,
+        1.2994295160287928,
+        0.4011193929934297
+      ],
+      "floor": "ground",
+      "collision": false,
+      "min": [
+        2.33463,
+        6.809339,
+        2.2
+      ],
+      "max": [
+        2.784533,
+        7.307879,
+        2.63
+      ]
+    },
+    {
+      "id": "LK_wc_tile",
+      "source_objects": [],
+      "source": "Project-specific finish/screen detail",
+      "floor": "ground",
+      "collision": false,
+      "min": [
+        6.1162451361867705,
+        0.5107003891050584,
+        0.003
+      ],
+      "max": [
+        7.490272373540856,
+        2.650778210116732,
+        0.009000000000000001
+      ]
+    },
+    {
+      "id": "LK_bath_tile",
+      "source_objects": [],
+      "source": "Project-specific finish/screen detail",
+      "floor": "upper",
+      "collision": false,
+      "min": [
+        0.5228599221789884,
+        5.082684824902724,
+        3.303
+      ],
+      "max": [
+        2.492704280155642,
+        8.499513618677044,
+        3.3089999999999997
+      ]
+    },
+    {
+      "id": "LK_laundry_tile",
+      "source_objects": [],
+      "source": "Project-specific finish/screen detail",
+      "floor": "upper",
+      "collision": false,
+      "min": [
+        0.5228599221789884,
+        3.0642023346303504,
+        3.303
+      ],
+      "max": [
+        2.650778210116732,
+        4.888132295719845,
+        3.3089999999999997
+      ]
+    },
+    {
+      "id": "LK_living_rug",
+      "source_objects": [],
+      "source": "Project-specific finish/screen detail",
+      "floor": "ground",
+      "collision": false,
+      "min": [
+        4.571984435797666,
+        7.721303501945526,
+        0.007
+      ],
+      "max": [
+        6.298638132295721,
+        9.63035019455253,
+        0.016
+      ]
+    },
+    {
+      "id": "LK_television",
+      "source_objects": [],
+      "source": "Project-specific finish/screen detail",
+      "floor": "ground",
+      "collision": true,
+      "min": [
+        7.344357976653697,
+        7.551070038910506,
+        0.77
+      ],
+      "max": [
+        7.405155642023347,
+        9.083171206225682,
+        1.62
+      ]
+    }
+  ],
+  "provenance": {
+    "output\\furniture\\fit.json": {
+      "revision": "r03",
+      "parts": [
+        {
+          "id": "HF_primary_bed",
+          "asset": "38770",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\38770\\source.glb",
+          "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-double-bed-upholster-4c7d1e0e",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "086be35da80ceffd6528af9490136ccf3f25c10e67160fd2e37d4bb0a9d9e367",
+          "source_dimensions_m": [
+            1.7101364135742188,
+            2.190000057220459,
+            1.105038434267044
+          ],
+          "scale_xyz": [
+            1.1285649405980789,
+            0.9863013440928696,
+            0.999965219067634
+          ],
+          "rotation_deg": 90,
+          "bounds_min": [
+            0.39999985694885254,
+            6.234999656677246,
+            0.0
+          ],
+          "bounds_max": [
+            2.56000018119812,
+            8.164999961853027,
+            1.1050000190734863
+          ],
+          "mattress_m": [
+            1.7999999523162842,
+            2.0
+          ],
+          "fit": "Mattress and frame anchored separately"
+        },
+        {
+          "id": "HF_bedroom2_bed",
+          "asset": "38770",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\38770\\source.glb",
+          "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-double-bed-upholster-4c7d1e0e",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "086be35da80ceffd6528af9490136ccf3f25c10e67160fd2e37d4bb0a9d9e367",
+          "source_dimensions_m": [
+            1.7101364135742188,
+            2.190000057220459,
+            1.105038434267044
+          ],
+          "scale_xyz": [
+            0.976530285387975,
+            0.9863013440928696,
+            0.999965219067634
+          ],
+          "rotation_deg": -90,
+          "bounds_min": [
+            11.480000495910645,
+            6.384999752044678,
+            0.0
+          ],
+          "bounds_max": [
+            13.640000343322754,
+            8.054999351501465,
+            1.1050000190734863
+          ],
+          "mattress_m": [
+            1.5399999618530273,
+            2.0
+          ],
+          "fit": "Mattress and frame anchored separately"
+        },
+        {
+          "id": "HF_bedroom3_bed",
+          "asset": "38770",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\38770\\source.glb",
+          "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-double-bed-upholster-4c7d1e0e",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "086be35da80ceffd6528af9490136ccf3f25c10e67160fd2e37d4bb0a9d9e367",
+          "source_dimensions_m": [
+            1.7101364135742188,
+            2.190000057220459,
+            1.105038434267044
+          ],
+          "scale_xyz": [
+            0.976530285387975,
+            0.9863013440928696,
+            0.999965219067634
+          ],
+          "rotation_deg": -90,
+          "bounds_min": [
+            11.480000495910645,
+            1.0149999856948853,
+            0.0
+          ],
+          "bounds_max": [
+            13.640000343322754,
+            2.684999942779541,
+            1.1050000190734863
+          ],
+          "mattress_m": [
+            1.5399999618530273,
+            2.0
+          ],
+          "fit": "Mattress and frame anchored separately"
+        },
+        {
+          "id": "HF_living_sofa",
+          "asset": "sofa",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\unreal\\AM69742\\SourceAssets\\Library\\sofa_three_seat\\source.glb",
+          "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-sofa-three-seat-6be9b44b",
+          "license": "CC0 1.0 Universal",
+          "sha256": "a7c5c20b00ce057815785a9bd393707de0bc84c9926278cac0882b369ab2b4d7",
+          "source_dimensions_m": [
+            2.5,
+            0.9199041724205017,
+            0.9900448620319366
+          ],
+          "scale_xyz": [
+            1.0,
+            1.0001041712630199,
+            0.9999546868695984
+          ],
+          "rotation_deg": -90,
+          "bounds_min": [
+            8.6899995803833,
+            6.090000152587891,
+            0.0
+          ],
+          "bounds_max": [
+            9.609999656677246,
+            8.59000015258789,
+            0.9900000095367432
+          ],
+          "mattress_m": null,
+          "fit": "Native dimensions"
+        },
+        {
+          "id": "HF_coffee_table",
+          "asset": "38790",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\38790\\source.glb",
+          "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-coffee-table-rect-2efbd4f9",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "1a1229be4269b3b05bbd79c455957a3512b008c596313577e603fc4555667c07",
+          "source_dimensions_m": [
+            1.2000000476837158,
+            0.6000915765762329,
+            0.4660329669713974
+          ],
+          "scale_xyz": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation_deg": 90,
+          "bounds_min": [
+            7.269954204559326,
+            6.700000286102295,
+            0.0
+          ],
+          "bounds_max": [
+            7.870046138763428,
+            7.900000095367432,
+            0.4660329818725586
+          ],
+          "mattress_m": null,
+          "fit": "Native dimensions"
+        },
+        {
+          "id": "HF_dining_table",
+          "asset": "38791",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\38791\\source.glb",
+          "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-dining-table-6seat-02f48ab1",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "4ac38a00396bb275295c34c5214695b37842dca10bc1cc0ef19c19529e43fd95",
+          "source_dimensions_m": [
+            2.0,
+            1.000152587890625,
+            0.7730651795864105
+          ],
+          "scale_xyz": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation_deg": 0,
+          "bounds_min": [
+            6.0,
+            4.109923839569092,
+            0.0
+          ],
+          "bounds_max": [
+            8.0,
+            5.110076427459717,
+            0.7730652093887329
+          ],
+          "mattress_m": null,
+          "fit": "Native dimensions"
+        },
+        {
+          "id": "HF_dining_rear0",
+          "asset": "chair",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\unreal\\AM69742\\SourceAssets\\Library\\dining_chair_02\\dining_chair_02.gltf",
+          "source_url": "https://polyhaven.com/a/dining_chair_02",
+          "license": "CC0",
+          "sha256": "c73342e0930615ea147237e1a640dd64eafa8d43662d1befad8ac896af87b129",
+          "source_dimensions_m": [
+            0.4335707724094391,
+            0.5764201134443283,
+            0.9733776897192001
+          ],
+          "scale_xyz": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation_deg": 0,
+          "bounds_min": [
+            6.103214740753174,
+            5.0617899894714355,
+            0.0
+          ],
+          "bounds_max": [
+            6.53678560256958,
+            5.638209819793701,
+            0.9733777046203613
+          ],
+          "mattress_m": null,
+          "fit": "Native dimensions"
+        },
+        {
+          "id": "HF_dining_rear1",
+          "asset": "chair",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\unreal\\AM69742\\SourceAssets\\Library\\dining_chair_02\\dining_chair_02.gltf",
+          "source_url": "https://polyhaven.com/a/dining_chair_02",
+          "license": "CC0",
+          "sha256": "c73342e0930615ea147237e1a640dd64eafa8d43662d1befad8ac896af87b129",
+          "source_dimensions_m": [
+            0.4335707724094391,
+            0.5764201134443283,
+            0.9733776897192001
+          ],
+          "scale_xyz": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation_deg": 0,
+          "bounds_min": [
+            6.783214569091797,
+            5.0617899894714355,
+            0.0
+          ],
+          "bounds_max": [
+            7.216785430908203,
+            5.638209819793701,
+            0.9733777046203613
+          ],
+          "mattress_m": null,
+          "fit": "Native dimensions"
+        },
+        {
+          "id": "HF_dining_rear2",
+          "asset": "chair",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\unreal\\AM69742\\SourceAssets\\Library\\dining_chair_02\\dining_chair_02.gltf",
+          "source_url": "https://polyhaven.com/a/dining_chair_02",
+          "license": "CC0",
+          "sha256": "c73342e0930615ea147237e1a640dd64eafa8d43662d1befad8ac896af87b129",
+          "source_dimensions_m": [
+            0.4335707724094391,
+            0.5764201134443283,
+            0.9733776897192001
+          ],
+          "scale_xyz": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation_deg": 0,
+          "bounds_min": [
+            7.46321439743042,
+            5.0617899894714355,
+            0.0
+          ],
+          "bounds_max": [
+            7.896785259246826,
+            5.638209819793701,
+            0.9733777046203613
+          ],
+          "mattress_m": null,
+          "fit": "Native dimensions"
+        },
+        {
+          "id": "HF_dining_front0",
+          "asset": "chair",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\unreal\\AM69742\\SourceAssets\\Library\\dining_chair_02\\dining_chair_02.gltf",
+          "source_url": "https://polyhaven.com/a/dining_chair_02",
+          "license": "CC0",
+          "sha256": "c73342e0930615ea147237e1a640dd64eafa8d43662d1befad8ac896af87b129",
+          "source_dimensions_m": [
+            0.4335707724094391,
+            0.5764201134443283,
+            0.9733776897192001
+          ],
+          "scale_xyz": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation_deg": 180,
+          "bounds_min": [
+            6.103214740753174,
+            3.58178973197937,
+            0.0
+          ],
+          "bounds_max": [
+            6.53678560256958,
+            4.158209800720215,
+            0.9733777046203613
+          ],
+          "mattress_m": null,
+          "fit": "Native dimensions"
+        },
+        {
+          "id": "HF_dining_front1",
+          "asset": "chair",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\unreal\\AM69742\\SourceAssets\\Library\\dining_chair_02\\dining_chair_02.gltf",
+          "source_url": "https://polyhaven.com/a/dining_chair_02",
+          "license": "CC0",
+          "sha256": "c73342e0930615ea147237e1a640dd64eafa8d43662d1befad8ac896af87b129",
+          "source_dimensions_m": [
+            0.4335707724094391,
+            0.5764201134443283,
+            0.9733776897192001
+          ],
+          "scale_xyz": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation_deg": 180,
+          "bounds_min": [
+            6.783214569091797,
+            3.58178973197937,
+            0.0
+          ],
+          "bounds_max": [
+            7.216785430908203,
+            4.158209800720215,
+            0.9733777046203613
+          ],
+          "mattress_m": null,
+          "fit": "Native dimensions"
+        },
+        {
+          "id": "HF_dining_front2",
+          "asset": "chair",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\unreal\\AM69742\\SourceAssets\\Library\\dining_chair_02\\dining_chair_02.gltf",
+          "source_url": "https://polyhaven.com/a/dining_chair_02",
+          "license": "CC0",
+          "sha256": "c73342e0930615ea147237e1a640dd64eafa8d43662d1befad8ac896af87b129",
+          "source_dimensions_m": [
+            0.4335707724094391,
+            0.5764201134443283,
+            0.9733776897192001
+          ],
+          "scale_xyz": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation_deg": 180,
+          "bounds_min": [
+            7.46321439743042,
+            3.58178973197937,
+            0.0
+          ],
+          "bounds_max": [
+            7.896785259246826,
+            4.158209800720215,
+            0.9733777046203613
+          ],
+          "mattress_m": null,
+          "fit": "Native dimensions"
+        },
+        {
+          "id": "HF_fridge",
+          "asset": "17835",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17835\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-tall-600-fridge-ho-277ed65c",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "6255f3463af414978ca63b0e8d1c1b460f14bfb61214f0e72897295e9e5129dd",
+          "source_dimensions_m": [
+            0.6000884771347046,
+            0.6410163938999176,
+            2.2200000286102295
+          ],
+          "scale_xyz": [
+            1.1998230718207548,
+            1.0296148527256643,
+            0.9999999871125095
+          ],
+          "rotation_deg": 180,
+          "bounds_min": [
+            4.650000095367432,
+            0.21999996900558472,
+            0.0
+          ],
+          "bounds_max": [
+            5.37000036239624,
+            0.8799999952316284,
+            2.2200000286102295
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_dishwasher_bay_study",
+          "asset": "17808",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17808\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-base-600-89129dae",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "4daea240e4cc09b24a48954c5db05f0aaf83e080d157544c9cf6dbb04cb119b2",
+          "source_dimensions_m": [
+            0.6000533699989319,
+            0.6410098373889923,
+            0.9000044353306293
+          ],
+          "scale_xyz": [
+            0.9999110579131786,
+            0.998424614834141,
+            0.9999950718791428
+          ],
+          "rotation_deg": 180,
+          "bounds_min": [
+            5.96999979019165,
+            0.23999997973442078,
+            0.0
+          ],
+          "bounds_max": [
+            6.570000171661377,
+            0.8799999952316284,
+            0.8999999761581421
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_sink",
+          "asset": "17806",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17806\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-base-600-sink-a65b92b5",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "dce707f51d2ad4193353f3c8ef5931811596e7ac8f9da45e1236bfc5e64529c4",
+          "source_dimensions_m": [
+            0.6000533699989319,
+            0.6410098373889923,
+            0.9011999368667603
+          ],
+          "scale_xyz": [
+            1.499866586869768,
+            0.998424614834141,
+            0.9986685120385914
+          ],
+          "rotation_deg": 180,
+          "bounds_min": [
+            6.590000152587891,
+            0.23999997973442078,
+            0.0
+          ],
+          "bounds_max": [
+            7.489999771118164,
+            0.8799999952316284,
+            0.8999999761581421
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_prep",
+          "asset": "17809",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17809\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-base-800-853beeb9",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "4f375c9d8a9d6d35a1ac9664adf5f9f40e9077e940884f0fc13e0cbd993bbcc2",
+          "source_dimensions_m": [
+            0.800000011920929,
+            0.6410105228424072,
+            0.8999922052025795
+          ],
+          "scale_xyz": [
+            1.1249999832361939,
+            0.9984235471862049,
+            1.0000086609610344
+          ],
+          "rotation_deg": 180,
+          "bounds_min": [
+            7.489999771118164,
+            0.2399999499320984,
+            0.0
+          ],
+          "bounds_max": [
+            8.390000343322754,
+            0.8799999952316284,
+            0.9000000357627869
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_end_base",
+          "asset": "17808",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17808\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-base-600-89129dae",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "4daea240e4cc09b24a48954c5db05f0aaf83e080d157544c9cf6dbb04cb119b2",
+          "source_dimensions_m": [
+            0.6000533699989319,
+            0.6410098373889923,
+            0.9000044353306293
+          ],
+          "scale_xyz": [
+            1.2998843752871323,
+            0.998424614834141,
+            0.9999950718791428
+          ],
+          "rotation_deg": 180,
+          "bounds_min": [
+            8.399999618530273,
+            0.23999997973442078,
+            0.0
+          ],
+          "bounds_max": [
+            9.180000305175781,
+            0.8799999952316284,
+            0.8999999761581421
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_corner",
+          "asset": "17812",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17812\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-base-900-corner-1d15d3e9",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "f3b8c2a232d122f8a39edf077c92ca20fb9e3f584883c2f9bf34d4e6bd2218c8",
+          "source_dimensions_m": [
+            0.8999999761581421,
+            0.8999999761581421,
+            0.9000031687319279
+          ],
+          "scale_xyz": [
+            1.0000000264909539,
+            1.0000000264909539,
+            0.9999964791991429
+          ],
+          "rotation_deg": 180,
+          "bounds_min": [
+            8.730000495910645,
+            0.23999997973442078,
+            0.0
+          ],
+          "bounds_max": [
+            9.630000114440918,
+            1.1399999856948853,
+            0.9000000357627869
+          ],
+          "mattress_m": null,
+          "fit": "Native dimensions"
+        },
+        {
+          "id": "HF_cooking_base_study",
+          "asset": "17808",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17808\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-base-600-89129dae",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "4daea240e4cc09b24a48954c5db05f0aaf83e080d157544c9cf6dbb04cb119b2",
+          "source_dimensions_m": [
+            0.6000533699989319,
+            0.6410098373889923,
+            0.9000044353306293
+          ],
+          "scale_xyz": [
+            1.3332147438842383,
+            0.998424614834141,
+            0.9999950718791428
+          ],
+          "rotation_deg": -90,
+          "bounds_min": [
+            9.079999923706055,
+            1.149999976158142,
+            0.0
+          ],
+          "bounds_max": [
+            9.720000267028809,
+            1.9499999284744263,
+            0.8999999761581421
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_pantry",
+          "asset": "17831",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17831\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-tall-600-larder-b9ef44d8",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "e3fb2565c366e6dc6753a084d3666711b8f8288a6d45dbb6574bf45bc44ce9b4",
+          "source_dimensions_m": [
+            0.6000000238418579,
+            0.6410081684589386,
+            2.219989348202944
+          ],
+          "scale_xyz": [
+            1.1666666203075002,
+            0.998427214334316,
+            1.0000047981298041
+          ],
+          "rotation_deg": -90,
+          "bounds_min": [
+            9.079999923706055,
+            2.5,
+            0.0
+          ],
+          "bounds_max": [
+            9.720000267028809,
+            3.1999998092651367,
+            2.2199997901916504
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_island",
+          "asset": "17855",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17855\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-island-breakfast-b-06cd323b",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "9759de0adef37937efe3ef42638635e66cdfcb53b2ba17597ce889800c281485",
+          "source_dimensions_m": [
+            1.8600000143051147,
+            1.2760316133499146,
+            0.9099703878164291
+          ],
+          "scale_xyz": [
+            1.2903225707213912,
+            0.7209852721319036,
+            1.0000325419200091
+          ],
+          "rotation_deg": 180,
+          "bounds_min": [
+            5.930000305175781,
+            1.6499998569488525,
+            0.0
+          ],
+          "bounds_max": [
+            8.329999923706055,
+            2.569999933242798,
+            0.9100000262260437
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_island_seat0",
+          "asset": "chair",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\unreal\\AM69742\\SourceAssets\\Library\\dining_chair_02\\dining_chair_02.gltf",
+          "source_url": "https://polyhaven.com/a/dining_chair_02",
+          "license": "CC0",
+          "sha256": "c73342e0930615ea147237e1a640dd64eafa8d43662d1befad8ac896af87b129",
+          "source_dimensions_m": [
+            0.4335707724094391,
+            0.5764201134443283,
+            0.9733776897192001
+          ],
+          "scale_xyz": [
+            0.9917642686346324,
+            0.8674228888584591,
+            1.1609059997316993
+          ],
+          "rotation_deg": 0,
+          "bounds_min": [
+            6.014999866485596,
+            2.7199997901916504,
+            0.0
+          ],
+          "bounds_max": [
+            6.445000171661377,
+            3.2199997901916504,
+            1.1299998760223389
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_island_seat1",
+          "asset": "chair",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\unreal\\AM69742\\SourceAssets\\Library\\dining_chair_02\\dining_chair_02.gltf",
+          "source_url": "https://polyhaven.com/a/dining_chair_02",
+          "license": "CC0",
+          "sha256": "c73342e0930615ea147237e1a640dd64eafa8d43662d1befad8ac896af87b129",
+          "source_dimensions_m": [
+            0.4335707724094391,
+            0.5764201134443283,
+            0.9733776897192001
+          ],
+          "scale_xyz": [
+            0.9917642686346324,
+            0.8674228888584591,
+            1.1609059997316993
+          ],
+          "rotation_deg": 0,
+          "bounds_min": [
+            6.614999771118164,
+            2.7199997901916504,
+            0.0
+          ],
+          "bounds_max": [
+            7.045000076293945,
+            3.2199997901916504,
+            1.1299998760223389
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_island_seat2",
+          "asset": "chair",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\unreal\\AM69742\\SourceAssets\\Library\\dining_chair_02\\dining_chair_02.gltf",
+          "source_url": "https://polyhaven.com/a/dining_chair_02",
+          "license": "CC0",
+          "sha256": "c73342e0930615ea147237e1a640dd64eafa8d43662d1befad8ac896af87b129",
+          "source_dimensions_m": [
+            0.4335707724094391,
+            0.5764201134443283,
+            0.9733776897192001
+          ],
+          "scale_xyz": [
+            0.9917642686346324,
+            0.8674228888584591,
+            1.1609059997316993
+          ],
+          "rotation_deg": 0,
+          "bounds_min": [
+            7.214999675750732,
+            2.7199997901916504,
+            0.0
+          ],
+          "bounds_max": [
+            7.644999980926514,
+            3.2199997901916504,
+            1.1299998760223389
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_island_seat3",
+          "asset": "chair",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\unreal\\AM69742\\SourceAssets\\Library\\dining_chair_02\\dining_chair_02.gltf",
+          "source_url": "https://polyhaven.com/a/dining_chair_02",
+          "license": "CC0",
+          "sha256": "c73342e0930615ea147237e1a640dd64eafa8d43662d1befad8ac896af87b129",
+          "source_dimensions_m": [
+            0.4335707724094391,
+            0.5764201134443283,
+            0.9733776897192001
+          ],
+          "scale_xyz": [
+            0.9917642686346324,
+            0.8674228888584591,
+            1.1609059997316993
+          ],
+          "rotation_deg": 0,
+          "bounds_min": [
+            7.814999580383301,
+            2.7199997901916504,
+            0.0
+          ],
+          "bounds_max": [
+            8.244999885559082,
+            3.2199997901916504,
+            1.1299998760223389
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_bedroom2_closet",
+          "asset": "38805",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\38805\\source.glb",
+          "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-wardrobe-2-door-de288b64",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "21d0c8dbe1aa4cc0ab847f186fff2114bd2e397f72c7963883f07885a7c825fc",
+          "source_dimensions_m": [
+            1.2200000286102295,
+            0.6169798970222473,
+            2.0249821841716766
+          ],
+          "scale_xyz": [
+            1.5983606182545376,
+            0.7941911922331748,
+            0.9975396404913486
+          ],
+          "rotation_deg": 90,
+          "bounds_min": [
+            9.925000190734863,
+            6.875,
+            0.0
+          ],
+          "bounds_max": [
+            10.414999961853027,
+            8.824999809265137,
+            2.0199999809265137
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_bedroom3_closet",
+          "asset": "38805",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\38805\\source.glb",
+          "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-wardrobe-2-door-de288b64",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "21d0c8dbe1aa4cc0ab847f186fff2114bd2e397f72c7963883f07885a7c825fc",
+          "source_dimensions_m": [
+            1.2200000286102295,
+            0.6169798970222473,
+            2.0249821841716766
+          ],
+          "scale_xyz": [
+            1.475409801465727,
+            0.7941911922331748,
+            0.9975396404913486
+          ],
+          "rotation_deg": 90,
+          "bounds_min": [
+            9.925000190734863,
+            0.5299999713897705,
+            0.0
+          ],
+          "bounds_max": [
+            10.414999961853027,
+            2.3299999237060547,
+            2.0199999809265137
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_walkin_west",
+          "asset": "38805",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\38805\\source.glb",
+          "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-wardrobe-2-door-de288b64",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "21d0c8dbe1aa4cc0ab847f186fff2114bd2e397f72c7963883f07885a7c825fc",
+          "source_dimensions_m": [
+            1.2200000286102295,
+            0.6169798970222473,
+            2.0249821841716766
+          ],
+          "scale_xyz": [
+            1.1885245622918357,
+            0.842815142778063,
+            0.9975396404913486
+          ],
+          "rotation_deg": -90,
+          "bounds_min": [
+            2.6500000953674316,
+            3.1550002098083496,
+            0.0
+          ],
+          "bounds_max": [
+            3.1700000762939453,
+            4.605000019073486,
+            2.0199999809265137
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_walkin_east",
+          "asset": "38805",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\38805\\source.glb",
+          "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-wardrobe-2-door-de288b64",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "21d0c8dbe1aa4cc0ab847f186fff2114bd2e397f72c7963883f07885a7c825fc",
+          "source_dimensions_m": [
+            1.2200000286102295,
+            0.6169798970222473,
+            2.0249821841716766
+          ],
+          "scale_xyz": [
+            1.1885245622918357,
+            0.842815142778063,
+            0.9975396404913486
+          ],
+          "rotation_deg": 90,
+          "bounds_min": [
+            3.879999876022339,
+            3.1550002098083496,
+            0.0
+          ],
+          "bounds_max": [
+            4.400000095367432,
+            4.605000019073486,
+            2.0199999809265137
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_family_bath",
+          "asset": "17865",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17865\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-bath-single-ended-6160600e",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "a484dfdeb90903177f2d93d5c8c8aa4b901d7e42a7fad60f874d36b83e566a6d",
+          "source_dimensions_m": [
+            1.7000000476837158,
+            0.7000366449356079,
+            0.5499953925609589
+          ],
+          "scale_xyz": [
+            0.8823529164271378,
+            0.9999476528323581,
+            1.0000083772320705
+          ],
+          "rotation_deg": 90,
+          "bounds_min": [
+            12.969999313354492,
+            3.8400001525878906,
+            0.0
+          ],
+          "bounds_max": [
+            13.670000076293945,
+            5.340000152587891,
+            0.5499999523162842
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_family_wc",
+          "asset": "17870",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17870\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-wc-close-coupled-13e88a96",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "175f19f79e3f9f97041c571cd1adf462fa8f43f45bea4cbcc4f043db11422c89",
+          "source_dimensions_m": [
+            0.4300000071525574,
+            0.6149902492761612,
+            0.8240122348070145
+          ],
+          "scale_xyz": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation_deg": 0,
+          "bounds_min": [
+            12.394999504089355,
+            4.552505016326904,
+            0.0
+          ],
+          "bounds_max": [
+            12.824999809265137,
+            5.167495250701904,
+            0.8240122199058533
+          ],
+          "mattress_m": null,
+          "fit": "Native dimensions"
+        },
+        {
+          "id": "HF_family_vanity",
+          "asset": "17884",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17884\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-vanity-800-24368157",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "28fbd139e1c619eaf3f20b1f9f6e7f9fae7e3ea6a8a18f29b907cb57ef157659",
+          "source_dimensions_m": [
+            0.8199999928474426,
+            0.5280104279518127,
+            0.8280169740319252
+          ],
+          "scale_xyz": [
+            0.9512195204922588,
+            1.0037680544604108,
+            1.0023949098028977
+          ],
+          "rotation_deg": 0,
+          "bounds_min": [
+            11.149999618530273,
+            4.565000057220459,
+            0.0
+          ],
+          "bounds_max": [
+            11.930000305175781,
+            5.09499979019165,
+            0.8300000429153442
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_ensuite_wc",
+          "asset": "17870",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17870\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-wc-close-coupled-13e88a96",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "175f19f79e3f9f97041c571cd1adf462fa8f43f45bea4cbcc4f043db11422c89",
+          "source_dimensions_m": [
+            0.4300000071525574,
+            0.6149902492761612,
+            0.8240122348070145
+          ],
+          "scale_xyz": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation_deg": 90,
+          "bounds_min": [
+            0.3425048291683197,
+            3.5350000858306885,
+            0.0
+          ],
+          "bounds_max": [
+            0.9574950933456421,
+            3.9650001525878906,
+            0.8240122199058533
+          ],
+          "mattress_m": null,
+          "fit": "Native dimensions"
+        },
+        {
+          "id": "HF_ensuite_vanity1",
+          "asset": "17884",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17884\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-vanity-800-24368157",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "28fbd139e1c619eaf3f20b1f9f6e7f9fae7e3ea6a8a18f29b907cb57ef157659",
+          "source_dimensions_m": [
+            0.8199999928474426,
+            0.5280104279518127,
+            0.8280169740319252
+          ],
+          "scale_xyz": [
+            0.792682933743549,
+            1.0037680544604108,
+            1.0023949098028977
+          ],
+          "rotation_deg": 90,
+          "bounds_min": [
+            1.784999966621399,
+            4.204999923706055,
+            0.0
+          ],
+          "bounds_max": [
+            2.315000057220459,
+            4.8550004959106445,
+            0.8300000429153442
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_ensuite_vanity2",
+          "asset": "17884",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17884\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-vanity-800-24368157",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "28fbd139e1c619eaf3f20b1f9f6e7f9fae7e3ea6a8a18f29b907cb57ef157659",
+          "source_dimensions_m": [
+            0.8199999928474426,
+            0.5280104279518127,
+            0.8280169740319252
+          ],
+          "scale_xyz": [
+            0.792682933743549,
+            1.0037680544604108,
+            1.0023949098028977
+          ],
+          "rotation_deg": 90,
+          "bounds_min": [
+            1.784999966621399,
+            3.504999876022339,
+            0.0
+          ],
+          "bounds_max": [
+            2.315000057220459,
+            4.154999732971191,
+            0.8300000429153442
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_ensuite_shower_tray",
+          "asset": "17893",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17893\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-shower-tray-rectan-abbdd481",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "df108bdfb38f5a2b48d073d807ede2edef62e75c5fa0782d90518a29de1670fe",
+          "source_dimensions_m": [
+            1.2000000476837158,
+            0.800048828125,
+            0.04995269700884819
+          ],
+          "scale_xyz": [
+            1.333333280351429,
+            1.0249374427830331,
+            1.000946955699778
+          ],
+          "rotation_deg": 0,
+          "bounds_min": [
+            0.25999993085861206,
+            2.4000000953674316,
+            0.0
+          ],
+          "bounds_max": [
+            1.8599998950958252,
+            3.2199997901916504,
+            0.05000000074505806
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_ensuite_shower_rail",
+          "asset": "17900",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17900\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-shower-riser-rail-4f9ff7aa",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "9d6dd07be54230cea7229905669c6d222039e44d632c3466c0ac686784f24484",
+          "source_dimensions_m": [
+            0.17907896637916565,
+            0.18600178137421608,
+            1.0700000524520874
+          ],
+          "scale_xyz": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "rotation_deg": 90,
+          "bounds_min": [
+            0.25699910521507263,
+            2.7204604148864746,
+            1.0499999523162842
+          ],
+          "bounds_max": [
+            0.4430008828639984,
+            2.8995394706726074,
+            2.119999885559082
+          ],
+          "mattress_m": null,
+          "fit": "Native dimensions"
+        },
+        {
+          "id": "HF_laundry_sink",
+          "asset": "17806",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\17806\\source.glb",
+          "source_url": "https://3dassets.dev/assets/fitted-kitchen-and-bathroom-builder-base-600-sink-a65b92b5",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "dce707f51d2ad4193353f3c8ef5931811596e7ac8f9da45e1236bfc5e64529c4",
+          "source_dimensions_m": [
+            0.6000533699989319,
+            0.6410098373889923,
+            0.9011999368667603
+          ],
+          "scale_xyz": [
+            0.9999110579131786,
+            0.998424614834141,
+            0.9986685120385914
+          ],
+          "rotation_deg": 180,
+          "bounds_min": [
+            2.1100001335144043,
+            0.2199999988079071,
+            0.0
+          ],
+          "bounds_max": [
+            2.7100000381469727,
+            0.8600000143051147,
+            0.8999999761581421
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        },
+        {
+          "id": "HF_living_millwork",
+          "asset": "38810",
+          "source": "C:\\Users\\Alex\\Documents\\Personal\\house-project-research\\asset-library\\assets\\38810\\source.glb",
+          "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-bookcase-5-shelf-8af13000",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "sha256": "1d1153178630e74cc1e284d10b2be8224182fdd91cd44cfafa8c90fda73cbe94",
+          "source_dimensions_m": [
+            0.9198787212371826,
+            0.3138877749443054,
+            2.0250000953674316
+          ],
+          "scale_xyz": [
+            0.6740018936041227,
+            1.115048204926433,
+            0.9999999529049742
+          ],
+          "rotation_deg": -90,
+          "bounds_min": [
+            4.674999713897705,
+            8.309999465942383,
+            0.0
+          ],
+          "bounds_max": [
+            5.025000095367432,
+            8.930000305175781,
+            2.0249998569488525
+          ],
+          "mattress_m": null,
+          "fit": "Explicit study resize to drawing footprint"
+        }
+      ],
+      "notes": [
+        "Source room arrangement preserved",
+        "AI-assisted vendor models disclosed by publisher",
+        "Static study geometry; no chair/appliance operation simulation"
+      ]
+    },
+    "output\\use-manifest.json": {
+      "revision": "r05",
+      "sources": [
+        {
+          "id": "oven_housing",
+          "asset": "17808",
+          "derivative": "Retained r04 imported cabinet; 0.62 m wide by 0.63 m high oven opening cut, worktop retained",
+          "source_url": "https://3dassets.dev/assets/17808",
+          "license": "CC0",
+          "source_sha256": "4daea240e4cc09b24a48954c5db05f0aaf83e080d157544c9cf6dbb04cb119b2"
+        },
+        {
+          "id": "dishwasher",
+          "asset": "14103",
+          "source_url": "https://3dassets.dev/assets/home-appliances-and-utility-dishwasher-600-9dbe9db1",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "1301ab919477480ad6dff7ecb732666fb91c9460cb5ba7159185680a65a01565",
+          "center": [
+            6.27,
+            0.56,
+            0
+          ],
+          "target_size_m": [
+            0.598,
+            0.64,
+            0.85
+          ],
+          "angle": 180,
+          "nonuniform_scale": [
+            0.9624778866877297,
+            0.8614383245376368,
+            1.0365853748954101
+          ],
+          "action": "dishwasher",
+          "default_open": false
+        },
+        {
+          "id": "fridge",
+          "asset": "14034",
+          "source_url": "https://3dassets.dev/assets/home-appliances-and-utility-fridge-freezer-freestandin-c577bb9f",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "7b7a24ed166c6d6daf511f7bc4740f391ccf71ebafcae29bc64565ee8c06f0d1",
+          "center": [
+            5.01,
+            0.55,
+            0
+          ],
+          "target_size_m": [
+            0.6,
+            0.66,
+            2.02
+          ],
+          "angle": 180,
+          "nonuniform_scale": [
+            0.9944359544101706,
+            0.8627265281279367,
+            1.0918918778201454
+          ],
+          "action": "fridge",
+          "default_open": false
+        },
+        {
+          "id": "oven",
+          "asset": "14075",
+          "source_url": "https://3dassets.dev/assets/home-appliances-and-utility-oven-built-in-single-0f769521",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "c28b10f85ec784d66f26672f3024155f02609568ad087f237b4b2fc398725823",
+          "center": [
+            9.4,
+            1.55,
+            0.16
+          ],
+          "target_size_m": [
+            0.6,
+            0.64,
+            0.6
+          ],
+          "angle": -90,
+          "nonuniform_scale": [
+            0.9676807146567777,
+            0.9053296044571139,
+            0.9366662834580761
+          ],
+          "action": "oven",
+          "default_open": false
+        },
+        {
+          "id": "hob",
+          "asset": "14081",
+          "source_url": "https://3dassets.dev/assets/home-appliances-and-utility-hob-induction-4-zone-d09c4ddb",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "4ec16e3dda29e0559b54103eb28d507c86ce7a2d7dddf0a34dfedf369175cf01",
+          "center": [
+            9.4,
+            1.55,
+            0.88
+          ],
+          "target_size_m": [
+            0.59,
+            0.52,
+            0.055
+          ],
+          "angle": -90,
+          "nonuniform_scale": [
+            1.0000000444509234,
+            0.9885997783621565,
+            0.3063465932915264
+          ],
+          "action": null,
+          "default_open": false
+        },
+        {
+          "id": "washer",
+          "asset": "14050",
+          "source_url": "https://3dassets.dev/assets/home-appliances-and-utility-washing-machine-front-load-8cf238bc",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "937e52a6c4991697209e1a860034ba535098986847ea3f2b8e27bada62189f02",
+          "center": [
+            0.67,
+            0.59,
+            0
+          ],
+          "target_size_m": [
+            0.6,
+            0.66,
+            0.85
+          ],
+          "angle": 180,
+          "nonuniform_scale": [
+            0.9450028951852806,
+            0.9128924343938273,
+            0.9985902436886088
+          ],
+          "action": "washer",
+          "default_open": false
+        },
+        {
+          "id": "dryer",
+          "asset": "14053",
+          "source_url": "https://3dassets.dev/assets/home-appliances-and-utility-tumble-dryer-condenser-1864c882",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "d39366e939ef5e010f9db0840d4df3039c07f2196686c15a40ac2d985e98d8a8",
+          "center": [
+            0.67,
+            0.59,
+            0.87
+          ],
+          "target_size_m": [
+            0.6,
+            0.66,
+            0.85
+          ],
+          "angle": 180,
+          "nonuniform_scale": [
+            0.9467894743896236,
+            0.8883442320267029,
+            0.9985902436886088
+          ],
+          "action": "dryer",
+          "default_open": false
+        },
+        {
+          "id": "walkin_west",
+          "asset": "38805",
+          "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-wardrobe-2-door-de288b64",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "21d0c8dbe1aa4cc0ab847f186fff2114bd2e397f72c7963883f07885a7c825fc",
+          "center": [
+            2.91,
+            3.88,
+            0
+          ],
+          "target_size_m": [
+            1.45,
+            0.52,
+            2.02
+          ],
+          "angle": 90,
+          "nonuniform_scale": [
+            1.1885245622918357,
+            0.842815142778063,
+            0.9975396404913486
+          ],
+          "action": "walkin_west",
+          "default_open": false
+        },
+        {
+          "id": "walkin_east",
+          "asset": "38805",
+          "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-wardrobe-2-door-de288b64",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "21d0c8dbe1aa4cc0ab847f186fff2114bd2e397f72c7963883f07885a7c825fc",
+          "center": [
+            4.14,
+            3.88,
+            0
+          ],
+          "target_size_m": [
+            1.45,
+            0.52,
+            2.02
+          ],
+          "angle": -90,
+          "nonuniform_scale": [
+            1.1885245622918357,
+            0.842815142778063,
+            0.9975396404913486
+          ],
+          "action": "walkin_east",
+          "default_open": false
+        },
+        {
+          "id": "bedroom2_closet",
+          "asset": "38805",
+          "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-wardrobe-2-door-de288b64",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "21d0c8dbe1aa4cc0ab847f186fff2114bd2e397f72c7963883f07885a7c825fc",
+          "center": [
+            10.17,
+            7.85,
+            0
+          ],
+          "target_size_m": [
+            1.95,
+            0.49,
+            2.02
+          ],
+          "angle": 90,
+          "nonuniform_scale": [
+            1.5983606182545376,
+            0.7941911922331748,
+            0.9975396404913486
+          ],
+          "action": "bedroom2_closet",
+          "default_open": false
+        },
+        {
+          "id": "bedroom3_closet",
+          "asset": "38805",
+          "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-wardrobe-2-door-de288b64",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "21d0c8dbe1aa4cc0ab847f186fff2114bd2e397f72c7963883f07885a7c825fc",
+          "center": [
+            10.17,
+            1.43,
+            0
+          ],
+          "target_size_m": [
+            1.8,
+            0.49,
+            2.02
+          ],
+          "angle": 90,
+          "nonuniform_scale": [
+            1.475409801465727,
+            0.7941911922331748,
+            0.9975396404913486
+          ],
+          "action": "bedroom3_closet",
+          "default_open": false
+        },
+        {
+          "id": "door_ext_front",
+          "asset": "22885",
+          "source_url": "https://3dassets.dev/assets/modular-greybox-architecture-kit-door-hinged-single-3116bbc3",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "8a942b335607f741bea1016810f0bde6062a4ea5bba9e7bd91f4f4c1b0229b04",
+          "center": [
+            3.856621503829956,
+            0.10813000053167343,
+            0
+          ],
+          "target_size_m": [
+            1.177425,
+            0.12,
+            2.118
+          ],
+          "angle": 0,
+          "nonuniform_scale": [
+            1.176147532486276,
+            0.4810035519498991,
+            1.0085714743737482
+          ],
+          "action": "door_ext_front",
+          "default_open": true
+        },
+        {
+          "id": "door_primary_east",
+          "asset": "22885",
+          "source_url": "https://3dassets.dev/assets/modular-greybox-architecture-kit-door-hinged-single-3116bbc3",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "8a942b335607f741bea1016810f0bde6062a4ea5bba9e7bd91f4f4c1b0229b04",
+          "center": [
+            4.505397796630859,
+            5.902072429656982,
+            0
+          ],
+          "target_size_m": [
+            1.23149,
+            0.12,
+            2.118
+          ],
+          "angle": 90,
+          "nonuniform_scale": [
+            1.2301538737342286,
+            0.4810035519498991,
+            1.0085714743737482
+          ],
+          "action": "door_primary_east",
+          "default_open": true
+        },
+        {
+          "id": "door_primary_services",
+          "asset": "22885",
+          "source_url": "https://3dassets.dev/assets/modular-greybox-architecture-kit-door-hinged-single-3116bbc3",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "8a942b335607f741bea1016810f0bde6062a4ea5bba9e7bd91f4f4c1b0229b04",
+          "center": [
+            3.4475274085998535,
+            5.118133068084717,
+            0
+          ],
+          "target_size_m": [
+            0.731333,
+            0.12,
+            2.118
+          ],
+          "angle": 180,
+          "nonuniform_scale": [
+            0.7305395276775893,
+            0.4810035519498991,
+            1.0085714743737482
+          ],
+          "action": "door_primary_services",
+          "default_open": true
+        },
+        {
+          "id": "door_laundry_north",
+          "asset": "22885",
+          "source_url": "https://3dassets.dev/assets/modular-greybox-architecture-kit-door-hinged-single-3116bbc3",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "8a942b335607f741bea1016810f0bde6062a4ea5bba9e7bd91f4f4c1b0229b04",
+          "center": [
+            2.4148941040039062,
+            2.2887420654296875,
+            0
+          ],
+          "target_size_m": [
+            0.7088639999999999,
+            0.12,
+            2.118
+          ],
+          "angle": 180,
+          "nonuniform_scale": [
+            0.7080949058057638,
+            0.4810035519498991,
+            1.0085714743737482
+          ],
+          "action": "door_laundry_north",
+          "default_open": false
+        },
+        {
+          "id": "door_laundry_east",
+          "asset": "22885",
+          "source_url": "https://3dassets.dev/assets/modular-greybox-architecture-kit-door-hinged-single-3116bbc3",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "8a942b335607f741bea1016810f0bde6062a4ea5bba9e7bd91f4f4c1b0229b04",
+          "center": [
+            2.9735629558563232,
+            1.666996955871582,
+            0
+          ],
+          "target_size_m": [
+            0.871058,
+            0.12,
+            2.118
+          ],
+          "angle": 90,
+          "nonuniform_scale": [
+            -0.8701129306345887,
+            0.4810035519498991,
+            1.0085714743737482
+          ],
+          "action": "door_laundry_east",
+          "default_open": true
+        },
+        {
+          "id": "door_bedroom_2_front",
+          "asset": "22885",
+          "source_url": "https://3dassets.dev/assets/modular-greybox-architecture-kit-door-hinged-single-3116bbc3",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "8a942b335607f741bea1016810f0bde6062a4ea5bba9e7bd91f4f4c1b0229b04",
+          "center": [
+            10.398460388183594,
+            5.38845682144165,
+            0
+          ],
+          "target_size_m": [
+            0.8530369999999999,
+            0.12,
+            2.118
+          ],
+          "angle": 0,
+          "nonuniform_scale": [
+            0.8521114828286263,
+            0.4810035519498991,
+            1.0085714743737482
+          ],
+          "action": "door_bedroom_2_front",
+          "default_open": true
+        },
+        {
+          "id": "door_bedroom_3_rear",
+          "asset": "22885",
+          "source_url": "https://3dassets.dev/assets/modular-greybox-architecture-kit-door-hinged-single-3116bbc3",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "8a942b335607f741bea1016810f0bde6062a4ea5bba9e7bd91f4f4c1b0229b04",
+          "center": [
+            10.398460388183594,
+            3.7845349311828613,
+            0
+          ],
+          "target_size_m": [
+            0.8530369999999999,
+            0.12,
+            2.118
+          ],
+          "angle": 0,
+          "nonuniform_scale": [
+            0.8521114828286263,
+            0.4810035519498991,
+            1.0085714743737482
+          ],
+          "action": "door_bedroom_3_rear",
+          "default_open": true
+        },
+        {
+          "id": "door_family_bath_west",
+          "asset": "22885",
+          "source_url": "https://3dassets.dev/assets/modular-greybox-architecture-kit-door-hinged-single-3116bbc3",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "8a942b335607f741bea1016810f0bde6062a4ea5bba9e7bd91f4f4c1b0229b04",
+          "center": [
+            10.830978393554688,
+            4.307161331176758,
+            0
+          ],
+          "target_size_m": [
+            0.744907,
+            0.12,
+            2.118
+          ],
+          "angle": 90,
+          "nonuniform_scale": [
+            0.7440988003327212,
+            0.4810035519498991,
+            1.0085714743737482
+          ],
+          "action": "door_family_bath_west",
+          "default_open": true
+        },
+        {
+          "id": "patio_0_0",
+          "asset": "22885",
+          "source_url": "https://3dassets.dev/assets/modular-greybox-architecture-kit-door-hinged-single-3116bbc3",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "8a942b335607f741bea1016810f0bde6062a4ea5bba9e7bd91f4f4c1b0229b04",
+          "center": [
+            1.941827,
+            9.064862,
+            0
+          ],
+          "target_size_m": [
+            0.739896,
+            0.12,
+            2.118
+          ],
+          "angle": 0,
+          "nonuniform_scale": [
+            0.7390932371033957,
+            0.4810035519498991,
+            1.0085714743737482
+          ],
+          "action": "patio_0",
+          "default_open": true
+        },
+        {
+          "id": "patio_0_1",
+          "asset": "22885",
+          "source_url": "https://3dassets.dev/assets/modular-greybox-architecture-kit-door-hinged-single-3116bbc3",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "8a942b335607f741bea1016810f0bde6062a4ea5bba9e7bd91f4f4c1b0229b04",
+          "center": [
+            2.689723,
+            9.064862,
+            0
+          ],
+          "target_size_m": [
+            0.739896,
+            0.12,
+            2.118
+          ],
+          "angle": 0,
+          "nonuniform_scale": [
+            -0.7390932371033957,
+            0.4810035519498991,
+            1.0085714743737482
+          ],
+          "action": "patio_0",
+          "default_open": true
+        },
+        {
+          "id": "patio_1_0",
+          "asset": "22885",
+          "source_url": "https://3dassets.dev/assets/modular-greybox-architecture-kit-door-hinged-single-3116bbc3",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "8a942b335607f741bea1016810f0bde6062a4ea5bba9e7bd91f4f4c1b0229b04",
+          "center": [
+            6.62744175,
+            9.064862,
+            0
+          ],
+          "target_size_m": [
+            0.7759395,
+            0.12,
+            2.118
+          ],
+          "angle": 0,
+          "nonuniform_scale": [
+            0.7750976310878694,
+            0.4810035519498991,
+            1.0085714743737482
+          ],
+          "action": "patio_1",
+          "default_open": true
+        },
+        {
+          "id": "patio_1_1",
+          "asset": "22885",
+          "source_url": "https://3dassets.dev/assets/modular-greybox-architecture-kit-door-hinged-single-3116bbc3",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "8a942b335607f741bea1016810f0bde6062a4ea5bba9e7bd91f4f4c1b0229b04",
+          "center": [
+            7.41138125,
+            9.064862,
+            0
+          ],
+          "target_size_m": [
+            0.7759395,
+            0.12,
+            2.118
+          ],
+          "angle": 0,
+          "nonuniform_scale": [
+            -0.7750976310878694,
+            0.4810035519498991,
+            1.0085714743737482
+          ],
+          "action": "patio_1",
+          "default_open": true
+        },
+        {
+          "id": "patio_2_0",
+          "asset": "22885",
+          "source_url": "https://3dassets.dev/assets/modular-greybox-architecture-kit-door-hinged-single-3116bbc3",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "8a942b335607f741bea1016810f0bde6062a4ea5bba9e7bd91f4f4c1b0229b04",
+          "center": [
+            11.32206675,
+            9.064862,
+            0
+          ],
+          "target_size_m": [
+            0.7579175,
+            0.12,
+            2.118
+          ],
+          "angle": 0,
+          "nonuniform_scale": [
+            0.7570951843668744,
+            0.4810035519498991,
+            1.0085714743737482
+          ],
+          "action": "patio_2",
+          "default_open": true
+        },
+        {
+          "id": "patio_2_1",
+          "asset": "22885",
+          "source_url": "https://3dassets.dev/assets/modular-greybox-architecture-kit-door-hinged-single-3116bbc3",
+          "license": {
+            "slug": "cc0-1.0",
+            "name": "CC0 1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "attributionRequired": false
+          },
+          "source_sha256": "8a942b335607f741bea1016810f0bde6062a4ea5bba9e7bd91f4f4c1b0229b04",
+          "center": [
+            12.08798425,
+            9.064862,
+            0
+          ],
+          "target_size_m": [
+            0.7579175,
+            0.12,
+            2.118
+          ],
+          "angle": 0,
+          "nonuniform_scale": [
+            -0.7570951843668744,
+            0.4810035519498991,
+            1.0085714743737482
+          ],
+          "action": "patio_2",
+          "default_open": true
+        }
+      ],
+      "parts": [
+        {
+          "id": "HU_oven_housing",
+          "min": [
+            9.079999923706055,
+            1.1500355005264282,
+            0.0
+          ],
+          "max": [
+            9.720000267028809,
+            1.9499999284744263,
+            0.8999999761581421
+          ],
+          "conditions": {},
+          "collision": true
+        },
+        {
+          "id": "HU_dishwasher_body",
+          "min": [
+            5.970999717712402,
+            0.2399999499320984,
+            0.0
+          ],
+          "max": [
+            6.568999767303467,
+            0.803368330001831,
+            0.8499999642372131
+          ],
+          "conditions": {},
+          "collision": true
+        },
+        {
+          "id": "HU_dishwasher_door_closed",
+          "min": [
+            5.973913192749023,
+            0.7553010582923889,
+            0.07048781961202621
+          ],
+          "max": [
+            6.543669700622559,
+            0.8799999952316284,
+            0.839634120464325
+          ],
+          "conditions": {
+            "dishwasher": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_dishwasher_door_open",
+          "min": [
+            5.973913192749023,
+            0.7731145620346069,
+            0.025797545909881592
+          ],
+          "max": [
+            6.543669700622559,
+            1.5422608852386475,
+            0.15049640834331512
+          ],
+          "conditions": {
+            "dishwasher": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_fridge_door_freezer_closed",
+          "min": [
+            4.710041522979736,
+            0.7525019645690918,
+            0.10045403242111206
+          ],
+          "max": [
+            5.309999942779541,
+            0.8799850940704346,
+            0.7555892467498779
+          ],
+          "conditions": {
+            "fridge": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_fridge_door_fridge_closed",
+          "min": [
+            4.71000862121582,
+            0.752504825592041,
+            0.7643243670463562
+          ],
+          "max": [
+            5.309987545013428,
+            0.8799822330474854,
+            2.006897449493408
+          ],
+          "conditions": {
+            "fridge": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_fridge_body",
+          "min": [
+            4.710000038146973,
+            0.2200000286102295,
+            0.0
+          ],
+          "max": [
+            5.306744575500488,
+            0.8799999952316284,
+            2.0199999809265137
+          ],
+          "conditions": {},
+          "collision": true
+        },
+        {
+          "id": "HU_fridge_door_freezer_open",
+          "min": [
+            5.284027576446533,
+            0.7718808650970459,
+            0.10045402497053146
+          ],
+          "max": [
+            5.411510467529297,
+            1.3718395233154297,
+            0.7555891275405884
+          ],
+          "conditions": {
+            "fridge": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_fridge_door_fridge_open",
+          "min": [
+            5.284030437469482,
+            0.7718935608863831,
+            0.7643243670463562
+          ],
+          "max": [
+            5.411507606506348,
+            1.3718723058700562,
+            2.006897211074829
+          ],
+          "conditions": {
+            "fridge": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_oven_door_oven_closed",
+          "min": [
+            9.079999923706055,
+            1.2838877439498901,
+            0.16147875785827637
+          ],
+          "max": [
+            9.209303855895996,
+            1.8161121606826782,
+            0.6653882265090942
+          ],
+          "conditions": {
+            "oven": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_oven_body",
+          "min": [
+            9.112096786499023,
+            1.25,
+            0.1599999964237213
+          ],
+          "max": [
+            9.720000267028809,
+            1.8499999046325684,
+            0.7599999904632568
+          ],
+          "conditions": {},
+          "collision": true
+        },
+        {
+          "id": "HU_oven_door_oven_open",
+          "min": [
+            8.683862686157227,
+            1.2838877439498901,
+            0.10989010334014893
+          ],
+          "max": [
+            9.187771797180176,
+            1.8161121606826782,
+            0.2391938716173172
+          ],
+          "conditions": {
+            "oven": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_hob_body",
+          "min": [
+            9.140000343322754,
+            1.2549999952316284,
+            0.8799999952316284
+          ],
+          "max": [
+            9.65999984741211,
+            1.84499990940094,
+            0.9350000023841858
+          ],
+          "conditions": {},
+          "collision": true
+        },
+        {
+          "id": "HU_washer_door_drum_closed",
+          "min": [
+            0.49106675386428833,
+            0.8235002756118774,
+            0.2439517229795456
+          ],
+          "max": [
+            0.8199750185012817,
+            0.9029184579849243,
+            0.5748922228813171
+          ],
+          "conditions": {
+            "washer": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_washer_body",
+          "min": [
+            0.3699999749660492,
+            0.2599999010562897,
+            0.0
+          ],
+          "max": [
+            0.9700000286102295,
+            0.9199999570846558,
+            0.8499999642372131
+          ],
+          "conditions": {},
+          "collision": true
+        },
+        {
+          "id": "HU_washer_door_drum_open",
+          "min": [
+            0.8040959239006042,
+            0.83682781457901,
+            0.2439517378807068
+          ],
+          "max": [
+            0.8835141658782959,
+            1.1657360792160034,
+            0.5748922824859619
+          ],
+          "conditions": {
+            "washer": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_dryer_door_drum_closed",
+          "min": [
+            0.46890586614608765,
+            0.8243318200111389,
+            1.1025866270065308
+          ],
+          "max": [
+            0.8372543454170227,
+            0.9016207456588745,
+            1.476229190826416
+          ],
+          "conditions": {
+            "dryer": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_dryer_body",
+          "min": [
+            0.3700000047683716,
+            0.25999996066093445,
+            0.8700000047683716
+          ],
+          "max": [
+            0.9700000286102295,
+            0.9199999570846558,
+            1.7200000286102295
+          ],
+          "conditions": {},
+          "collision": true
+        },
+        {
+          "id": "HU_dryer_door_drum_open",
+          "min": [
+            0.4054102599620819,
+            0.8389770984649658,
+            1.1025866270065308
+          ],
+          "max": [
+            0.4826991558074951,
+            1.2073255777359009,
+            1.476229190826416
+          ],
+          "conditions": {
+            "dryer": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_walkin_west_door_left_closed",
+          "min": [
+            3.1337637901306152,
+            3.176401138305664,
+            0.0997261330485344
+          ],
+          "max": [
+            3.1700000762939453,
+            3.8752384185791016,
+            1.9800883531570435
+          ],
+          "conditions": {
+            "walkin_west": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_walkin_west_door_right_closed",
+          "min": [
+            3.1337637901306152,
+            3.8847615718841553,
+            0.0997261330485344
+          ],
+          "max": [
+            3.1700000762939453,
+            4.583599090576172,
+            1.9800883531570435
+          ],
+          "conditions": {
+            "walkin_west": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_walkin_west_body",
+          "min": [
+            2.6500000953674316,
+            3.1550002098083496,
+            0.0
+          ],
+          "max": [
+            3.167459487915039,
+            4.605000019073486,
+            2.0199999809265137
+          ],
+          "conditions": {},
+          "collision": true
+        },
+        {
+          "id": "HU_walkin_west_door_left_open",
+          "min": [
+            3.155682325363159,
+            3.1620681285858154,
+            0.0997261330485344
+          ],
+          "max": [
+            3.8545196056365967,
+            3.1983044147491455,
+            1.980088233947754
+          ],
+          "conditions": {
+            "walkin_west": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_walkin_west_door_right_open",
+          "min": [
+            3.155682325363159,
+            4.5616960525512695,
+            0.0997261330485344
+          ],
+          "max": [
+            3.854519844055176,
+            4.5979323387146,
+            1.9800883531570435
+          ],
+          "conditions": {
+            "walkin_west": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_walkin_east_door_left_closed",
+          "min": [
+            3.879999876022339,
+            3.8847618103027344,
+            0.0997261330485344
+          ],
+          "max": [
+            3.916236162185669,
+            4.583599090576172,
+            1.9800883531570435
+          ],
+          "conditions": {
+            "walkin_east": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_walkin_east_door_right_closed",
+          "min": [
+            3.879999876022339,
+            3.176401138305664,
+            0.0997261330485344
+          ],
+          "max": [
+            3.916236162185669,
+            3.8752386569976807,
+            1.9800883531570435
+          ],
+          "conditions": {
+            "walkin_east": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_walkin_east_body",
+          "min": [
+            3.882540464401245,
+            3.1550002098083496,
+            0.0
+          ],
+          "max": [
+            4.399999618530273,
+            4.605000019073486,
+            2.0199999809265137
+          ],
+          "conditions": {},
+          "collision": true
+        },
+        {
+          "id": "HU_walkin_east_door_left_open",
+          "min": [
+            3.1954803466796875,
+            4.5616960525512695,
+            0.0997261330485344
+          ],
+          "max": [
+            3.894317626953125,
+            4.5979323387146,
+            1.980088233947754
+          ],
+          "conditions": {
+            "walkin_east": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_walkin_east_door_right_open",
+          "min": [
+            3.1954798698425293,
+            3.1620681285858154,
+            0.0997261330485344
+          ],
+          "max": [
+            3.894317388534546,
+            3.1983044147491455,
+            1.9800883531570435
+          ],
+          "conditions": {
+            "walkin_east": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_bedroom2_closet_door_left_closed",
+          "min": [
+            10.380854606628418,
+            6.903780460357666,
+            0.0997261330485344
+          ],
+          "max": [
+            10.414999961853027,
+            7.843596458435059,
+            1.9800883531570435
+          ],
+          "conditions": {
+            "bedroom2_closet": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_bedroom2_closet_door_right_closed",
+          "min": [
+            10.380854606628418,
+            7.856403350830078,
+            0.0997261330485344
+          ],
+          "max": [
+            10.414999961853027,
+            8.796218872070312,
+            1.9800883531570435
+          ],
+          "conditions": {
+            "bedroom2_closet": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_bedroom2_closet_body",
+          "min": [
+            9.925000190734863,
+            6.875,
+            0.0
+          ],
+          "max": [
+            10.412606239318848,
+            8.824999809265137,
+            2.0199999809265137
+          ],
+          "conditions": {},
+          "collision": true
+        },
+        {
+          "id": "HU_bedroom2_closet_door_left_open",
+          "min": [
+            10.401511192321777,
+            6.890270233154297,
+            0.0997261330485344
+          ],
+          "max": [
+            11.341326713562012,
+            6.9244160652160645,
+            1.980088233947754
+          ],
+          "conditions": {
+            "bedroom2_closet": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_bedroom2_closet_door_right_open",
+          "min": [
+            10.401512145996094,
+            8.775582313537598,
+            0.0997261330485344
+          ],
+          "max": [
+            11.341327667236328,
+            8.809727668762207,
+            1.9800883531570435
+          ],
+          "conditions": {
+            "bedroom2_closet": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_bedroom3_closet_door_left_closed",
+          "min": [
+            10.380854606628418,
+            0.5565667152404785,
+            0.0997261330485344
+          ],
+          "max": [
+            10.414999961853027,
+            1.424088954925537,
+            1.9800883531570435
+          ],
+          "conditions": {
+            "bedroom3_closet": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_bedroom3_closet_door_right_closed",
+          "min": [
+            10.380854606628418,
+            1.4359108209609985,
+            0.0997261330485344
+          ],
+          "max": [
+            10.414999961853027,
+            2.3034331798553467,
+            1.9800883531570435
+          ],
+          "conditions": {
+            "bedroom3_closet": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_bedroom3_closet_body",
+          "min": [
+            9.925000190734863,
+            0.5299999713897705,
+            0.0
+          ],
+          "max": [
+            10.412606239318848,
+            2.3299999237060547,
+            2.0199999809265137
+          ],
+          "conditions": {},
+          "collision": true
+        },
+        {
+          "id": "HU_bedroom3_closet_door_left_open",
+          "min": [
+            10.401510238647461,
+            0.5430580377578735,
+            0.0997261330485344
+          ],
+          "max": [
+            11.26903247833252,
+            0.5772038698196411,
+            1.980088233947754
+          ],
+          "conditions": {
+            "bedroom3_closet": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_bedroom3_closet_door_right_open",
+          "min": [
+            10.401511192321777,
+            2.282794952392578,
+            0.0997261330485344
+          ],
+          "max": [
+            11.269033432006836,
+            2.3169405460357666,
+            1.9800883531570435
+          ],
+          "conditions": {
+            "bedroom3_closet": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_door_ext_front_body",
+          "min": [
+            3.267909049987793,
+            0.04812999814748764,
+            0.0
+          ],
+          "max": [
+            4.445333957672119,
+            0.14489087462425232,
+            2.118000030517578
+          ],
+          "conditions": {},
+          "collision": false
+        },
+        {
+          "id": "HU_door_ext_front_leaf_closed",
+          "min": [
+            3.368074893951416,
+            0.0743345245718956,
+            0.015128678642213345
+          ],
+          "max": [
+            4.3631134033203125,
+            0.16812999546527863,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "door_ext_front": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_door_ext_front_leaf_open",
+          "min": [
+            3.3508141040802,
+            0.11324042081832886,
+            0.015128678642213345
+          ],
+          "max": [
+            3.4446096420288086,
+            1.1082789897918701,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "door_ext_front": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_door_primary_east_body",
+          "min": [
+            4.468636989593506,
+            5.286327362060547,
+            0.0
+          ],
+          "max": [
+            4.5653977394104,
+            6.517817497253418,
+            2.118000030517578
+          ],
+          "conditions": {},
+          "collision": false
+        },
+        {
+          "id": "HU_door_primary_east_leaf_closed",
+          "min": [
+            4.445397853851318,
+            5.391092777252197,
+            0.015128678642213345
+          ],
+          "max": [
+            4.539193153381348,
+            6.431821346282959,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "door_primary_east": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_door_primary_east_leaf_open",
+          "min": [
+            3.4604220390319824,
+            5.374695777893066,
+            0.015128678642213345
+          ],
+          "max": [
+            4.501151084899902,
+            5.468491077423096,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "door_primary_east": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_door_primary_services_body",
+          "min": [
+            3.0818610191345215,
+            5.081372261047363,
+            0.0
+          ],
+          "max": [
+            3.8131937980651855,
+            5.178133010864258,
+            2.118000030517578
+          ],
+          "conditions": {},
+          "collision": false
+        },
+        {
+          "id": "HU_door_primary_services_leaf_closed",
+          "min": [
+            3.1329305171966553,
+            5.058133125305176,
+            0.015128678642213345
+          ],
+          "max": [
+            3.7509779930114746,
+            5.151928424835205,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "door_primary_services": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_door_primary_services_leaf_open",
+          "min": [
+            3.6815714836120605,
+            4.487846851348877,
+            0.015128678642213345
+          ],
+          "max": [
+            3.775367021560669,
+            5.105894565582275,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "door_primary_services": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_door_laundry_north_body",
+          "min": [
+            2.06046199798584,
+            2.251981258392334,
+            0.0
+          ],
+          "max": [
+            2.7693262100219727,
+            2.3487422466278076,
+            2.118000030517578
+          ],
+          "conditions": {},
+          "collision": false
+        },
+        {
+          "id": "HU_door_laundry_north_leaf_closed",
+          "min": [
+            2.1099627017974854,
+            2.2287421226501465,
+            0.015128678642213345
+          ],
+          "max": [
+            2.70902156829834,
+            2.322537660598755,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "door_laundry_north": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_door_laundry_north_leaf_open",
+          "min": [
+            2.6399741172790527,
+            1.6770853996276855,
+            0.015128678642213345
+          ],
+          "max": [
+            2.733769655227661,
+            2.27614426612854,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "door_laundry_north": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_door_laundry_east_body",
+          "min": [
+            2.9368021488189697,
+            1.2314679622650146,
+            0.0
+          ],
+          "max": [
+            3.0335631370544434,
+            2.1025259494781494,
+            2.118000030517578
+          ],
+          "conditions": {},
+          "collision": false
+        },
+        {
+          "id": "HU_door_laundry_east_leaf_closed",
+          "min": [
+            2.9135630130767822,
+            1.2922946214675903,
+            0.015128678642213345
+          ],
+          "max": [
+            3.0073585510253906,
+            2.028423309326172,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "door_laundry_east": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_door_laundry_east_leaf_open",
+          "min": [
+            2.227428436279297,
+            1.9567842483520508,
+            0.015128676779568195
+          ],
+          "max": [
+            2.963557004928589,
+            2.050579786300659,
+            2.0373141765594482
+          ],
+          "conditions": {
+            "door_laundry_east": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_door_bedroom_2_front_body",
+          "min": [
+            9.971941947937012,
+            5.328456878662109,
+            0.0
+          ],
+          "max": [
+            10.824978828430176,
+            5.425217628479004,
+            2.118000030517578
+          ],
+          "conditions": {},
+          "collision": false
+        },
+        {
+          "id": "HU_door_bedroom_2_front_leaf_closed",
+          "min": [
+            10.044511795043945,
+            5.354661464691162,
+            0.015128678642213345
+          ],
+          "max": [
+            10.765410423278809,
+            5.448456764221191,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "door_bedroom_2_front": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_door_bedroom_2_front_leaf_open",
+          "min": [
+            10.02206802368164,
+            5.398750305175781,
+            0.015128678642213345
+          ],
+          "max": [
+            10.115863800048828,
+            6.119649410247803,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "door_bedroom_2_front": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_door_bedroom_3_rear_body",
+          "min": [
+            9.971941947937012,
+            3.7245349884033203,
+            0.0
+          ],
+          "max": [
+            10.824978828430176,
+            3.821295738220215,
+            2.118000030517578
+          ],
+          "conditions": {},
+          "collision": false
+        },
+        {
+          "id": "HU_door_bedroom_3_rear_leaf_closed",
+          "min": [
+            10.044511795043945,
+            3.750739336013794,
+            0.015128678642213345
+          ],
+          "max": [
+            10.765410423278809,
+            3.8445348739624023,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "door_bedroom_3_rear": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_door_bedroom_3_rear_leaf_open",
+          "min": [
+            10.000422477722168,
+            3.1011922359466553,
+            0.015128676779568195
+          ],
+          "max": [
+            10.094218254089355,
+            3.8220913410186768,
+            2.0373141765594482
+          ],
+          "conditions": {
+            "door_bedroom_3_rear": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_door_family_bath_west_body",
+          "min": [
+            10.794217109680176,
+            3.9347076416015625,
+            0.0
+          ],
+          "max": [
+            10.89097785949707,
+            4.679614543914795,
+            2.118000030517578
+          ],
+          "conditions": {},
+          "collision": false
+        },
+        {
+          "id": "HU_door_family_bath_west_leaf_closed",
+          "min": [
+            10.770977973937988,
+            3.9980783462524414,
+            0.015128678642213345
+          ],
+          "max": [
+            10.864773750305176,
+            4.627597332000732,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "door_family_bath_west": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_door_family_bath_west_leaf_open",
+          "min": [
+            10.795149803161621,
+            3.952260971069336,
+            0.015128676779568195
+          ],
+          "max": [
+            11.424668312072754,
+            4.046056270599365,
+            2.0373141765594482
+          ],
+          "conditions": {
+            "door_family_bath_west": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_patio_0_0_body",
+          "min": [
+            1.5718791484832764,
+            9.004862785339355,
+            0.0
+          ],
+          "max": [
+            2.3117752075195312,
+            9.10162353515625,
+            2.118000030517578
+          ],
+          "conditions": {},
+          "collision": false
+        },
+        {
+          "id": "HU_patio_0_0_leaf_closed",
+          "min": [
+            1.6348235607147217,
+            9.03106689453125,
+            0.015128678642213345
+          ],
+          "max": [
+            2.2601075172424316,
+            9.124862670898438,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "patio_0": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_patio_0_0_leaf_open",
+          "min": [
+            1.610571026802063,
+            9.076964378356934,
+            0.015128678642213345
+          ],
+          "max": [
+            1.7043664455413818,
+            9.702247619628906,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "patio_0": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_patio_0_1_body",
+          "min": [
+            2.319775104522705,
+            9.004862785339355,
+            0.0
+          ],
+          "max": [
+            3.05967116355896,
+            9.10162353515625,
+            2.118000030517578
+          ],
+          "conditions": {},
+          "collision": false
+        },
+        {
+          "id": "HU_patio_0_1_leaf_closed",
+          "min": [
+            2.3714427947998047,
+            9.03106689453125,
+            0.015128678642213345
+          ],
+          "max": [
+            2.9967267513275146,
+            9.124862670898438,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "patio_0": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_patio_0_1_leaf_open",
+          "min": [
+            2.9271838665008545,
+            9.076964378356934,
+            0.015128676779568195
+          ],
+          "max": [
+            3.020979404449463,
+            9.702247619628906,
+            2.0373141765594482
+          ],
+          "conditions": {
+            "patio_0": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_patio_1_0_body",
+          "min": [
+            6.239471912384033,
+            9.004862785339355,
+            0.0
+          ],
+          "max": [
+            7.015411376953125,
+            9.10162353515625,
+            2.118000030517578
+          ],
+          "conditions": {},
+          "collision": false
+        },
+        {
+          "id": "HU_patio_1_0_leaf_closed",
+          "min": [
+            6.305482864379883,
+            9.03106689453125,
+            0.015128678642213345
+          ],
+          "max": [
+            6.961226940155029,
+            9.124862670898438,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "patio_1": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_patio_1_0_leaf_open",
+          "min": [
+            6.281805515289307,
+            9.076387405395508,
+            0.015128678642213345
+          ],
+          "max": [
+            6.375600814819336,
+            9.732131958007812,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "patio_1": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_patio_1_1_body",
+          "min": [
+            7.023411750793457,
+            9.004862785339355,
+            0.0
+          ],
+          "max": [
+            7.799351215362549,
+            9.10162353515625,
+            2.118000030517578
+          ],
+          "conditions": {},
+          "collision": false
+        },
+        {
+          "id": "HU_patio_1_1_leaf_closed",
+          "min": [
+            7.077596187591553,
+            9.03106689453125,
+            0.015128678642213345
+          ],
+          "max": [
+            7.733340263366699,
+            9.124862670898438,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "patio_1": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_patio_1_1_leaf_open",
+          "min": [
+            7.663221836090088,
+            9.076387405395508,
+            0.015128676779568195
+          ],
+          "max": [
+            7.757017135620117,
+            9.732131958007812,
+            2.0373141765594482
+          ],
+          "conditions": {
+            "patio_1": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_patio_2_0_body",
+          "min": [
+            10.943106651306152,
+            9.004862785339355,
+            0.0
+          ],
+          "max": [
+            11.701025009155273,
+            9.10162353515625,
+            2.118000030517578
+          ],
+          "conditions": {},
+          "collision": false
+        },
+        {
+          "id": "HU_patio_2_0_leaf_closed",
+          "min": [
+            11.007584571838379,
+            9.03106689453125,
+            0.015128678642213345
+          ],
+          "max": [
+            11.648098945617676,
+            9.124862670898438,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "patio_2": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_patio_2_0_leaf_open",
+          "min": [
+            10.983620643615723,
+            9.076676368713379,
+            0.015128678642213345
+          ],
+          "max": [
+            11.07741641998291,
+            9.717190742492676,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "patio_2": false
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_patio_2_1_body",
+          "min": [
+            11.709025382995605,
+            9.004862785339355,
+            0.0
+          ],
+          "max": [
+            12.466943740844727,
+            9.10162353515625,
+            2.118000030517578
+          ],
+          "conditions": {},
+          "collision": false
+        },
+        {
+          "id": "HU_patio_2_1_leaf_closed",
+          "min": [
+            11.761951446533203,
+            9.03106689453125,
+            0.015128678642213345
+          ],
+          "max": [
+            12.4024658203125,
+            9.124862670898438,
+            2.0373144149780273
+          ],
+          "conditions": {
+            "patio_2": true
+          },
+          "collision": true
+        },
+        {
+          "id": "HU_patio_2_1_leaf_open",
+          "min": [
+            12.332634925842285,
+            9.076677322387695,
+            0.015128676779568195
+          ],
+          "max": [
+            12.426430702209473,
+            9.717191696166992,
+            2.0373141765594482
+          ],
+          "conditions": {
+            "patio_2": false
+          },
+          "collision": true
+        }
+      ],
+      "removed": [
+        "HF_dishwasher_bay_study",
+        "HF_cooking_base_study",
+        "HF_fridge",
+        "HF_walkin_west",
+        "HF_walkin_east",
+        "HF_bedroom2_closet",
+        "HF_bedroom3_closet"
+      ],
+      "preserved_architecture": true,
+      "vendor_disclosure": "AI-assisted vendor assets; study derivatives, not manufacturer models"
+    }
+  },
+  "additional_assets": [
+    {
+      "id": "38771",
+      "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-single-bed-timber-bf8bfbfb",
+      "license": {
+        "slug": "cc0-1.0",
+        "name": "CC0 1.0 Universal",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attributionRequired": false
+      },
+      "sha256": "d1dca54ae11c7ac0793fb8f574a29329d83cde653c734c0e2955125105b4d0d0"
+    },
+    {
+      "id": "38795",
+      "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-desk-writing-2f6be817",
+      "license": {
+        "slug": "cc0-1.0",
+        "name": "CC0 1.0 Universal",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attributionRequired": false
+      },
+      "sha256": "29678a25099beed66d4b225b439e0c5fe05ecced4362791d130a15eeb7386146"
+    },
+    {
+      "id": "38786",
+      "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-desk-task-chair-e1320da0",
+      "license": {
+        "slug": "cc0-1.0",
+        "name": "CC0 1.0 Universal",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attributionRequired": false
+      },
+      "sha256": "9a1efb2112523ab1757ec7eed96dbb44c6001b1246004ce64bcd66da403e2dc6"
+    },
+    {
+      "id": "38801",
+      "source_url": "https://3dassets.dev/assets/bedroom-and-living-room-furniture-pendant-lamp-dome-af25ab66",
+      "license": {
+        "slug": "cc0-1.0",
+        "name": "CC0 1.0 Universal",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attributionRequired": false
+      },
+      "sha256": "0101fbc22e6a09105c1d25e215e787964134027a7f7cf8861912d3db371e8815"
+    }
+  ],
+  "finishes": [
+    {
+      "source": "https://polyhaven.com/a/wood_floor",
+      "license": "CC0",
+      "sha256": "7c3ff1164c8dd0758ef2c048e9a266d28174120de01052ec40e6ca486177345c"
+    }
+  ],
+  "architecture_changes": "Igor R04: full horizontal mirror about source x=5.5 m; compact entrance-side kitchen; new 1.25 m dining window; ground rear terrace removed; upstairs room arrangement and balconies retained. Later mirror message treated as superseding the earlier all-bedrooms-east idea. Not the unmodified publisher design.",
+  "baseline_fit": "revisions/r03-furnished/output/furniture-fit.json",
+  "current_furniture_bounds": [
+    {
+      "id": "LK_sofa_rear",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        4.49465,
+        9.861382,
+        0.0
+      ],
+      "max": [
+        7.388619,
+        10.68823,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_sofa_return",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        6.58609,
+        8.475195,
+        0.0
+      ],
+      "max": [
+        7.388619,
+        9.849222,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_coffee",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        5.187743,
+        7.988813,
+        0.0
+      ],
+      "max": [
+        6.06323,
+        9.375,
+        0.4
+      ]
+    },
+    {
+      "id": "LK_media_cabinet",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.607004,
+        7.089008,
+        0.0
+      ],
+      "max": [
+        3.9961089999999997,
+        9.387159,
+        0.48
+      ]
+    },
+    {
+      "id": "LK_dining",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.996595,
+        6.006809,
+        0.0
+      ],
+      "max": [
+        8.896401000000001,
+        7.891537,
+        0.76
+      ]
+    },
+    {
+      "id": "LK_dining_left_0",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        8.969358,
+        7.368677,
+        0.0
+      ],
+      "max": [
+        9.382782,
+        7.782101,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_dining_right_0",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.5102139999999995,
+        7.368677,
+        0.0
+      ],
+      "max": [
+        7.923638,
+        7.782101,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_dining_left_1",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        8.969358,
+        6.724222,
+        0.0
+      ],
+      "max": [
+        9.382782,
+        7.137646,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_dining_right_1",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.5102139999999995,
+        6.724222,
+        0.0
+      ],
+      "max": [
+        7.923638,
+        7.137646,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_dining_left_2",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        8.969358,
+        6.079767,
+        0.0
+      ],
+      "max": [
+        9.382782,
+        6.493191,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_dining_right_2",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.5102139999999995,
+        6.079767,
+        0.0
+      ],
+      "max": [
+        7.923638,
+        6.493191,
+        0.83
+      ]
+    },
+    {
+      "id": "LK_fridge",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        9.893482,
+        3.526264747081712,
+        0.0
+      ],
+      "max": [
+        10.47714,
+        4.2193577470817125,
+        2.15
+      ]
+    },
+    {
+      "id": "LK_dishwasher",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        9.893482,
+        5.119163412451362,
+        0.0
+      ],
+      "max": [
+        10.47714,
+        5.751458412451362,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_sink",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        9.893482,
+        4.219358330739299,
+        0.0
+      ],
+      "max": [
+        10.47714,
+        5.119163330739299,
+        0.94
+      ]
+    },
+    {
+      "id": "LK_cooking_prep1",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.61965,
+        4.41391,
+        0.0
+      ],
+      "max": [
+        8.482977,
+        4.985409,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_oven",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.619649,
+        3.696498,
+        0.0
+      ],
+      "max": [
+        8.482976,
+        4.401751,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_cooking_prep2",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.61965,
+        3.003405,
+        0.0
+      ],
+      "max": [
+        8.482977,
+        3.672179,
+        0.9
+      ]
+    },
+    {
+      "id": "LK_entrance_storage",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.303502,
+        0.5107,
+        0.0
+      ],
+      "max": [
+        7.9844360000000005,
+        2.662938,
+        2.15
+      ]
+    },
+    {
+      "id": "LK_entry_bench",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        5.163424,
+        1.957685,
+        0.0
+      ],
+      "max": [
+        5.807879,
+        2.541342,
+        0.45
+      ]
+    },
+    {
+      "id": "LK_downstairs_wc",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.9717900000000004,
+        1.921206,
+        0.0
+      ],
+      "max": [
+        4.409533,
+        2.529183,
+        0.82
+      ]
+    },
+    {
+      "id": "LK_downstairs_basin",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.825875,
+        0.5107,
+        0.0
+      ],
+      "max": [
+        4.531128,
+        0.924124,
+        0.86
+      ]
+    },
+    {
+      "id": "LK_primary_bed",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.607004,
+        7.453794,
+        3.3
+      ],
+      "max": [
+        5.589008,
+        9.423638,
+        4.4
+      ]
+    },
+    {
+      "id": "LK_primary_bedside0",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.607004,
+        9.581712,
+        3.3
+      ],
+      "max": [
+        3.9961089999999997,
+        9.970818,
+        3.76
+      ]
+    },
+    {
+      "id": "LK_primary_bedside1",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.607004,
+        6.955253,
+        3.3
+      ],
+      "max": [
+        3.9961089999999997,
+        7.344358,
+        3.76
+      ]
+    },
+    {
+      "id": "LK_primary_wardrobe",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.509727,
+        6.201362,
+        3.3
+      ],
+      "max": [
+        6.099708,
+        6.821498,
+        5.4
+      ]
+    },
+    {
+      "id": "LK_primary_desk",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.449415999999999,
+        6.322957,
+        3.3
+      ],
+      "max": [
+        7.88716,
+        8.973736,
+        4.04
+      ]
+    },
+    {
+      "id": "LK_primary_desk_chair",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        6.975194,
+        8.025291,
+        3.3
+      ],
+      "max": [
+        7.3764590000000005,
+        8.414397,
+        4.23
+      ]
+    },
+    {
+      "id": "LK_bedroom2_bed",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.6191639999999996,
+        -0.401265,
+        3.3
+      ],
+      "max": [
+        4.49465,
+        1.592899,
+        4.24
+      ]
+    },
+    {
+      "id": "LK_bedroom2_desk",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        6.148346,
+        0.01216,
+        3.3
+      ],
+      "max": [
+        6.82928,
+        1.30107,
+        4.04
+      ]
+    },
+    {
+      "id": "LK_bedroom2_desk_chair",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        5.649806,
+        0.425584,
+        3.3
+      ],
+      "max": [
+        6.05107,
+        0.826848,
+        4.23
+      ]
+    },
+    {
+      "id": "LK_bedroom2_wardrobe",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        3.509727,
+        2.09144,
+        3.3
+      ],
+      "max": [
+        5.674125,
+        2.711576,
+        5.4
+      ]
+    },
+    {
+      "id": "LK_bedroom2_bedside",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        4.591926,
+        -0.389105,
+        3.3
+      ],
+      "max": [
+        4.981031,
+        0.0,
+        3.76
+      ]
+    },
+    {
+      "id": "LK_bedroom3_bed",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        9.516537,
+        -0.401265,
+        3.3
+      ],
+      "max": [
+        10.392023,
+        1.592899,
+        4.24
+      ]
+    },
+    {
+      "id": "LK_bedroom3_desk",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.1575880000000005,
+        0.01216,
+        3.3
+      ],
+      "max": [
+        7.838521,
+        1.30107,
+        4.04
+      ]
+    },
+    {
+      "id": "LK_bedroom3_desk_chair",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        7.935798,
+        0.425584,
+        3.3
+      ],
+      "max": [
+        8.337062,
+        0.826848,
+        4.23
+      ]
+    },
+    {
+      "id": "LK_bedroom3_wardrobe",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        8.312743000000001,
+        2.09144,
+        3.3
+      ],
+      "max": [
+        10.47714,
+        2.711576,
+        5.4
+      ]
+    },
+    {
+      "id": "LK_bedroom3_bedside",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        8.993677,
+        -0.389105,
+        3.3
+      ],
+      "max": [
+        9.382782,
+        0.0,
+        3.76
+      ]
+    },
+    {
+      "id": "LK_bath",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        8.555934,
+        7.696984,
+        3.3
+      ],
+      "max": [
+        10.112354,
+        8.487354,
+        3.85
+      ]
+    },
+    {
+      "id": "LK_upstairs_wc",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        9.723249,
+        6.882296,
+        3.3
+      ],
+      "max": [
+        10.306907,
+        7.271401,
+        4.1
+      ]
+    },
+    {
+      "id": "LK_bath_vanity",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        8.531615,
+        6.578308,
+        3.3
+      ],
+      "max": [
+        8.981518,
+        7.186284,
+        4.16
+      ]
+    },
+    {
+      "id": "LK_shower",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        9.613813,
+        5.058366,
+        3.3
+      ],
+      "max": [
+        10.47714,
+        5.885214,
+        3.345
+      ]
+    },
+    {
+      "id": "LK_shower_rail",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        10.355545,
+        5.265078,
+        4.35
+      ],
+      "max": [
+        10.452821,
+        5.72714,
+        5.4
+      ]
+    },
+    {
+      "id": "LK_laundry_sink",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        9.309825,
+        4.304475,
+        3.3
+      ],
+      "max": [
+        10.47714,
+        4.888132,
+        4.21
+      ]
+    },
+    {
+      "id": "LK_laundry_prep",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        8.349222000000001,
+        4.304475,
+        3.3
+      ],
+      "max": [
+        9.297665,
+        4.888132,
+        4.21
+      ]
+    },
+    {
+      "id": "LK_washer",
+      "floor": "upper",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        9.771887,
+        3.076362,
+        3.3
+      ],
+      "max": [
+        10.392023,
+        3.708658,
+        4.16
+      ]
+    },
+    {
+      "id": "LK_store_shelves",
+      "floor": "ground",
+      "kind": "furniture",
+      "walkable": false,
+      "min": [
+        1.9046690000000002,
+        8.013132,
+        0.0
+      ],
+      "max": [
+        2.804475,
+        8.341439,
+        1.9
+      ]
+    },
+    {
+      "id": "LK_television",
+      "kind": "furniture",
+      "floor": "ground",
+      "walkable": false,
+      "min": [
+        3.594844357976653,
+        7.551070038910506,
+        0.77
+      ],
+      "max": [
+        3.655642023346303,
+        9.083171206225682,
+        1.62
+      ]
+    },
+    {
+      "id": "LK_compact_prep",
+      "floor": "ground",
+      "kind": "furniture",
+      "min": [
+        9.893482446670532,
+        5.751459121704102,
+        0.0
+      ],
+      "max": [
+        10.477140069007874,
+        6.3229570388793945,
+        0.8999999761581421
+      ],
+      "walkable": false
+    }
+  ],
+  "parts_are_baseline_provenance": true
+}
