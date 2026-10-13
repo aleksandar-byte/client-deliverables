@@ -61,7 +61,7 @@ const activities=[
 ['Weekly ranking snapshots + review',Array.from({length:16},(_,i)=>[i+1,i+1,'gray',i===0||i===8?'Baseline':i===7||i===15?'Review':'Track']),'baseline'],
 ['One-month reassessment + rankings',[[5,8,'gray','Root canals'],[13,16,'gray','Implants']],'tracking']];
 const ticketUrls={};
-const intakeLinks=[["Review", "https://ascendpoint-dashboard.vercel.app/intake/preview/brio-dental-care-springfield?draft=5e969c10-a803-4c83-89ad-e15235c65e52"], ["Client link", "https://ascendpoint-dashboard.vercel.app/intake/ecc662d7-8bdb-88cb-a6a4-f1c6b6b7031a#access=0KDjwygsfz0o1nHpBsXqoEr76TWelrTpo3gw_oaMMBk"]];
+const intakeLinks=[["Review", "https://ascendpoint-dashboard.vercel.app/intake/preview/brio-dental-care-springfield?draft=5e969c10-a803-4c83-89ad-e15235c65e52"], ["Client link", "https://ascendpoint-dashboard.vercel.app/intake/ecc662d7-8bdb-88cb-a6a4-f1c6b6b7031a#access=rqTJWW94w13eqBhbaCqNSXgF5qxd84BbYFNWbs0ckBo"]];
 const input=document.getElementById('start-date');const fmt=new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',timeZone:'UTC'});const longfmt=new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
 function day(n){const d=new Date(input.value+'T00:00:00Z');d.setUTCDate(d.getUTCDate()+n);return d}function range(a,b){return longfmt.format(day((a-1)*7))+' – '+longfmt.format(day(b*7-1))}
 const tooltip=document.createElement('div');tooltip.id='gantt-tooltip';tooltip.className='gantt-tooltip';tooltip.setAttribute('role','tooltip');tooltip.hidden=true;document.body.append(tooltip);
