@@ -42,7 +42,7 @@ function resize(){const w=view.clientWidth,h=view.clientHeight;renderer.setSize(
 function fit(){
     $('#plan-orientation-control').hidden=mode!=='plan';
     updateContext();dimensions.visible=$('#guides').checked&&mode!=='walk';document.body.dataset.mode=mode;$('#walk-pad').hidden=mode!=='walk';$('#walk-menu').hidden=mode!=='walk';$('#frame').disabled=mode==='walk';outdoorWalk.setActive(mode==='walk');
-    if(mode==='walk'){orbit.enabled=false;active=camera;camera.fov=2*Math.atan(1/camera.aspect)*180/Math.PI;camera.updateProjectionMatrix();outdoorWalk.sync();document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));$('#caption').textContent='Drag to look · hold arrows / WASD. Enter either house from the shared parking; use the stairs in LK1891 to reach upstairs.';return;}
+    if(mode==='walk'){orbit.enabled=false;active=camera;camera.fov=Math.min(75,2*Math.atan(Math.tan(75*Math.PI/360)/camera.aspect)*180/Math.PI);camera.updateProjectionMatrix();outdoorWalk.sync();document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));$('#caption').textContent='Drag to look · hold arrows / WASD. Enter either house from the shared parking; use the stairs in LK1891 to reach upstairs.';return;}
 
     const b=data.frames[$('#frame').value],cx=(b[0]+b[1])/2,cy=(b[2]+b[3])/2,span=Math.max(b[1]-b[0],b[3]-b[2]);
     orbit.dispose();active=mode==='plan'?plan:camera;orbit=new OrbitControls(active,renderer.domElement);orbit.enableDamping=true;orbit.minDistance=2;orbit.maxDistance=200;orbit.enableRotate=mode==='3d';orbit.maxPolarAngle=Math.PI*.49;

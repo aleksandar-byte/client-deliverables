@@ -195,7 +195,7 @@ function update(){interiorLighting.refresh();
  drawReview();$('#areas').replaceChildren();
  for(const r of floorData().rooms||[]){const p=document.createElement('p');p.textContent=r.label+(r.reference_area_m2!=null?' · reference '+r.reference_area_m2.toFixed(2)+' m²':'')+(r.modeled_area_m2!=null?' · modeled '+r.modeled_area_m2+' m²':'')+(r.area_basis?' · '+r.area_basis:'');$('#areas').append(p);}
 }
-function resize(){const w=view.clientWidth,h=view.clientHeight;renderer.setSize(w,h,false);eye.aspect=w/h;eye.fov=THREE.MathUtils.radToDeg(2*Math.atan(Math.tan(Math.PI/4)/(w/h)));eye.updateProjectionMatrix();}
+function resize(){const w=view.clientWidth,h=view.clientHeight;renderer.setSize(w,h,false);eye.aspect=w/h;eye.fov=Math.min(75,THREE.MathUtils.radToDeg(2*Math.atan(Math.tan(75*Math.PI/360)/(w/h))));eye.updateProjectionMatrix();}
 function syncEye(){const s=walker.state;eye.position.set(s.x,s.z+world.avatar.eye_height,-s.y);const cp=Math.cos(s.pitch);eye.lookAt(s.x+Math.sin(s.yaw)*cp,s.z+world.avatar.eye_height+Math.sin(s.pitch),-s.y-Math.cos(s.yaw)*cp);}
 function fit(){
  resize();if(mode==='walk'){syncEye();return;}
