@@ -1,0 +1,237 @@
+[
+  {
+    "id": "modern_coffee_table_01",
+    "source": "https://polyhaven.com/a/modern_coffee_table_01",
+    "license": "CC0-1.0",
+    "authors": {
+      "Amin": "All"
+    },
+    "files": [
+      {
+        "path": "originals\\modern_coffee_table_01\\modern_coffee_table_01.gltf",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/modern_coffee_table_01/modern_coffee_table_01_1k.gltf",
+        "bytes": 2771,
+        "sha256": "a35d811da4c174d0c888f23353dda21501763dbf5505c66f57fef4b3f613e50c"
+      },
+      {
+        "path": "originals\\modern_coffee_table_01\\modern_coffee_table_01.bin",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/modern_coffee_table_01/modern_coffee_table_01.bin",
+        "bytes": 154864,
+        "sha256": "b8fe0d49041b879a5d5962685a39e3daf009679f7b6a88ced1347e6dc6c0851e"
+      },
+      {
+        "path": "originals\\modern_coffee_table_01\\textures\\modern_coffee_table_01_rough_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_coffee_table_01/modern_coffee_table_01_rough_1k.jpg",
+        "bytes": 403959,
+        "sha256": "8013b48b0ebb845907f840afcae9cbc915a5205ac82ed99cbba31771febacb0f"
+      },
+      {
+        "path": "originals\\modern_coffee_table_01\\textures\\modern_coffee_table_01_diff_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_coffee_table_01/modern_coffee_table_01_diff_1k.jpg",
+        "bytes": 410569,
+        "sha256": "069b89dd3ef03ddcbb7b2e6a124b1903aa7848394509121aa19f87bd0ef0218c"
+      },
+      {
+        "path": "originals\\modern_coffee_table_01\\textures\\modern_coffee_table_01_nor_gl_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_coffee_table_01/modern_coffee_table_01_nor_gl_1k.jpg",
+        "bytes": 359134,
+        "sha256": "43e0d317d0f8418b130c0058c645225ee83b808b1dc0e5e7236bead3bdd77139"
+      }
+    ]
+  },
+  {
+    "id": "modern_ceiling_lamp_01",
+    "source": "https://polyhaven.com/a/modern_ceiling_lamp_01",
+    "license": "CC0-1.0",
+    "authors": {
+      "James Ray Cock": "All"
+    },
+    "files": [
+      {
+        "path": "originals\\modern_ceiling_lamp_01\\modern_ceiling_lamp_01.gltf",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/modern_ceiling_lamp_01/modern_ceiling_lamp_01_1k.gltf",
+        "bytes": 6177,
+        "sha256": "f88b5d0a81fa813457a77474e7e4e812f97ad5fac2109ba03ddb183274be3f8c"
+      },
+      {
+        "path": "originals\\modern_ceiling_lamp_01\\textures\\modern_ceiling_lamp_01_arm_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_ceiling_lamp_01/modern_ceiling_lamp_01_arm_1k.jpg",
+        "bytes": 124022,
+        "sha256": "f4c6a8e7c86b1deaaf0f74099539ff635063b63f594b0fadfc3ec8fac805df4e"
+      },
+      {
+        "path": "originals\\modern_ceiling_lamp_01\\textures\\modern_ceiling_lamp_01_diff_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_ceiling_lamp_01/modern_ceiling_lamp_01_diff_1k.jpg",
+        "bytes": 79705,
+        "sha256": "c08bfbf7576a86a4a09d386ae9f0a92965fc652bf82f3a8dba1c796b1aa9e535"
+      },
+      {
+        "path": "originals\\modern_ceiling_lamp_01\\modern_ceiling_lamp_01.bin",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/modern_ceiling_lamp_01/modern_ceiling_lamp_01.bin",
+        "bytes": 146828,
+        "sha256": "ae5140a64e12e639554158901a5e92340bb37c706096ff255804e3220fb96367"
+      },
+      {
+        "path": "originals\\modern_ceiling_lamp_01\\textures\\modern_ceiling_lamp_01_nor_gl_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/modern_ceiling_lamp_01/modern_ceiling_lamp_01_nor_gl_1k.jpg",
+        "bytes": 79333,
+        "sha256": "dd75bd21a901581325f5c363bd89b45430b8531cb27dead314cd087196a33c27"
+      }
+    ]
+  },
+  {
+    "id": "ceramic_vase_04",
+    "source": "https://polyhaven.com/a/ceramic_vase_04",
+    "license": "CC0-1.0",
+    "authors": {
+      "James Ray Cock": "All"
+    },
+    "files": [
+      {
+        "path": "originals\\ceramic_vase_04\\ceramic_vase_04.gltf",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/ceramic_vase_04/ceramic_vase_04_1k.gltf",
+        "bytes": 2716,
+        "sha256": "ca6461229bd6379b621396581e32400f93884fe77f7fa8abe6ddbeb64d57421b"
+      },
+      {
+        "path": "originals\\ceramic_vase_04\\ceramic_vase_04.bin",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/ceramic_vase_04/ceramic_vase_04.bin",
+        "bytes": 239728,
+        "sha256": "00d6b5743358cba4bc78d25010b1bfc262d6cb313de8cbeffa570bb95387dfc7"
+      },
+      {
+        "path": "originals\\ceramic_vase_04\\textures\\ceramic_vase_04_rough_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ceramic_vase_04/ceramic_vase_04_rough_1k.jpg",
+        "bytes": 134635,
+        "sha256": "56186ba6e1980655ff8284a59b2bf04588c047fe61d69d09b98dde40a85f503e"
+      },
+      {
+        "path": "originals\\ceramic_vase_04\\textures\\ceramic_vase_04_diff_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ceramic_vase_04/ceramic_vase_04_diff_1k.jpg",
+        "bytes": 95512,
+        "sha256": "b8682d194184e15b97b3e8547ebb92e96101d16260412528f37e3096b3844b67"
+      },
+      {
+        "path": "originals\\ceramic_vase_04\\textures\\ceramic_vase_04_nor_gl_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ceramic_vase_04/ceramic_vase_04_nor_gl_1k.jpg",
+        "bytes": 123462,
+        "sha256": "a1c1cc5eda4157a17ba104387d9898362f2731632b840af62f76c2d00c751bd3"
+      }
+    ]
+  },
+  {
+    "id": "potted_plant_01",
+    "source": "https://polyhaven.com/a/potted_plant_01",
+    "license": "CC0-1.0",
+    "authors": {
+      "Rico Cilliers": "All"
+    },
+    "files": [
+      {
+        "path": "originals\\potted_plant_01\\potted_plant_01.gltf",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/potted_plant_01/potted_plant_01_1k.gltf",
+        "bytes": 7969,
+        "sha256": "23b30294407684b02f14800d6685bd8938da5d2111e17753ac8dd3c37d8c88a0"
+      },
+      {
+        "path": "originals\\potted_plant_01\\textures\\potted_plant_01_pot_rough_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_01/potted_plant_01_pot_rough_1k.jpg",
+        "bytes": 173192,
+        "sha256": "1256199fe3a88a0534bcd4c8bf141cfa9a28b68fce3f286193d0713796fd8561"
+      },
+      {
+        "path": "originals\\potted_plant_01\\textures\\potted_plant_01_leaves_nor_gl_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_01/potted_plant_01_leaves_nor_gl_1k.jpg",
+        "bytes": 177105,
+        "sha256": "2faa756e0ee2b8341c752b283b93599157bf56f4083a9f61b825cdfa0c7138ff"
+      },
+      {
+        "path": "originals\\potted_plant_01\\textures\\potted_plant_01_pot_diff_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_01/potted_plant_01_pot_diff_1k.jpg",
+        "bytes": 204900,
+        "sha256": "51c9d80e8abe585bd3dbcebe7cba1d3ed1a22b137c7cb66baf0e462c08dca312"
+      },
+      {
+        "path": "originals\\potted_plant_01\\potted_plant_01.bin",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/potted_plant_01/potted_plant_01.bin",
+        "bytes": 5345188,
+        "sha256": "a8dd1f7ce75f50dc25bbedc20809da02ee4193815c155b883a329925fa5548f7"
+      },
+      {
+        "path": "originals\\potted_plant_01\\textures\\potted_plant_01_leaves_rough_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_01/potted_plant_01_leaves_rough_1k.jpg",
+        "bytes": 91706,
+        "sha256": "765e3bd1bfdad39dd0d1cd755eafd1f9f1d46cbbb6013988cbfd1197de27a1f9"
+      },
+      {
+        "path": "originals\\potted_plant_01\\textures\\potted_plant_01_pot_nor_gl_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_01/potted_plant_01_pot_nor_gl_1k.jpg",
+        "bytes": 200349,
+        "sha256": "ec02e51751e0822d229d48bea1373b06e2675c3725ff04fd1f87ac516719e620"
+      },
+      {
+        "path": "originals\\potted_plant_01\\textures\\potted_plant_01_leaves_diff_1k.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_01/potted_plant_01_leaves_diff_1k.jpg",
+        "bytes": 124730,
+        "sha256": "b73891a0a606e139d0fcdd9e6fe503cd1210be3fc9c55fbd033941288231ccaa"
+      }
+    ]
+  },
+  {
+    "id": "cotton_jersey",
+    "source": "https://polyhaven.com/a/cotton_jersey",
+    "license": "CC0-1.0",
+    "authors": {
+      "colormass": "Photography",
+      "Rico Cilliers": "Processing"
+    },
+    "files": [
+      {
+        "path": "originals\\cotton_jersey\\Diffuse.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cotton_jersey/cotton_jersey_diff_1k.jpg",
+        "bytes": 581360,
+        "sha256": "0f1b790e4087223275aaa6fdffdd46a556a26d2af72cd811acf72ba9c21ec1f6"
+      },
+      {
+        "path": "originals\\cotton_jersey\\nor_gl.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cotton_jersey/cotton_jersey_nor_gl_1k.jpg",
+        "bytes": 678670,
+        "sha256": "9b79709806511b62567fb007ff61009c3b194bb0d0821fbaee3faf1b2bff0318"
+      },
+      {
+        "path": "originals\\cotton_jersey\\Rough.jpg",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cotton_jersey/cotton_jersey_rough_1k.jpg",
+        "bytes": 865264,
+        "sha256": "89bed18f5c3f03fc7b4c2382446891629716278e521e06e8b7f6c8f02dd22590"
+      }
+    ]
+  },
+  {
+    "id": "glam_velvet_sofa",
+    "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/GlamVelvetSofa",
+    "license": "CC-BY-4.0",
+    "authors": {
+      "Eric Chadwick / Wayfair, LLC": "Model and textures, copyright 2021"
+    },
+    "files": [
+      {
+        "path": "originals\\glam_velvet_sofa\\source.glb",
+        "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/GlamVelvetSofa/glTF-Binary/GlamVelvetSofa.glb",
+        "bytes": 3149844,
+        "sha256": "67202c74a1a33377771f162dc7fad612a6c9bd51ee15124c488e9851d9ac5266"
+      },
+      {
+        "path": "originals\\glam_velvet_sofa\\LICENSE.md",
+        "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/GlamVelvetSofa/LICENSE.md",
+        "bytes": 782,
+        "sha256": "b9a0328334d3597cf438846bd14eac5cf07a70cc93746cd8b8b569806d1b8c7f"
+      }
+    ]
+  },
+  {
+    "id": "white_oak_veneer",
+    "source": "https://polyhaven.com/a/white_oak_veneer",
+    "license": "CC0-1.0",
+    "note": "Existing project texture, mobile JPEG 1024; DirectX normal uses inverted Y."
+  }
+]
