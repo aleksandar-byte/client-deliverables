@@ -1,0 +1,49 @@
+{
+  "revision": "kids-r04",
+  "removePrefixes": [
+    "CP_bedroom2_bed",
+    "CP_bedroom3_bed",
+    "CP_bedroom2_closet_",
+    "CP_bedroom3_closet_",
+    "CP_bedside3",
+    "CP_bedside5"
+  ],
+  "bedsideMoves": [
+    {
+      "label": "CP_bedside2",
+      "deltaZ": -1.195466
+    },
+    {
+      "label": "CP_bedside4",
+      "deltaZ": -1.315466
+    }
+  ],
+  "rooms": [
+    {
+      "name": "Bedroom 2",
+      "accent": "#7d99ac",
+      "bedZ": -3.7,
+      "deskZ": -1.41,
+      "chairZ": -2.18,
+      "wardrobeZ": -3.43,
+      "deskRotation": 3.141592653589793,
+      "chairRotation": 0,
+      "lampOldZ": -1.45,
+      "lampNewZ": -2.65,
+      "chairX": 5.75
+    },
+    {
+      "name": "Bedroom 3",
+      "accent": "#bc9166",
+      "bedZ": 3.59,
+      "deskZ": 1.3,
+      "chairZ": 2.07,
+      "wardrobeZ": 3.32,
+      "deskRotation": 0,
+      "chairRotation": 3.141592653589793,
+      "lampOldZ": 3.96,
+      "lampNewZ": 2.65,
+      "chairX": 6.25
+    }
+  ]
+}
