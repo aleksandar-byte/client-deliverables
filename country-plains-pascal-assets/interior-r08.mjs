@@ -31,8 +31,8 @@ export async function styleInterior(house,scene){
  box('Dishwasher recessed plinth',[.4919,0,-4.99],[1.0919,.12,-4.91],dark,dishwasher);
  fits.push(bounds(dishwasher,'Integrated dishwasher'));
  // Fit the existing imported oven and glass inside an open-front base cabinet.
- const ob=new THREE.Box3();oven.forEach(n=>ob.union(new THREE.Box3().setFromObject(n)));const appliance=new THREE.Group();appliance.name='Imported built-in oven';group.add(appliance);
- for(const n of oven){const c=n.clone(true);c.matrixAutoUpdate=false;c.matrix.copy(n.matrixWorld);appliance.add(c);}
+ const ovenParts=oven.filter(n=>n.userData.label!=='CP_oven_0');const ob=new THREE.Box3();ovenParts.forEach(n=>ob.union(new THREE.Box3().setFromObject(n)));const appliance=new THREE.Group();appliance.name='Imported built-in oven';group.add(appliance);
+ for(const n of ovenParts){const c=n.clone(true);c.matrixAutoUpdate=false;c.matrix.copy(n.matrixWorld);appliance.add(c);}
  const targetMin=new THREE.Vector3(-2.8321,.19,-4.624534),targetMax=new THREE.Vector3(-2.2606,.81,-4.024534),sz=ob.getSize(new THREE.Vector3());appliance.scale.copy(targetMax.clone().sub(targetMin).divide(sz));appliance.position.copy(targetMin).sub(ob.min.clone().multiply(appliance.scale));
  const ovenCab=new THREE.Group();ovenCab.name='Oven cabinet surround';group.add(ovenCab);
  box('Oven top',[-2.8321,.88,-4.674534],[-2.2606,.91,-3.974534],stone,ovenCab);
