@@ -1,0 +1,57 @@
+{
+  "revision": "layout-r05",
+  "removePrefixes": [
+    "CP_bedroom2_bed",
+    "CP_bedroom3_bed",
+    "CP_bedroom2_closet_",
+    "CP_bedroom3_closet_",
+    "CP_bedside3",
+    "CP_bedside5",
+    "CP_island_stool"
+  ],
+  "bedsideMoves": [
+    {
+      "label": "CP_bedside2",
+      "deltaZ": -1.345466
+    },
+    {
+      "label": "CP_bedside4",
+      "deltaZ": -1.265466
+    }
+  ],
+  "rooms": [
+    {
+      "name": "Bedroom 2",
+      "accent": "#7d99ac",
+      "bedZ": -3.7,
+      "deskZ": -1.85,
+      "chairZ": -1.6,
+      "wardrobeZ": -3.43,
+      "deskRotation": -1.5707963267948966,
+      "chairRotation": 1.5707963267948966,
+      "lampOldZ": -1.45,
+      "lampNewZ": -2.8,
+      "chairX": 6.25,
+      "deskX": 7.1
+    },
+    {
+      "name": "Bedroom 3",
+      "accent": "#bc9166",
+      "bedZ": 3.59,
+      "deskZ": 1.75,
+      "chairZ": 1.5,
+      "wardrobeZ": 3.32,
+      "deskRotation": -1.5707963267948966,
+      "chairRotation": 1.5707963267948966,
+      "lampOldZ": 3.96,
+      "lampNewZ": 2.7,
+      "chairX": 6.25,
+      "deskX": 7.1,
+      "deskScale": [
+        -1,
+        1,
+        1
+      ]
+    }
+  ]
+}
