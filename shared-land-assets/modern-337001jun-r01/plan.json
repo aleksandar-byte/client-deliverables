@@ -1,0 +1,1056 @@
+{
+  "id": "modern-337001jun",
+  "title": "337001JUN - shared site with Igor",
+  "units": "metres",
+  "assumptions": [
+    "Publisher main-level slab option only; no basement, garage, or added office.",
+    "Scale 46 ft = 14.0208 m across 708 source pixels; room measurements are reference labels, not surveyed clear dimensions.",
+    "Source drawing traced at pixel-level resolution. Wall thickness follows this concept drawing; concrete structure, insulation and approvals require a local design.",
+    "Rigid 90-degree rotation places the rear glazing toward the tree/downhill side (approximately east in the existing site frame). Bearing and boundary registration remain provisional.",
+    "Level floor and conceptual graded access are visual proposals. Terrain retains the 109-point survey TIN; no retaining-wall or foundation design is implied.",
+    "Roof profile inferred from published 9 ft to 14 ft 6 ceiling description and exterior views; master wing 13 ft high rear."
+  ],
+  "floors": [
+    {
+      "id": "ground",
+      "label": "337001JUN \u00b7 ground floor",
+      "z": 0,
+      "height": 2.7432,
+      "slab_thickness": 0.205,
+      "slabs": [
+        [
+          2.816142,
+          -1.0,
+          12.5,
+          13.0208
+        ],
+        [
+          2.10322,
+          -1.0,
+          2.816142,
+          9.218549
+        ]
+      ],
+      "ceiling": false,
+      "rooms": [
+        {
+          "id": "living",
+          "label": "Living / dining",
+          "at": [
+            5.152942,
+            2.861661
+          ],
+          "reference_area_m2": 33.92,
+          "area_basis": "Publisher labelled rectangular dimensions; not a measured usable-area certificate"
+        },
+        {
+          "id": "kitchen",
+          "label": "Kitchen",
+          "at": [
+            5.053925,
+            7.079783
+          ],
+          "reference_area_m2": 19.7,
+          "area_basis": "Publisher labelled rectangular dimensions; not a measured usable-area certificate"
+        },
+        {
+          "id": "primary",
+          "label": "Primary bedroom",
+          "at": [
+            5.311369,
+            11.179085
+          ],
+          "reference_area_m2": 18.07,
+          "area_basis": "Publisher labelled rectangular dimensions; not a measured usable-area certificate"
+        },
+        {
+          "id": "bedroom-2",
+          "label": "Bedroom 2",
+          "at": [
+            10.816712,
+            7.317424
+          ],
+          "reference_area_m2": 11.75,
+          "area_basis": "Publisher labelled rectangular dimensions; not a measured usable-area certificate"
+        },
+        {
+          "id": "bedroom-3",
+          "label": "Bedroom 3",
+          "at": [
+            10.994942,
+            1.713064
+          ],
+          "reference_area_m2": 7.06,
+          "area_basis": "Publisher labelled rectangular dimensions; not a measured usable-area certificate"
+        },
+        {
+          "id": "bathroom",
+          "label": "Bathroom",
+          "at": [
+            8.539322,
+            1.732868
+          ],
+          "reference_area_m2": 4.04,
+          "area_basis": "Publisher labelled rectangular dimensions; not a measured usable-area certificate"
+        },
+        {
+          "id": "ensuite",
+          "label": "Primary bathroom",
+          "at": [
+            11.39101,
+            11.099871
+          ],
+          "reference_area_m2": 8.64,
+          "area_basis": "Publisher labelled rectangular dimensions; not a measured usable-area certificate"
+        },
+        {
+          "id": "walk-in",
+          "label": "Walk-in closet",
+          "at": [
+            8.776963,
+            11.436529
+          ],
+          "reference_area_m2": 5.2,
+          "area_basis": "Publisher labelled rectangular dimensions; not a measured usable-area certificate"
+        },
+        {
+          "id": "foyer",
+          "label": "Foyer",
+          "at": [
+            10.004773,
+            4.247898
+          ],
+          "reference_area_m2": 11.15,
+          "area_basis": "Publisher labelled rectangular dimensions; not a measured usable-area certificate"
+        },
+        {
+          "id": "laundry",
+          "label": "Laundry",
+          "at": [
+            9.767132,
+            -0.267275
+          ],
+          "reference_area_m2": 4.41,
+          "area_basis": "Publisher labelled rectangular dimensions; not a measured usable-area certificate"
+        },
+        {
+          "id": "pantry",
+          "label": "Pantry",
+          "at": [
+            8.341288,
+            6.822339
+          ],
+          "reference_area_m2": 2.24,
+          "area_basis": "Publisher labelled rectangular dimensions; not a measured usable-area certificate"
+        }
+      ]
+    }
+  ],
+  "walls": [
+    {
+      "id": "ground/front",
+      "floor": "ground",
+      "a": [
+        12.420786,
+        -0.920786
+      ],
+      "b": [
+        12.420786,
+        12.941586
+      ],
+      "thickness": 0.16,
+      "openings": [
+        {
+          "start": 1.742698,
+          "width": 1.782305,
+          "type": "window",
+          "bottom": 0.9,
+          "height": 1.4
+        },
+        {
+          "start": 4.297336,
+          "width": 1.901125,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.35
+        },
+        {
+          "start": 7.406468,
+          "width": 1.782305,
+          "type": "window",
+          "bottom": 0.9,
+          "height": 1.4
+        }
+      ],
+      "height": 4.42
+    },
+    {
+      "id": "ground/left",
+      "floor": "ground",
+      "a": [
+        12.420786,
+        -0.920786
+      ],
+      "b": [
+        2.202237,
+        -0.920786
+      ],
+      "thickness": 0.16,
+      "openings": [
+        {
+          "start": 2.45562,
+          "width": 1.04958,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.15
+        },
+        {
+          "start": 5.148881,
+          "width": 3.762644,
+          "type": "window",
+          "bottom": 0.35,
+          "height": 2.1
+        }
+      ],
+      "height": 4.42
+    },
+    {
+      "id": "ground/right",
+      "floor": "ground",
+      "a": [
+        12.420786,
+        12.941586
+      ],
+      "b": [
+        2.816142,
+        12.941586
+      ],
+      "thickness": 0.16,
+      "openings": [
+        {
+          "start": 0.891153,
+          "width": 1.28722,
+          "type": "window",
+          "bottom": 1.4,
+          "height": 0.8
+        },
+        {
+          "start": 4.950847,
+          "width": 3.366576,
+          "type": "window",
+          "bottom": 0.4,
+          "height": 2.05
+        }
+      ],
+      "height": 4.42
+    },
+    {
+      "id": "ground/rear-living",
+      "floor": "ground",
+      "a": [
+        2.202237,
+        -0.920786
+      ],
+      "b": [
+        2.202237,
+        9.159139
+      ],
+      "thickness": 0.16,
+      "openings": [
+        {
+          "start": 0.336658,
+          "width": 3.425986,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.5
+        },
+        {
+          "start": 4.534976,
+          "width": 2.693261,
+          "type": "window",
+          "bottom": 0,
+          "height": 2.5
+        },
+        {
+          "start": 7.347058,
+          "width": 2.019946,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.5
+        }
+      ],
+      "height": 4.42
+    },
+    {
+      "id": "ground/rear-master",
+      "floor": "ground",
+      "a": [
+        2.816142,
+        9.159139
+      ],
+      "b": [
+        2.816142,
+        12.941586
+      ],
+      "thickness": 0.16,
+      "openings": [
+        {
+          "start": 0.871349,
+          "width": 2.099159,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.5
+        }
+      ],
+      "height": 4.42
+    },
+    {
+      "id": "ground/master-return",
+      "floor": "ground",
+      "a": [
+        2.816142,
+        9.159139
+      ],
+      "b": [
+        2.202237,
+        9.159139
+      ],
+      "thickness": 0.16,
+      "openings": [],
+      "height": 4.42
+    },
+    {
+      "id": "ground/laundry-divider",
+      "floor": "ground",
+      "a": [
+        12.420786,
+        0.485254
+      ],
+      "b": [
+        7.727383,
+        0.485254
+      ],
+      "thickness": 0.115,
+      "openings": [],
+      "height": 4.42
+    },
+    {
+      "id": "ground/mechanical",
+      "floor": "ground",
+      "a": [
+        11.232583,
+        -0.920786
+      ],
+      "b": [
+        11.232583,
+        0.485254
+      ],
+      "thickness": 0.115,
+      "openings": [
+        {
+          "start": 0.0,
+          "width": 0.693119,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.1
+        }
+      ],
+      "height": 4.42
+    },
+    {
+      "id": "ground/br3-foyer",
+      "floor": "ground",
+      "a": [
+        12.420786,
+        3.059695
+      ],
+      "b": [
+        9.390868,
+        3.059695
+      ],
+      "thickness": 0.115,
+      "openings": [
+        {
+          "start": 0.970366,
+          "width": 1.10899,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.1
+        }
+      ],
+      "height": 4.42
+    },
+    {
+      "id": "ground/br3-bath",
+      "floor": "ground",
+      "a": [
+        9.390868,
+        0.485254
+      ],
+      "b": [
+        9.390868,
+        3.059695
+      ],
+      "thickness": 0.115,
+      "openings": [],
+      "height": 4.42
+    },
+    {
+      "id": "ground/bath-foyer",
+      "floor": "ground",
+      "a": [
+        9.390868,
+        3.059695
+      ],
+      "b": [
+        7.727383,
+        3.059695
+      ],
+      "thickness": 0.115,
+      "openings": [
+        {
+          "start": 0.158427,
+          "width": 0.891153,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.1
+        }
+      ],
+      "height": 4.42
+    },
+    {
+      "id": "ground/utility-living",
+      "floor": "ground",
+      "a": [
+        7.727383,
+        -0.920786
+      ],
+      "b": [
+        7.727383,
+        3.059695
+      ],
+      "thickness": 0.115,
+      "openings": [
+        {
+          "start": 0.198034,
+          "width": 0.732725,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.1
+        }
+      ],
+      "height": 4.42
+    },
+    {
+      "id": "ground/br2-foyer",
+      "floor": "ground",
+      "a": [
+        12.420786,
+        5.554922
+      ],
+      "b": [
+        8.955193,
+        5.554922
+      ],
+      "thickness": 0.115,
+      "openings": [
+        {
+          "start": 2.45562,
+          "width": 0.930759,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.1
+        }
+      ],
+      "height": 4.42
+    },
+    {
+      "id": "ground/br2-pantry",
+      "floor": "ground",
+      "a": [
+        8.955193,
+        5.554922
+      ],
+      "b": [
+        8.955193,
+        9.159139
+      ],
+      "thickness": 0.115,
+      "openings": [
+        {
+          "start": 2.693261,
+          "width": 0.851546,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.1
+        }
+      ],
+      "height": 4.42
+    },
+    {
+      "id": "ground/pantry-foyer",
+      "floor": "ground",
+      "a": [
+        8.955193,
+        5.554922
+      ],
+      "b": [
+        7.727383,
+        5.554922
+      ],
+      "thickness": 0.115,
+      "openings": [],
+      "height": 4.42
+    },
+    {
+      "id": "ground/pantry-rear",
+      "floor": "ground",
+      "a": [
+        7.727383,
+        5.554922
+      ],
+      "b": [
+        7.727383,
+        9.159139
+      ],
+      "thickness": 0.115,
+      "openings": [
+        {
+          "start": 0.277247,
+          "width": 0.891153,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.1
+        }
+      ],
+      "height": 4.42
+    },
+    {
+      "id": "ground/pantry-store",
+      "floor": "ground",
+      "a": [
+        8.955193,
+        7.891722
+      ],
+      "b": [
+        7.727383,
+        7.891722
+      ],
+      "thickness": 0.115,
+      "openings": [],
+      "height": 4.42
+    },
+    {
+      "id": "ground/master-left",
+      "floor": "ground",
+      "a": [
+        12.420786,
+        9.159139
+      ],
+      "b": [
+        2.816142,
+        9.159139
+      ],
+      "thickness": 0.115,
+      "openings": [
+        {
+          "start": 4.693403,
+          "width": 1.009973,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.1
+        }
+      ],
+      "height": 4.42
+    },
+    {
+      "id": "ground/master-bath",
+      "floor": "ground",
+      "a": [
+        9.925559,
+        9.159139
+      ],
+      "b": [
+        9.925559,
+        12.941586
+      ],
+      "thickness": 0.115,
+      "openings": [
+        {
+          "start": 0.158427,
+          "width": 0.950563,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.1
+        }
+      ],
+      "height": 4.42
+    },
+    {
+      "id": "ground/master-wic",
+      "floor": "ground",
+      "a": [
+        7.727383,
+        10.347342
+      ],
+      "b": [
+        7.727383,
+        12.941586
+      ],
+      "thickness": 0.115,
+      "openings": [],
+      "height": 4.42
+    },
+    {
+      "id": "ground/wic-entry",
+      "floor": "ground",
+      "a": [
+        9.925559,
+        10.347342
+      ],
+      "b": [
+        7.727383,
+        10.347342
+      ],
+      "thickness": 0.115,
+      "openings": [
+        {
+          "start": 0.574298,
+          "width": 1.069383,
+          "type": "door",
+          "bottom": 0,
+          "height": 2.1
+        }
+      ],
+      "height": 4.42
+    }
+  ],
+  "objects": [
+    {
+      "id": "rear-deck",
+      "floor": "ground",
+      "center": [
+        0.5981624999999999,
+        6.0104,
+        -0.1025
+      ],
+      "size": [
+        3.010115,
+        14.0208,
+        0.205
+      ],
+      "kind": "slab",
+      "material": "wood",
+      "walkable": true
+    },
+    {
+      "id": "master-deck-infill",
+      "floor": "ground",
+      "center": [
+        2.459681,
+        11.119674499999999,
+        -0.1025
+      ],
+      "size": [
+        0.7129220000000003,
+        3.802251,
+        0.205
+      ],
+      "kind": "slab",
+      "material": "wood",
+      "walkable": true
+    },
+    {
+      "id": "front-porch",
+      "floor": "ground",
+      "center": [
+        13.2624305,
+        4.297407,
+        -0.1025
+      ],
+      "size": [
+        1.5248609999999996,
+        2.475424,
+        0.205
+      ],
+      "kind": "slab",
+      "material": "floor",
+      "walkable": true
+    },
+    {
+      "id": "kitchen-base",
+      "floor": "ground",
+      "center": [
+        4.4994305,
+        8.792776499999999,
+        0.45
+      ],
+      "size": [
+        4.237925000000001,
+        0.5346910000000005,
+        0.9
+      ],
+      "kind": "storage",
+      "material": "wood",
+      "walkable": false
+    },
+    {
+      "id": "kitchen-counter",
+      "floor": "ground",
+      "center": [
+        4.4994305,
+        8.782874499999998,
+        0.92
+      ],
+      "size": [
+        4.237925000000001,
+        0.5941010000000002,
+        0.04
+      ],
+      "kind": "fixture",
+      "material": "white",
+      "walkable": false
+    },
+    {
+      "id": "kitchen-island",
+      "floor": "ground",
+      "center": [
+        4.836088,
+        6.7728304999999995,
+        0.45
+      ],
+      "size": [
+        2.6140480000000004,
+        1.3664329999999998,
+        0.9
+      ],
+      "kind": "storage",
+      "material": "wood",
+      "walkable": false
+    },
+    {
+      "id": "island-counter",
+      "floor": "ground",
+      "center": [
+        4.836088,
+        6.7728304999999995,
+        0.92
+      ],
+      "size": [
+        2.7328680000000003,
+        1.5248610000000005,
+        0.04
+      ],
+      "kind": "fixture",
+      "material": "white",
+      "walkable": false
+    },
+    {
+      "id": "pantry-shelf",
+      "floor": "ground",
+      "center": [
+        8.370993,
+        7.5154575,
+        0.95
+      ],
+      "size": [
+        0.7723319999999996,
+        0.47528099999999984,
+        1.9
+      ],
+      "kind": "storage",
+      "material": "wood",
+      "walkable": false
+    },
+    {
+      "id": "laundry-machines",
+      "floor": "ground",
+      "center": [
+        10.093888,
+        0.1188915,
+        0.45
+      ],
+      "size": [
+        1.1684,
+        0.534691,
+        0.9
+      ],
+      "kind": "fixture",
+      "material": "white",
+      "walkable": false
+    },
+    {
+      "id": "vanity-shared",
+      "floor": "ground",
+      "center": [
+        8.004630500000001,
+        2.6141185,
+        0.425
+      ],
+      "size": [
+        0.35646100000000125,
+        0.495085,
+        0.85
+      ],
+      "kind": "fixture",
+      "material": "white",
+      "walkable": false
+    },
+    {
+      "id": "vanity-master",
+      "floor": "ground",
+      "center": [
+        12.103932,
+        10.4760645,
+        0.425
+      ],
+      "size": [
+        0.43567400000000056,
+        1.9605350000000001,
+        0.85
+      ],
+      "kind": "fixture",
+      "material": "wood",
+      "walkable": false
+    },
+    {
+      "id": "shower-master",
+      "floor": "ground",
+      "center": [
+        11.6286505,
+        12.2781725,
+        0.02
+      ],
+      "size": [
+        1.3862369999999995,
+        1.128793,
+        0.04
+      ],
+      "kind": "fixture",
+      "material": "white",
+      "walkable": false
+    }
+  ],
+  "viewpoints": [
+    {
+      "id": "living",
+      "label": "Living / dining",
+      "floor": "ground",
+      "feet": [
+        5.152942,
+        2.861661,
+        0
+      ],
+      "look_at": [
+        5.152942,
+        8.109559,
+        1.5
+      ],
+      "default": true
+    },
+    {
+      "id": "kitchen",
+      "label": "Kitchen",
+      "floor": "ground",
+      "feet": [
+        5.232156,
+        8.089756,
+        0
+      ],
+      "look_at": [
+        5.152942,
+        2.465593,
+        1.5
+      ],
+      "default": false
+    },
+    {
+      "id": "primary",
+      "label": "Primary bedroom",
+      "floor": "ground",
+      "feet": [
+        5.311369,
+        11.179085,
+        0
+      ],
+      "look_at": [
+        3.370637,
+        11.179085,
+        1.5
+      ],
+      "default": false
+    },
+    {
+      "id": "bedroom-2",
+      "label": "Bedroom 2",
+      "floor": "ground",
+      "feet": [
+        10.816712,
+        7.317424,
+        0
+      ],
+      "look_at": [
+        8.816712,
+        7.317424,
+        1.5
+      ],
+      "default": false
+    },
+    {
+      "id": "bedroom-3",
+      "label": "Bedroom 3",
+      "floor": "ground",
+      "feet": [
+        10.994942,
+        1.713064,
+        0
+      ],
+      "look_at": [
+        8.994942,
+        1.713064,
+        1.5
+      ],
+      "default": false
+    },
+    {
+      "id": "bathroom",
+      "label": "Bathroom",
+      "floor": "ground",
+      "feet": [
+        8.737356,
+        1.732868,
+        0
+      ],
+      "look_at": [
+        6.737356,
+        1.732868,
+        1.5
+      ],
+      "default": false
+    },
+    {
+      "id": "ensuite",
+      "label": "Primary bathroom",
+      "floor": "ground",
+      "feet": [
+        10.757302,
+        10.882034,
+        0
+      ],
+      "look_at": [
+        8.757302,
+        10.882034,
+        1.5
+      ],
+      "default": false
+    },
+    {
+      "id": "walk-in",
+      "label": "Walk-in closet",
+      "floor": "ground",
+      "feet": [
+        8.915586,
+        11.377119,
+        0
+      ],
+      "look_at": [
+        6.915585999999999,
+        11.377119,
+        1.5
+      ],
+      "default": false
+    },
+    {
+      "id": "foyer",
+      "label": "Foyer",
+      "floor": "ground",
+      "feet": [
+        10.004773,
+        4.247898,
+        0
+      ],
+      "look_at": [
+        5.152942,
+        4.247898,
+        1.5
+      ],
+      "default": false
+    },
+    {
+      "id": "laundry",
+      "label": "Laundry",
+      "floor": "ground",
+      "feet": [
+        8.816569,
+        -0.306881,
+        0
+      ],
+      "look_at": [
+        6.816568999999999,
+        -0.306881,
+        1.5
+      ],
+      "default": false
+    },
+    {
+      "id": "pantry",
+      "label": "Pantry",
+      "floor": "ground",
+      "feet": [
+        8.559125,
+        6.980766,
+        0
+      ],
+      "look_at": [
+        6.559125,
+        6.980766,
+        1.5
+      ],
+      "default": false
+    },
+    {
+      "id": "entry",
+      "label": "Front entry",
+      "floor": "ground",
+      "feet": [
+        11.965308,
+        4.247898,
+        0
+      ],
+      "look_at": [
+        4.558841,
+        4.247898,
+        1.5
+      ]
+    }
+  ],
+  "review": {
+    "actions": {},
+    "measures": [],
+    "envelopes": []
+  },
+  "source": {
+    "url": "https://www.architecturaldesigns.com/house-plans/3-bed-modern-home-plan-with-home-office-1540-sq-ft-337001jun",
+    "heated_area_m2": 143.0706816,
+    "overall_width_m": 14.0208,
+    "overall_depth_m": 14.9352,
+    "basement": false,
+    "missing_requirement": "Separate office is not present in the main-level drawing."
+  },
+  "site": {
+    "pixel_scale_m": 0.019803389830508472,
+    "source_origin_pixels": [
+      75,
+      99
+    ],
+    "transform": "siteX=12.5-(pixelY-99)*scale; siteY=-1+(pixelX-75)*scale",
+    "entry": [
+      12.420786,
+      4.247898
+    ],
+    "rear_glazing_direction": [
+      -1,
+      0
+    ]
+  }
+}
