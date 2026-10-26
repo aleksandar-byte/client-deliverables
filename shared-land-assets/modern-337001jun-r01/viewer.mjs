@@ -9,7 +9,8 @@ import {installIgorPlan} from '../igor-pascal-plan-r01.mjs';
 import {installWallDimensions} from '../wall-dimensions-r02.mjs';
 import {installParcelReview} from '../cadastral-review-r01.mjs';
 const $=s=>document.querySelector(s),view=$('#view'),loader=new GLTFLoader();
-const json=async name=>{const r=await fetch(new URL(name,import.meta.url));if(!r.ok)throw Error(name+' unavailable');return r.json();};
+const asset=name=>{const url=new URL(name,import.meta.url);url.searchParams.set('v','furnished-r02');return url.href;};
+const json=async name=>{const r=await fetch(asset(name));if(!r.ok)throw Error(name+' unavailable');return r.json();};
 const scene=new THREE.Scene();scene.background=new THREE.Color('#dbe4e3');
 const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.5));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.localClippingEnabled=true;renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;view.prepend(renderer.domElement);
 const camera=new THREE.PerspectiveCamera(43,1,.08,800),planCamera=new THREE.OrthographicCamera(-30,30,30,-30,.1,800);
@@ -40,7 +41,7 @@ function addMarker(label,x,y,z){const el=document.createElement('span');el.class
 function wallCaps(walls){for(const w of walls){const length=Math.hypot(w.b[0]-w.a[0],w.b[1]-w.a[1]),d=[(w.b[0]-w.a[0])/length,(w.b[1]-w.a[1])/length],holes=w.openings.filter(h=>h.bottom<1.15&&h.bottom+h.height>1.15).sort((a,b)=>a.start-b.start);let cur=0;
  const strip=(a,b)=>{if(b-a<.001)return;const p=new THREE.Mesh(new THREE.BoxGeometry(b-a,.015,w.thickness),new THREE.MeshBasicMaterial({color:0x586058}));p.position.set(w.a[0]+d[0]*(a+b)/2,1.147,-w.a[1]-d[1]*(a+b)/2);p.rotation.y=Math.atan2(d[1],d[0]);caps.add(p);};for(const h of holes){strip(cur,h.start);cur=h.start+h.width;}strip(cur,length);}}
 async function init(){
- const [siteGltf,contextGltf,homeGltf,nav,geometry,groups]=await Promise.all([loader.loadAsync(new URL('../country-site-r02.glb',import.meta.url).href),loader.loadAsync(new URL('../context-r05.glb',import.meta.url).href),loader.loadAsync(new URL('./model.glb',import.meta.url).href),json('./navigation.json'),json('./plan.json'),json('./dimension-groups.json')]);
+ const [siteGltf,contextGltf,homeGltf,nav,geometry,groups]=await Promise.all([loader.loadAsync(new URL('../country-site-r02.glb',import.meta.url).href),loader.loadAsync(new URL('../context-r05.glb',import.meta.url).href),loader.loadAsync(asset('./model.glb')),json('./navigation.json'),json('./plan.json'),json('./dimension-groups.json')]);
  root=siteGltf.scene;const obsolete=[];root.traverse(o=>{if(!o.isMesh)return;const role=meta(o,'siteRole');if(!role||['tree','slope'].includes(role))obsolete.push(o);else o.userData.siteRole=role;});obsolete.forEach(o=>o.removeFromParent());scene.add(root);
  const ctx=contextGltf.scene;ctx.traverse(o=>{if(o.isMesh){for(const k of ['contextRole']){const m=meta(o,k);if(m!==undefined)o.userData[k]=m;}o.castShadow=true;o.receiveShadow=true;}});scene.add(ctx);contextRoots.push(ctx);
  house=homeGltf.scene;house.name='Alex · 337001JUN';house.traverse(o=>{if(!o.isMesh)return;o.userData.kind=meta(o,'kind');o.castShadow=!['window','slab'].includes(o.userData.kind);o.receiveShadow=true;for(const m of Array.isArray(o.material)?o.material:[o.material])m.side=THREE.DoubleSide;});scene.add(house);wallCaps(geometry.walls);
@@ -61,7 +62,7 @@ async function init(){
  window.__sharedReview={scene,house,igor:result.group,walk,walkConfig,terrain,geometry,setMode:m=>{mode=m;fit();},get mode(){return mode;},setFrame:f=>{$('#frame').value=f;fit();}};
  const params=new URLSearchParams(location.search);if(frames[params.get('frame')])$('#frame').value=params.get('frame');if(['walk','plan','3d'].includes(params.get('view')))mode=params.get('view');
  const place=params.get('place')||'parking';if(walkConfig.places[place]){$('#walk-place').value=place;walk.teleport(walkConfig.places[place]);}
- document.body.dataset.loaded='true';document.body.dataset.revision='modern-shared-r01';$('#status').textContent='Ready · 337001JUN + Igor · survey-based terrain';fit();
+ document.body.dataset.loaded='true';document.body.dataset.revision='modern-furnished-r02';$('#status').textContent='Ready · furnished 337001JUN + Igor · survey-based terrain';fit();
 }
 for(const b of document.querySelectorAll('[data-mode]'))b.onclick=()=>{mode=b.dataset.mode;fit();};$('#frame').onchange=fit;
 for(const id of ['roof','planting','context','partner','guides'])$('#'+id).onchange=updateContext;
