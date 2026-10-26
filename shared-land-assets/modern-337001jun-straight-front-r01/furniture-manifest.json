@@ -139,11 +139,11 @@
         "LIB_modern_coffee_table_01_0"
       ],
       "rotation_degrees": 0,
-      "flip_x": true,
+      "flip_x": false,
       "scale_xyz": [
         1.0231757164001465,
         1.0051394701004028,
-        0.9999997019767761
+        1.0
       ],
       "nonuniform_study_fit": true,
       "min": [
