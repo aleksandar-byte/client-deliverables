@@ -1,0 +1,14 @@
+{
+  "roof_pitch_deg": 29.859016164923098,
+  "ridge_external_m": 6.6,
+  "ridge_underside_m": 6.3,
+  "eave_underside_m": 3.2,
+  "office_area_m2": 15.179999999999998,
+  "office_min_headroom_m": 2.1296296296296293,
+  "upper_half_landing_west_headroom_m": 2.429444444444444,
+  "basement_external_m2": 32.25,
+  "basement_inside_m2": 26.325,
+  "basement_outside_core_m2": 17.189999999999998,
+  "deck_over_basement_m2": 11.25,
+  "status": "2D proposal only; existing 3D not updated"
+}
