@@ -9,7 +9,7 @@ import {installIgorPlan} from '../igor-pascal-plan-r01.mjs';
 import {installWallDimensions} from '../wall-dimensions-r02.mjs';
 import {installParcelReview} from '../cadastral-review-r01.mjs';
 const $=s=>document.querySelector(s),view=$('#view'),loader=new GLTFLoader();
-const asset=name=>{const url=new URL(name,import.meta.url);url.searchParams.set('v','interior-r02');return url.href;};
+const asset=name=>{const url=new URL(name,import.meta.url);url.searchParams.set('v','interior-r03');return url.href;};
 const json=async name=>{const r=await fetch(asset(name));if(!r.ok)throw Error(name+' unavailable');return r.json();};
 const scene=new THREE.Scene();scene.background=new THREE.Color('#dbe4e3');
 const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.5));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.localClippingEnabled=true;renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;view.prepend(renderer.domElement);
@@ -59,7 +59,7 @@ async function init(){
  const matrix=new THREE.Matrix4(),v=new THREE.Vector3();for(const r of contextRoots)r.traverse(o=>{if(!o.isInstancedMesh)return;for(let i=0;i<o.count;i++){o.getMatrixAt(i,matrix);v.setFromMatrixPosition(matrix);const x=v.x,y=-v.z;if(x> -1.7&&x<14.5&&y> -1.5&&y<13.7||x>13.4&&x<15.4&&y> -7&&y<5){matrix.makeScale(0,0,0);o.setMatrixAt(i,matrix);}}o.instanceMatrix.needsUpdate=true;o.computeBoundingSphere();});
  addMarker('Alex · 337001JUN',6,7,5);addMarker('Igor · LK1891',6,-23,terrain.height(6,-23.5)+8);addMarker('Shared parking',13,-10,terrain.height(13,-10)+.15);
  for(const r of geometry.floors[0].rooms)addMarker(r.label+' · ≈ '+r.reference_area_m2.toFixed(1)+' m²',...r.at,1.25);
- window.__sharedReview={scene,house,igor:result.group,walk,walkConfig,terrain,geometry,setMode:m=>{mode=m;fit();},get mode(){return mode;},setFrame:f=>{$('#frame').value=f;fit();}};
+ window.__sharedReview={camera,reviewView:(p,t)=>{mode='3d';fit();camera.fov=65;camera.updateProjectionMatrix();camera.position.set(...p);orbit.target.set(...t);orbit.update();},scene,house,igor:result.group,walk,walkConfig,terrain,geometry,setMode:m=>{mode=m;fit();},get mode(){return mode;},setFrame:f=>{$('#frame').value=f;fit();}};
  const params=new URLSearchParams(location.search);if(frames[params.get('frame')])$('#frame').value=params.get('frame');if(['walk','plan','3d'].includes(params.get('view')))mode=params.get('view');
  const place=params.get('place')||'parking';if(walkConfig.places[place]){$('#walk-place').value=place;walk.teleport(walkConfig.places[place]);}
  document.body.dataset.loaded='true';document.body.dataset.revision='modern-straight-front-r01';$('#status').textContent='Ready · furnished 337001JUN + Igor · survey-based terrain';fit();
