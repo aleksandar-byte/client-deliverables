@@ -9,7 +9,7 @@ import {installIgorPlan} from '../igor-pascal-plan-r01.mjs';
 import {installWallDimensions} from '../wall-dimensions-r02.mjs';
 import {installParcelReview} from '../cadastral-review-r01.mjs';
 const $=s=>document.querySelector(s),view=$('#view'),loader=new GLTFLoader();
-const asset=name=>{const url=new URL(name,import.meta.url);url.searchParams.set('v','interior-r03');return url.href;};
+const asset=name=>{const url=new URL(name,import.meta.url);url.searchParams.set('v','bedroom-r04');return url.href;};
 const json=async name=>{const r=await fetch(asset(name));if(!r.ok)throw Error(name+' unavailable');return r.json();};
 const scene=new THREE.Scene();scene.background=new THREE.Color('#dbe4e3');
 const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.5));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.localClippingEnabled=true;renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;view.prepend(renderer.domElement);
