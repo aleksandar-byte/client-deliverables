@@ -1,0 +1,29 @@
+{
+  "revision": "stacked-r01",
+  "levels_m": [
+    -2.85,
+    0,
+    2.85
+  ],
+  "riser_m": 0.178125,
+  "going_m": 0.28,
+  "nominal_flight_width_m": 1,
+  "table_m": [
+    2,
+    0.9
+  ],
+  "kitchen_to_tucked_chair_m": 1.84582458496,
+  "chair_pullback_assumption_m": 0.6,
+  "remaining_kitchen_aisle_after_pullback_m": 1.2458245849599994,
+  "front_chair_to_sofa_after_pullback_m": 0.21000000000000085,
+  "limitations": [
+    "Planning envelopes, not manufacturer operating dimensions.",
+    "Main traffic route goes around the east end of the table; not between occupied dining chairs and sofa.",
+    "Open appliance doors reduce the working aisle; chairs/appliances are static.",
+    "Proposed excavation; retaining structure and local code approval not designed."
+  ],
+  "guidance_reference": "https://buildingcontrol.bathnes.gov.uk/loft-conversions/stairs-and-guarding",
+  "guidance_scope": "UK planning reference only, not North Macedonia compliance.",
+  "sampled_minimum_stair_headroom_m": 2.5999999046325684,
+  "headroom_samples": 88
+}
