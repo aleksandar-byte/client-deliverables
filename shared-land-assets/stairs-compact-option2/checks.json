@@ -1,0 +1,26 @@
+{
+  "status": "concept geometry checked, not construction approval",
+  "footprint": [
+    3.62,
+    2.05
+  ],
+  "area": 7.420999999999999,
+  "saved_area": 1.7140000000000004,
+  "rise": 0.178125,
+  "going": 0.26,
+  "flight_width": 0.9,
+  "stacked_flight_clearance": 2.73,
+  "proposed_roof_min_at_critical_points": 2.6820370370370368,
+  "landing": [
+    6.5,
+    -0.65,
+    7.4,
+    1.4
+  ],
+  "notes": [
+    "Same service-side access retained; stair footprint retreats 0.44m from living. No new separate hallway claimed.",
+    "Handrails intrude slightly into nominal 0.90m tread width; final clear width needs detailing.",
+    "Existing raised office model retained as hidden context; new pitched roof remains a separate proposal.",
+    "Concrete structure, protected escape, roof junctions and basement waterproofing unresolved."
+  ]
+}
