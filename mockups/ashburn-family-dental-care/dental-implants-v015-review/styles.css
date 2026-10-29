@@ -510,7 +510,7 @@ strong {
 }
 .provider-grid {
   display: grid;
-  grid-template-columns: 180px minmax(0, 680px);
+  grid-template-columns: 180px minmax(0, 1fr);
   gap: 40px;
   align-items: center;
 }
@@ -529,7 +529,7 @@ strong {
   border-top: 1px solid var(--border);
   margin-top: 44px;
   padding-top: 34px;
-  max-width: 980px;
+  max-width: 100%;
 }
 .testimonial-group blockquote {
   margin: 24px 0;
@@ -1168,7 +1168,7 @@ strong {
 #doctor-profile .full-review[open] > summary { margin-bottom: 8px; }
 
 /* v012: full patient reviews sit below the entire portrait/biography row. */
-#doctor-profile .testimonial-group { max-width: 980px; }
+#doctor-profile .testimonial-group { max-width: 100%; }
 #doctor-profile .review-source { margin: 12px 0 0; font-size: 13px; }
 #doctor-profile .review-source a { display: inline-flex; align-items: center; min-height: 44px; }
 
