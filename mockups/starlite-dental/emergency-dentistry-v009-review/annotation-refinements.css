@@ -1,6 +1,18 @@
 /* v008: one phone-first action group, raised hero copy and calm symptom section. */
-#emergency-visit .visit-preparation{border-top:1px solid #c8dde9;margin-top:24px;padding-top:24px}
-#emergency-visit .visit-preparation p{margin-bottom:0}
+/* v010: separate practical notes, real office photo beside the visit, shorter map. */
+#prepare-visit{padding-top:0}
+#prepare-visit>.shell{border-top:1px solid #c8dde9;padding-top:48px}
+#prepare-visit h2{max-width:32ch;margin-bottom:32px}
+#prepare-visit .preparation-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:64px}
+#prepare-visit .treatment-options{margin-top:0}
+#prepare-visit article>p:last-child{margin-bottom:0}
+#emergency-visit .visit-support{padding-top:8px}
+#emergency-visit .entrance-photo{margin:0}
+#emergency-visit .entrance-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain}
+#office-map-arrival .office-map iframe{min-height:400px}
+@media(max-width:1100px){#prepare-visit .preparation-grid{gap:40px}}
+@media(max-width:800px){#prepare-visit>.shell{padding-top:32px}#prepare-visit .preparation-grid{grid-template-columns:minmax(0,1fr);gap:28px}#emergency-visit .visit-support{padding-top:0}#emergency-visit .entrance-photo{max-width:560px}#office-map-arrival .office-map iframe{height:430px;min-height:430px}}
+@media(max-width:600px){#prepare-visit h2{margin-bottom:24px}#office-map-arrival .office-map iframe{height:360px;min-height:360px}}
 #hero.hero .hero-grid{justify-content:center}
 #hero.hero .hero-copy{width:calc(58% - 48px);max-width:650px;padding:56px 0;margin-left:max(48px,calc((100vw - 1152px)/2))}
 #hero.hero .hero-practice{color:white;font-size:13px;letter-spacing:.1em;margin-bottom:20px}
