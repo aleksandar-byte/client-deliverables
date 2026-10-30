@@ -1,0 +1,466 @@
+[
+  {
+    "url": "https://mjbfirm.com/blog/california-workers-compensation-law/",
+    "final_url": "https://mjbfirm.com/california-workers-compensation-law/",
+    "final_status": 200,
+    "redirects": [
+      {
+        "url": "https://mjbfirm.com/blog/california-workers-compensation-law/",
+        "status": 301,
+        "location": "https://mjbfirm.com/california-workers-compensation-law/"
+      }
+    ],
+    "in_sitemap": false,
+    "inlinks": [
+      {
+        "source": "https://mjbfirm.com/california-abc-test/",
+        "text": "even workers' compensation",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      }
+    ]
+  },
+  {
+    "url": "https://mjbfirm.com/blog/california-termination-laws",
+    "final_url": "https://mjbfirm.com/california-termination-laws/",
+    "final_status": 200,
+    "redirects": [
+      {
+        "url": "https://mjbfirm.com/blog/california-termination-laws",
+        "status": 301,
+        "location": "https://mjbfirm.com/california-termination-laws/"
+      }
+    ],
+    "in_sitemap": false,
+    "inlinks": [
+      {
+        "source": "https://mjbfirm.com/california-cobra-insurance/",
+        "text": "California termination laws",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      },
+      {
+        "source": "https://mjbfirm.com/california-supreme-court-holds-that-meal-and-rest-period-violations-warrant-imposition-of-statutory-penalties/",
+        "text": "California termination laws",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      },
+      {
+        "source": "https://mjbfirm.com/pto-payout-california/",
+        "text": "termination",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      }
+    ]
+  },
+  {
+    "url": "https://mjbfirm.com/blog/at-will-employment-california",
+    "final_url": "https://mjbfirm.com/at-will-employment-california/",
+    "final_status": 200,
+    "redirects": [
+      {
+        "url": "https://mjbfirm.com/blog/at-will-employment-california",
+        "status": 301,
+        "location": "https://mjbfirm.com/at-will-employment-california/"
+      }
+    ],
+    "in_sitemap": false,
+    "inlinks": [
+      {
+        "source": "https://mjbfirm.com/california-cobra-insurance/",
+        "text": "at-will employment in California",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      },
+      {
+        "source": "https://mjbfirm.com/on-call-pay-california/",
+        "text": "at-will employment in California",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      }
+    ]
+  },
+  {
+    "url": "https://mjbfirm.com/blog/california-workers-compensation-law",
+    "final_url": "https://mjbfirm.com/california-workers-compensation-law/",
+    "final_status": 200,
+    "redirects": [
+      {
+        "url": "https://mjbfirm.com/blog/california-workers-compensation-law",
+        "status": 301,
+        "location": "https://mjbfirm.com/california-workers-compensation-law/"
+      }
+    ],
+    "in_sitemap": false,
+    "inlinks": [
+      {
+        "source": "https://mjbfirm.com/california-cobra-insurance/",
+        "text": "California workers’ compensation law",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      },
+      {
+        "source": "https://mjbfirm.com/california-supreme-court-holds-that-meal-and-rest-period-violations-warrant-imposition-of-statutory-penalties/",
+        "text": "California workers’ compensation law",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      },
+      {
+        "source": "https://mjbfirm.com/on-call-pay-california/",
+        "text": "compensation law",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      }
+    ]
+  },
+  {
+    "url": "https://mjbfirm.com/blog/non-compete-california",
+    "final_url": "https://mjbfirm.com/non-compete-california/",
+    "final_status": 200,
+    "redirects": [
+      {
+        "url": "https://mjbfirm.com/blog/non-compete-california",
+        "status": 301,
+        "location": "https://mjbfirm.com/non-compete-california/"
+      }
+    ],
+    "in_sitemap": false,
+    "inlinks": [
+      {
+        "source": "https://mjbfirm.com/california-cobra-insurance/",
+        "text": "non-compete agreements in California",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      },
+      {
+        "source": "https://mjbfirm.com/california-supreme-court-holds-that-meal-and-rest-period-violations-warrant-imposition-of-statutory-penalties/",
+        "text": "non-compete agreements in California",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      },
+      {
+        "source": "https://mjbfirm.com/non-solicitation-agreement-california/",
+        "text": "Non-Compete",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      }
+    ]
+  },
+  {
+    "url": "https://mjbfirm.com/blog/waiting-time-penalties-california",
+    "final_url": "https://mjbfirm.com/waiting-time-penalties-california/",
+    "final_status": 200,
+    "redirects": [
+      {
+        "url": "https://mjbfirm.com/blog/waiting-time-penalties-california",
+        "status": 301,
+        "location": "https://mjbfirm.com/waiting-time-penalties-california/"
+      }
+    ],
+    "in_sitemap": false,
+    "inlinks": [
+      {
+        "source": "https://mjbfirm.com/california-supreme-court-holds-that-meal-and-rest-period-violations-warrant-imposition-of-statutory-penalties/",
+        "text": "waiting time penalties in California",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      },
+      {
+        "source": "https://mjbfirm.com/california-termination-laws/",
+        "text": "waiting time penalties in California",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      }
+    ]
+  },
+  {
+    "url": "https://mjbfirm.com/blog/severance-pay-california",
+    "final_url": "https://mjbfirm.com/severance-pay-california/",
+    "final_status": 200,
+    "redirects": [
+      {
+        "url": "https://mjbfirm.com/blog/severance-pay-california",
+        "status": 301,
+        "location": "https://mjbfirm.com/severance-pay-california/"
+      }
+    ],
+    "in_sitemap": false,
+    "inlinks": [
+      {
+        "source": "https://mjbfirm.com/california-termination-laws/",
+        "text": "severance pay in California",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      }
+    ]
+  },
+  {
+    "url": "https://mjbfirm.com/blog/unemployment-in-california",
+    "final_url": "https://mjbfirm.com/unemployment-in-california/",
+    "final_status": 200,
+    "redirects": [
+      {
+        "url": "https://mjbfirm.com/blog/unemployment-in-california",
+        "status": 301,
+        "location": "https://mjbfirm.com/unemployment-in-california/"
+      }
+    ],
+    "in_sitemap": false,
+    "inlinks": [
+      {
+        "source": "https://mjbfirm.com/california-termination-laws/",
+        "text": "unemployment benefits in California",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      },
+      {
+        "source": "https://mjbfirm.com/on-call-pay-california/",
+        "text": "unemployment in California",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      }
+    ]
+  },
+  {
+    "url": "https://mjbfirm.com/blog/california-independent-contractor-law",
+    "final_url": "https://mjbfirm.com/california-independent-contractor-law/",
+    "final_status": 200,
+    "redirects": [
+      {
+        "url": "https://mjbfirm.com/blog/california-independent-contractor-law",
+        "status": 301,
+        "location": "https://mjbfirm.com/california-independent-contractor-law/"
+      }
+    ],
+    "in_sitemap": false,
+    "inlinks": [
+      {
+        "source": "https://mjbfirm.com/on-call-pay-california/",
+        "text": "California independent contractor law",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      }
+    ]
+  },
+  {
+    "url": "https://mjbfirm.com/personal-injury-law/motorcycle-acccidents/",
+    "final_url": "https://mjbfirm.com/personal-injury-law/motorcycle-accidents/",
+    "final_status": 200,
+    "redirects": [
+      {
+        "url": "https://mjbfirm.com/personal-injury-law/motorcycle-acccidents/",
+        "status": 301,
+        "location": "/personal-injury-law/motorcycle-accidents/"
+      }
+    ],
+    "in_sitemap": false,
+    "inlinks": [
+      {
+        "source": "https://mjbfirm.com/personal-injury-law/",
+        "text": "Motorcycle Accidents",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": null
+      }
+    ]
+  },
+  {
+    "url": "https://mjbfirm.com/blog/page/1/",
+    "final_url": "https://mjbfirm.com/blog/",
+    "final_status": 200,
+    "redirects": [
+      {
+        "url": "https://mjbfirm.com/blog/page/1/",
+        "status": 301,
+        "location": "https://mjbfirm.com/blog/"
+      }
+    ],
+    "in_sitemap": false,
+    "inlinks": [
+      {
+        "source": "https://mjbfirm.com/blog/page/2/",
+        "text": "« Previous",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": [
+          "prev",
+          "page-numbers"
+        ]
+      },
+      {
+        "source": "https://mjbfirm.com/blog/page/2/",
+        "text": "1",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": [
+          "page-numbers"
+        ]
+      },
+      {
+        "source": "https://mjbfirm.com/blog/page/3/",
+        "text": "1",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": [
+          "page-numbers"
+        ]
+      },
+      {
+        "source": "https://mjbfirm.com/blog/page/9/",
+        "text": "1",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": [
+          "page-numbers"
+        ]
+      },
+      {
+        "source": "https://mjbfirm.com/blog/page/4/",
+        "text": "1",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": [
+          "page-numbers"
+        ]
+      },
+      {
+        "source": "https://mjbfirm.com/blog/page/5/",
+        "text": "1",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": [
+          "page-numbers"
+        ]
+      },
+      {
+        "source": "https://mjbfirm.com/blog/page/8/",
+        "text": "1",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": [
+          "page-numbers"
+        ]
+      },
+      {
+        "source": "https://mjbfirm.com/blog/page/7/",
+        "text": "1",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": [
+          "page-numbers"
+        ]
+      },
+      {
+        "source": "https://mjbfirm.com/blog/page/6/",
+        "text": "1",
+        "inside_nav": false,
+        "inside_header": false,
+        "inside_footer": false,
+        "rel": null,
+        "id": null,
+        "classes": [
+          "page-numbers"
+        ]
+      }
+    ]
+  }
+]

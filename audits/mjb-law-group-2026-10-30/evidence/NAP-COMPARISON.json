@@ -1,0 +1,126 @@
+{
+  "checked_at": "2026-10-30",
+  "baseline": {
+    "name": "MJB Law Group, APC",
+    "address": "1442 Irvine Boulevard, Suite 201, Tustin, CA 92780",
+    "phone": "9492660880",
+    "gbp_phone": "9498326738",
+    "gbp_phone_role": "Verified WC Google Business Profile - New -> 9492660880",
+    "hours": "Mon-Fri08:30-17:30;Sat/Sunclosed"
+  },
+  "finding": "No confirmed NAP correction; wider-directory coverage partial",
+  "rows": [
+    {
+      "source": "Homepage/contact",
+      "url": "https://mjbfirm.com/contact-us/",
+      "evidence": "liveHTTP200",
+      "name": "MJB Law Group, APC",
+      "address": "1442IrvineBlvdSuite201,TustinCA92780",
+      "phone": "9492660880",
+      "result": "consistent"
+    },
+    {
+      "source": "OrganizationJSON-LD",
+      "url": "https://mjbfirm.com/",
+      "evidence": "liveextracted",
+      "name": "MJB Law Group, APC",
+      "address": null,
+      "phone": "+19492660880",
+      "result": "phoneconsistent;physicaladdressnotpresentinOrganization"
+    },
+    {
+      "source": "GoogleBusinessProfile",
+      "url": "https://www.google.com/maps/search/?api=1&query=Google&query_place_id=ChIJFfK8Ex3f3IARLR_eEVRMZ9g",
+      "evidence": "liveSerpAPI",
+      "name": "MJB Law Group, APC",
+      "address": "1442IrvineBlvdSte201,TustinCA92780",
+      "phone": "9498326738",
+      "hours": "Mon-Fri08:30-17:30;Sat/Sunclosed",
+      "result": "consistent;verifiedtrackingphone"
+    },
+    {
+      "source": "OrangeCountyLawyers",
+      "url": "https://www.orangecountylawyers.com/attorneys/mjb-law-group/",
+      "evidence": "liveHTTP200",
+      "address": "1442IrvineBlvdSuite201,TustinCA92780",
+      "phone": "9492660880",
+      "result": "consistent"
+    },
+    {
+      "source": "Halt",
+      "url": "https://www.halt.org/lawyers/mjb-law-group",
+      "evidence": "liveHTTP200",
+      "address": "1442IrvineBlvdSuite201,TustinCA92780",
+      "phone": "9492660880",
+      "hours": "Mon-Fri08:30-17:30;Sat/Sunclosed",
+      "result": "consistent;ignoreHaltfooterphone/address"
+    },
+    {
+      "source": "StateBar303519",
+      "url": "https://apps.calbar.ca.gov/attorney/Licensee/Detail/303519",
+      "evidence": "liveHTTP200",
+      "name": "Michael Joseph Berry / MJB Law Group APC",
+      "address": "1442IrvineBlvdSte201,TustinCA92780-3846",
+      "phone": "9492660880",
+      "result": "consistentnormalizedZIP+4;Active"
+    },
+    {
+      "source": "Justia",
+      "url": "https://lawyers.justia.com/lawyer/michael-berry-1672176",
+      "evidence": "searchindexed/direct403",
+      "address": "1442IrvineBlvdSuite201,TustinCA92780",
+      "phone": "9492660880",
+      "result": "indexedconsistent;liveunavailable"
+    },
+    {
+      "source": "Avvo",
+      "url": "https://www.avvo.com/attorneys/92780-ca-michael-berry-4698028.html",
+      "evidence": "searchindexed/direct403",
+      "address": "1442IrvineBlvdSuite201,TustinCA92780",
+      "phone": "9492660880",
+      "result": "indexedconsistent;liveunavailable"
+    },
+    {
+      "source": "Birdeye",
+      "url": "https://reviews.birdeye.com/mjb-law-group-apc-169046773307506",
+      "evidence": "searchindexed/direct403",
+      "address": "1442IrvineBlvdSuite201,TustinCA92780",
+      "phone": null,
+      "hours": "Mon-Fri08:30-17:30;Sat/Sunclosed",
+      "result": "indexedaddress/hoursconsistent;reviewcount51differsfromexactGBP45"
+    },
+    {
+      "source": "Facebook",
+      "url": "https://www.facebook.com/people/MJB-Law-Group-APC/100063566403499/",
+      "evidence": "liveHTTP200limitedshell",
+      "name": "MJB Law Group APC | Irvine CA",
+      "address": null,
+      "phone": null,
+      "result": "Irvinecitylabelunresolved;notaconfirmedwrongaddress"
+    },
+    {
+      "source": "Yelp",
+      "url": null,
+      "evidence": "boundednamesearch/domainsearchattempt",
+      "result": "unverified;notprovenabsent"
+    },
+    {
+      "source": "AppleMaps",
+      "url": null,
+      "evidence": "boundednamesearch/domainsearchattempt",
+      "result": "unverified;notprovenabsent"
+    },
+    {
+      "source": "BingMaps",
+      "url": null,
+      "evidence": "boundednamesearch/domainsearchattempt",
+      "result": "unverified;notprovenabsent"
+    },
+    {
+      "source": "BBB",
+      "url": null,
+      "evidence": "boundednamesearch/domainsearchattempt",
+      "result": "unverified;notprovenabsent"
+    }
+  ]
+}

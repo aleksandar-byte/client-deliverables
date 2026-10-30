@@ -1,0 +1,783 @@
+{
+  "issue": "Article.author is typed Person but named firm brand MJB Firm",
+  "affected_pages": [
+    {
+      "url": "https://mjbfirm.com/administrative-exemption-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/seo-serp/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/are-mandatory-retirement-ages-legal/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/at-will-employment-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/boeing-ceo-admits-company-retaliated-against-whistleblowers/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-abc-test/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/content-serp/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-cobra-insurance/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-fair-employment-and-housing-act/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-fair-pay-act/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-final-pay/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-furlough-laws/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-independent-contractor-law/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-job-abandonment/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-layoff-laws/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-mandatory-overtime/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-overtime-laws/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-penalty-pay/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-pregnancy-discrimination-law/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-supreme-court-holds-that-meal-and-rest-period-violations-warrant-imposition-of-statutory-penalties/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-termination-checklist/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-termination-laws/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-vacation-laws/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-wage-and-hour-laws/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/content-serp/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-wage-garnishment/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/california-workers-compensation-law/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/can-an-employer-reduce-your-pay/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/liz/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/can-i-claim-whiplash-as-a-passenger/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/can-my-personal-injury-settlement-be-garnished/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/cfra-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/child-labor-laws-tustin/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/liz/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/constructive-termination-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/liz/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/definition-of-abusive-conduct-under-california-law/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/disability-discrimination-in-the-workplace/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/seo-serp/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/does-employment-law-apply-to-volunteers/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/employee-monitoring-laws/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/seo-serp/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/employment-agencies-can-illegally-discriminate-too/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/employment-background-check-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/content-serp/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/employment-law-developments-that-may-affect-you-and-your-job/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/exempt-vs-non-exempt-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/liz/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/family-leave-act-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/four-common-employment-law-issues-california-employees-face/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/holiday-pay-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/hostile-work-environment-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/how-long-is-maternity-leave-in-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/how-many-different-kinds-of-employment-are-there/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/how-to-file-a-wage-claim-in-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/independent-contractor-vs-employee/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/liz/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/inside-sales-exemption-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/interactive-process-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/seo-serp/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/interest-on-unpaid-wages-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/invasion-of-privacy-laws/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/liz/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/is-my-employment-arbitration-agreement-binding/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/issues-a-misclassified-worker-faces/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/legal-issues-for-employees-working-from-home/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/mileage-reimbursement-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/content-serp/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/new-federal-rule-increases-pay-for-some-salaried-workers/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/non-compete-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/non-solicitation-agreement-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/content-serp/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/on-call-pay-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/content-serp/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/outside-sales-exemption-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/part-time-unemployment-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/payroll-deductions-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/liz/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/per-diem-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/content-serp/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/pto-payout-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/content-serp/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/reasonable-accommodation-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/seo-serp/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/reporting-time-pay-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/liz/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/severance-pay-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/sick-leave-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/liz/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/the-dirty-dozen-signs-your-job-is-misclassified-as-an-independent-contractor/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/the-federal-government-wants-more-help-from-whistleblowers/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/time-clock-rounding/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/liz/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/unemployment-in-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/use-it-or-lose-it-vacation-policy-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/waiting-time-penalties-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/warn-act-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/webmaintenance/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/what-are-the-consequences-of-a-successful-wrongful-termination-case/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/what-is-involved-in-being-part-of-a-wrongful-death-lawsuit/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/what-is-premium-pay-in-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/what-is-workplace-harassment/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/liz/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/what-new-employment-laws-go-into-effect-in-2024/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/what-will-it-cost-you-to-be-an-independent-contractor/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/what-you-need-to-know-about-the-personal-injury-process/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/workplace-bullying-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/workplace-harassment-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/liz/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/workplace-retaliation-california/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/joanne/"
+      }
+    },
+    {
+      "url": "https://mjbfirm.com/you-should-have-a-right-to-disconnect-from-your-employer/",
+      "script": 1,
+      "author": {
+        "@type": "Person",
+        "name": "MJB Firm",
+        "url": "https://mjbfirm.com/author/mberry/"
+      }
+    }
+  ],
+  "recommendation": "Confirm corporate authorship; represent firm author as Organization referencing #organization. Preserve visible Michael J. Berry reviewer separately; do not reassign sole authorship without confirmation.",
+  "template_to_find": "Public article JSON-LD generating source (Article.author); CMS emitter/settings unverified",
+  "keep": [
+    "valid WebSite",
+    "valid Organization",
+    "BreadcrumbList",
+    "Article dates/headlines/images"
+  ],
+  "optional": [
+    "LegalService entity with verified Tustin details",
+    "Person/ProfilePage for Michael J. Berry on his bio, linked to firm"
+  ],
+  "no_product_detected": true
+}
