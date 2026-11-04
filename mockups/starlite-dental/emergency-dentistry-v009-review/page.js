@@ -29,6 +29,9 @@
     document.querySelectorAll('[data-today-hours]').forEach(element => {
       element.textContent = hours[day];
     });
+    document.querySelectorAll('[data-office-today-label]').forEach(element => {
+      element.textContent = 'Today';
+    });
   } catch {
     // The complete weekly schedule remains usable in HTML.
   }

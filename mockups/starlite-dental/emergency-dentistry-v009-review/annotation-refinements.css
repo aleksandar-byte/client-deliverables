@@ -1,4 +1,5 @@
 /* v008: one phone-first action group, raised hero copy and calm symptom section. */
+.office-today-summary{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
 /* v010: separate practical notes, real office photo beside the visit, shorter map. */
 #prepare-visit{padding-top:0}
 #prepare-visit>.shell{border-top:1px solid #c8dde9;padding-top:48px}
