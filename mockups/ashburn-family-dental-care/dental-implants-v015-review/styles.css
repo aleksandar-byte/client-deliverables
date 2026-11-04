@@ -1245,3 +1245,38 @@ strong {
   #implant-experience .more-reviews > summary,
   #implant-experience .more-reviews-chevron { transition: none; }
 }
+
+/* v017: compact selected-review proof and factual hero benefits. */
+#hero .hero-review-proof { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; width: fit-content; max-width: 100%; min-height: 44px; margin-top: 10px; font-size: 14px; line-height: 1.5; text-decoration: none; }
+#hero .hero-review-proof > span:last-child { text-decoration: underline; text-underline-offset: 4px; }
+#hero .hero-review-proof:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+#hero .hero-review-stars { display: inline-flex; flex: 0 0 auto; gap: 2px; color: #e4bd72; }
+#hero .hero-review-stars svg { display: block; fill: currentColor; }
+#hero .hero-benefits { display: flex; flex-wrap: wrap; gap: 8px 20px; padding: 0; margin: 10px 0 0; list-style: none; font-size: 14px; line-height: 1.5; }
+#hero .hero-benefits li { display: flex; gap: 8px; min-width: 0; max-width: 100%; margin: 0; padding: 0; }
+#hero .hero-benefits li::before { content: ''; display: block; flex: 0 0 6px; width: 6px; height: 6px; margin-top: 7px; border-radius: 50%; background: #e4bd72; }
+@media (max-width: 900px) {
+  #hero { padding-block: 24px; }
+  #hero .hero-grid { gap: 20px; }
+  #hero .hero-lead { margin-bottom: 16px; }
+  #hero .hero-note { margin-top: 12px; margin-bottom: 0; }
+  #hero .hero-review-proof { margin-top: 4px; }
+  #hero .hero-benefits { margin-top: 4px; gap: 6px 20px; }
+  #hero .start-path { padding-top: 16px; }
+  #hero .start-path h2 { margin-bottom: 12px; }
+  #hero .start-path li { margin-bottom: 8px; }
+}
+@media (max-width: 540px) {
+  #hero { padding-block: 16px; }
+  #hero .hero-grid { gap: 16px; }
+  #hero .start-path h2 { margin-bottom: 8px; }
+  #hero .start-path li:last-child { margin-bottom: 0; }
+  #hero[data-hero-density] .hero-lead { font-size: 14px; line-height: 1.5; margin-bottom: 12px; }
+  #hero[data-hero-density] .button { min-height: 44px; font-size: 13px; }
+  #hero .hero-benefits { display: grid; gap: 4px; }
+  #hero .hero-review-proof { gap: 4px 10px; }
+  #hero .hero-review-stars svg { width: 15px; height: 15px; }
+}
+@media (max-width: 380px) {
+  #hero[data-hero-density="tight"] { padding-block: 8px; }
+}
