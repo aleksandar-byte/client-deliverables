@@ -1280,3 +1280,43 @@ strong {
 @media (max-width: 380px) {
   #hero[data-hero-density="tight"] { padding-block: 8px; }
 }
+
+/* Hero media: v020 approved smile image; consultation steps remain below. */
+#hero .hero-grid { grid-template-columns: minmax(0,1.25fr) minmax(0,.8fr); gap: 72px; }
+#hero .hero-image { width: min(100%,440px); min-width: 0; margin: 0 0 0 auto; }
+#hero .hero-image img { display: block; width: 100%; height: auto; aspect-ratio: 5 / 4; object-fit: contain; border-radius: 8px; }
+#implant-consultation { padding-block: 40px; background: var(--surface); }
+#implant-consultation .start-path { border: 0; padding: 0; }
+#implant-consultation .start-path h2 { max-width: none; font-size: 30px; margin: 0 0 28px; }
+#implant-consultation .start-path ol { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 40px; margin: 0; padding-left: 24px; }
+#implant-consultation .start-path li { margin: 0; padding-left: 8px; min-width: 0; font-size: 16px; line-height: 1.5; }
+#implant-consultation .start-path li::marker { color: var(--ink); font-weight: 600; }
+#implant-consultation .start-path strong { display: block; font-weight: 600; }
+#implant-consultation .start-path span { display: block; margin-top: 8px; font-size: 14px; line-height: 1.65; color: var(--ink); }
+@media (max-width: 1100px) and (min-width: 901px) { #hero .hero-grid { gap: 40px; } }
+@media (max-width: 900px) {
+  #hero .hero-grid { grid-template-columns: minmax(0,1fr); gap: 24px; }
+  #hero .hero-image { width: min(100%,240px); margin: 0; }
+  #implant-consultation .start-path ol { gap: 28px; }
+}
+@media (max-width: 600px) {
+  #implant-consultation { padding-block: 32px; }
+  #implant-consultation .start-path h2 { font-size: 28px; margin-bottom: 24px; }
+  #implant-consultation .start-path ol { grid-template-columns: minmax(0,1fr); gap: 20px; }
+}
+
+/* v019: approved phone hero; retain desktop/tablet composition. */
+@media (max-width: 600px) {
+  #hero[data-viewport-hero] { --hero-sizing: content; min-block-size: 0; align-items: start; padding-block: 24px; }
+  #hero .hero-grid { grid-template-columns: minmax(0,1fr); gap: 0; }
+  #hero .hero-image { display: none; }
+  #hero .eyebrow { margin-bottom: 16px; }
+  #hero .hero-copy h1 { font-size: 34px; line-height: 1.14; margin-bottom: 16px; }
+  #hero .hero-copy .hero-lead { font-size: 16px; line-height: 1.6; margin: 0 0 16px; }
+  #hero .button-row { display: grid; grid-template-columns: minmax(0,1fr); gap: 6px; width: 100%; }
+  #hero .button-row .button { width: 100%; min-height: 48px; font-size: 14px; line-height: 1.5; padding: 12px 16px; text-align: center; }
+  #hero .hero-phone { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 44px; font-size: 14px; line-height: 1.5; }
+  #hero .hero-note { margin: 8px 0 0; font-size: 12px; line-height: 1.5; text-align: center; }
+  #hero .hero-review-proof { width: 100%; margin-top: 16px; padding-top: 12px; border-top: 1px solid rgb(255 255 255 / 20%); }
+  #hero .hero-benefits { margin-top: 8px; gap: 6px; font-size: 14px; line-height: 1.5; }
+}
