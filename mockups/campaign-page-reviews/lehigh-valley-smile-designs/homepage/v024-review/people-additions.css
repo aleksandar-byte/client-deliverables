@@ -1,0 +1,51 @@
+/* One connected element, with founder and team as distinct chapters. */
+.v013-people-band{padding:0 24px 64px;background:#f4f4f4}
+#v013-people-group{width:100%;max-width:1120px;margin:0 auto;border:1px solid rgba(127,44,87,.16);border-radius:32px;background:#fff}
+#v013-people-group #section-34-149{border-radius:32px 32px 0 0;background-image:linear-gradient(100deg,rgba(69,30,51,.94),rgba(40,33,44,.9)),url('assets/ae38feb178ea73c0.webp')!important;background-position:center!important;background-size:cover!important}
+#v013-people-group #section-34-149>.ct-section-inner-wrap{display:block;max-width:none;padding:48px!important}
+#v013-people-group #div_block-40-149{display:grid!important;grid-template-columns:220px minmax(0,1fr);grid-template-areas:"proof eyebrow" "proof name" "proof biography" "proof action" "quote quote";gap:16px 40px;align-items:start;width:100%;max-width:none;margin:0!important;padding:0}
+#v013-people-group #headline-41-149{grid-area:eyebrow;margin:0!important;line-height:1.4!important}
+#v013-people-group #headline-42-149{grid-area:name;font-size:44px!important;line-height:1.2!important;margin:0!important}
+#v013-people-group #text_block-43-149{grid-area:biography;margin:0!important;line-height:1.7!important}
+#v013-people-group .v004-michael-proof{grid-area:proof;display:flex;flex-direction:column;align-items:flex-start;gap:20px;margin:0!important;min-width:0}
+#v013-people-group .v004-michael-proof img{display:block;width:220px;height:220px;max-width:100%;border-radius:24px;object-fit:contain;background:#fff}
+#v013-people-group .v004-michael-proof p{font-size:14px;line-height:1.6;margin:0}
+#v013-people-group #text_block-44-149{grid-area:action;justify-self:start;min-height:44px;display:inline-flex;align-items:center;margin:0!important}
+#v013-people-group .v009-founder-quote{grid-area:quote;max-width:none;margin:16px 0 0!important;padding-left:20px}
+#v013-people-group #section-207-149{border-radius:0 0 32px 32px;background:#fff}
+#v013-people-group #section-207-149>.ct-section-inner-wrap{display:block;max-width:none;padding:48px!important}
+#v013-people-group #div_block-208-149{display:block;width:100%;max-width:none;min-height:0!important;height:auto!important;margin:0;padding:0}
+#v013-people-group #headline-214-149{font-size:24px!important;line-height:1.5!important;margin:0 0 8px!important}
+#v013-people-group #headline-216-149{font-size:36px!important;line-height:1.2!important;margin:0 0 24px!important}
+#v013-people-group .v013-provider-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;width:100%}
+#v013-people-group .v004-provider-row{display:grid;grid-template-columns:96px minmax(0,1fr);gap:20px;align-items:start;min-width:0;margin:0!important;padding:24px 0 0}
+#v013-people-group .v004-provider-row img{width:96px;height:128px;max-width:100%;object-fit:contain;border-radius:16px}
+#v013-people-group .v004-provider-row h3{font-size:24px;line-height:1.25;margin:0 0 12px!important}
+#v013-people-group .v004-provider-row p{font-size:15px;line-height:1.6;margin:0 0 12px}
+#v013-people-group .v004-provider-row a{display:inline-flex;align-items:center;min-height:44px;line-height:1.5;text-decoration:underline;text-underline-offset:3px}
+#v013-people-group #section-207-149 #div_block-209-149{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:24px;align-items:center;min-height:0!important;height:auto!important;width:100%;margin:32px 0 0;padding:0}
+#v013-people-group #div_block-210-149{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:center;position:static;width:100%;height:auto;min-height:0;max-width:none;margin:0;padding:0;transform:none}
+#v013-people-group #div_block-210-149 img{display:block;position:static;width:100%;height:auto;max-width:100%;max-height:none;object-fit:contain;border-radius:16px;margin:0;padding:0;transform:none}
+#v013-people-group #section-207-149 #slider-224-149,#v013-people-group #section-207-149 #slider-224-149 :is(.unslider,.oxygen-unslider-container,.unslider-wrap,.ct-slide){width:100%;height:320px!important;min-height:320px!important}
+#v013-people-group #slider-224-149{border-radius:20px;overflow:hidden;background:#f4f4f4}
+#v013-people-group #slider-224-149 .unslider-wrap img{width:100%;height:100%;object-fit:contain;background:#f4f4f4}
+#v013-people-group #slider-224-149 .v004-review-controls{bottom:16px}
+@media(max-width:1100px){.v013-people-band{padding-bottom:48px}#v013-people-group #section-34-149>.ct-section-inner-wrap,#v013-people-group #section-207-149>.ct-section-inner-wrap{padding:32px!important}#v013-people-group #div_block-40-149{grid-template-columns:180px minmax(0,1fr);column-gap:32px}#v013-people-group .v004-michael-proof img{width:180px;height:180px}#v013-people-group .v004-provider-row{grid-template-columns:80px minmax(0,1fr);gap:16px}#v013-people-group .v004-provider-row img{width:80px;height:112px}}
+@media(max-width:700px){
+ .v013-people-band{padding:0 24px 40px}
+ #v013-people-group{border-radius:24px}
+ #v013-people-group #section-34-149{border-radius:24px 24px 0 0}
+ #v013-people-group #section-207-149{border-radius:0 0 24px 24px}
+ #v013-people-group #section-34-149>.ct-section-inner-wrap,#v013-people-group #section-207-149>.ct-section-inner-wrap{padding:24px!important}
+ #v013-people-group #div_block-40-149{grid-template-columns:minmax(0,1fr);grid-template-areas:"eyebrow" "name" "proof" "biography" "action" "quote";gap:20px}
+ #v013-people-group #headline-42-149{font-size:34px!important}
+ #v013-people-group .v004-michael-proof{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;align-items:start}
+ #v013-people-group .v004-michael-proof img{width:120px;height:120px;border-radius:16px}
+ #v013-people-group .v004-michael-proof p{font-size:14px}
+ #v013-people-group .v009-founder-quote{margin:4px 0 0!important;padding-left:16px}
+ #v013-people-group #headline-216-149{font-size:32px!important}
+ #v013-people-group .v013-provider-grid{grid-template-columns:minmax(0,1fr);gap:24px}
+ #v013-people-group #section-207-149 #div_block-209-149{grid-template-columns:minmax(0,1fr);gap:24px;margin-top:24px}
+ #v013-people-group #section-207-149 #slider-224-149,#v013-people-group #section-207-149 #slider-224-149 :is(.unslider,.oxygen-unslider-container,.unslider-wrap,.ct-slide){height:280px!important;min-height:280px!important}
+}
+@media(max-width:389px){#v013-people-group .v004-michael-proof{grid-template-columns:104px minmax(0,1fr);gap:12px}#v013-people-group .v004-michael-proof img{width:104px;height:104px}}

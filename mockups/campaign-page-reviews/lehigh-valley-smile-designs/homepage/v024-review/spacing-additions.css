@@ -1,0 +1,111 @@
+/* v010: one spacing scale, preserving the existing visual identity. */
+:root{--v010-section-space:64px;--v010-column-gap:48px;--v010-stack-gap:32px}
+.v010-section{height:auto!important;min-height:0!important;scroll-margin-top:112px}
+.v010-section>.ct-section-inner-wrap{height:auto!important;min-height:0!important;padding:var(--v010-section-space) 24px!important;row-gap:var(--v010-stack-gap)!important;column-gap:var(--v010-column-gap)!important}
+.v010-section :is(h2,h3){margin-top:0!important}
+.v010-section h2:not(.subhead){margin-bottom:16px!important}
+.v010-section :is(.subhead,.subtitle,#headline-41-149,#headline-214-149){margin:0 0 8px!important}
+.v010-section p{margin-top:0;margin-bottom:16px}
+.v010-section p:last-child{margin-bottom:0}
+.v010-section .btn-outline{margin-top:24px}
+#care-pathways .v004-care-links{gap:16px;margin:8px 0 24px}
+#care-pathways .v004-care-links .btn-outline,.v005-makeover-actions .btn-outline{margin:0}
+#care-pathways .v009-urgent-route{margin-top:16px}
+.v005-makeover-actions{margin-top:24px;gap:16px}
+#section-34-149 #div_block-40-149{height:auto!important;min-height:0!important}
+#section-34-149 .v004-michael-proof{margin-top:24px;gap:24px}
+#section-34-149 .v009-founder-quote{margin-top:24px}
+#section-207-149 :is(#div_block-208-149,#div_block-209-149){height:auto!important;min-height:0!important}
+#section-207-149 #div_block-209-149{min-height:480px!important}
+#section-207-149 #slider-224-149{height:100%;min-height:480px}
+#section-207-149 #slider-224-149 :is(.unslider,.oxygen-unslider-container,.unslider-wrap,.ct-slide){height:100%;min-height:480px}
+.v004-provider-row{margin-top:24px;padding-top:24px;gap:24px}
+.v004-provider-row :is(h3,p){margin-bottom:12px}
+/* Short and long review excerpts use a natural-height branded panel. */
+#section-134-149 #div_block-135-149{height:auto!important;min-height:0!important;padding:48px!important}
+#slider-136-149,#slider-136-149 :is(.unslider,.oxygen-unslider-container,.unslider-wrap,.ct-slide){height:auto!important;min-height:0!important}
+#slider-136-149 .ct-slide{padding:0 0 80px!important}
+#slider-136-149 :is(#div_block-155-149,#div_block-176-149){height:auto!important;min-height:0!important}
+#slider-136-149 blockquote{margin:24px 0!important}
+#slider-136-149 .v004-review-controls{bottom:8px}
+/* Copy columns size to text; media keeps the original gold-framed treatment. */
+:is(#smile-makeover,#section-61-149,#section-76-149,#section-112-149)>.ct-section-inner-wrap{align-items:center}
+:is(#v004-smile-div_block-62-149,#div_block-62-149,#div_block-77-149,#div_block-113-149){height:auto!important;min-height:0!important;justify-content:center}
+:is(#div_block-67-149,#div_block-82-149,#div_block-118-149){height:480px!important;min-height:0!important;max-height:none}
+:is(#div_block-68-149,#div_block-83-149,#div_block-119-149){height:100%!important;min-height:0!important;width:100%}
+#patient-information [data-element="visit-preparation"],#insurance-payment :is(.v008-cost-intro,.v008-financial-row,.v008-financial-action){column-gap:var(--v010-column-gap)}
+#patient-information .v008-visit-copy .btn-outline{margin-top:24px}
+#faq h2{margin-bottom:24px!important}
+#faq details{padding-block:24px}
+#faq details p{margin-top:16px}
+/* One near-top contact section. Source order puts the map before the form. */
+#section-16-127>.ct-section-inner-wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"intro intro" "form identity" "form map" "form hours" "routes routes";gap:24px 32px!important;align-items:start}
+#section-16-127 .v004-contact-actions{display:contents}
+#section-16-127 #div_block-19-127{grid-area:intro;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 32px;align-items:start;width:100%;max-width:none}
+#section-16-127 #div_block-23-127{grid-column:1;margin:0}
+#section-16-127 #text_block-25-127{grid-column:1;grid-row:2 / 4;margin:0!important}
+#section-16-127 #div_block-19-127>p{grid-column:2;max-width:none;margin:0!important}
+#section-16-127 #text_block-218-149{padding-top:8px}
+#section-16-127 #div_block-20-127{grid-area:identity;display:flex;align-items:flex-start;gap:12px;width:100%;min-height:0;height:auto}
+#section-16-127 #div_block-20-127>.footer-contacts{margin:0!important;padding:0;max-width:100%;width:auto}
+#section-16-127 #div_block-38-127{display:flex;flex-direction:row;align-items:center;gap:12px}
+#section-16-127 #div_block-42-127{font-size:24px!important;line-height:1.4!important}
+#section-16-127 #div_block-45-127{margin:4px 0!important}
+#section-16-127 #code_block-54-127{grid-area:map;width:100%;height:340px!important;min-height:0;border-radius:24px;overflow:hidden}
+#section-16-127 #code_block-54-127 iframe{min-height:0!important;height:100%;width:100%}
+#section-16-127 #div_block-21-127{grid-area:form;width:100%;height:auto!important;min-height:0!important;align-self:stretch;padding:24px;gap:16px;border-radius:24px}
+#section-16-127 #div_block-21-127>:is(p,div){width:100%;margin:0}
+#section-16-127 #text_block-56-127{line-height:1.2!important}
+#section-16-127 #text_block-58-127{line-height:1.6!important}
+#section-16-127 #gform_4{margin:8px 0 0;width:100%}
+#section-16-127 #gform_fields_4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+#section-16-127 #gform_fields_4>.gfield{grid-column:1 / -1;min-width:0;margin:0;padding:0}
+#section-16-127 #gform_fields_4>:is(#field_4_1,#field_4_3){grid-column:auto}
+#section-16-127 :is(input[type="text"],input[type="tel"],input[type="email"],select,textarea){width:100%;max-width:100%;box-sizing:border-box;min-height:48px;padding:12px;border-radius:8px}
+#section-16-127 textarea{height:96px;min-height:96px}
+#section-16-127 #input_4_5{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px}
+#section-16-127 #input_4_5 .gchoice{display:flex;gap:8px;align-items:center;min-height:32px}
+#section-16-127 #input_4_5 :is(input,label){margin:0}
+#section-16-127 #input_4_5 label{line-height:1.5!important}
+#section-16-127 #field_4_9 .ginput_container_consent{display:grid;grid-template-columns:20px minmax(0,1fr);gap:8px;align-items:start}
+#section-16-127 #field_4_9 input{margin-top:5px}
+#section-16-127 #field_4_9 label{line-height:1.5!important}
+#section-16-127 .gform_footer{padding:0;margin:24px 0 0}
+#section-16-127 #gform_submit_button_4{padding:12px 24px;min-height:48px;background:#7f2c57!important;color:#fff!important;border:1px solid #7f2c57;border-radius:999px;line-height:1.4!important;cursor:pointer;max-width:100%;white-space:normal}
+#section-16-127 #div_block-22-127{grid-area:hours;width:100%;min-height:0;height:auto;gap:0}
+#section-16-127 #div_block-53-127{padding:24px;width:100%;border-radius:24px}
+#section-16-127 #headline-59-127{margin-bottom:16px!important}
+#section-16-127 #text_block-62-127{line-height:1.7!important}
+#section-16-127 .v007-office-routes{grid-area:routes;width:100%;padding-top:8px;margin:0}
+#section-16-127 .v007-office-routes ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding:0;margin-top:16px}
+#section-16-127 .v007-office-routes li{margin:0;min-width:0}
+#section-16-127 .v007-office-routes .btn-outline{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:4px;min-height:76px;width:100%;margin:0;padding:12px 20px;text-align:left;line-height:1.4}
+#section-16-127 .v007-office-routes .v007-route-county{font-size:16px;white-space:normal}
+#section-16-127 .v007-office-routes h3{margin:0 0 8px!important}
+#section-16-127 .v007-office-routes p{margin:0 0 16px}
+#section-17-127>.ct-section-inner-wrap,#section-18-127>.ct-section-inner-wrap{padding:32px 24px!important}
+@media(max-width:1100px){:root{--v010-section-space:48px;--v010-column-gap:32px}}
+@media(max-width:900px){
+ #section-16-127>.ct-section-inner-wrap{display:flex;flex-direction:column;gap:24px!important}
+ #section-16-127 #div_block-19-127{display:flex;flex-direction:column;gap:16px}
+ #section-16-127 #div_block-19-127>p{padding:0}
+ #section-16-127 :is(#div_block-20-127,#div_block-21-127,#div_block-22-127,#code_block-54-127){width:100%}
+ #section-16-127 #div_block-20-127{gap:12px}
+ #section-16-127 .v007-office-routes ul{grid-template-columns:1fr;gap:16px}
+ :is(#div_block-67-149,#div_block-82-149,#div_block-118-149){height:400px!important}
+}
+@media(max-width:767px){
+ :root{--v010-section-space:40px;--v010-column-gap:32px}
+ #section-134-149 #div_block-135-149{padding:32px 24px!important}
+ #slider-136-149 .ct-slide{padding-bottom:80px!important}
+ #section-207-149 #div_block-209-149,#section-207-149 #slider-224-149,#section-207-149 #slider-224-149 :is(.unslider,.oxygen-unslider-container,.unslider-wrap,.ct-slide){min-height:320px!important;height:320px!important}
+ :is(#div_block-67-149,#div_block-82-149,#div_block-118-149){height:320px!important}
+ #patient-information [data-element="visit-preparation"]{gap:24px}
+ #insurance-payment :is(.v008-cost-intro,.v008-financial-row,.v008-financial-action){row-gap:16px}
+ #section-16-127 #code_block-54-127{height:300px!important}
+ #section-16-127 #div_block-21-127,#section-16-127 #div_block-53-127{padding:24px 20px}
+ #section-16-127 #gform_fields_4{grid-template-columns:minmax(0,1fr)}
+ #section-16-127 #gform_fields_4>:is(#field_4_1,#field_4_3){grid-column:1}
+ #section-16-127 #input_4_5{column-gap:12px}
+ #section-16-127 #div_block-42-127{font-size:22px!important}
+}

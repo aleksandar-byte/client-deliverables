@@ -1,0 +1,20 @@
+/* v014: direct external booking, compact office/map, integrated founder biography. */
+#section-16-127>.ct-section-inner-wrap{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"intro intro" "location map" "routes routes";gap:24px!important;align-items:stretch}
+#section-16-127 #div_block-19-127{gap:8px;margin-bottom:0}
+#section-16-127 .v011-location-column{padding:24px;gap:16px;align-self:stretch}
+#section-16-127 #div_block-20-127{gap:8px}
+#section-16-127 #headline-59-127{margin-bottom:8px!important}
+#section-16-127 #text_block-62-127{gap:6px}
+#section-16-127 .v011-hours-row{padding-bottom:4px}
+#section-16-127 .v011-hours-row:last-child{padding-bottom:0}
+#section-16-127 .v014-map-panel{grid-area:map;display:flex;min-width:0;min-height:340px;align-self:stretch;border:1px solid rgba(127,44,87,.1);border-radius:24px;overflow:hidden;background:#f4f4f4}
+#section-16-127 .v014-map-panel #code_block-54-127{grid-area:auto;flex:1 1 auto;height:auto!important;min-height:340px!important;border-radius:0}
+#section-16-127 .v007-office-routes{padding-top:0}
+#section-34-149 .v004-michael-proof{display:block;margin-top:0}
+#section-34-149 #text_block-43-149>[data-element="michael-credentials"]{display:inline;font:inherit;color:inherit;letter-spacing:inherit}
+@media(max-width:767px){
+ #section-16-127>.ct-section-inner-wrap{grid-template-columns:minmax(0,1fr);grid-template-areas:"intro" "location" "map" "routes";gap:20px!important}
+ #section-16-127 .v011-location-column{padding:24px 20px}
+ #section-16-127 .v014-map-panel{min-height:300px}
+ #section-16-127 .v014-map-panel #code_block-54-127{height:300px!important;min-height:300px!important}
+}

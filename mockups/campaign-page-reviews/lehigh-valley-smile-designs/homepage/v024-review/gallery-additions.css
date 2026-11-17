@@ -1,0 +1,14 @@
+/* Narrow v005 gallery delta in the approved original homepage design. */
+#smile-makeover { min-height:0 !important; scroll-margin-top:120px; }
+.v005-makeover-actions { display:flex; flex-wrap:wrap; align-items:center; gap:16px; margin-top:30px; }
+.v005-makeover-actions a.btn-outline { margin-top:0; min-height:44px; display:inline-flex; align-items:center; justify-content:center; }
+.v005-gallery-button { color:#7f2c57; border-color:#7f2c57; }
+.v005-gallery-button:hover { background:#7f2c57; color:#fff; }
+.v005-gallery-case { position:relative; z-index:2; margin:0; width:95%; min-width:0; border-radius:20px; background:#fff; }
+.v005-gallery-case img { display:block; width:100%; height:auto; aspect-ratio:474/379; object-fit:contain; border-radius:20px 20px 0 0; }
+.v005-gallery-case figcaption { padding:14px 16px; font-family:"Open Sans",sans-serif; font-size:14px; line-height:1.5; text-align:center; color:#484848; }
+#smile-makeover #v004-smile-div_block-67-149 { min-height:0; height:auto; align-self:center; }
+#smile-makeover #v004-smile-div_block-68-149 { display:block; height:auto; min-height:0; padding-bottom:20px; }
+#smile-makeover .v005-gallery-case { width:calc(100% - 20px); }
+#smile-makeover #v004-smile-div_block-69-149 { top:20px; left:20px; right:auto; bottom:auto; width:calc(100% - 20px); height:calc(100% - 20px); }
+@media(max-width:479px) { .v005-makeover-actions { align-items:stretch; flex-direction:column; width:100%; gap:12px; } .v005-makeover-actions a.btn-outline { width:100%; } }

@@ -1,0 +1,10 @@
+/* v009: approved consolidation inside the existing brand components. */
+#section-34-149 .v009-founder-quote{margin:28px 0 0;padding:0 0 0 20px;border-left:1px solid rgba(255,255,255,.45);max-width:620px}
+#section-34-149 .v009-founder-quote #text_block-129-149{font-size:16px!important;line-height:1.7!important;text-align:left!important;margin:0 0 12px}
+#section-34-149 .v009-founder-quote #text_block-130-149{font-size:18px!important;line-height:1.4!important;text-align:left!important}
+#care-pathways .v009-urgent-route{max-width:850px;margin-top:14px}
+#insurance-payment .v009-membership-details{display:inline-block;margin-top:12px;color:#7f2c57;text-decoration:underline;text-underline-offset:4px;font-family:"Open Sans",sans-serif;font-size:16px;font-weight:400}
+#section-16-127 .v009-contact-booking{display:inline-flex;align-items:center;justify-content:center;align-self:flex-start;width:auto;max-width:100%;margin:12px 0;font-family:Amandine,Georgia,serif;font-size:18px;line-height:1.4;text-transform:none}
+#section-16-127 #text_block-218-149{margin:22px 0 0;max-width:540px}
+.lvsd-bar__row [data-element="hero-payment-shortcut"]{font-size:clamp(16px,1.4vw,20px)!important;white-space:normal;line-height:1.25!important}
+@media(max-width:767px){#section-34-149 .v009-founder-quote{margin-top:24px;padding-left:16px}#section-16-127 .v009-contact-booking{min-height:48px}}

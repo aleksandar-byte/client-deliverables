@@ -1,0 +1,25 @@
+/* Four visible choices: brief descriptions, explicit actions, no disclosure step. */
+#care-pathways{background:#f4f4f4;color:#000}
+#care-pathways>.ct-section-inner-wrap{display:block}
+#care-pathways h2{margin:0 0 32px!important;font-family:Amandine,Georgia,serif;font-weight:400;color:#7f2c57;line-height:1.2}
+#care-pathways .v012-care-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;width:100%}
+#care-pathways .v012-care-tile{display:flex;flex-direction:column;align-items:flex-start;gap:16px;min-width:0;padding:28px;background:#fff;border:1px solid rgba(127,44,87,.2);border-radius:24px}
+#care-pathways .v012-care-tile--urgent{border-color:#7f2c57;background:#fffafb}
+#care-pathways .v012-care-tile h3{margin:0;font-family:Amandine,Georgia,serif;font-size:30px;line-height:1.2;font-weight:400;color:#7f2c57}
+#care-pathways .v012-care-tile p{max-width:62ch;margin:0;font-family:"Open Sans",sans-serif;font-size:16px;font-weight:400;line-height:1.65;color:#000}
+#care-pathways .v012-care-tile .v012-care-note{font-size:14px;line-height:1.6;color:#454545}
+#care-pathways .v012-care-note a{color:#7f2c57;text-decoration:underline;text-underline-offset:3px}
+#care-pathways .v012-care-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;margin-top:auto;padding-top:8px;width:100%}
+#care-pathways .v012-care-link,#care-pathways .v012-care-call{display:inline-flex;align-items:center;justify-content:flex-start;gap:10px;min-height:44px;max-width:100%;font-family:Amandine,Georgia,serif;font-weight:400;font-size:18px;line-height:1.4;color:#7f2c57;text-decoration:underline;text-underline-offset:4px}
+#care-pathways .v012-care-link svg{flex:none}
+#care-pathways .v012-care-link:hover,#care-pathways .v012-care-call:hover{text-decoration-thickness:2px}
+#care-pathways .v012-care-call{border-radius:999px;padding:10px 18px;background:#7f2c57;color:#fff;text-decoration:none;justify-content:center}
+#care-pathways .v012-care-call:hover{background:#642144}
+#care-pathways :is(a,button):focus-visible{outline:3px solid #7f2c57;outline-offset:4px}
+@media(max-width:700px){
+ #care-pathways h2{margin-bottom:24px!important}
+ #care-pathways .v012-care-grid{grid-template-columns:minmax(0,1fr);gap:16px}
+ #care-pathways .v012-care-tile{padding:24px;gap:16px}
+ #care-pathways .v012-care-tile h3{font-size:28px}
+ #care-pathways .v012-care-actions{gap:8px 20px}
+}

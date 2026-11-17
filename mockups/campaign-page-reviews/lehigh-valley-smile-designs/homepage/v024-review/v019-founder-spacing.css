@@ -1,0 +1,5 @@
+/* Founder breathing room; retain inherited horizontal alignment and group. */
+.v013-people-band{padding-top:64px}
+#v013-people-group #section-34-149>.ct-section-inner-wrap{padding-top:64px!important;padding-bottom:64px!important}
+@media(max-width:900px){#v013-people-group #section-34-149>.ct-section-inner-wrap{padding-top:48px!important;padding-bottom:48px!important}}
+@media(max-width:600px){.v013-people-band{padding-top:48px}#v013-people-group #section-34-149>.ct-section-inner-wrap{padding-top:40px!important;padding-bottom:40px!important}}

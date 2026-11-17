@@ -1,0 +1,19 @@
+/* Scoped real-practice opening imagery; shared v022 location styles remain unchanged. */
+#section-2-149{background-image:none!important}
+#section-2-149 .v023-hero-image{position:absolute!important;inset:0;display:block;width:100%;height:100%!important;max-height:100%!important;z-index:0!important;object-fit:cover;object-position:50% 65%;pointer-events:none}
+#section-2-149>.dynamic-video-overlay{display:block!important;visibility:visible!important;opacity:1!important;position:absolute!important;inset:0;z-index:1!important;width:100%;height:100%!important;max-height:none!important;background:rgba(49,12,35,.67)!important;pointer-events:none}
+#section-2-149>.ct-section-inner-wrap{position:relative;z-index:2}
+#care-pathways .v023-care-opening{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,300px);align-items:center;gap:28px 48px;width:100%;margin:0 0 32px}
+#care-pathways .v023-care-opening h2{margin:0!important;max-width:15ch}
+#care-pathways .v023-care-photo{display:block;min-width:0;margin:0;width:100%}
+#care-pathways .v023-care-photo img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 54%;border-radius:20px}
+#care-pathways .v023-care-photo figcaption{margin:10px 0 0;font-family:"Open Sans",sans-serif;font-size:12px;line-height:1.5;color:#584750}
+#section-207-149 .v023-one-staff-photo{grid-template-columns:minmax(0,1fr)!important}
+#section-207-149 .v023-one-staff-photo img{width:100%!important;max-width:100%;height:auto!important;max-height:580px;object-fit:cover;object-position:50% 40%}
+@media(max-width:767px){#section-2-149 .v023-hero-image{object-position:100% 50%}}
+@media(max-width:700px){
+ #care-pathways .v023-care-opening{grid-template-columns:minmax(0,1fr);gap:22px;margin-bottom:28px}
+ #care-pathways .v023-care-opening h2{max-width:18ch}
+ #care-pathways .v023-care-photo{max-width:440px}
+ #care-pathways .v023-care-photo img{aspect-ratio:4/3;object-position:50% 54%}
+}

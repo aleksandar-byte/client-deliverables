@@ -1,0 +1,14 @@
+/* v008: supported competitive gaps; preserve v007 shared visual system. */
+.decision-section{background:#fff}
+.decision-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:64px;align-items:start}
+.decision-layout>*{min-width:0}
+.decision-layout>div:first-child>p:last-child{max-width:430px}
+.decision-answers>div{border-top:1px solid var(--line);padding-top:24px}
+.decision-answers>div+div{margin-top:28px}
+.decision-answers h3{font-size:24px;line-height:1.2;margin-bottom:12px}
+.decision-answers p{font-size:16px;line-height:1.75;max-width:680px;margin:0}
+#suitability{padding-top:24px}
+#suitability>.shell{border-top:1px solid var(--line);padding-top:48px}
+@media(max-width:1000px){.decision-layout{gap:36px}}
+@media(max-width:860px){.decision-layout{grid-template-columns:minmax(0,1fr);gap:28px}.decision-layout>div:first-child>p:last-child{max-width:680px}#suitability>.shell{padding-top:36px}}
+@media(max-width:600px){.decision-answers>div{padding-top:20px}.decision-answers>div+div{margin-top:24px}#suitability{padding-top:0}#suitability>.shell{padding-top:32px}}

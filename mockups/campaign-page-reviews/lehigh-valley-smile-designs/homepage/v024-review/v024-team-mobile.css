@@ -1,0 +1,15 @@
+/* Mobile doctor profiles: portraits first, full-width readable copy. */
+@media(max-width:900px){
+ #v013-people-group #section-207-149 .v004-provider-row{grid-template-columns:minmax(0,1fr);gap:18px;align-items:start;padding:24px 0 0}
+ #v013-people-group #section-207-149 .v004-provider-row>img{display:block;width:160px;height:184px;max-width:100%;object-fit:contain;object-position:center;border-radius:18px;background:#f7f2f5;justify-self:start;margin:0}
+ #v013-people-group #section-207-149 .v004-provider-row>div{min-width:0;width:100%}
+ #v013-people-group #section-207-149 .v004-provider-row h3{font-size:28px!important;line-height:1.25;margin:0 0 12px!important;text-wrap:pretty}
+ #v013-people-group #section-207-149 .v004-provider-row p{font-size:15px;line-height:1.7;margin:0 0 12px;max-width:65ch}
+ #v013-people-group #section-207-149 .v004-provider-row a{min-height:44px;display:inline-flex;align-items:center;line-height:1.5;text-underline-offset:4px}
+ #v013-people-group #section-207-149 .v004-provider-row a:focus-visible{outline:2px solid #227e7b;outline-offset:4px;border-radius:2px}
+}
+@media(max-width:700px){
+ #v013-people-group #section-207-149 .v013-provider-grid{grid-template-columns:minmax(0,1fr);gap:28px}
+ #v013-people-group #section-207-149 .v004-provider-row{gap:18px;padding-top:24px}
+ #v013-people-group #section-207-149 .v004-provider-row>img{width:160px;height:184px}
+}

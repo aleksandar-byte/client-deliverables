@@ -1,0 +1,120 @@
+/* Final private Invisalign lift; adapt the read-only Smile Makeover v011 system. */
+.header-inner{gap:32px}
+.brand{width:132px;flex:0 0 132px}
+.brand img{width:132px;height:auto}
+.desktop-nav a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
+.menu-toggle{min-width:112px;justify-content:space-between}
+.menu-toggle [data-menu-label]{font:inherit}
+.mobile-menu a{display:flex;align-items:center;min-height:44px}
+.mobile-menu a:hover{text-decoration:underline}
+#service-hero .hero-actions{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:8px 24px;align-items:center}
+#service-hero .hero-actions>*{min-width:0}
+#service-hero .hero-actions .hero-hours{grid-column:1/-1;width:100%;max-width:410px;margin:0}
+#service-hero .hero-actions .phone-link{padding:6px 0}
+.start-path p{font-size:16px;line-height:1.6}
+#service-provider-expertise,#location-service-map{background:#fff}
+#patient-reviews{background:var(--surface)}
+.provider-layout{align-items:start;grid-template-columns:184px minmax(0,1fr);gap:40px}
+.provider-layout figure{max-width:184px}
+.provider-layout img{height:auto;max-height:none;object-fit:contain}
+.provider-layout .reading{max-width:680px}
+.provider-layout a,.technology-note>a,.planning-resource{min-height:44px}
+.comparison td{line-height:1.75}
+.phase [data-element="consultation-preparation"]{margin-top:24px}
+.phase [data-element="consultation-preparation"]>p:last-child{margin-top:16px}
+.faq-list summary{padding-inline:12px;transition:background-color .15s ease}
+.faq-list summary:hover,.faq-list details[open]{background:#fff}
+.faq-list details[open]>summary{text-decoration:underline;text-underline-offset:5px}
+.faq-list details>p{padding:4px 28px 24px 12px}
+.office-hours dl{font-size:16px}
+.office-hours dt small{font-size:14px}
+.office .office-access{font-size:16px;line-height:1.65}
+.office-map p{font-size:14px;line-height:1.65}
+.footer-legal a{font-size:14px}
+.floating-consultation[hidden]{display:none!important}
+.floating-consultation{position:fixed;z-index:25;inset:auto 0 0;padding:10px 24px max(10px,env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line)}
+.floating-consultation .button{width:100%;min-height:48px;font-size:18px;padding:10px 20px;background:var(--plum);color:#fff;border-color:var(--plum)}
+.floating-consultation .button:focus-visible{outline-color:#13705e}
+@media(min-width:651px){.floating-consultation{display:none!important}}
+@media(min-width:861px){.desktop-nav{display:flex;position:static;background:transparent;gap:24px}.desktop-nav a{padding-block:4px}}
+@media(max-width:1000px){
+ .desktop-nav{gap:20px}
+ #service-hero .hero-actions{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:4px 12px}
+ #service-hero .hero-actions .button{grid-column:1/-1;justify-self:start}
+ #service-hero .hero-actions .phone-link{grid-column:1}
+ #service-hero .hero-actions .hero-hours{grid-column:2;max-width:100%;align-self:start}
+ #service-hero .hero-hours summary{font-size:14px;gap:6px}
+ #service-hero .hero-hours .chevron{margin-left:2px}
+ #service-hero .hero-actions .hero-hours[open]{grid-column:1/-1}
+}
+@media(max-width:860px){
+ .brand{width:120px;flex-basis:120px}.brand img{width:120px;height:auto}
+ .provider-layout{grid-template-columns:160px minmax(0,1fr);gap:32px}
+ .provider-layout figure{max-width:160px}
+ #service-hero .hero-actions{grid-template-columns:minmax(0,1fr)}
+ #service-hero .hero-actions .hero-hours{grid-column:1}
+ html:not(.js) .header-inner{flex-wrap:wrap}
+ html:not(.js) .navigation{flex:1 1 100%;width:100%}
+ html:not(.js) .desktop-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 20px;padding-top:8px}
+ html:not(.js) .desktop-nav a{display:flex;align-items:center;min-height:44px}
+ html:not(.js) .menu-toggle{display:none}
+}
+@media(max-width:650px){
+ html{scroll-padding-bottom:92px}
+ #service-hero .hero-actions{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:4px 10px}
+ #service-hero .hero-actions .button{grid-column:1/-1;width:100%;min-height:48px;font-size:18px;padding:12px 16px;gap:16px}
+ #service-hero .hero-actions .phone-link{grid-column:1;font-size:16px;min-height:44px;line-height:1.4}
+ #service-hero .hero-actions .hero-hours{grid-column:2}
+ #service-hero .hero-hours summary{min-height:44px;font-size:14px;gap:6px}
+ #service-hero .hero-actions .hero-hours[open]{grid-column:1/-1}
+ #service-hero .hero-schedule{font-size:16px}
+ .start-path p{font-size:16px}
+ .provider-layout{grid-template-columns:minmax(0,1fr);gap:24px}
+ .provider-layout figure{width:160px}
+ .faq-list summary{padding:18px 10px}
+ .faq-list details>p{padding-left:10px;padding-right:16px}
+}
+@media(max-width:360px){
+ #service-hero .hero-actions .phone-link{flex-direction:column;align-items:flex-start;justify-content:center;gap:0;font-size:15px}
+ #service-hero .hero-actions .button{font-size:17px}
+}
+@media(prefers-reduced-motion:reduce){.faq-list summary{transition:none}}
+
+/* Reserve the actual first-screen layout before deferred measurement arrives.
+   Header geometry derives from the approved132px native270:259logo plus24px
+   block padding,with the existing140pxminimum. The lower path is intrinsic,
+   not a hard-coded measured height. No runtime measurement or QA is bypassed. */
+#service-hero .hero-opening{
+ --opening-chrome:max(140px,calc(132px * 259 / 270 + 24px));
+ display:grid;grid-template-rows:minmax(min-content,1fr) auto;
+ min-block-size:calc(var(--first-screen-block-size) - var(--opening-chrome));
+}
+#service-hero .hero-opening>.hero-stage{min-block-size:0}
+@media(max-width:900px){
+ #service-hero .hero-opening{display:block;min-block-size:0}
+ #service-hero .hero-opening>.hero-stage{min-block-size:calc(var(--first-screen-block-size) - var(--opening-chrome))}
+}
+@media(max-width:860px){#service-hero .hero-opening{--opening-chrome:140px}}
+
+/* Short-phone composition is responsive CSS from first paint. The original
+   runtime still measures real fit; it does not have to shrink already-painted
+   required content. These are the existing compact-phone design values. */
+@media(max-width:600px) and (max-height:760px){
+ #service-hero .hero-opening .hero-stage{padding-block:16px}
+ #service-hero .hero-stage .hero-grid{gap:12px}
+ #service-hero .hero-stage h1{font-size:34px;line-height:1.08;margin-bottom:14px}
+ #service-hero .hero-stage .hero-offer{font-size:21px;line-height:1.25;margin-bottom:10px}
+ #service-hero .hero-stage .hero-lead{font-size:16px;line-height:1.45;margin-bottom:14px}
+ #service-hero .hero-stage .hero-office img{height:96px}
+}
+@media(max-width:360px) and (max-height:700px){
+ #service-hero .hero-opening .hero-stage{padding-block:8px}
+ #service-hero .hero-stage .hero-grid{gap:8px}
+ #service-hero .hero-stage h1{font-size:32px;line-height:1.04;margin-bottom:8px}
+ #service-hero .hero-stage .hero-offer{font-size:20px;line-height:1.2;margin-bottom:8px}
+ #service-hero .hero-stage .hero-lead{font-size:15px;line-height:1.4;margin-bottom:10px}
+ #service-hero .hero-stage .hero-office img{height:80px}
+ #service-hero .hero-stage .hero-actions .button{min-height:52px;padding:8px 12px;font-size:17px;gap:8px}
+ #service-hero .hero-stage .hero-actions .button svg{width:14px}
+ #service-hero .hero-stage .hero-actions .phone-link{min-height:52px}
+}
