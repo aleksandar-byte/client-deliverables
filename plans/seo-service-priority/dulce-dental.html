@@ -112,7 +112,7 @@ BL: Emergency dentistry · Backlink/PR · Weeks 17–17 · Second high-DR backli
   const parsed=new DOMParser().parseFromString(data.html,'text/html'),next=parsed.querySelector('.campaign-improvements');if(!next)throw Error('Invalid section');
   const step=old.querySelector('h2')?.dataset.step;if(step)next.querySelector('h2').dataset.step=step;
   for(const item of next.querySelectorAll('details[data-report-content-group]'))if(groups.includes(item.dataset.reportContentGroup))item.open=true;
-  const current=old;current.replaceWith(next);
+  old.replaceWith(next);
   if(next.querySelector('.cp-scroll'))next.querySelector('.cp-scroll').scrollLeft=scroll;
   if(inside){const target=manual?next.querySelector('[data-live-work-refresh]'):focusHref?[...next.querySelectorAll('a')].find(a=>a.getAttribute('href')===focusHref):focusGroup?[...next.querySelectorAll('details[data-report-content-group]')].find(d=>d.dataset.reportContentGroup===focusGroup)?.querySelector('summary'):next.querySelector('.cp-scroll');if(target){target.disabled=false;target.focus({preventScroll:true});}}
   window.scrollTo(x,y);
